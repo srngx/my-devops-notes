@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'public'
+          path: 'my-devops-notes'
           name: 'my-devops-notes'
           
       - name: Deploy to GitHub Pages
