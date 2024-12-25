@@ -59,6 +59,7 @@ These are my obsidian Notes of DevOps Course.
 | ---------- | -------------------------------- |
 | 2024-12-19 | [[2024-12-19 Git Class]]         |
 | 2024-12-23 | [[2024-12-23 docker-day]]        |
+| 2024-12-24 | [[2024-12-24 docker basics]]     |
 
 
 

@@ -9,7 +9,7 @@ Before Learning about docker it is crucial to know about containers and even bef
 - one app divided in chunks
 ### What is docker?
 
-![[Drawing 2024-12-23 09.42.16.excalidraw]]
+![[Docker-Architecture-diagram_1.excalidraw]]
 ### What is container?
 - its like small virtual machines
 - containers are free to use all the rams they needs
