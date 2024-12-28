@@ -19,25 +19,39 @@
 ---
 ### Basic Git Commands
 
-#### To add all untracked changes into git
+#### Adding Files to Staging Area 
+
 ```sh
 git add . 
-#or 
-git add -A
 ```
+This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.
 
+```sh
+git add -A 
+```
+This command will stage **all types of changes** across your entire working directory including *newfiles, modifications and deletions*
 #### This command will commit changes into git
 ```sh
 git commit -m "new commit"
 ``` 
+**Creates a commit with the specified message.** This is the most common way to commit changes.
 
+```sh
+git commit -A "your commit message"
+```
+**Automatically stages all tracked files that have been modified and deleted, then creates a commit.** It combines `git add -A` and `git commit -m` into a single command.
+
+**Does not stage any new files.** If you have new files you want to include in the commit, you still need to stage them separately using `git add`.
 #### Syncing latest commit to remote repo
 ```sh
 git push origin main
 ```
-
+**Uploads your local changes to the remote repository.**
+After pushing, other developers can access your changes by pulling from the remote repository.
 #### Pulling latest changes from remote to local
 ```sh
 git pull origin main
 ```
+**Downloads changes from the remote repository to your local repository.** Used to stay up-to-date with the latest changes made by other develpers.*
+
 

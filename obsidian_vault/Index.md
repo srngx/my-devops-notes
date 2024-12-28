@@ -1,8 +1,16 @@
+---
+Title: My DevOps Notes
+tags: []
+---
 ![[{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png]]
 # My DevOps Notes 
-## From CDEC Course at CloudBlitz
 
-These are my obsidian Notes of DevOps Course.
+**Author**: Sarang Wandile
+**Github**: [srngx](https://github.com/srngx)
+
+Hello, My name is Sarang, in this place I store my DevOps related Notes, assignments and Practical. Feel free to explore.
+
+*These notes are made using Obsidian App - A Markdown Notetaking App and Hosted with Cloudflare page.*
 
 #### Linux
 
@@ -15,15 +23,15 @@ These are my obsidian Notes of DevOps Course.
 #### AWS
 
 > [!todo]- Tasks to perform
-> [[🤔 Task 1 - Implement autoscaling on memory utilization]]
+> [[☑️ Task 1 - Implement autoscaling on memory utilization]]
 > [[✅ Host static website on s3 bucket]]
 > [[✅ Create 5 IAM users and 5 S3 buckets and attach them each other]]
 > [[✅ Implement Template with Scheduled Autoscaling]]
 > [[✅ Monitoring Nginx logs with Cloudwatch]]
 > [[☑️ Task 4 - How to store aws load balancer logs in s3 bucket]]
-> [[🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]]
+> [[✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]]
 > [[✅Task 7 - Get sns alert when any user launches new instance]]
-> [[Create notification for s3 bucket activity happen of put and delete]]
+> [[✅Create notification for s3 bucket activity happen of put and delete]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
@@ -61,6 +69,11 @@ These are my obsidian Notes of DevOps Course.
 | 2024-12-23 | [[2024-12-23 docker-day]]        |
 | 2024-12-24 | [[2024-12-24 docker basics]]     |
 
+#### DevOps Tasks
 
+| Sr. NO. | Task Name                                         |
+| ------- | ------------------------------------------------- |
+| Task 1  | [[Task 1 Creating Tomcat student-ui container]]   |
+| Task 2  | [[Task 2 Create the Free-css template container]] |
 
 

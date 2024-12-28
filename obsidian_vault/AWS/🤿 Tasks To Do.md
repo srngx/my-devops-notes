@@ -18,8 +18,8 @@ Week's Assignment
 
 | No. | Task Title                                                                                                                  | Status                  |
 | --- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| 1.  | [[🤔 Task 1 - Implement autoscaling on memory utilization]]                                                                 | half done then confused |
-| 2.  | [[Create notification for s3 bucket activity happen of put and delete]]                                          | ✅                       |
+| 1.  | [[☑️ Task 1 - Implement autoscaling on memory utilization]]                                                                 | half done then confused |
+| 2.  | [[✅Create notification for s3 bucket activity happen of put and delete]]                                          | ✅                       |
 | 3.  | [[Task 3 - add sns alert for policy, lifecycle changes for all buckets]]                                                    |                         |
 | 4.  | [[☑️ Task 4 - How to store aws load balancer logs in s3 bucket]]                                                            | ✅                       |
 | 5.  | [[Task 5 - enable vpc flow logs]]                                                                                           |                         |
@@ -33,4 +33,4 @@ Ongoing Task
 
 | Sr.  No. | Task Title                                                         |
 | -------- | ------------------------------------------------------------------ |
-| 1.       | [[🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]] |
+| 1.       | [[✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]] |
