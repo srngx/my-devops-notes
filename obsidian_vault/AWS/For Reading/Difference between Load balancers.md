@@ -1,4 +1,3 @@
-
 # AWS Load Balancer Types
 
 AWS offers four types of load balancers:

@@ -10,10 +10,10 @@ tags: []
 
 Hello, My name is Sarang, in this place I store my DevOps related Notes, assignments and Practical. Feel free to explore.
 
-*These notes are made using Obsidian App - A Markdown Notetaking App and Hosted with Cloudflare page.*
+*These notes are made using [Obsidian App](https://obsidian.md) - A Markdown Notetaking App and Hosted with [Cloudflare page](https://pages.cloudflare.com/).*
 
 >[!Warning]
->"These notes are subject to ongoing expansion and further amendments."
+>"These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced. "
 
 #### Linux
 
@@ -26,15 +26,15 @@ Hello, My name is Sarang, in this place I store my DevOps related Notes, assignm
 #### AWS
 
 > [!todo]- Tasks to perform
-> [[☑️ Task 1 - Implement autoscaling on memory utilization]]
+> [[☑️ Implement autoscaling on memory utilization]]
 > [[✅ Host static website on s3 bucket]]
 > [[✅ Create 5 IAM users and 5 S3 buckets and attach them each other]]
 > [[✅ Implement Template with Scheduled Autoscaling]]
 > [[✅ Monitoring Nginx logs with Cloudwatch]]
-> [[☑️ Task 4 - How to store aws load balancer logs in s3 bucket]]
+> [[☑️ How to store aws load balancer logs in s3 bucket]]
 > [[✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]]
-> [[✅Task 7 - Get sns alert when any user launches new instance]]
-> [[✅Create notification for s3 bucket activity happen of put and delete]]
+> [[✅ Get sns alert when any user launches new instance]]
+> [[✅ Create notification for s3 bucket activity happen of put and delete]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
@@ -72,12 +72,17 @@ Hello, My name is Sarang, in this place I store my DevOps related Notes, assignm
 | 2024-12-23 | [[2024-12-23 docker-day]]        |
 | 2024-12-24 | [[2024-12-24 docker basics]]     |
 
-#### DevOps Tasks
+> [!todo]- Tasks to perform
+> - [[Task 1 Creating Tomcat student-ui container]]
+> - [[Task 2 Create the Free-css template container]]
+> - [[Task 3 Create Mysql Container]]
 
-| Sr. NO. | Task Name                                         |
-| ------- | ------------------------------------------------- |
-| Task 1  | [[Task 1 Creating Tomcat student-ui container]]   |
-| Task 2  | [[Task 2 Create the Free-css template container]] |
-| Task 3  | [[Task 3 Create Mysql Container]]                 |
+> [!example]- Task assigned for Reading
+> - [[Agile Development]]
+> - [[Agile Vs DevOps]]
+> - [[Git Fetch vs Git pull]]
+> - [[Monolithic vs Microservice Architecture]]
+> - [[Git Theory]] 
+> - [[Reading Docker Inspect output]]
 
 
