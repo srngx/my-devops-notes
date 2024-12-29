@@ -10,9 +10,9 @@ date: 2024-12-28
 ---
 # Task 2: Create the Free-css template container 
 ## Instructions
-- get the docker image of Amazon linux 
-- install nginx 
-- add free-css template
+- [ ] get the docker image of Amazon linux 
+- [ ] install nginx 
+- [ ] add free-css template
 
 ## Steps Performed:
 

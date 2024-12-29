@@ -3,11 +3,8 @@
 ### Rhel Based Distro Installation
 Installing docker on amazonlinux and rhel based distros are much easier than installling on ubuntu
 ```sh
-
 sudo yum install docker # rhel/amazonlinux/fedora etc
 sudo pacman -S docker   # archlinux based distros
-sudo 
-
 ```
 
 ### Ubuntu/Debian Family based distro Installation
