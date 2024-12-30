@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sun, 29 Dec 2024 16:05:26 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sun, 29 Dec 2024 16:04:26 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Authentication vs. Authorization]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 30 Dec 2024 16:01:53 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 30 Dec 2024 16:00:46 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Authentication vs. Authorization]]></title><description><![CDATA[ 
  <br><br>While often used interchangeably,&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/authenticate" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/authenticate" target="_blank">authentication</a>&nbsp;and authorization represent fundamentally different functions. In this article, we compare and contrast the two to show how they protect applications in complementary ways.<br><br>In simple terms, authentication is the process of verifying who a user is, while authorization is the process of verifying what they have access to.<br>Comparing these processes to a real-world example, when you go through security in an airport, you show your ID to authenticate your identity. Then, when you arrive at the gate, you present your boarding pass to the flight attendant, so they can authorize you to board your flight and allow access to the plane.<br><br>Here's a quick overview of the differences between authentication and authorization:<br><br>In short, access to a resource is protected by both authentication and authorization. If you can't prove your identity, you won't be allowed into a resource. And even if you can prove your identity, if you are not authorized for that resource, you will still be denied access.<br>Auth0 has products and services for authentication, like&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/authenticate/passwordless/passwordless-with-universal-login" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/authenticate/passwordless/passwordless-with-universal-login" target="_blank">passwordless</a>,&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/secure/multi-factor-authentication" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/secure/multi-factor-authentication" target="_blank">multi-factor authentication</a>&nbsp;(MFA), and&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/authenticate/single-sign-on" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/authenticate/single-sign-on" target="_blank">Single-Sign On (SSO)</a>&nbsp;you can configure using&nbsp;Auth0 Dashboard&nbsp;or&nbsp;Management API. For authorization, Auth0 offers&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/manage-users/access-control/rbac" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/manage-users/access-control/rbac" target="_blank">role-based access control</a>&nbsp;(RBAC) or&nbsp;<a data-tooltip-position="top" aria-label="https://docs.fga.dev/fga" rel="noopener nofollow" class="external-link" href="https://docs.fga.dev/fga" target="_blank">fine grained authorization</a>&nbsp;FGA).]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html</link><guid isPermaLink="false">AWS/For Reading/Authorized vs Authonticated.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate></item><item><title><![CDATA[AWS EC2 Instance Types Grouped by Family]]></title><description><![CDATA[ 
  <br><br><br>
 <br>M1 (e.g., m1.small, m1.medium, m1.large)
@@ -2038,20 +2038,18 @@ SELECT User, Host FROM mysql.user;
 
 ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-11-28-creating-rds.html</link><guid isPermaLink="false">Daily Notes/2024-11-28 Creating RDS.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-11-30]]></title><description><![CDATA[ 
  <br><br>download zip file<br>
-unzip it<br>sudo yum install java-17<br>
-![info]<br>
+unzip it<br>sudo yum install java-17<br>Info
 in ubuntu java packages are called<br>
 jdk and jre<br>
 java development kit and java runtime
 <br>cd into extracted folder<br>cd bin<br>bash catalina.sh start<br>git clone <a rel="noopener nofollow" class="external-link" href="https://github.com/cholekulche/BE-application-student.git" target="_blank">https://github.com/cholekulche/BE-application-student.git</a><br>cd into it<br>
 install maven<br>
 sudo yum install maven<br>build appliaction<br>
-mvn clean package<br>
-![info]<br>
+mvn clean package<br>Info
 first install java before maven because<br>
 maven will install java latest version which might conflict with required versions
 <br>cd target<br>code<br>
-artifact application<br> mv studentapp-2.2-SNAPSHOT.war studentapp.war<br> mv studentapp.war ../../apache-tomcat-9.0.97/webapps/.<br>cd ../../apache-tomcat-9.0.97/webapps/<br>.war file will get extracted automatically into student app<br>check ip:8080/studentapp<br><img alt="student-app-final-page.png" src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"><br>continue to <a data-href="2024-12-02" href="https://notes.sarangwandile.xyz/daily-notes/2024-12-02.html" class="internal-link" target="_self" rel="noopener nofollow">2024-12-02</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-11-30.html</link><guid isPermaLink="false">Daily Notes/2024-11-30.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-02]]></title><description><![CDATA[ 
+artifact application<br> mv studentapp-2.2-SNAPSHOT.war studentapp.war<br> mv studentapp.war ../../apache-tomcat-9.0.97/webapps/.<br>cd ../../apache-tomcat-9.0.97/webapps/<br>.war file will get extracted automatically into student app<br>check ip:8080/studentapp<br><img alt="student-app-final-page.png" src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"><br>continue to <a data-href="2024-12-02" href="https://notes.sarangwandile.xyz/daily-notes/2024-12-02.html" class="internal-link" target="_self" rel="noopener nofollow">2024-12-02</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-11-30.html</link><guid isPermaLink="false">Daily Notes/2024-11-30.md</guid><pubDate>Mon, 30 Dec 2024 16:00:30 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-02]]></title><description><![CDATA[ 
  <br>continued from <a data-href="2024-11-30" href="https://notes.sarangwandile.xyz/daily-notes/2024-11-30.html" class="internal-link" target="_self" rel="noopener nofollow">2024-11-30</a><br>create database<br>
 copy whole command<br>show database;<br>use studentapp;<br>show tables;<br><br>cd apache-tomcat/conf<br>
 vi context.xml<br>edit jdbc connector <br>&lt;Resource Name ... &gt;
@@ -2203,7 +2201,7 @@ Before Learning about docker it is crucial to know about containers and even bef
 <br>Single unified application
 <br><br>
 <br>one app divided in chunks
-<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://4542c7f9-ff05-4156-9ce7-428f8bf660d9" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
+<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://d1b8b7ac-fafb-4035-9519-dc7cfd89b9df" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
 <br>its like small virtual machines
 <br>containers are free to use all the rams they needs
 <br>whereas in vms softwares has limited prealloted ram to use
@@ -2222,146 +2220,17 @@ ps list running containers<br>
 -a list all containers stopped and running<br>
 rm remove stopped containers<br>
 kill kill the containers<br>
--P expose container on random host port ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-24-docker-basics.html</link><guid isPermaLink="false">Daily Notes/2024-12-24 docker basics.md</guid><pubDate>Tue, 24 Dec 2024 04:29:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-29]]></title><description><![CDATA[ 
- ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-29.html</link><guid isPermaLink="false">Daily Notes/2024-12-29.md</guid><pubDate>Sun, 29 Dec 2024 16:03:37 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
- <br><br><br>
-<br>Get the docker image of Amazon linux 
-<br>Add tomcat package  
-<br>Add student ui 
-<br>Then commit the image 
-<br>Store on ecr as well as on docker hub
-<br><br>Step 1: Getting the the Amazon Linux Image<br>
-Upon searching the for amazonlinux image in <a data-tooltip-position="top" aria-label="https://hub.docker.com" rel="noopener nofollow" class="external-link" href="https://hub.docker.com" target="_blank">dockerhub</a> I found its official image<br>
-I pulled it into the system with docker pull amazonlinux<br>sudo docker run -it -d -p 32768:8080 --name tomcat-student-ui amazonlinux`
-<br>and I run the image interactively and in detached mode so i can execute shell command later on<br><img alt="{1CC503E6-0A58-42E5-93CF-64946C7AA1EF}.png" src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"><br>Lets dive into the container <br>sudo docker exec -it &lt;containerid&gt; &lt;shell-command&gt;`
-<br><img alt="{0119C4A3-2DE3-4CB0-9692-E63934BF4F5C}.png" src="https://notes.sarangwandile.xyz/lib/media/{0119c4a3-2de3-4cb0-9692-e63934bf4f5c}.png"><br><br>Our App student-ui required specific version of tomcat thats why we gonna install it from source<br>Make sure to install dependancies and unzip package before hand<br><br>Install this specific version from source<br>cd /opt # we can use this directory for temporary space
-curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.zip
-unzip apache-tomcat-9.0.98.zip # unzip the archive
-yum install java-17 -y # tomcat 9 requires java-17 to work properly
-cd apache-tomcat-9.0.98/bin/
-bash ./catalina.sh start 
-<br><img alt="{9BD47135-6F08-466A-A3C7-A11FC17A759D}.png" src="https://notes.sarangwandile.xyz/lib/media/{9bd47135-6f08-466a-a3c7-a11fc17a759d}.png"><br><img alt="{40C024BF-0490-4CFC-9507-9363489D25BD}.png" src="https://notes.sarangwandile.xyz/lib/media/{40c024bf-0490-4cfc-9507-9363489d25bd}.png"><br>It looks like our tomcat server is up and running on desired port<br><br>but first we need these package building tools git and maven for building our student-ui app<br><br>sudo yum install git maven -y
-<br><br>git clone https://github.com/Pritam-Khergade/student-ui
-<br><br>cd student-ui
-mvn clean package
-<br><img alt="{8E723B0C-8E54-4F56-94BC-F7D231F3287A}.png" src="https://notes.sarangwandile.xyz/lib/media/{8e723b0c-8e54-4f56-94bc-f7d231f3287a}.png"><br>
-this creates .war file in ./target folder<br>
-rename it to suitable short name and move to /opt/apache-tomcat-9.0.98/webapps directory<br>mv target/studentapp-2.2-SNAPSHOT.war target/studentapp.war
-mv target/studentapp.war /opt/apache-tomcat-9.0.97/webapps/
-<br>and the app should be accessible on tomcat server on http://instance-ip:32768/studentapp<br><img alt="{0DFF6CA3-CC34-4310-933F-F66D3256551D}.png" src="https://notes.sarangwandile.xyz/lib/media/{0dff6ca3-cc34-4310-933f-f66d3256551d}.png"><br><br>Before creating the image its better to remove the unnecessary packages that we no longer need to make the size of the image minimal as possible.<br><br>yum remove maven git unzip -y
-<br>Lets exit from container shell and build the image <br>sudo docker commit &lt;container-id&gt;
-<br><img alt="{A2D16CE6-81BA-4DAF-A151-58EA34744A1B}.png" src="https://notes.sarangwandile.xyz/lib/media/{a2d16ce6-81ba-4daf-a151-58ea34744a1b}.png"><br>You see the created image doesnt have any name so lets give it a tag<br>sudo docker tag &lt;image-id&gt; &lt;newtag&gt;
-<br><img alt="{A6DFB555-CE8C-404D-AE0E-0E5BE4AECD43}.png" src="https://notes.sarangwandile.xyz/lib/media/{a6dfb555-ce8c-404d-ae0e-0e5be4aecd43}.png"><br>
-now push it to docker hub and ECR<br><br><br>
-<br>Login to docker hub
-<br>Click on repositories
-<br>Create new repository
-<br>Give it proper name and click create
-<br>Here is my repo looks llike<br><img alt="{8E536B96-794C-49C6-B49F-257C6FEE2E9E}.png" src="https://notes.sarangwandile.xyz/lib/media/{8e536b96-794c-49c6-b49f-257c6fee2e9e}.png"><br>Lets push our image into this repo<br>
-First rename add new tag to image appropriate according to docker hub repo name<br>sudo docker tag &lt;old-tag-name&gt; &lt;newtag-name&gt;
-<br><img alt="{62B7DAF9-7C95-4E53-BEB1-28F215445939}.png" src="https://notes.sarangwandile.xyz/lib/media/{62b7daf9-7c95-4e53-beb1-28f215445939}.png"><br>and now push it to docker hub<br>sudo docker push archsarangx/tomcat-student-ui:latest
-<br><img alt="{3386541C-1516-4A09-9493-93A52B3FF2E0}.png" src="https://notes.sarangwandile.xyz/lib/media/{3386541c-1516-4a09-9493-93a52b3ff2e0}.png"><br>and its successfully uploaded on docker hub at<br>
-<img alt="{034DA07E-A936-4284-9683-BF0300BC5EB4}.png" src="https://notes.sarangwandile.xyz/lib/media/{034da07e-a936-4284-9683-bf0300bc5eb4}.png"><br>
-and anyone can pull it with<br>docker pull archsarangx/tomcat-student-ui:latest
-<br><br><br>
-<br>goto amazon ECR service and create repositoy
-<br><img alt="Pasted image 20241228180114.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241228180114.png"><br>then click on blue repo name and click on view push commands<br><br>aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 970547378605.dkr.ecr.us-west-2.amazonaws.com
-<br><br>``<br>docker tag archsarangx/tomcat-student-ui:latest 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
-<br>docker push 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
-<br><img alt="{8230C2A4-4835-4E3A-9500-E4C8B9187FB3}.png" src="https://notes.sarangwandile.xyz/lib/media/{8230c2a4-4835-4e3a-9500-e4c8b9187fb3}.png"><br><img alt="{E9698F18-9E9B-4973-9E1A-3E629727DA11}.png" src="https://notes.sarangwandile.xyz/lib/media/{e9698f18-9e9b-4973-9e1a-3e629727da11}.png"><br>
-🎉 And our Image is successfully uploaded on both ECR and docker hub.<br><br>Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/dockertasks/task-1-creating-tomcat-student-ui-container.html</link><guid isPermaLink="false">DevOps/DockerTasks/Task 1 Creating Tomcat student-ui container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:56 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 2: Create the Free-css template container]]></title><description><![CDATA[ 
- <br><br><br>
-<br>get the docker image of Amazon linux 
-<br>install nginx 
-<br>add free-css template
-<br><br><br>
-<br>
-Goto docker hub --&gt; <a rel="noopener nofollow" class="external-link" href="https://hub.docker.com" target="_blank">https://hub.docker.com</a>
-
-<br>
-Click on Search and search for ---&gt; amazonlinux
-
-<br>
-Here I found this official image<br>
-<img alt="{BACB7514-FD34-4BC8-9CB6-0314BF45113F}.png" src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png">
-
-<br>
-I simply pulled the image into my ec2 instance<br>
-docker pull amazonlinux
-here is successful pull looks like
-<img alt="{BD7598CF-AF45-41FB-82E8-A7E26163D176}.png" src="https://notes.sarangwandile.xyz/lib/media/{bd7598cf-af45-41fb-82e8-a7e26163d176}.png">
-
-<br>
-We can further confirm if the image is really present in the system with docker images
-<img alt="Pasted image 20241227205640.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227205640.png"><br>
-Looks like amazonlinux is successfully pulled in our system<br>
-lets start the container using this image
-
-<br>
-Running the container from image<br>
-sudo docker run -d -p 32768:80 --name free-css-template amazonlinux
-We used -d to run the container in detached mode meaning its output wont occupy the terminal screen and quietly run in the background after running this command it will simply give us container-id and gives us prompt.<br>
---name flag will assign the name for our container instead of their random funny names and with -p we are forwarding the network traffic of port 80 of the container to 32768 port of our host machine in this case ec2-instance.<br>
-<img alt="{5005E6A5-9A5C-44EE-B8B4-37364CD7D1E2}.png" src="https://notes.sarangwandile.xyz/lib/media/{5005e6a5-9a5c-44ee-b8b4-37364cd7d1e2}.png">
-We can check for the further detail of the container with<br>
-docker ps<br>
-Upon inspection we can see there is no container running<br>
-lets check again with docker ps -a and for our surprise container is exited just after it run. Thats because its an Operating system container which doesnt really do anything itself unless we assign it a task or a process that will run in background constantly so we can enter into the container to perform our tasks.
-We can achieve this by running the container interactively
-but first clean up the exited container with docker rm &lt;container-id&gt;
-
-<br><br>
-<br>Run a container interactively.
-<br>docker run -it -d -p 32768:80 --name free-css-template amazonlinux
-<br>   I run the container with -it and -d so it opened the interactive stdin shell session for me to interact with it and the container itself is in detached mode allowing us to enter into it anytime with exec command<br>docker exec -it &lt;container-id&gt; &lt;shell-command&gt;
-<br><img alt="{8DD627B8-39AA-4F0D-8320-CF6DA2D7BB33}.png" src="https://notes.sarangwandile.xyz/lib/media/{8dd627b8-39aa-4f0d-8320-cf6da2d7bb33}.png"><br>we got bash shell session inside container<br>
-Now we need to update the packages inside the container<br><br>yum update
-<br><img alt="{FEF2B4B8-3A70-49CA-B07C-475B398724EC}.png" src="https://notes.sarangwandile.xyz/lib/media/{fef2b4b8-3a70-49ca-b07c-475b398724ec}.png"><br>
-<br>Install nginx package start it
-<br>yum install nginx -y
-<br> since this amazonlinux container image doesn't come with systemd preinstalled we cannot start nginx daemon so we need to run this command manually in background<br>nginx &amp;
-<br>and our nginx server is successfully started at port 32768 on our host ec2-instance<br><img alt="{E0754AEE-5490-497B-AA74-428CD4B239A9}.png" src="https://notes.sarangwandile.xyz/lib/media/{e0754aee-5490-497b-aa74-428cd4b239a9}.png"><br><br>Lets add free css template in it<br>
-Head on to <a rel="noopener nofollow" class="external-link" href="https://www.free-css.com/" target="_blank">https://www.free-css.com/</a> and download any free css template you want by right clicking on the download button and copying link address<br>
-<img alt="{B54DF9F8-AC7B-420B-9EAA-54AE5D0B261F}.png" src="https://notes.sarangwandile.xyz/lib/media/{b54df9f8-ac7b-420b-9eaa-54ae5d0b261f}.png"><br>
-and go to your containers terminal session and download this file in nginx server directory with curl or wget<br>cd /usr/share/nginx/html
-curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip
-
-# Extract the zip file
-unzip carvilla.zip
-
-# If unzip is not found install unzip package
-sudo yum install unzip
-<br>extracting the zip has extracted all contents into folder named carvilla-v1.0<br>
-I'll rename it for my convenient. <br>mv carvilla-v1.0 mywebsite
-<br>and the website is running at port 32768/mywebsite<br>now we can get out of this container with exit command.<br><img alt="{ADBAE0E2-C52F-4FE1-9DBE-85A5BABFF759}.png" src="https://notes.sarangwandile.xyz/lib/media/{adbae0e2-c52f-4fe1-9dbe-85a5babff759}.png"><br>We have our container successfully hosting our free-css template on port http://instance-ip:32768/mywebsite<br>
-Lets create the image out of this container so we can spin many containers as we want and save the hustle to do all these steps all over again.<br><br>
-<br>Creating the image<br>
-<img alt="{FE045571-00F2-44B6-B1CB-E7F26EE9AE7E}.png" src="https://notes.sarangwandile.xyz/lib/media/{fe045571-00f2-44b6-b1cb-e7f26ee9ae7e}.png"><br>
-Now that we have our container running and our site is visible I want to make image out of it and push it to docker hub 
-<br>for that we use docker commit &lt;container-id&gt;<br>it returns with the sha-id<br>
-<img alt="{83AC20A6-5137-45BC-8761-6AD28799FF56}.png" src="https://notes.sarangwandile.xyz/lib/media/{83ac20a6-5137-45bc-8761-6ad28799ff56}.png"><br>with docker images we can confirm the image creation<br>
-<img alt="{9EE50687-0A6E-4930-966B-D6D50B9E78B7}.png" src="https://notes.sarangwandile.xyz/lib/media/{9ee50687-0a6e-4930-966b-d6d50b9e78b7}.png"><br>our image shown in first row doesnt have name so lets give it a tag and then push it to repo<br>
-docker tag &lt;image-id&gt; &lt;tagname&gt;<br>
-docker tag local-image:tagname new-repo:tagname<br><img alt="Pasted image 20241227225859.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227225859.png"><br>Here I have already created repository in docker hub so I gave its name here<br>and run docker hub login command before running push command<br>
-docker login<br>and push it to our docker hub<br>
-docker push new-repo:tagname<br><img alt="Pasted image 20241227231042.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227231042.png"><br>And our project is successful pushed over docker hub and can be access from here<br><a rel="noopener nofollow" class="external-link" href="https://hub.docker.com/r/archsarangx/amazonlinux-free-css-demo/tags" target="_blank">https://hub.docker.com/r/archsarangx/amazonlinux-free-css-demo/tags</a><br><br><img alt="{393988AE-E9F0-47A9-A960-5EBE39901FED}.png" src="https://notes.sarangwandile.xyz/lib/media/{393988ae-e9f0-47a9-a960-5ebe39901fed}.png"><br>To store the image into Amazon's Elastic Container Registry which is similar to docker hub but their own we need to create a repository here too.<br>I gave the repo same name<br>
-<img alt="{F7CDF0B9-3C17-4D22-9547-7D65863E4BDE}.png" src="https://notes.sarangwandile.xyz/lib/media/{f7cdf0b9-3c17-4d22-9547-7d65863e4bde}.png"><br>and Upon clicking create button my repo is created<br>
-<img alt="{7B336AAA-A8CB-4F61-823E-072A4025B6A6}.png" src="https://notes.sarangwandile.xyz/lib/media/{7b336aaa-a8cb-4f61-823e-072a4025b6a6}.png"><br>
-Click on the Repo name in blue and click on view push commands to get instruction for pushing our image into this repo<br><img alt="{7CB87CED-E1FD-4698-BCA5-DFC2D6C53B23}.png" src="https://notes.sarangwandile.xyz/lib/media/{7cb87ced-e1fd-4698-bca5-dfc2d6c53b23}.png"><br><br>To push our image we need to first Authenticate with registry for that carefully use first command also we need to have aws-cli installed and configured for that luckily for me I am using amazonlinux ec2 instance so its already installed i can just run aws configure to configure aws-cli<br>
-For those havent can check <a data-tooltip-position="top" aria-label="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html" rel="noopener nofollow" class="external-link" href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html" target="_blank">this documentation</a> to configure their aws-cli within instance.<br><img alt="Pasted image 20241228154309.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241228154309.png"><br>and then run this command provided in the instructions but remember to add sudo as we are using standard user<br>
-<img alt="{AC6817B4-D44D-4A43-AEFF-16292F4D44D0}.png" src="https://notes.sarangwandile.xyz/lib/media/{ac6817b4-d44d-4a43-aeff-16292f4d44d0}.png"><br>Now that We have successfully login to ECR lets tag the image accordingly and push it to ECR<br>sudo docker tag &lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt; &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;newname&gt;:&lt;newtag&gt;<br><img alt="{19760D25-4AB9-4A59-9757-62575607EF5A}.png" src="https://notes.sarangwandile.xyz/lib/media/{19760d25-4ab9-4a59-9757-62575607ef5a}.png"><br>
-and push to ECR<br>sudo docker push &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt;<br><img alt="{D18E449C-3E7D-4B49-8AC1-75893D2A92F7}.png" src="https://notes.sarangwandile.xyz/lib/media/{d18e449c-3e7d-4b49-8ac1-75893d2a92f7}.png"><br>and refresh the amazon EKS web site to see the latest image listed in there<br>
-<img alt="{48017E2C-FBB3-4AB6-B125-BFEFA58746BE}.png" src="https://notes.sarangwandile.xyz/lib/media/{48017e2c-fbb3-4ab6-b125-bfefa58746be}.png"><br>Thank you for Reading<br>
-Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/dockertasks/task-2-create-the-free-css-template-container.html</link><guid isPermaLink="false">DevOps/DockerTasks/Task 2 Create the Free-css template container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:16 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Create the MYSQL Container]]></title><description><![CDATA[ 
- <br><br><br>
-<br>Host mysql container 
-<br>Use -e ## environment variables
-<br>use MYSQL_USER, MYSQL_PASSWORD
-<br><br><br><br>sudo docker pull mysql
-<br><br>sudo docker run -e MYSQL_USER=sarang -e MYSQL_PASSWORD=mysupersecretpassword -e MYSQL_RANDOM_ROOT_PASSWORD=yes -p 3306:3306 --name mysql_container -v mysql_data:/var/lib/mysql mysql:latest
-<br>Here we used -e flag to specify each environment variables for mysql<br>MYSQL_USER=sarang  This sets the username for our mysql database<br>
-MYSQL_PASSWORD=mysupersecretpassword This sets the password for our database<br>MYSQL_RANDOM_ROOT_PASSWORD=yes    # This tells the mysql to generate a random root password (it can be seen in docker logs)<br>
--v mysql_data:/var/lib/mysql mysql:latest This flag sets the persistence volume for our container and it mounts /var/lib/mysql directory of the container to the mysql_data directory of our host.]]></description><link>https://notes.sarangwandile.xyz/devops/dockertasks/task-3-create-mysql-container.html</link><guid isPermaLink="false">DevOps/DockerTasks/Task 3 Create Mysql Container.md</guid><pubDate>Sun, 29 Dec 2024 13:49:31 GMT</pubDate></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+-P expose container on random host port ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-24-docker-basics.html</link><guid isPermaLink="false">Daily Notes/2024-12-24 docker basics.md</guid><pubDate>Tue, 24 Dec 2024 04:29:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-30]]></title><description><![CDATA[ 
+ <br>Task 1: <a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a><br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a><br>persistence storage<br>
+docker volume<br>
+docker volume ls<br>creating docker volume<br>
+docker volume create dev<br>Root directory of docker<br>
+cd /var/lib/docker/<br>all systemd service files lies in<br>
+/etc/systemd/system/<br>configuration files<br>
+/etc/docker<br>socket file<br>
+/var/run/docker.sock<br>docker run -d -P -v dev:/usr/share/nginx/html nginx<br>Tommorow<br>
+dockerfile<br>
+network]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-30.html</link><guid isPermaLink="false">Daily Notes/2024-12-30.md</guid><pubDate>Mon, 30 Dec 2024 14:59:04 GMT</pubDate></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -2468,8 +2337,45 @@ AWS CodePipeline&nbsp;-&nbsp;Fully management continuous delivery service that h
 <br>Microservices offer greater flexibility, scalability, and fault isolation, but they come with increased architectural complexity. &nbsp;
 <br>The choice between monolithic and microservices depends on the specific needs and complexity of your application.<br>References:<br>
 <br><a rel="noopener nofollow" class="external-link" href="https://rtslabs.com/data-integration-in-a-microservices-architecture" target="_blank">https://rtslabs.com/data-integration-in-a-microservices-architecture</a>
-]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html</link><guid isPermaLink="false">DevOps/For Reading/Monolithic vs Microservice Architecture.md</guid><pubDate>Sun, 29 Dec 2024 14:51:11 GMT</pubDate></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
- <br>Output of Mysql container from <a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/dockertasks/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a> <br><br>docker inspect &lt;container-id&gt;<br>[
+]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html</link><guid isPermaLink="false">DevOps/For Reading/Monolithic vs Microservice Architecture.md</guid><pubDate>Sun, 29 Dec 2024 14:51:11 GMT</pubDate></item><item><title><![CDATA[read about docker.sock file]]></title><description><![CDATA[ 
+ <br><br>Basically this file act as a bridge between docker daemon and docker client.<br>
+Its responsible for api communications between docker client and dockerd service that runs in the background.<br>So when you run docker run nginx<br>
+docker client send request to this file over at /var/run/docker.sock and then docker daemon which is constantly listening for this socket it receives the request and create container.<br><img alt="docker-sock-file.svg" src="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg"><br><br>The docker.sock file is a Unix socket that allows communication between the Docker client and the Docker daemon (the background process that manages containers). It acts like a bridge, enabling you to manage containers, images, networks, and more.<br>Here's a breakdown:<br>
+<br>What is a socket? A socket is a way for programs to communicate with each other, either on the same machine or over a network. Think of it like a phone line specifically for applications.
+<br>Why a socket instead of a network connection? Using a Unix socket for communication between the client and daemon on the same host is more efficient and secure than using network-based protocols like HTTP or TCP.
+<br>How it works: When you run a Docker command (e.g., docker run), the client sends the command to the docker.sock file. The Docker daemon, listening on the other end of the socket, receives the command and executes it.
+<br>Location: The docker.sock file is typically located at /var/run/docker.sock on Linux systems.
+<br>Security: The docker.sock file is usually owned by the root user and the docker group, which restricts access and enhances security.
+<br>Key points to remember:<br>
+<br>It's the primary way to interact with the Docker daemon.
+<br>It enables efficient and secure communication.
+<br>It's a critical component for managing Docker containers and images.
+<br>Misusing or exposing the docker.sock file can lead to security risks.
+<br>If you're interested in diving deeper, I recommend checking out these resources:<br>
+<br>Understanding /var/run/docker.sock: <a rel="noopener nofollow" class="external-link" href="https://dev.to/piyushbagani15/understanding-varrundockersock-the-key-to-dockers-inner-workings-nm7" target="_blank">https://dev.to/piyushbagani15/understanding-varrundockersock-the-key-to-dockers-inner-workings-nm7</a>
+<br>What is Docker socket binding? <a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/what-is-docker-socket-binding/" target="_blank">https://www.geeksforgeeks.org/what-is-docker-socket-binding/</a>
+<br>Docker Tips: about /var/run/docker.sock: <a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/docker-tips-about-varrundockersock/" target="_blank">https://www.geeksforgeeks.org/docker-tips-about-varrundockersock/</a>
+<br><br>When you install docker in a machine. Two diffrent programs come in:<br>
+<br>Docker Client
+<br>Docker Server
+<br>Docker Server receives commands over a socket (either over a network or through a "file")<br>Docker Client communicates over a network and sends message to the Docker server to say make a container, start a container, stop a container etc.<br>When the client and server are running on the same computer, they can connect through a special file called a socket. And since they can communicate through a file and Docker can efficiently share files between hosts and containers, it means you can run the client inside Docker itself.<br>Here is a sample:<br>docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock docker sh
+<br>This command creates a container that docker client installed within. And check the volume part:&nbsp;-v /var/run/docker.sock:/var/run/docker.sock<br>With&nbsp;-v&nbsp;flag it shares host&nbsp;docker.sock&nbsp;file so you can manipulate the containers within the host via a container.<br>docker run --rm -it ubuntu bash # Creates a new container via container 
+<br>Run&nbsp;docker ps&nbsp;on host terminal.<br>CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+0f9e333b59fe   ubuntu    "bash"                   5 seconds ago    Up 4 seconds              zealous_wilson
+b4a8af31416b   docker    "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes             epic_elion
+<br><br>Docker.sock file<br>The Docker.sock file, also known as the Docker socket, is a Unix domain socket (UDS) file used by Docker to communicate between the Docker daemon (dockerd) and the Docker client. It allows the client to send commands to the daemon and receive responses.<br><br>By default, the Docker.sock file is located at&nbsp;/var/run/docker.sock&nbsp;on Linux systems and&nbsp;C:\ProgramData\docker\socket&nbsp;on Windows systems.<br><br>The Docker.sock file enables the following:<br>
+<br>Command execution: The Docker client sends commands (e.g.,&nbsp;docker run,&nbsp;docker ps) to the daemon through the socket, which executes the requested action.
+<br>Response retrieval: The daemon sends responses (e.g., container output, error messages) back to the client through the socket.
+<br><br>
+<br>Access control: The Docker.sock file is owned by the&nbsp;docker&nbsp;group and has restrictive permissions by default, ensuring that only authorized users can access it.
+<br>Encryption: The communication between the client and daemon is not encrypted by default. To secure the socket, you can enable TLS encryption using the&nbsp;--tls&nbsp;and&nbsp;--tlscert&nbsp;flags when starting the daemon.
+<br><br>You can mount the Docker.sock file inside a container using the&nbsp;-v&nbsp;flag when running the container. For example:<br>docker run -v /var/run/docker.sock:/var/run/docker.sock my-image
+<br>This allows the container to access the Docker socket and interact with the Docker daemon on the host system.<br><br>If you need to access the Docker daemon remotely or securely, consider using a TCP socket (e.g.,&nbsp;dockerd -H tcp://0.0.0.0:2375) or a proxy like Docker Compose or Kubernetes.<br><br><br>
+<br><a rel="noopener nofollow" class="external-link" href="https://lobster1234.github.io/2019/04/05/docker-socket-file-for-ipc/" target="_blank">https://lobster1234.github.io/2019/04/05/docker-socket-file-for-ipc/</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://stackoverflow.com/questions/35110146/what-is-the-purpose-of-the-file-docker-sock" target="_blank">https://stackoverflow.com/questions/35110146/what-is-the-purpose-of-the-file-docker-sock</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://www.educative.io/answers/var-run-dockersock" target="_blank">https://www.educative.io/answers/var-run-dockersock</a>
+]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html</link><guid isPermaLink="false">DevOps/For Reading/read about docker.sock file.md</guid><pubDate>Mon, 30 Dec 2024 15:51:49 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
+ <br>Output of Mysql container from <a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a> <br><br>docker inspect &lt;container-id&gt;<br>[
   {
     "Id": "3ce6ffd3357d7d78a4fff68218ea477ef0bcc3a747153cb93143e128bb21e4a3",
     "Created": "2024-12-29T12:46:23.52003502Z",
@@ -2778,7 +2684,7 @@ AWS CodePipeline&nbsp;-&nbsp;Fully management continuous delivery service that h
 - **SandboxID, SandboxKey:** Information related to the container's network namespace.
 - **Ports:**  Details about the ports that are published to the host.
 - **[Other network settings]:** IP address, MAC address, gateway, and other network-related information.
-<br>If you have a specific question about any of these elements, feel free to ask! I'm here to help you understand your Docker container's configuration.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html</link><guid isPermaLink="false">DevOps/For Reading/Reading Docker Inspect output.md</guid><pubDate>Sun, 29 Dec 2024 14:34:58 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
+<br>If you have a specific question about any of these elements, feel free to ask! I'm here to help you understand your Docker container's configuration.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html</link><guid isPermaLink="false">DevOps/For Reading/Reading Docker Inspect output.md</guid><pubDate>Mon, 30 Dec 2024 15:27:24 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
 Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br>At initial stages of the software development developers usually build software in monolithic way meaning everything that software has to offer is bundle in the single unit but as the development goes on the need to federate the services of the software arises and developers adapt Microservices method to divide software into chunks so all chunks communicate with each other creating illusion of one single software.<br><br>
 <br>Single unified application
@@ -2849,7 +2755,7 @@ REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
 custom-nginx   latest    5c9d3a455e0f   47 seconds ago   214MB
 <br><br>docker push &lt;image-id&gt;
 <br>If you have verified docker hub login through docker login command it will automatically push the image to your docker hub repo assuming your docker hub repo has same name as your image tag<br>and same goes to ECR except you need to authenticate through slightly different method:<br>aws ecr get-login-password --region &lt;region-name&gt; | docker login --username AWS --password-stdin &lt;amazon-account-id&gt;.dkr.ecr.&lt;region-name&gt;.amazonaws.com
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/docker-little-bit-advance.html</link><guid isPermaLink="false">DevOps/Notes/Docker little bit Advance.md</guid><pubDate>Sun, 29 Dec 2024 13:04:54 GMT</pubDate></item><item><title><![CDATA[Git Notes]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/docker-little-bit-advance.html</link><guid isPermaLink="false">DevOps/Notes/Docker little bit Advance.md</guid><pubDate>Mon, 30 Dec 2024 03:48:40 GMT</pubDate></item><item><title><![CDATA[Git Notes]]></title><description><![CDATA[ 
  <br><br>Git is a Distributed Version Control System that mainly used for Source code management by developers.<br>Git basically divides your code into three part.<br>
 <br>Working Area
 <br>Staging Area
@@ -2871,7 +2777,7 @@ which is basically telling git this is a final changes with the special stamp of
 <br>git branch -a   List all available branches
 <br>git checkout -b Create and switch to the new branch
 <br>git checkout    To switch to different branch
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-notes.html</link><guid isPermaLink="false">DevOps/Notes/Git Notes.md</guid><pubDate>Sun, 29 Dec 2024 15:52:40 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-notes.html</link><guid isPermaLink="false">DevOps/Notes/Git Notes.md</guid><pubDate>Mon, 30 Dec 2024 15:58:08 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
 <br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
@@ -2897,7 +2803,192 @@ which is basically telling git this is a final changes with the special stamp of
 <br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
 <br>Uploads your local changes to the remote repository.<br>
 After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Get the docker image of Amazon linux 
+<br>Add tomcat package  
+<br>Add student ui 
+<br>Then commit the image 
+<br>Store on ecr as well as on docker hub
+<br><br>Step 1: Getting the the Amazon Linux Image<br>
+Upon searching the for amazonlinux image in <a data-tooltip-position="top" aria-label="https://hub.docker.com" rel="noopener nofollow" class="external-link" href="https://hub.docker.com" target="_blank">dockerhub</a> I found its official image<br>
+I pulled it into the system with docker pull amazonlinux<br>sudo docker run -it -d -p 32768:8080 --name tomcat-student-ui amazonlinux`
+<br>and I run the image interactively and in detached mode so i can execute shell command later on<br><img alt="{1CC503E6-0A58-42E5-93CF-64946C7AA1EF}.png" src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"><br>Lets dive into the container <br>sudo docker exec -it &lt;containerid&gt; &lt;shell-command&gt;`
+<br><img alt="{0119C4A3-2DE3-4CB0-9692-E63934BF4F5C}.png" src="https://notes.sarangwandile.xyz/lib/media/{0119c4a3-2de3-4cb0-9692-e63934bf4f5c}.png"><br><br>Our App student-ui required specific version of tomcat thats why we gonna install it from source<br>Make sure to install dependancies and unzip package before hand<br><br>Install this specific version from source<br>cd /opt # we can use this directory for temporary space
+curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.zip
+unzip apache-tomcat-9.0.98.zip # unzip the archive
+yum install java-17 -y # tomcat 9 requires java-17 to work properly
+cd apache-tomcat-9.0.98/bin/
+bash ./catalina.sh start 
+<br><img alt="{9BD47135-6F08-466A-A3C7-A11FC17A759D}.png" src="https://notes.sarangwandile.xyz/lib/media/{9bd47135-6f08-466a-a3c7-a11fc17a759d}.png"><br><img alt="{40C024BF-0490-4CFC-9507-9363489D25BD}.png" src="https://notes.sarangwandile.xyz/lib/media/{40c024bf-0490-4cfc-9507-9363489d25bd}.png"><br>It looks like our tomcat server is up and running on desired port<br><br>but first we need these package building tools git and maven for building our student-ui app<br><br>sudo yum install git maven -y
+<br><br>git clone https://github.com/Pritam-Khergade/student-ui
+<br><br>cd student-ui
+mvn clean package
+<br><img alt="{8E723B0C-8E54-4F56-94BC-F7D231F3287A}.png" src="https://notes.sarangwandile.xyz/lib/media/{8e723b0c-8e54-4f56-94bc-f7d231f3287a}.png"><br>
+this creates .war file in ./target folder<br>
+rename it to suitable short name and move to /opt/apache-tomcat-9.0.98/webapps directory<br>mv target/studentapp-2.2-SNAPSHOT.war target/studentapp.war
+mv target/studentapp.war /opt/apache-tomcat-9.0.97/webapps/
+<br>and the app should be accessible on tomcat server on http://instance-ip:32768/studentapp<br><img alt="{0DFF6CA3-CC34-4310-933F-F66D3256551D}.png" src="https://notes.sarangwandile.xyz/lib/media/{0dff6ca3-cc34-4310-933f-f66d3256551d}.png"><br><br>Before creating the image its better to remove the unnecessary packages that we no longer need to make the size of the image minimal as possible.<br><br>yum remove maven git unzip -y
+<br>Lets exit from container shell and build the image <br>sudo docker commit &lt;container-id&gt;
+<br><img alt="{A2D16CE6-81BA-4DAF-A151-58EA34744A1B}.png" src="https://notes.sarangwandile.xyz/lib/media/{a2d16ce6-81ba-4daf-a151-58ea34744a1b}.png"><br>You see the created image doesnt have any name so lets give it a tag<br>sudo docker tag &lt;image-id&gt; &lt;newtag&gt;
+<br><img alt="{A6DFB555-CE8C-404D-AE0E-0E5BE4AECD43}.png" src="https://notes.sarangwandile.xyz/lib/media/{a6dfb555-ce8c-404d-ae0e-0e5be4aecd43}.png"><br>
+now push it to docker hub and ECR<br><br><br>
+<br>Login to docker hub
+<br>Click on repositories
+<br>Create new repository
+<br>Give it proper name and click create
+<br>Here is my repo looks llike<br><img alt="{8E536B96-794C-49C6-B49F-257C6FEE2E9E}.png" src="https://notes.sarangwandile.xyz/lib/media/{8e536b96-794c-49c6-b49f-257c6fee2e9e}.png"><br>Lets push our image into this repo<br>
+First rename add new tag to image appropriate according to docker hub repo name<br>sudo docker tag &lt;old-tag-name&gt; &lt;newtag-name&gt;
+<br><img alt="{62B7DAF9-7C95-4E53-BEB1-28F215445939}.png" src="https://notes.sarangwandile.xyz/lib/media/{62b7daf9-7c95-4e53-beb1-28f215445939}.png"><br>and now push it to docker hub<br>sudo docker push archsarangx/tomcat-student-ui:latest
+<br><img alt="{3386541C-1516-4A09-9493-93A52B3FF2E0}.png" src="https://notes.sarangwandile.xyz/lib/media/{3386541c-1516-4a09-9493-93a52b3ff2e0}.png"><br>and its successfully uploaded on docker hub at<br>
+<img alt="{034DA07E-A936-4284-9683-BF0300BC5EB4}.png" src="https://notes.sarangwandile.xyz/lib/media/{034da07e-a936-4284-9683-bf0300bc5eb4}.png"><br>
+and anyone can pull it with<br>docker pull archsarangx/tomcat-student-ui:latest
+<br><br><br>
+<br>goto amazon ECR service and create repositoy
+<br><img alt="Pasted image 20241228180114.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241228180114.png"><br>then click on blue repo name and click on view push commands<br><br>aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 970547378605.dkr.ecr.us-west-2.amazonaws.com
+<br><br>``<br>docker tag archsarangx/tomcat-student-ui:latest 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
+<br>docker push 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
+<br><img alt="{8230C2A4-4835-4E3A-9500-E4C8B9187FB3}.png" src="https://notes.sarangwandile.xyz/lib/media/{8230c2a4-4835-4e3a-9500-e4c8b9187fb3}.png"><br><img alt="{E9698F18-9E9B-4973-9E1A-3E629727DA11}.png" src="https://notes.sarangwandile.xyz/lib/media/{e9698f18-9e9b-4973-9e1a-3e629727da11}.png"><br>
+🎉 And our Image is successfully uploaded on both ECR and docker hub.<br><br>Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 1 Creating Tomcat student-ui container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:56 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 2: Create the Free-css template container]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>get the docker image of Amazon linux 
+<br>install nginx 
+<br>add free-css template
+<br><br><br>
+<br>
+Goto docker hub --&gt; <a rel="noopener nofollow" class="external-link" href="https://hub.docker.com" target="_blank">https://hub.docker.com</a>
+
+<br>
+Click on Search and search for ---&gt; amazonlinux
+
+<br>
+Here I found this official image<br>
+<img alt="{BACB7514-FD34-4BC8-9CB6-0314BF45113F}.png" src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png">
+
+<br>
+I simply pulled the image into my ec2 instance<br>
+docker pull amazonlinux
+here is successful pull looks like
+<img alt="{BD7598CF-AF45-41FB-82E8-A7E26163D176}.png" src="https://notes.sarangwandile.xyz/lib/media/{bd7598cf-af45-41fb-82e8-a7e26163d176}.png">
+
+<br>
+We can further confirm if the image is really present in the system with docker images
+<img alt="Pasted image 20241227205640.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227205640.png"><br>
+Looks like amazonlinux is successfully pulled in our system<br>
+lets start the container using this image
+
+<br>
+Running the container from image<br>
+sudo docker run -d -p 32768:80 --name free-css-template amazonlinux
+We used -d to run the container in detached mode meaning its output wont occupy the terminal screen and quietly run in the background after running this command it will simply give us container-id and gives us prompt.<br>
+--name flag will assign the name for our container instead of their random funny names and with -p we are forwarding the network traffic of port 80 of the container to 32768 port of our host machine in this case ec2-instance.<br>
+<img alt="{5005E6A5-9A5C-44EE-B8B4-37364CD7D1E2}.png" src="https://notes.sarangwandile.xyz/lib/media/{5005e6a5-9a5c-44ee-b8b4-37364cd7d1e2}.png">
+We can check for the further detail of the container with<br>
+docker ps<br>
+Upon inspection we can see there is no container running<br>
+lets check again with docker ps -a and for our surprise container is exited just after it run. Thats because its an Operating system container which doesnt really do anything itself unless we assign it a task or a process that will run in background constantly so we can enter into the container to perform our tasks.
+We can achieve this by running the container interactively
+but first clean up the exited container with docker rm &lt;container-id&gt;
+
+<br><br>
+<br>Run a container interactively.
+<br>docker run -it -d -p 32768:80 --name free-css-template amazonlinux
+<br>   I run the container with -it and -d so it opened the interactive stdin shell session for me to interact with it and the container itself is in detached mode allowing us to enter into it anytime with exec command<br>docker exec -it &lt;container-id&gt; &lt;shell-command&gt;
+<br><img alt="{8DD627B8-39AA-4F0D-8320-CF6DA2D7BB33}.png" src="https://notes.sarangwandile.xyz/lib/media/{8dd627b8-39aa-4f0d-8320-cf6da2d7bb33}.png"><br>we got bash shell session inside container<br>
+Now we need to update the packages inside the container<br><br>yum update
+<br><img alt="{FEF2B4B8-3A70-49CA-B07C-475B398724EC}.png" src="https://notes.sarangwandile.xyz/lib/media/{fef2b4b8-3a70-49ca-b07c-475b398724ec}.png"><br>
+<br>Install nginx package start it
+<br>yum install nginx -y
+<br> since this amazonlinux container image doesn't come with systemd preinstalled we cannot start nginx daemon so we need to run this command manually in background<br>nginx &amp;
+<br>and our nginx server is successfully started at port 32768 on our host ec2-instance<br><img alt="{E0754AEE-5490-497B-AA74-428CD4B239A9}.png" src="https://notes.sarangwandile.xyz/lib/media/{e0754aee-5490-497b-aa74-428cd4b239a9}.png"><br><br>Lets add free css template in it<br>
+Head on to <a rel="noopener nofollow" class="external-link" href="https://www.free-css.com/" target="_blank">https://www.free-css.com/</a> and download any free css template you want by right clicking on the download button and copying link address<br>
+<img alt="{B54DF9F8-AC7B-420B-9EAA-54AE5D0B261F}.png" src="https://notes.sarangwandile.xyz/lib/media/{b54df9f8-ac7b-420b-9eaa-54ae5d0b261f}.png"><br>
+and go to your containers terminal session and download this file in nginx server directory with curl or wget<br>cd /usr/share/nginx/html
+curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip
+
+# Extract the zip file
+unzip carvilla.zip
+
+# If unzip is not found install unzip package
+sudo yum install unzip
+<br>extracting the zip has extracted all contents into folder named carvilla-v1.0<br>
+I'll rename it for my convenient. <br>mv carvilla-v1.0 mywebsite
+<br>and the website is running at port 32768/mywebsite<br>now we can get out of this container with exit command.<br><img alt="{ADBAE0E2-C52F-4FE1-9DBE-85A5BABFF759}.png" src="https://notes.sarangwandile.xyz/lib/media/{adbae0e2-c52f-4fe1-9dbe-85a5babff759}.png"><br>We have our container successfully hosting our free-css template on port http://instance-ip:32768/mywebsite<br>
+Lets create the image out of this container so we can spin many containers as we want and save the hustle to do all these steps all over again.<br><br>
+<br>Creating the image<br>
+<img alt="{FE045571-00F2-44B6-B1CB-E7F26EE9AE7E}.png" src="https://notes.sarangwandile.xyz/lib/media/{fe045571-00f2-44b6-b1cb-e7f26ee9ae7e}.png"><br>
+Now that we have our container running and our site is visible I want to make image out of it and push it to docker hub 
+<br>for that we use docker commit &lt;container-id&gt;<br>it returns with the sha-id<br>
+<img alt="{83AC20A6-5137-45BC-8761-6AD28799FF56}.png" src="https://notes.sarangwandile.xyz/lib/media/{83ac20a6-5137-45bc-8761-6ad28799ff56}.png"><br>with docker images we can confirm the image creation<br>
+<img alt="{9EE50687-0A6E-4930-966B-D6D50B9E78B7}.png" src="https://notes.sarangwandile.xyz/lib/media/{9ee50687-0a6e-4930-966b-d6d50b9e78b7}.png"><br>our image shown in first row doesnt have name so lets give it a tag and then push it to repo<br>
+docker tag &lt;image-id&gt; &lt;tagname&gt;<br>
+docker tag local-image:tagname new-repo:tagname<br><img alt="Pasted image 20241227225859.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227225859.png"><br>Here I have already created repository in docker hub so I gave its name here<br>and run docker hub login command before running push command<br>
+docker login<br>and push it to our docker hub<br>
+docker push new-repo:tagname<br><img alt="Pasted image 20241227231042.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227231042.png"><br>And our project is successful pushed over docker hub and can be access from here<br><a rel="noopener nofollow" class="external-link" href="https://hub.docker.com/r/archsarangx/amazonlinux-free-css-demo/tags" target="_blank">https://hub.docker.com/r/archsarangx/amazonlinux-free-css-demo/tags</a><br><br><img alt="{393988AE-E9F0-47A9-A960-5EBE39901FED}.png" src="https://notes.sarangwandile.xyz/lib/media/{393988ae-e9f0-47a9-a960-5ebe39901fed}.png"><br>To store the image into Amazon's Elastic Container Registry which is similar to docker hub but their own we need to create a repository here too.<br>I gave the repo same name<br>
+<img alt="{F7CDF0B9-3C17-4D22-9547-7D65863E4BDE}.png" src="https://notes.sarangwandile.xyz/lib/media/{f7cdf0b9-3c17-4d22-9547-7d65863e4bde}.png"><br>and Upon clicking create button my repo is created<br>
+<img alt="{7B336AAA-A8CB-4F61-823E-072A4025B6A6}.png" src="https://notes.sarangwandile.xyz/lib/media/{7b336aaa-a8cb-4f61-823e-072a4025b6a6}.png"><br>
+Click on the Repo name in blue and click on view push commands to get instruction for pushing our image into this repo<br><img alt="{7CB87CED-E1FD-4698-BCA5-DFC2D6C53B23}.png" src="https://notes.sarangwandile.xyz/lib/media/{7cb87ced-e1fd-4698-bca5-dfc2d6c53b23}.png"><br><br>To push our image we need to first Authenticate with registry for that carefully use first command also we need to have aws-cli installed and configured for that luckily for me I am using amazonlinux ec2 instance so its already installed i can just run aws configure to configure aws-cli<br>
+For those havent can check <a data-tooltip-position="top" aria-label="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html" rel="noopener nofollow" class="external-link" href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html" target="_blank">this documentation</a> to configure their aws-cli within instance.<br><img alt="Pasted image 20241228154309.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241228154309.png"><br>and then run this command provided in the instructions but remember to add sudo as we are using standard user<br>
+<img alt="{AC6817B4-D44D-4A43-AEFF-16292F4D44D0}.png" src="https://notes.sarangwandile.xyz/lib/media/{ac6817b4-d44d-4a43-aeff-16292f4d44d0}.png"><br>Now that We have successfully login to ECR lets tag the image accordingly and push it to ECR<br>sudo docker tag &lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt; &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;newname&gt;:&lt;newtag&gt;<br><img alt="{19760D25-4AB9-4A59-9757-62575607EF5A}.png" src="https://notes.sarangwandile.xyz/lib/media/{19760d25-4ab9-4a59-9757-62575607ef5a}.png"><br>
+and push to ECR<br>sudo docker push &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt;<br><img alt="{D18E449C-3E7D-4B49-8AC1-75893D2A92F7}.png" src="https://notes.sarangwandile.xyz/lib/media/{d18e449c-3e7d-4b49-8ac1-75893d2a92f7}.png"><br>and refresh the amazon EKS web site to see the latest image listed in there<br>
+<img alt="{48017E2C-FBB3-4AB6-B125-BFEFA58746BE}.png" src="https://notes.sarangwandile.xyz/lib/media/{48017e2c-fbb3-4ab6-b125-bfefa58746be}.png"><br>Thank you for Reading<br>
+Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 2 Create the Free-css template container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:16 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Create the MYSQL Container]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Host mysql container 
+<br>Use -e ## environment variables
+<br>use MYSQL_USER, MYSQL_PASSWORD
+<br><br><br><br>sudo docker pull mysql
+<br><br>sudo docker run -e MYSQL_USER=sarang -e MYSQL_PASSWORD=mysupersecretpassword -e MYSQL_RANDOM_ROOT_PASSWORD=yes -p 3306:3306 --name mysql_container -v mysql_data:/var/lib/mysql mysql:latest
+<br>Here we used -e flag to specify each environment variables for mysql<br>MYSQL_USER=sarang  This sets the username for our mysql database<br>
+MYSQL_PASSWORD=mysupersecretpassword This sets the password for our database<br>MYSQL_RANDOM_ROOT_PASSWORD=yes    # This tells the mysql to generate a random root password (it can be seen in docker logs)<br>
+-v mysql_data:/var/lib/mysql mysql:latest This flag sets the persistence volume for our container and it mounts /var/lib/mysql directory of the container to the mysql_data directory of our host.]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 3 Create Mysql Container.md</guid><pubDate>Mon, 30 Dec 2024 15:50:54 GMT</pubDate></item><item><title><![CDATA[Task 4 Create daemon service of tomcat]]></title><description><![CDATA[ 
+ <br>The simplest possible script I could make for tomcat is this one<br># make catalina.sh executable
+chmod +x ~/apache-tomcat-9.0.98/bin/catalina.sh 
+
+# navigate to systemd services directory
+cd /etc/systemd/system
+
+# Create new tomcat service file
+vi tomcat.service
+<br>Add this script <br>[Unit]
+Description=Tomcat Service Daemon
+
+[Service]
+Type=forking
+ExecStart=home/ec2-user/apache-tomcat-9.0.98/bin/catalina.sh start
+ExecReload=/home/ec2-user/apache-tomcat-9.0.98/bin/catalina.sh start
+ExecStop=/home/ec2-user/apache-tomcat-9.0.98/bin/catalina.sh stop
+
+[Install]
+WantedBy=multi-user.target
+<br>Run these commands afterwards<br># Reloading the systemd daemon
+systemctl daemon-reload
+
+# Enabling and starting tomcat.service
+systemctl enable --now tomcat.service
+
+# Checking Status of our service
+systemctl status tomcat.service
+<br>However this isnt sufficient for tomcats full usecase<br>
+for that you need to add Environment Variables<br># Set environment variables (optional but recommended) 
+
+# Update with your Java installation path
+Environment=JAVA_HOME=/usr/lib/jvm/jre 
+
+# Update with your Tomcat PID file path 
+Environment=CATALINA_PID=/home/ec2-user/apache-tomcat-9.0.98/temp/tomcat.pid 
+
+# Update with your Tomcat installation path 
+Environment=CATALINA_HOME=/home/ec2-user/apache-tomcat-9.0.98 
+
+# Update with your Tomcat base directory 
+Environment=CATALINA_BASE=/home/ec2-user/apache-tomcat-9.0.98 
+
+# Customize JVM options 
+Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
+Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
+
+<br>also for security purposes its recommended to use tomcat service as a dedicated tomcat user<br>after making changes in the file its important to reload systemd daemon with systemctl daemon-reload and restarting the tomat service and check the status.<br>If everything is working and your tomcat page is displaying on port 8080 it means your tomcat service is successfully working.]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 4 Create daemon service of tomcat.md</guid><pubDate>Mon, 30 Dec 2024 15:50:44 GMT</pubDate></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://notes.sarangwandile.xyz/linux/top-40-linux-commands.html</link><guid isPermaLink="false">Linux/Top 40 Linux Commands.md</guid><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[Understanding Vim]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br>Vim Modes<br>]]></description><link>https://notes.sarangwandile.xyz/linux/understanding-vim.html</link><guid isPermaLink="false">Linux/Understanding Vim.md</guid><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
@@ -2938,9 +3029,10 @@ Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel
 
 <br><br><br><br>Tasks to perform
 
-<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/dockertasks/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
-<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/dockertasks/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
-<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/dockertasks/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
+<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
+<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
+<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
+<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
 
 <br>Task assigned for Reading
 
@@ -2950,5 +3042,6 @@ Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel
 <br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
 <br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/for-reading/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
 <br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
+<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
 
-]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Sun, 29 Dec 2024 14:53:52 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Mon, 30 Dec 2024 15:24:24 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

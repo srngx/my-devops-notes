@@ -76,6 +76,7 @@ Hello, My name is Sarang, in this place I store my DevOps related Notes, assignm
 > - [[Task 1 Creating Tomcat student-ui container]]
 > - [[Task 2 Create the Free-css template container]]
 > - [[Task 3 Create Mysql Container]]
+> - [[Task 4 Create daemon service of tomcat]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
@@ -84,5 +85,6 @@ Hello, My name is Sarang, in this place I store my DevOps related Notes, assignm
 > - [[Monolithic vs Microservice Architecture]]
 > - [[Git Theory]] 
 > - [[Reading Docker Inspect output]]
+> - [[read about docker.sock file]]
 
 

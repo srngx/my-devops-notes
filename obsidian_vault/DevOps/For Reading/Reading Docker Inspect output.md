@@ -1,3 +1,10 @@
+---
+Title: Docker Inspect Output
+date: 2024-12-29
+tags:
+  - reading_tasks
+  - docker
+---
 
 Output of Mysql container from [[Task 3 Create Mysql Container]] 
 ### Inspecting a container

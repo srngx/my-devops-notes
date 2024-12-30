@@ -5,7 +5,6 @@ tags:
   - blog
   - git
 ---
-
 ## What is Git?
 Git is a **Distributed Version Control System** that mainly used for Source code management by developers.
 
