@@ -1,4 +1,112 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 30 Dec 2024 16:01:53 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 30 Dec 2024 16:00:46 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Authentication vs. Authorization]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 31 Dec 2024 17:40:10 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 31 Dec 2024 17:38:05 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+ <br><br>Agile Manifesto
+The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
+<br>Scrum
+In scrum, a product is built in a series of fixed-length iterations called sprints, giving agile teams a framework for shipping software on a regular cadence. Learn how the scrum methodology impacts traditional project management.
+<br>Kanban
+Kanban is a popular agile framework that requires real-time communication of team's capacity and full transparency of work. Learn how the kanban methodology for agile software development can benefit for your team.
+<br><br>The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. Teams follow a cycle of planning, executing, and evaluating.<br>Whereas the traditional "waterfall" approach has one discipline contribute to the project, then "throw it over the wall" to the next contributor, agile calls for collaborative cross-functional teams. Open communication, collaboration, adaptation, and trust amongst team members are at the heart of agile. Although the project lead or product owner typically prioritizes the work to be delivered, the team takes the lead on deciding how the work will get done, self-organizing around granular tasks and assignments.<br>Agile isn't defined by a set of ceremonies or specific development techniques. Rather, agile is a group of methodologies that demonstrate a commitment to tight feedback cycles and continuous improvement.<br><img alt="Agile development example | Atlassian Agile Coach" src="https://wac-cdn.atlassian.com/dam/jcr:5e0e5b6f-9329-4c20-a711-6eef96956d88/nursery-teams%20(1).svg?cdnVersion=2472" referrerpolicy="no-referrer"><br>The original&nbsp;<a data-tooltip-position="top" aria-label="http://agilemanifesto.org/" rel="noopener nofollow" class="external-link" href="http://agilemanifesto.org/" target="_blank">Agile Manifesto</a>&nbsp;didn't prescribe two-week iterations or an ideal team size. It simply laid out a set of core values that put people first. The way you and your team live those values today – whether you do scrum by the book, or blend elements of kanban and XP – is entirely up to you.<br><br>Teams choose agile so they can respond to changes in the marketplace or feedback from customers quickly without derailing a year's worth of plans. "Just enough" planning and shipping in small, frequent increments lets your team gather feedback on each change and integrate it into future plans at minimal cost.<br>But it's not just a numbers game—first and foremost, it's about people. As described by the Agile Manifesto, authentic human interactions are more important than rigid processes. Collaborating with customers and teammates is more important than predefined arrangements. And delivering a working solution to the customer's problem is more important than hyper-detailed documentation.<br>An agile team unites under a shared vision, then brings it to life the way they know is best. Each team sets their own standards for quality, usability, and completeness. Their "definition of done" then informs how fast they'll churn the work out. Although it can be scary at first, company leaders find that when they put their trust in an agile team, that team feels a greater sense of ownership and rises to meet (or exceed) management's expectations.<br><br>The publication of the Agile Manifesto in 2001 marks the birth of agile as a methodology. Since then, many agile frameworks have emerged such as scrum,&nbsp;<a data-tooltip-position="top" aria-label="https://www.atlassian.com/agile/kanban" rel="noopener nofollow" class="external-link" href="https://www.atlassian.com/agile/kanban" target="_blank">kanban</a>,&nbsp;<a data-tooltip-position="top" aria-label="https://www.atlassian.com/agile/agile-at-scale/lean-portfolio-management" rel="noopener nofollow" class="external-link" href="https://www.atlassian.com/agile/agile-at-scale/lean-portfolio-management" target="_blank">lean</a>, and Extreme Programming (XP). Each embodies the core principles of frequent iteration, continuous learning, and high quality in its own way.&nbsp;<a data-tooltip-position="top" aria-label="https://www.atlassian.com/agile/scrum" rel="noopener nofollow" class="external-link" href="https://www.atlassian.com/agile/scrum" target="_blank">Scrum</a>&nbsp;and XP are favored by software development teams, while&nbsp;<a data-tooltip-position="top" aria-label="https://www.atlassian.com/agile/kanban" rel="noopener nofollow" class="external-link" href="https://www.atlassian.com/agile/kanban" target="_blank">kanban</a>&nbsp;is a darling among service-oriented teams like IT or human resources.<br>Today, many agile teams combine practices from a few different frameworks, spiced up with practices unique to the team. Some teams adopt some agile rituals&nbsp;(like regular stand-ups, retros, backlogs, etc.), while others created a&nbsp;new agile practice (<a data-tooltip-position="top" aria-label="https://www.atlassian.com/agile/agile-marketing/what-is-agile-marketing" rel="noopener nofollow" class="external-link" href="https://www.atlassian.com/agile/agile-marketing/what-is-agile-marketing" target="_blank">agile marketing teams</a>&nbsp;who adhere to the&nbsp;Agile Marketing Manifesto).<br><img alt="Atlassian agile coach" src="https://wac-cdn.atlassian.com/dam/jcr:8631b273-6575-4586-9a9a-f5eb84d4b46f/illustrations-spot-Code%20Release%202.svg?cdnVersion=2472" referrerpolicy="no-referrer"><br>The agile teams of tomorrow will value their own effectiveness over adherence to doctrine. Openness, trust, and autonomy are emerging as the cultural currency for companies who want to attract the best people and get the most out of them. Such companies are already proving that practices can vary across teams, as long as they're guided by the right principles.<br><br>The way each team practices agile should be unique to their needs and culture. Indeed, no two teams inside Atlassian have identical agile practices.<br>Although many of our teams organize their work in sprints, estimate in story points, and prioritize their backlogs, we're not die-hard practitioners of scrum. Or kanban. Or any other trademarked methodology. Instead, we give each team the autonomy to cherry-pick the practices that will make them most effective. And we encourage you to take a similar approach.<br>For example, if you're on a queue-oriented team like IT, kanban provides a solid foundation for your agile practice. But nothing should stop you from sprinkling in a few scrum practices like demo sessions with stakeholders or regular retrospectives.<br>The key to doing agile right is&nbsp;<a data-tooltip-position="top" aria-label="https://www.atlassian.com/blog/agile/how-to-stay-agile-and-keep-improving" rel="noopener nofollow" class="external-link" href="https://www.atlassian.com/blog/agile/how-to-stay-agile-and-keep-improving" target="_blank">embracing a mindset of continuous improvement</a>. Experiment with different practices and have open, honest discussions about them with your team. Keep the ones that work, and throw out the ones that don't.<br><img alt="Atlassian on agile | Atlassian agile coach" src="https://wac-cdn.atlassian.com/dam/jcr:358e6b8e-5eec-428f-8d2f-c9aedb962263/illustrations-spot-hero-Status%20Page%20Light-1115x898@2x.png?cdnVersion=2472" referrerpolicy="no-referrer">]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html</link><guid isPermaLink="false">AWS/For Reading/Agile Development.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://wac-cdn.atlassian.com/dam/jcr:5e0e5b6f-9329-4c20-a711-6eef96956d88/nursery-teams%20(1).svg?cdnVersion=2472" length="0" type="false"/><content:encoded>&lt;figure&gt;&lt;img src="https://wac-cdn.atlassian.com/dam/jcr:5e0e5b6f-9329-4c20-a711-6eef96956d88/nursery-teams%20(1).svg?cdnVersion=2472"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Agile Vs DevOps]]></title><description><![CDATA[ 
+ <br>Agile and DevOps have shaped the way software is developed today. They’ve become so widely adapted and revered as to permeate beyond the world of software development into shaping project management and org charts in businesses of all stripes.<br>DevOps and agile can be tricky to define, and the lines between the two often seem to blur.<br>
+<br>At a basic level, DevOps is the combination of two teams (software development and IT operations) to create a more powerful, efficient software development process.
+<br>Agile is a series of methodologies around iterative development designed to make tasks smaller and more manageable and increase collaboration.
+<br>But what are the deeper differences between DevOps and agile? Is DevOps&nbsp;better&nbsp;than agile? Or can DevOps and agile be implemented together? In this post, we’ll dive into some common agile and DevOps FAQs.<br><br>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#1" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#1" target="_blank">What is the difference between DevOps and agile?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#2" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#2" target="_blank">What is agile?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#3" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#3" target="_blank">What are the benefits of agile?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#4" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#4" target="_blank">How can a company be agile?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#5" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#5" target="_blank">What is DevOps?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#6" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#6" target="_blank">Why combine software development and IT operations?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#7" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#7" target="_blank">What are some DevOps concepts and key terms?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#8" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#8" target="_blank">What are the benefits of DevOps?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#9" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#9" target="_blank">Is DevOps better than agile? Is DevOps a replacement for agile?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#CICD" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#CICD" target="_blank">What is CI/CD?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#11" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#11" target="_blank">What are the benefits of CI/CD?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#12" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#12" target="_blank">What are some common DevOps tools?</a>
+<br><a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#13" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#13" target="_blank">How can I learn more about DevOps?</a>
+<br><br>Agile and DevOps are both used in the development of software. While they’re both designed to improve the software development process, they seek to do so by taking different approaches. But they’re not mutually exclusive. (More on that below.)<br>Agile is essentially about giving software developers a shared set of principles to drive decision-making and allow for more responsiveness to change.<br>DevOps is about a culture change intended to drive collaboration between software developers and IT operations.<br>It's often said that DevOps is agile applied beyond the software development team.<br><br><img alt="Post-COVID DevOps" src="https://www.pluralsight.com/content/dam/ps/blog/migration/app/uploads/2021/03/ResourcePage-1.jpg" referrerpolicy="no-referrer"><br><a data-tooltip-position="top" aria-label="https://get.acloudguru.com/post-covid-devops-accelerating-future-webinar" rel="noopener nofollow" class="external-link" href="https://get.acloudguru.com/post-covid-devops-accelerating-future-webinar" target="_blank"><strong></strong>
+</a>Post-COVID DevOps: Accelerating the Future<br>How has COVID affected — or even accelerated — DevOps best practices for engineering teams?&nbsp;<a data-tooltip-position="top" aria-label="https://get.acloudguru.com/post-covid-devops-accelerating-future-webinarhttps://get.acloudguru.com/post-covid-devops-accelerating-future-webinar" rel="noopener nofollow" class="external-link" href="https://get.acloudguru.com/post-covid-devops-accelerating-future-webinarhttps://get.acloudguru.com/post-covid-devops-accelerating-future-webinar" target="_blank">Watch this free, on-demand webinar</a>&nbsp;panel discussion with DevOps leaders as we explore DevOps in a post-COVID world.<br><a data-tooltip-position="top" aria-label="https://get.acloudguru.com/post-covid-devops-accelerating-future-webinar" rel="noopener nofollow" class="external-link" href="https://get.acloudguru.com/post-covid-devops-accelerating-future-webinar" target="_blank">Watch Now</a><br><br><br>Agile is an iterative software development approach that&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/blog/engineering/riding-the-next-cloud-why-edge-computing-is-the-next-wave-to-catch" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/blog/engineering/riding-the-next-cloud-why-edge-computing-is-the-next-wave-to-catch" target="_blank">focuses on collaboration and quick, rapid releases</a>. It's a set of values and principles that can be used to help drive decisions in software development.&nbsp;<br>When it comes to agile, it’s tough to define it more concisely than the original micro&nbsp;<a data-tooltip-position="top" aria-label="https://agilemanifesto.org/" rel="noopener nofollow" class="external-link" href="https://agilemanifesto.org/" target="_blank">manifesto</a>&nbsp;itself, which was written back in 2001. (No TL;DR version needed. It's only 68 words.) It states:<br>We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:<br>
+<br>Individuals and interactions&nbsp;over processes and tools
+<br>Working software&nbsp;over comprehensive documentation
+<br>Customer collaboration&nbsp;over contract negotiation
+<br>Responding to change&nbsp;over following a plan
+<br>That is, while there is value in the items on the right, we value the items on the left more<br>The manifest is paired with&nbsp;<a data-tooltip-position="top" aria-label="https://agilemanifesto.org/principles.html" rel="noopener nofollow" class="external-link" href="https://agilemanifesto.org/principles.html" target="_blank">12 agile principles</a>&nbsp;to help make better decisions.&nbsp;<br>Copying agile approaches and investing in agile tools doesn’t make your team agile. It’s not just about doing two-week iterations or building out smaller teams. In agile, the&nbsp;what&nbsp;a team does is less important than the&nbsp;why&nbsp;they do it.<br>Agile (as the name implies) is about the flexibility and adaptability to build software with ever-changing needs and toss set-in-stone plans out the window.<br>This includes better connecting the dev team with end-users. (You could sort of think of that a bit like the&nbsp;<a data-tooltip-position="top" aria-label="https://www.youtube.com/watch?v=m4OvQIGDg4I" rel="noopener nofollow" class="external-link" href="https://www.youtube.com/watch?v=m4OvQIGDg4I" target="_blank">“What would you say you do here?” scene</a>&nbsp;from&nbsp;Office Space.)<br><br>
+<br>Agility&nbsp;-&nbsp; More quickly respond to market changes or customer feedback.
+<br>Quality&nbsp;- A focus on testing and sustained customer involvement means the chances of a product’s overall quality being high are greater.
+<br>Collaboration&nbsp;- Agile is about people. By placing value on human interactions over processes and “that’s just the way it’s done,” organizations are able to let employees act guided by their experience and a shared set of values rather than being micro-managed or shackled to detailed documentation.
+<br>Ownership&nbsp;- The trust required from leadership to have agile teams can create an increased feeling of ownership.
+<br>Customer satisfaction&nbsp;- With a focus on finding and fixing problems quickly and a direct line between customers and developers, customers are more likely to be satisfied and come back for more.
+<br>Predictability&nbsp;- By doing away with big plans that are set in stone and often detached from reality, organizations can get a better picture of what’s going well and what’s not working right away rather than months down the road when it’s too late to do anything to correct it.
+<br>Increase productivity&nbsp;- Regularly used planning tools like Kanban and Scrum help teams keep tabs of work and progress toward goals.
+<br><br>Many organizations are used to working in a waterfall model. A waterfall model is a linear approach is a sequence of events that starts with a heavy upfront investment of time and resources in scoping out requirements and budgeting before moving into development, testing, and production.<br>Moving this paradigm to agile and&nbsp;<a data-tooltip-position="top" aria-label="https://acloud.guru/overview/agile-at-scale" rel="noopener nofollow" class="external-link" href="https://acloud.guru/overview/agile-at-scale" target="_blank">running agile at scale</a>&nbsp;can be difficult and complex. This isn’t helped by the fact that “agile” is less of a thing you do and more of a basis for decision-making. For organizations guided by process above all else, this can require a major shift and definitely takes some backing from management.<br><br>With a name that sounds like a covert military team and the kind of goofy capitalization you’ve come to expect from tech terminology, DevOps combines software development and IT operations. Take the "dev" from software development and the "ops" from IT operations and you get this portmanteau, which is the fun-to-say term that describes mashing together of multiple words, like spork, phablet, brunch, jorts, and bromance.<br>DevOps isn't just a process. It’s a shift in workplace culture. It’s a collaboration between teams. Doubling down on automation and installing all of the right software won’t get you there alone. Like agile, people are the key component.<br>Interested in upscaling or beginning your journey with DevOps? A Cloud Guru’s&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/learning-paths/devops" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/learning-paths/devops" target="_blank">DevOps Learning Paths</a>&nbsp;offers custom courses fit for beginners and advanced gurus!<br>AWS offers the following definition of the DevOps model:<br>DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.<br><br><img src="https://www.pluralsight.com/content/dam/ps/blog/migration/app/uploads/2020/06/cost-optimization-blog-header.jpg" referrerpolicy="no-referrer"><br><a data-tooltip-position="top" aria-label="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar" rel="noopener nofollow" class="external-link" href="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar" target="_blank"><strong></strong></a>Automating AWS Cost Optimization<br>
+AWS provides unprecedented value to your business, but using it cost-effectively can be a challenge. In this&nbsp;<a data-tooltip-position="top" aria-label="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar" rel="noopener nofollow" class="external-link" href="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar" target="_blank">free, on-demand webinar</a>, you'll get an overview of AWS cost-optimization tools and strategies.<br><a data-tooltip-position="top" aria-label="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar" rel="noopener nofollow" class="external-link" href="https://go.acloudguru.com/AWS-Cost-Optimization-Webinar" target="_blank">Watch Now</a><br><br><br>How did these two groups get combined into one? And why would you want to combine development and IT operations?&nbsp;<br>Way back when (around 2007 or so), IT operations teams were separate from development teams. Then, people in the development and operations communities realized there was some issues in the way these teams were structured and how they interacted (or didn’t interact).<br>
+<br>Development and IT operations teams had different objectives
+<br>Development and operations teams had different performance indicators
+<br>Development and operations teams were siloed physically in different rooms, buildings, or offices
+<br>So they started talking. This gave birth to DevOps and the&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/google-professional-cloud-devops-engineer-certification-path-introduction-gcp-devops-engineer-track-part-1" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/google-professional-cloud-devops-engineer-certification-path-introduction-gcp-devops-engineer-track-part-1" target="_blank">DevOps engineer</a>.&nbsp;<br>Patrick Debois, often called the Godfather of DevOps, brought these groups together at&nbsp;<a data-tooltip-position="top" aria-label="https://devopsdays.org/" rel="noopener nofollow" class="external-link" href="https://devopsdays.org/" target="_blank">devopsdays</a>&nbsp;in 2009 where they discussed ways to bridge the gap between the two fields. Now, thousands of enterprises have adapted or are working toward adapting these practices.<br>These new approaches basically make ops everyone’s job to a degree, which makes&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/the-future-of-ops-jobs" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/the-future-of-ops-jobs" target="_blank">the future of ops jobs</a>&nbsp;very interesting.&nbsp;<br><br>
+<br>Container&nbsp;- A lightweight, standalone, executable piece of software. It includes everything needed to run that software.
+<br>Continuous delivery (CD)&nbsp;- The ongoing and manual or automatic release of software to production. It's aimed around new cycles. Some orgs release a new version with any changes.
+<br>Continuous integration (CI)&nbsp;- The ongoing programming, building, and testing of code. This is done before turning it over to the continuous delivery (CD) system for deployment. With CD, it makes up&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#CICD" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/devops-vs-agile-whats-the-difference#CICD" target="_blank">CI/CD</a>.
+<br>Infrastructure as Code (IaC)&nbsp;- Defining infrastructure you want to use with programming code that can be understood by cloud services. These cloud services then create the infrastructure for you based on this code. This allows you to define standards and reuse code, which saves time.
+<br>Microservices&nbsp;- Application architecture that is broken into multiple small pieces. Containers are often used to deploy microservices.
+<br>Open source&nbsp;- Computer software code released under a license for free, like&nbsp;<a data-tooltip-position="top" aria-label="https://acloud.guru/series/linux-this-month" rel="noopener nofollow" class="external-link" href="https://acloud.guru/series/linux-this-month" target="_blank">Linux</a>&nbsp;or&nbsp;<a data-tooltip-position="top" aria-label="https://acloud.guru/series/kubernetes-this-month" rel="noopener nofollow" class="external-link" href="https://acloud.guru/series/kubernetes-this-month" target="_blank">Kubernetes</a>.
+<br>Pipeline&nbsp;- A set of connected processes where the output of one process is the input for the next.
+<br>Serverless&nbsp;- Running a service or microservice on cloud-based infrastructure without worrying about the servers running your code. You simply provide the code, and the cloud provider runs the code and gives you the results. See more on the&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/serverless-showdown-aws-lambda-vs-azure-functions-vs-google-cloud-functions" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/serverless-showdown-aws-lambda-vs-azure-functions-vs-google-cloud-functions" target="_blank">Function as a Service&nbsp;(FaaS) services of AWS, Azure, and GCP</a>.
+<br>Source code repository&nbsp;- A place to upload and track the history of your code, like&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/azure-devops-vs-github-comparing-microsofts-devops-twins" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/azure-devops-vs-github-comparing-microsofts-devops-twins" target="_blank">GitHub</a>&nbsp;or&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/aws-developer-tools-overview-and-codecommit-cheat-sheet" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/aws-developer-tools-overview-and-codecommit-cheat-sheet" target="_blank">AWS CodeCommit</a>.
+<br>Unit testing&nbsp;- Breaking your application down into small parts to test that each features works.
+<br><br>DevOps is all about producing higher-quality software faster and saving a lot of time and money. Here’s a more detailed breakdown of the benefits.<br>
+<br>Speed&nbsp;- Release updates and new features faster, adapt to the changing market, and become more efficient.
+<br>Rapid delivery&nbsp;- Increase deployment frequency and the pace of releases. Respond to customers' needs faster and build a competitive advantage.&nbsp;
+<br>Reliability&nbsp;- Automatic testing is built-in. Ensures rollouts are of the highest quality and that you have less downtime because you build for stability and test before deploying.
+<br>Scale&nbsp;- Implements automation. With the use of cloud and container technology, you can scale usage up and down and save money while you do so.
+<br>Collaboration&nbsp;- Allow teams who used to be apart to work together. Workflows can be combined, inefficiency is reduced, and time is saved.
+<br>Security&nbsp;- Allows infrastructure to be created by code, just like software. By doing this (instead of doing it manually), you can define policies to stay compliant no matter how many servers will be deployed.
+<br>Want an overview of the benefits with a heavy dash of sarcasm? Check out our post&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/5-reasons-to-not-move-to-devops" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/5-reasons-to-not-move-to-devops" target="_blank">5 reasons to NOT move to DevOps</a>.<br><br>DevOps and agile can speed up the delivery of and increase the quality of software.&nbsp;Agile replaced the old-school waterfall model, but DevOps isn’t a replacement for agile.<br>DevOps exists because of agile, and the two can coexist and be used together. You don’t have to choose between DevOps and agile. Ideally, your organization will practice both.&nbsp;<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/the-top-devops-skills-people-are-learning-at-a-cloud-guru-right-now" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/the-top-devops-skills-people-are-learning-at-a-cloud-guru-right-now" target="_blank">top DevOps skills people are learning at ACG right now</a><br><br>Continuous integration and continuous development (or CI/CD) is a DevOps tactic — a way to deliver apps to customers with the introduction of automation into the agile development process.&nbsp;<br>The&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/implementing-a-full-ci-cd-pipeline" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/implementing-a-full-ci-cd-pipeline" target="_blank">CI/CD pipeline</a>&nbsp;(as it's called when these practices are combined) has become an integral part of DevOps culture. A variety of tools and techniques are used for implementing such a pipeline. (More on those tools below.)<br>The CI/CD pipeline is supported by teams working in an agile way with either DevOps or a&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/reliability-engineering-concepts" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/reliability-engineering-concepts" target="_blank">site reliability engineering (SRE)</a>&nbsp;approach.&nbsp;<br>Read more about&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/blog/engineering/you-need-sre-skills-to-thrive-in-a-serverless-world-kelsey-hightower" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/blog/engineering/you-need-sre-skills-to-thrive-in-a-serverless-world-kelsey-hightower" target="_blank"><em></em></a>why you need SRE skills to thrive in a serverless world&nbsp;and check out our&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/reliability-engineering-concepts" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/reliability-engineering-concepts" target="_blank"><em></em></a>Site Reliability Engineering Concepts&nbsp;or&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/google-cloud-devops-and-sres-gcp-devops-engineer-track-part-2" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/google-cloud-devops-and-sres-gcp-devops-engineer-track-part-2" target="_blank"><em></em></a>Google Cloud DevOps and SREs&nbsp;courses.<br><br>CI/CD pipelines smooth and speed up the flow of code from development through operations and QA into production by automating manual processes and increasing confidence in your releases.&nbsp;<br>This is the exact opposite of the waterfall release approach still practiced by many large organizations, where developers throw code “over the wall” to ops, devs don’t get access to production, and ops doesn’t have much inside knowledge of how the code works.<br>CI/CD allows organizations to:<br>
+<br>Build faster
+<br>Decrease code review time
+<br>Automatic
+<br>Faster fault isolation
+<br>Additional deployment features
+<br>As mentioned before, you can be doing the right things and using the right tools and&nbsp;still&nbsp;not be agile or properly implementing DevOps. A broken and messy team can result in broken and messy CI/CD pipelines. You can almost&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/cd-pipeline" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/cd-pipeline" target="_blank">predict how your CI/CD pipeline looks</a>&nbsp;based on how your dev and ops teams work together.<br><br><img alt="Cloud Dictionary" src="https://www.pluralsight.com/content/dam/ps/blog/migration/app/uploads/2020/12/Cloud-Dictionary-Resource-Image.jpg" referrerpolicy="no-referrer"><br><a data-tooltip-position="top" aria-label="https://get.acloudguru.com/cloud-dictionary-of-pain" rel="noopener nofollow" class="external-link" href="https://get.acloudguru.com/cloud-dictionary-of-pain" target="_blank"><strong></strong></a>Get the Cloud Dictionary of Pain<br>
+Speaking cloud doesn’t have to be hard. We analyzed millions of responses to ID the top concepts that trip people up. Grab this&nbsp;<a data-tooltip-position="top" aria-label="https://get.acloudguru.com/cloud-dictionary-of-pain" rel="noopener nofollow" class="external-link" href="https://get.acloudguru.com/cloud-dictionary-of-pain" target="_blank">cloud guide</a>&nbsp;for succinct definitions of some of the most painful cloud terms.<br><a data-tooltip-position="top" aria-label="https://get.acloudguru.com/cloud-dictionary-of-pain" rel="noopener nofollow" class="external-link" href="https://get.acloudguru.com/cloud-dictionary-of-pain" target="_blank">Get the Goods</a><br><br><br>Here are some of the most popular DevOps CI/CD tools you might use if working in an AWS cloud environment.<br>
+<br>
+Git&nbsp;- Free open-source version control system. It stores the entire history of your code that your developers will continue to push new code to It has a tiny footprint and fast performance. It also supports branching, allowing others to work on features separately without having developers trip over code.
+
+<br>
+GitHub&nbsp;-&nbsp;Online service to host Git repositories. GitHub is owned by Microsoft, which offers a similar DevOps tool called Azure DevOps. Whether you are a developer or not, working alone or in a team,&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/introduction-to-azure-devops" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/introduction-to-azure-devops" target="_blank">Azure DevOps training</a>&nbsp;can help you organize the way you plan, create and deliver software. Get the lowdown on&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/azure-devops-vs-github-comparing-microsofts-devops-twins" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/azure-devops-vs-github-comparing-microsofts-devops-twins" target="_blank">Azure DevOps vs GitHub in this comparison of Microsoft DevOps tools</a>.
+
+<br>
+AWS CodeCommit&nbsp;-&nbsp;Fully managed server for hosting Git repositories. It’s secure and encrypted, highly available, and easily integrated with other AWS services.
+
+<br>
+AWS CodeBuild&nbsp;-&nbsp;Fully managed continuous integration code that complies code, runs tests, and produces software packages. When developers write code and push it into Git, CodeBuild compiles that code and produces a software package. It scales automatically and can process multiple builds concurrently.
+
+<br>
+AWS CodeDeploy&nbsp;-&nbsp;Fully managed deployment service that takes the software package (or files you updated and pushed into your Git repository) and deploys it to AWS or on-premises servers. It integrates well with AWS services and your own servers. It completely automates software deployment, eliminating error-prone manual operations.
+
+<br>
+AWS CodePipeline&nbsp;-&nbsp;Fully management continuous delivery service that helps you completely automate your release pipeline. It can automate the build, test, and deploy phases of software development and it can integrate with CodeCommit and GitHub, giving you the flexibility to use the source-control system of your choice. Read more about&nbsp;<a data-tooltip-position="top" aria-label="https://www.pluralsight.com/resources/blog/cloud/automating-ci-cd-with-aws-codepipeline" rel="noopener nofollow" class="external-link" href="https://www.pluralsight.com/resources/blog/cloud/automating-ci-cd-with-aws-codepipeline" target="_blank">automating CI/CD with AWS CodePipeline</a>.
+
+<br>Other common DevOps tools include&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/docker-deep-dive" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/docker-deep-dive" target="_blank">Docker</a>, Jira,&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/jenkins-fundamentals" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/jenkins-fundamentals" target="_blank">Jenkins</a>,&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/puppet-quick-start" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/puppet-quick-start" target="_blank">Puppet</a>, Chef,&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/splunk-deep-dive" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/splunk-deep-dive" target="_blank">Splunk</a>,&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/introduction-to-ansible" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/introduction-to-ansible" target="_blank">Ansible</a>,&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/kubernetes-deep-dive" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/kubernetes-deep-dive" target="_blank">Kubernetes</a>, Bamboo, and&nbsp;<a data-tooltip-position="top" aria-label="https://acloudguru.com/course/nagios-certified-professional-prep-course" rel="noopener nofollow" class="external-link" href="https://acloudguru.com/course/nagios-certified-professional-prep-course" target="_blank">Nagios</a>.]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html</link><guid isPermaLink="false">AWS/For Reading/Agile Vs DevOps.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://www.pluralsight.com/content/dam/ps/blog/migration/app/uploads/2021/03/ResourcePage-1.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://www.pluralsight.com/content/dam/ps/blog/migration/app/uploads/2021/03/ResourcePage-1.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Amazon Web Services In Plain English]]></title><description><![CDATA[ 
+ <br>I was searching one liner meaning for aws services and I came across some interesting websites:<br>Meaning of AWS Services in one line
+
+<br><a rel="noopener nofollow" class="external-link" href="https://adayinthelifeof.nl/2020/05/20/aws.html" target="_blank">https://adayinthelifeof.nl/2020/05/20/aws.html</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://expeditedsecurity.com/aws-in-plain-english/" target="_blank">https://expeditedsecurity.com/aws-in-plain-english/</a>
+
+<br>Those I need 
+EC2 - Virtual Private Servers<br>
+Lambda - Programming Functions you can run but can costs a fortune<br>
+S3 - File Storage (unmountable)<br>
+EFS - Mountable Network Disks<br>
+RDS - Managed Relational Database<br>
+VPC - Virtual Private Network (consider as VLANs)<br>
+DynamoDB - Large &amp; scalable non-relational database<br>
+CloudFront - Content Delivery Network<br>
+Route 53 - Managed domains names and records<br>
+CloudWatch - Monitoring and Logs<br>
+Autoscaling - Scale resources dynamically or manually<br>
+CloudTrail - Spying on your users (Tracking Users activity)<br>
+IAM - Users and their Permissions, policies and roles
+]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/amazon-web-services-in-plain-english.html</link><guid isPermaLink="false">AWS/For Reading/Amazon Web Services In Plain English.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate></item><item><title><![CDATA[Authentication vs. Authorization]]></title><description><![CDATA[ 
  <br><br>While often used interchangeably,&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/authenticate" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/authenticate" target="_blank">authentication</a>&nbsp;and authorization represent fundamentally different functions. In this article, we compare and contrast the two to show how they protect applications in complementary ways.<br><br>In simple terms, authentication is the process of verifying who a user is, while authorization is the process of verifying what they have access to.<br>Comparing these processes to a real-world example, when you go through security in an airport, you show your ID to authenticate your identity. Then, when you arrive at the gate, you present your boarding pass to the flight attendant, so they can authorize you to board your flight and allow access to the plane.<br><br>Here's a quick overview of the differences between authentication and authorization:<br><br>In short, access to a resource is protected by both authentication and authorization. If you can't prove your identity, you won't be allowed into a resource. And even if you can prove your identity, if you are not authorized for that resource, you will still be denied access.<br>Auth0 has products and services for authentication, like&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/authenticate/passwordless/passwordless-with-universal-login" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/authenticate/passwordless/passwordless-with-universal-login" target="_blank">passwordless</a>,&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/secure/multi-factor-authentication" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/secure/multi-factor-authentication" target="_blank">multi-factor authentication</a>&nbsp;(MFA), and&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/authenticate/single-sign-on" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/authenticate/single-sign-on" target="_blank">Single-Sign On (SSO)</a>&nbsp;you can configure using&nbsp;Auth0 Dashboard&nbsp;or&nbsp;Management API. For authorization, Auth0 offers&nbsp;<a data-tooltip-position="top" aria-label="https://auth0.com/docs/manage-users/access-control/rbac" rel="noopener nofollow" class="external-link" href="https://auth0.com/docs/manage-users/access-control/rbac" target="_blank">role-based access control</a>&nbsp;(RBAC) or&nbsp;<a data-tooltip-position="top" aria-label="https://docs.fga.dev/fga" rel="noopener nofollow" class="external-link" href="https://docs.fga.dev/fga" target="_blank">fine grained authorization</a>&nbsp;FGA).]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html</link><guid isPermaLink="false">AWS/For Reading/Authorized vs Authonticated.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate></item><item><title><![CDATA[AWS EC2 Instance Types Grouped by Family]]></title><description><![CDATA[ 
  <br><br><br>
 <br>M1 (e.g., m1.small, m1.medium, m1.large)
@@ -198,7 +306,8 @@
 
 <br>Create an Amazon EKS cluster with nodes running Inf1 instances. For more information, see&nbsp;<a data-tooltip-position="top" aria-label="https://docs.aws.amazon.com/eks/latest/userguide/inferentia-support.html" rel="noopener nofollow" class="external-link" href="https://docs.aws.amazon.com/eks/latest/userguide/inferentia-support.html" target="_blank">Inferentia support</a>&nbsp;in the&nbsp;Amazon EKS User Guide.
 ]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html</link><guid isPermaLink="false">AWS/For Reading/AWS Instance Types.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate></item><item><title><![CDATA[AWS Load Balancer Types]]></title><description><![CDATA[ 
- <br><br>AWS offers four types of load balancers:<br>]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html</link><guid isPermaLink="false">AWS/For Reading/Difference between Load balancers.md</guid><pubDate>Sun, 29 Dec 2024 14:19:08 GMT</pubDate></item><item><title><![CDATA[Host Tomcat Vanshit's Version]]></title><description><![CDATA[<a class="tag" href="https://notes.sarangwandile.xyz/?query=tag:git" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#git</a> 
+ <br><br>AWS offers four types of load balancers:<br>]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html</link><guid isPermaLink="false">AWS/For Reading/Difference between Load balancers.md</guid><pubDate>Sun, 29 Dec 2024 14:19:08 GMT</pubDate></item><item><title><![CDATA[Git Fetch vs Git pull]]></title><description><![CDATA[ 
+ <br><br>Git fetch and git pull are both Git commands used to retrieve update information from a remote repository. So, how do they differ? Git fetch downloads the changes from the remote repository to the local repository but does not make any changes to the current working directory. Since the changes are not merged into the local branch, you can check the changes from the remote repository without interrupting your current work. On the other hand, git pull retrieves the latest changes from the remote repository like git fetch, but it also automatically merges those changes into the current branch. In contrast to git fetch, git pull directly applies the changes from the remote repository to the local working directory.<br><br>The git fetch command retrieves the latest commit history from the remote repository, but it does not affect the local working directory. Even after fetching remote changes, they are not reflected in the local branch. It is primarily used when you want to retrieve the latest status from the remote repository and review the changes before they are reflected in the local repository. To apply the retrieved changes to the local branch, you need to manually run git merge or&nbsp;<a data-tooltip-position="top" aria-label="https://docs.gitlab.com/ee/topics/git/git_rebase.html" rel="noopener nofollow" class="external-link" href="https://docs.gitlab.com/ee/topics/git/git_rebase.html" target="_blank">git rebase</a>.<br><br>The git pull command combines&nbsp;git fetch&nbsp;and&nbsp;git merge&nbsp;(or&nbsp;git rebase) into a single command. This allows you to fetch changes from the remote repository and automatically integrate them into the current local branch.<br>While git fetch retrieves changes from the remote repository without applying them to the local branch, running git pull automatically integrates the changes from the remote repository into the local branch.<br>Git pull is suitable for quickly reflecting remote changes in the local branch, but it can lead to conflicts, so caution is needed, especially when working with multiple people.<br><br>Git fetch is a command used to retrieve the latest information from a remote repository. The retrieved information is not directly reflected in the local branch. Using git pull will reflect all remote branches, including incorrect or problematic ones, in the local branch.<br>When changes are made simultaneously on both remote and local branches, or when there are new users on the team, it is safer to use git fetch to retrieve the remote branch contents first and then perform merge or rebase.<br><br>Git pull is a command that performs more processes compared to git fetch. Git pull can perform both git fetch and additionally execute git merge or git rebase. For this reason, git pull is recommended when you want to quickly reflect changes from the remote repository in the local branch.<br><br><br>Git pull is a command that performs git fetch followed by git merge or git rebase. While git fetch does not affect the local repository, git pull automatically synchronizes changes from the remote repository with the local repository.<br><br>When executing git pull, there may be conflicts between remote and local changes. Merge conflicts are particularly likely to occur, so if conflicts arise, they need to be resolved manually. Additionally, using git pull --rebase allows you to incorporate the latest changes while performing a rebase.<br><br>Git fetch is useful for checking and retrieving the latest status of the remote repository. However, the changes retrieved are not automatically reflected in the local branch; git fetch is used to synchronize the local and remote repositories.<br>]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html</link><guid isPermaLink="false">AWS/For Reading/Git Fetch vs Git pull.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate></item><item><title><![CDATA[Host Tomcat Vanshit's Version]]></title><description><![CDATA[<a class="tag" href="https://notes.sarangwandile.xyz/?query=tag:git" style="background-color: rgb(4, 108, 116); color: white; font-weight: 700; border: none; border-radius: 1em; padding: 0.2em 0.5em;">#git</a> 
  <br>.............................................Deploying Application..........................<br>1.Create an instance by using ec2-service and create database by RDS service.<br>
 2.Create custom security group by adding SSH, custom tcp 8080 , for maria db add a port custom tcp 3306.<br>
 3.Add this Security group to EC2 instance and Database instance.<br>
@@ -557,7 +666,25 @@ The main phases of SDLC include Requirements, Design, Implementation (Coding), T
 SDLC ensures a structured and organized approach to software development, leading to the creation of reliable and high-quality software. It helps manage resources efficiently, reduces development time, and minimizes the risk of project failure.
 <br><br>
 The key objectives of SDLC include delivering a high-quality product, meeting customer requirements, managing project resources effectively, minimizing risks, and providing a clear and transparent development process.
-]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html</link><guid isPermaLink="false">AWS/For Reading/SDLC - Software Developement LifeCycle.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://media.geeksforgeeks.org/wp-content/uploads/20231220113035/SDLC.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/20231220113035/SDLC.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Some talks about git in reddit 1]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html</link><guid isPermaLink="false">AWS/For Reading/SDLC - Software Developement LifeCycle.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://media.geeksforgeeks.org/wp-content/uploads/20231220113035/SDLC.jpg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/20231220113035/SDLC.jpg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[SDLC - Software Developement LifeCycle 1]]></title><description><![CDATA[ 
+ ]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle-1.html</link><guid isPermaLink="false">AWS/For Reading/SDLC - Software Developement LifeCycle 1.md</guid><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[Simple Definitions To give in Interview]]></title><description><![CDATA[ 
+ <br><br><br>Linux is a powerful, flexible, and open-source operating system that's widely used in server environments.<br><br>kernel is the core component of an operating system. It acts as bridge between software and hardware.]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/simple-definitions-to-give-in-interview.html</link><guid isPermaLink="false">AWS/For Reading/Simple Definitions To give in Interview.md</guid><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[Some talks about git in reddit]]></title><description><![CDATA[ 
+ <br><br>[reddit user]<br>
+git&nbsp;is a program that is used to track changes in code. It's very useful and allows you to "go back in time" if something is broken and see what's changed which might have caused it to break. It's also very handy when several people work on the same code together, they can share their changes easily.
+GitHub is a website, now owned by Microsoft, that you can use with git. There are other websites like it, e.g. GitLab. All of them allow you to put your changes on their servers to make it easier to share them with other people. They may also have other features like more advanced permissions so you can only share your code with specific people, or build platforms where you can automatically build your program after you've pushed new code to them.
+<br>[reddit user]<br>
+Just in case that is still a bit dense for you or your current computer knowledge a simpler version is:
+Linus Torvalds, the man who Linux is named after (Linus + Unix = Linux) made a manager for managing the revisions of computer programming he was doing making the Linux Kernel. Every different thing he tried to do to solve for how to make something one way, or another or the third way was saved. if he had to go back and change from the third way back to the second or first as all saved unlike usual computer coding which wouldn't save that.
+Making fun of himself that he needed this helpful feature he called it "git" after the British Slang for someone being a dummy. Now some people prefer to think of it as "Go-back In Time" instead of thinking of the creator of the Linux Kernel as 'dumb'.
+Now Git was so useful, and like Linux, Open Source and Free, and the more it was developed by the community the more powerful, and to some people, seen as a required tool for doing programming projects.
+What was shared versions of work stored locally, called versioning, would be stored in folders of single coders work, or multiple coders putting their proposed version(s) for a piece of code, or multiple people sharing and collaborating on the same code. The folders for these were called repositories. Later the finished/published pieces of code would be published to a folder which was also called a repository. When you install software on Linux or just using package managers in general, they largely use collections of published repositories either by pointing at all those final version repositories or by collecting copies of them on a central server called itself a repository, as in a repository of repositories.
+Now this is where GitHub and its siblings/cousins come in. They can act as an online collection of not just the published version of the repositories, but a central place for people to collaborate with Git online, store the work away from the person's local computer alone, preventing loss of data, and even act as a place users can come to learn about and install and get help with the published program/code.
+In short you use Git to help you develop code and track all the versions of your work over time.<br>
+Git is so ubiquitous that the format it finishes off the code in can be used to distribute to code and update it later.
+GitHub (and GitLab, SourceForge, etc.) are places where code project can be worked on and collaborated with that also distribute and help creators support users that is done with Git and Git related software.
+Repositories is just a Git related Jargon for the folders that hold the different versions of a Git Project, but when you are talking Package Managers or Code Sites like GitHub, they are talking about the stored published versions of the code that people can download, install, and use.
+To you the end user just think of repositories as "Folders of Code" be it programs or extensions or mods or even collections of settings and that it is just jargon.
+]]></description><link>https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html</link><guid isPermaLink="false">AWS/For Reading/Some talks about git in reddit.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate></item><item><title><![CDATA[Some talks about git in reddit 1]]></title><description><![CDATA[ 
  <br><br>[reddit user]<br>
 git&nbsp;is a program that is used to track changes in code. It's very useful and allows you to "go back in time" if something is broken and see what's changed which might have caused it to break. It's also very handy when several people work on the same code together, they can share their changes easily.
 GitHub is a website, now owned by Microsoft, that you can use with git. There are other websites like it, e.g. GitLab. All of them allow you to put your changes on their servers to make it easier to share them with other people. They may also have other features like more advanced permissions so you can only share your code with specific people, or build platforms where you can automatically build your program after you've pushed new code to them.
@@ -965,7 +1092,93 @@ systemctl restart nginx
 
 <br>Create Alarm<br>
 <img alt="create-alarms-cloudwatch.png" src="https://notes.sarangwandile.xyz/lib/media/create-alarms-cloudwatch.png"><br>select memory utilization metric<br>
-<img alt="select-metric-cpu-utilization.png" src="https://notes.sarangwandile.xyz/lib/media/select-metric-cpu-utilization.png"><br><img alt="select-matric.png" src="https://notes.sarangwandile.xyz/lib/media/select-matric.png">]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html</link><guid isPermaLink="false">AWS/Tasks Done/☑️ Implement autoscaling on memory utilization.md</guid><pubDate>Sat, 28 Dec 2024 13:29:05 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[✅ Create 5 IAM users and 5 S3 buckets and attach them each other]]></title><description><![CDATA[ 
+<img alt="select-metric-cpu-utilization.png" src="https://notes.sarangwandile.xyz/lib/media/select-metric-cpu-utilization.png"><br><img alt="select-matric.png" src="https://notes.sarangwandile.xyz/lib/media/select-matric.png">]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html</link><guid isPermaLink="false">AWS/Tasks Done/☑️ Implement autoscaling on memory utilization.md</guid><pubDate>Sat, 28 Dec 2024 13:29:05 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[☑️ Task 1 - Implement autoscaling on memory utilization]]></title><description><![CDATA[ 
+ <br><br>
+<br>Implement autoscaling on memory utilization 
+<br>SNS will notification each time instance scale up and scale down
+<br>In short:<br>
+Implementing Autoscaling on Memory Utilization with SNS Notifications<br>
+Understanding the Components:<br><br>
+<br>AWS Auto Scaling Group (ASG): Manages a group of EC2 instances, automatically scaling them up or down based on predefined policies.
+<br>Amazon CloudWatch: Monitors various metrics, including memory utilization, from your EC2 instances.
+<br>Amazon SNS: A messaging service to send notifications to subscribed endpoints (e.g., email, SMS, or other AWS services).
+<br><br>
+<br>Navigate to the SNS console.
+<br>Create a new topic.
+<br>Give it a descriptive name (e.g., "AutoScalingNotifications").
+<br><img alt="autoscaling-notifications-created.png" src="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png"><br><br>
+<br>Navigate to the EC2 console and select "Auto Scaling Groups".
+<br>Create a new Auto Scaling group with the desired configuration:
+
+<br>Launch Configuration: Specify the AMI, instance type, security groups, etc.
+<br>Scaling Policies:
+
+<br>Scaling Adjustment Policy: Define the scaling adjustment (e.g., add or remove instances) based on specific conditions.
+<br>Target Tracking Scaling Policy: Set a target value for a specific metric (e.g., memory utilization) and let the ASG automatically adjust the number of instances to maintain that target.
+
+
+
+
+<br><img alt="launch-template-creation-snsautoscalinggroup123.png" src="https://notes.sarangwandile.xyz/lib/media/launch-template-creation-snsautoscalinggroup123.png"><br>Created Launch Template with this User data<br>#!/bin/bash
+yum install nginx unzip -y
+systemctl enable --now nginx
+curl -O [https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip](https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip)
+unzip oxer.zip
+rm oxer.zip
+mv oxer* /usr/share/nginx/html
+systemctl restart nginx
+<br><img alt="autoscale-group-size.png" src="https://notes.sarangwandile.xyz/lib/media/autoscale-group-size.png"><br>enable sns notification and select previously created sns topic<br>
+<img alt="add-notification-in-auto-scaling-groups.png" src="https://notes.sarangwandile.xyz/lib/media/add-notification-in-auto-scaling-groups.png"><br><img alt="choose-lauch-template-review.png" src="https://notes.sarangwandile.xyz/lib/media/choose-lauch-template-review.png"><br><br>
+<br>Navigate to the CloudWatch console.
+<br>Create an alarm for the "MemoryUtilization" metric:
+
+<br>Metric Name: MemoryUtilization
+<br>Namespace: AWS/EC2
+<br>Statistic: Average
+<br>Period: 5 Minutes (or as needed)
+<br>Threshold: Set the desired threshold (e.g., 80%)
+<br>Comparison Operator: Greater Than or Equal To
+<br>Alarm Actions: Select the SNS topic created in step 1.
+
+
+<br>Associate the Alarm with the Auto Scaling Group:
+
+<br>In the Auto Scaling group settings, under "Notifications," add the CloudWatch alarm created in step 3.
+
+
+<br>Create Alarm<br>
+<img alt="create-alarms-cloudwatch.png" src="https://notes.sarangwandile.xyz/lib/media/create-alarms-cloudwatch.png"><br>select memory utilization metric<br>
+<img alt="select-metric-cpu-utilization.png" src="https://notes.sarangwandile.xyz/lib/media/select-metric-cpu-utilization.png"><br><img alt="select-matric.png" src="https://notes.sarangwandile.xyz/lib/media/select-matric.png">]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/☑️-task-1-implement-autoscaling-on-memory-utilization.html</link><guid isPermaLink="false">AWS/Tasks Done/☑️ Task 1 - Implement autoscaling on memory utilization.md</guid><pubDate>Sat, 28 Dec 2024 13:29:05 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[☑️ Task 4 - How to store aws load balancer logs in s3 bucket]]></title><description><![CDATA[ 
+ <br><br>1.&nbsp;&nbsp;&nbsp; Create 2 instances and&nbsp;add http port and also install nginx enable it .<br>
+2.&nbsp;&nbsp;&nbsp; For load balancer u will need target group<br>
+3.&nbsp;&nbsp;&nbsp; Go to EC2 service scroll down u will see target groups<br>
+<img alt="{8799CC1A-FB3F-4C46-89AC-E9EA4FA22C1E} 1.png" src="https://notes.sarangwandile.xyz/lib/media/{8799cc1a-fb3f-4c46-89ac-e9ea4fa22c1e}-1.png"><br>
+4.&nbsp;&nbsp;&nbsp; Create target group &gt; add instances &gt; save and create .<br>
+<img alt="{122014CE-B98D-499C-83AC-AD171883DF5B}.png" src="https://notes.sarangwandile.xyz/lib/media/{122014ce-b98d-499c-83ac-ad171883df5b}.png"><br>
+<img alt="{76992DE6-07D5-4F62-BF3D-8BAC91D82994}.png" src="https://notes.sarangwandile.xyz/lib/media/{76992de6-07d5-4f62-bf3d-8bac91d82994}.png"><br>
+5.&nbsp;&nbsp;&nbsp; Now create load balancer (Application load balancer) &gt; configure it give name , vpc ,select availability zones, select Target Groups u created and create load balancer.<br>
+<img alt="{B089AE33-8E08-44B4-BF14-89AC63880F3B}.png" src="https://notes.sarangwandile.xyz/lib/media/{b089ae33-8e08-44b4-bf14-89ac63880f3b}.png"><br>
+<img alt="{CC268607-25E9-442F-BAC8-171661E1F704}.png" src="https://notes.sarangwandile.xyz/lib/media/{cc268607-25e9-442f-bac8-171661e1f704}.png"><br>
+6.&nbsp;&nbsp;&nbsp; Check it your load balancer is working or not.<br>
+7.&nbsp;&nbsp;&nbsp; If working , Create s3 bucket&nbsp; and go to permission &gt; &nbsp;bucket policy and edit it :-<br>
+8.&nbsp;&nbsp;&nbsp; Note :- &nbsp;Find policy from this by searching on google enable access log of load balancer to s3<br><img alt="Pasted image 20241201200127.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241201200127.png"><br>
+Policy :-<br>{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws-us-gov:iam::elb-account-id:root"
+      },
+      "Action": "s3:PutObject",
+      "Resource": "s3-bucket-arn"
+    }
+  ]
+}
+<br><img alt="Pasted image 20241201200139.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241201200139.png"><br>
+9.&nbsp;&nbsp;&nbsp; Save it.<br>10.&nbsp;&nbsp;Now go to load balancer u created &gt; go to attributes section &gt;&nbsp; scroll down and u will see this monitoring sec enable access logs and add our bucket<br><img alt="Pasted image 20241201200203.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241201200203.png"><br>
+11.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Save changes.<br>
+12.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U will see ur logs folder in ur s3 bucket.]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/☑️-task-4-how-to-store-aws-load-balancer-logs-in-s3-bucket.html</link><guid isPermaLink="false">AWS/Tasks Done/☑️ Task 4 - How to store aws load balancer logs in s3 bucket.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{8799cc1a-fb3f-4c46-89ac-e9ea4fa22c1e}-1.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{8799cc1a-fb3f-4c46-89ac-e9ea4fa22c1e}-1.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[✅ Create 5 IAM users and 5 S3 buckets and attach them each other]]></title><description><![CDATA[ 
  <br>Task:<br>
 requirement: <br>
 <br>Create 5 I am users
@@ -1446,7 +1659,343 @@ show databases;
 use studentapp;
 show tables;
 select * from students;
-]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html</link><guid isPermaLink="false">AWS/Tasks Done/✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[✅ Tasks To Do]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html</link><guid isPermaLink="false">AWS/Tasks Done/✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[✅Create notification for s3 bucket activity happen of put and delete]]></title><description><![CDATA[ 
+ <br><br>Whenever a new object is added or deleted in s3 bucket you will get notification via email<br><br><img alt="Create-bucket.png" src="https://notes.sarangwandile.xyz/lib/media/create-bucket.png"><br><br><img alt="create-topic.png" src="https://notes.sarangwandile.xyz/lib/media/create-topic.png"><br>
+Create an topic &gt; go to access policy and add a policy<br>&nbsp;<br>
+<img alt="sns-create-topic-access-policy.png" src="https://notes.sarangwandile.xyz/lib/media/sns-create-topic-access-policy.png"><br>Click on Advanced and Paste this code.<br>{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SNS:Publish",
+      "Resource": "arn:aws:sns:us-west-2:970547378605:sns-s3-topic123",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::snsbucket123testing"
+        }
+      }
+    }
+  ]
+}
+<br>Tip
+In above JSON code edit "Resource"  block to replace the ARN id according to your sns topic's Arn id and aws:SourceArn to your S3 bucket's ARN id.<br>
+or in last two fields just change your AWS account id and topic name<br>
+"Resource": "arn:aws:sns:ap-south-1:&lt;your-aws-account-id&gt;:&lt;sns-topic-name&gt;"<br>
+"aws:SourceArn": "arn:aws:s3:::&lt;s3-bucket-name&gt;"
+<br><br>   After Topic is created Create Subscription to get notifications <br><img alt="sns-create-subscription.png" src="https://notes.sarangwandile.xyz/lib/media/sns-create-subscription.png"><br>
+Set:<br>
+<br>Topic ARN: Your previously created Topic's ARN ID
+<br>Protocol: Email<br>
+- Endpoint: Your Gmail address<br>
+Click on create subscription button
+<br>After your subscription is created, you'll get a mail to confirm it.<br><img alt="email-subscription-confirmation.png" src="https://notes.sarangwandile.xyz/lib/media/email-subscription-confirmation.png"><br>
+Goto your mail and click on Confirm Subscription link.<br>
+<img alt="sns-subscription-mail.png" src="https://notes.sarangwandile.xyz/lib/media/sns-subscription-mail.png"><br><br>Now go to your buckets<br>
+<br>
+Select Your Bucket:
+
+<br>
+Choose the bucket for which you want to set up notifications.
+
+<br>
+Go to the Properties tab.<br>
+<img alt="snsbucket123testing-overview.png" src="https://notes.sarangwandile.xyz/lib/media/snsbucket123testing-overview.png">
+
+<br>
+Scroll down to Event notifications and click Create event notification.<br>
+<img alt="creating-snsbucket123testing-event-notification.png" src="https://notes.sarangwandile.xyz/lib/media/creating-snsbucket123testing-event-notification.png">
+
+<br>
+Click on Create event notification 
+
+<br>
+Event name: put_and_delete_event
+
+<br>
+Event types: 
+
+<br>Select put checkbox
+<br>Permanently Deleted checkbox<br>
+<img alt="Pasted image 20241201210604.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241201210604.png">
+
+
+<br>
+Scroll down u will see Destination Option 
+
+<br>select SNS topic 
+<br>choose your previously created SNS Topic 
+<br>Click on Save changes<br>
+<img alt="selecting-sns-topic-s3-bucket.png" src="https://notes.sarangwandile.xyz/lib/media/selecting-sns-topic-s3-bucket.png"><br>
+Try adding new files in bucket you should get notification in your mail.<br>
+<img alt="uploading-files-s3-bucket.png" src="https://notes.sarangwandile.xyz/lib/media/uploading-files-s3-bucket.png">
+
+
+<br><img alt="sns-topic-email-notification.png" src="https://notes.sarangwandile.xyz/lib/media/sns-topic-email-notification.png">]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/✅create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html</link><guid isPermaLink="false">AWS/Tasks Done/✅Create notification for s3 bucket activity happen of put and delete.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/create-bucket.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/create-bucket.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[✅Task 7 - Get sns alert when any user launches new instance]]></title><description><![CDATA[ 
+ <br><br>Whenever u r launching instance u will get a event and also u have to get details<br><br>
+<br>
+Create Topic
+
+<br>Type:  Standard
+<br>Name: NotifyonInstanceLaunch
+
+
+<br>
+Create subscription 
+
+<br>Select Topic ARN
+<br>Protocol: E-mail 
+<br>Endpoint: <a data-tooltip-position="top" aria-label="mailto:archsarangx@gmail.com" rel="noopener nofollow" class="external-link" href="https://notes.sarangwandile.xyz/mailto:archsarangx@gmail.com" target="_blank">archsarangx@gmail.com</a>
+<br>check your mails and confirm subscription 
+
+4.&nbsp;&nbsp;&nbsp; Go to Amazon Event bridge service .<br>
+5.&nbsp;&nbsp;&nbsp; In buses section go to rules and Create rule<br>
+<img alt="create-eventbridge-rules.png" src="https://notes.sarangwandile.xyz/lib/media/create-eventbridge-rules.png"><br>
+In step 2 Build event pattern scroll down to bottom<br>
+In Event Pattern section add configuration like this:
+
+<br>
+Event Source: AWS Service
+
+<br>
+AWS Service: EC2
+
+<br>
+Event Type: EC2 Instance State-change Notification<br>
+<img alt="event-pattern-eventbridge-rules.png" src="https://notes.sarangwandile.xyz/lib/media/event-pattern-eventbridge-rules.png"><br>
+Click Next and in Step 3 Select Target page Select
+
+<br>
+Target Type: AWS Service
+
+<br>
+Select a target: SNS Topic
+
+<br>
+Topic: your topic name
+
+<br><img alt="selecting-target-amazon-eventbridge-rules-creation.png" src="https://notes.sarangwandile.xyz/lib/media/selecting-target-amazon-eventbridge-rules-creation.png"><br>
+9.&nbsp;&nbsp;&nbsp; Create target and at last create rule<br>&nbsp;You will get a notifications while Launching and terminating instance]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/✅task-7-get-sns-alert-when-any-user-launches-new-instance.html</link><guid isPermaLink="false">AWS/Tasks Done/✅Task 7 - Get sns alert when any user launches new instance.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/create-eventbridge-rules.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/create-eventbridge-rules.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]]></title><description><![CDATA[ 
+ <br><br><img alt="rds-logos-database-selections.png" src="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png"><br>
+<br>Goto RDS dashboard and click on Create Database 
+<br>Select Standard create for database creation method
+<br>I chose MariaDB engine
+<br>Engine Version selected n-1 that is one step behind the latest one
+<br>Select Free Tier Template
+<br>I leave database-1 as DB instance identifier name
+<br>Self Managed Credential Management
+<br>and inputed desired Master Password i.e Passw0rd123
+<br>In instance configuration I selected Burstable classes for DB instance class
+<br>and selected db.t3.micro
+<br>for storage I selected General Purpose SSD gp2 and allocated 20GB of storage
+<br>I left default setting as it is and clicked on Create Database
+<br><img alt="database-created-successfully.png" src="https://notes.sarangwandile.xyz/lib/media/database-created-successfully.png"><br>
+Also add security group rules for port 3306 for database<br>
+<img alt="{26BC9CA5-9BB0-4D39-9B13-454B992FE55F}.png" src="https://notes.sarangwandile.xyz/lib/media/{26bc9ca5-9bb0-4d39-9b13-454b992fe55f}.png"><br><br><img alt="launching-ec2-instance-button.png" src="https://notes.sarangwandile.xyz/lib/media/launching-ec2-instance-button.png"><br>
+<br>Launch ec2 instance
+<br>I gave name of ec2 instance db-test
+<br>Selected Amazon linux free tier 
+<br>and added security group for 3306 port<br>
+[make sure to have same security group for both ec2 and rds]
+<br>Clicked on create instance
+<br>Log into instance
+<br><br>
+<br>After login to ec2 install mariadb client
+<br>yum install mariadb105
+<br>
+<br>Login to endpoint of RDS we just created
+<br>mysql -h &lt;hostname&gt; -u &lt;user&gt; -p
+mysql -h database-1.czsumoyo8fx5.us-west-2.rds.amazonaws.com -u admin -p
+<br>Input the password and congrats you just logged into your fresh sql database.<br><img alt="mariadb-installed-success.png" src="https://notes.sarangwandile.xyz/lib/media/mariadb-installed-success.png"><br><br><a rel="noopener nofollow" class="external-link" href="https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql" target="_blank">https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql</a><br><br>CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+grant create, alter, drop, insert, update, delete, select on demo.persons to 'sammy'@'localhost';
+grant select on demo.* to 'sammy'@'localhost';           
+show grants for 'sammy'@'localhost';
+
+<br><br>Install tomcat, git, maven<br><br>Install this specific version from source<br>curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip
+unzip apache-tomcat-9.0.97.zip
+yum install java-17 -y 
+cd apache-tomcat-9.0.97/bin/
+bash ./catalina.sh start 
+
+<br>hit the instance ip:8080 / curl the ip<br>
+You should see tomcat webpage<br>
+<img alt="{BF5D483E-E314-42B8-A790-36EC904C637B}.png" src="https://notes.sarangwandile.xyz/lib/media/{bf5d483e-e314-42b8-a790-36ec904c637b}.png"><br><br>sudo yum install git -y
+<br><br>sudo yum install maven -y
+<br><br>git clone https://github.com/Pritam-Khergade/student-ui
+<br>build application<br>cd student-ui
+mvn clean package
+<br>this must have created .war file in target folder<br>
+rename it to suitable short name and move to apache-tomcat's webapps directory<br>mv target/studentapp-2.2-SNAPSHOT.war target/studentapp.war
+mv target/studentapp.war ../apache-tomcat-9.0.97/webapps/
+<br>hit the instance ip:8080/studentapp<br>
+<img alt="{17627F7C-22F9-448B-B926-BE826D130D98}.png" src="https://notes.sarangwandile.xyz/lib/media/{17627f7c-22f9-448b-b926-be826d130d98}.png"><br>Upon filling the form if you get this<br>
+<img alt="{9A94ABEB-EA83-48BB-A58B-36203206528C}.png" src="https://notes.sarangwandile.xyz/lib/media/{9a94abeb-ea83-48bb-a58b-36203206528c}.png"><br>
+It means you have not connected RDS with this webapp<br>
+lets do this<br><br>mysql -h database-1.czsumoyo8fx5.us-west-2.rds.amazonaws.com -u admin -p
+<br><br>CREATE DATABASE studentapp;
+use studentapp;
+CREATE TABLE if not exists students(student_id INT NOT NULL AUTO_INCREMENT,
+	student_name VARCHAR(100) NOT NULL,
+    student_addr VARCHAR(100) NOT NULL,
+	student_age VARCHAR(3) NOT NULL,
+	student_qual VARCHAR(20) NOT NULL,
+	student_percent VARCHAR(10) NOT NULL,
+	student_year_passed VARCHAR(10) NOT NULL,
+	PRIMARY KEY (student_id)
+);
+<br>show database;
+use studentapp;
+show tables;
+desc students;
+<br><img alt="{E35F872A-AB74-43BC-BACD-DE202683E43E}.png" src="https://notes.sarangwandile.xyz/lib/media/{e35f872a-ab74-43bc-bacd-de202683e43e}.png"><br>Ir should look like this<br>
+<img alt="{5ABCCE77-EF84-4615-957E-4DD5E23E430E}.png" src="https://notes.sarangwandile.xyz/lib/media/{5abcce77-ef84-4615-957e-4dd5e23e430e}.png"><br><br>goto conf folder in apache-tomcat source folder<br>cd ../conf
+#and edit context.xml file
+vi context.xml
+<br>and paste this code between &lt;context&gt;&lt;/context&gt; block<br>&lt;Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
+           maxTotal="500" maxIdle="30" maxWaitMillis="1000"
+           username="admin" password="Passw0rd123" driverClassName="com.mysql.jdbc.Driver"
+           url="jdbc:mysql://database-1.czsumoyo8fx5.us-west-2.rds.amazonaws.com:3306/studentapp?useUnicode=yes&amp;amp;characterEncoding=utf8"/&gt;
+<br>make sure to edit username and password values with your own and url to your hostaname of database<br><br>copy this url - <a rel="noopener nofollow" class="external-link" href="https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar" target="_blank">https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar</a><br>Place the mysql connector library (mysql-connector.jar) into /lib folder of apache-tomcat directory by using curl or wget<br>cd ../lib
+curl -O https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
+<br>now that library file is placed into its correct location lets restart catalina<br>
+but first navigate back to bin directory where catalina.sh binary is located<br>cd ../bin
+bash catalina.sh stop
+bash catalina.sh start
+<br>Now navigate to browser with this url<br>
+ec2-instance-ip:8080/studentapp<br>now registration data should be able to passed into database<br>After the filling the registration form login to mysql database and check if the data is present in the table now.<br>mysql -h &lt;rds endpoint&gt; -u admin -p
+show databases;
+use studentapp;
+show tables;
+select * from students;
+]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html</link><guid isPermaLink="false">AWS/Tasks Done/🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/rds-logos-database-selections.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[🤔 Task 1 - Implement autoscaling on memory utilization]]></title><description><![CDATA[ 
+ <br><br>Implement autoscaling on memory utilization trigger notification each time instance scale up and scale down with sns<br>Implementing Autoscaling on Memory Utilization with SNS Notifications<br>
+Understanding the Components:<br>
+<br>AWS Auto Scaling Group (ASG): Manages a group of EC2 instances, automatically scaling them up or down based on predefined policies.
+<br>Amazon CloudWatch: Monitors various metrics, including memory utilization, from your EC2 instances.
+<br>Amazon SNS: A messaging service to send notifications to subscribed endpoints (e.g., email, SMS, or other AWS services).
+<br><br>
+<br>Navigate to the SNS console.
+<br>Create a new topic.
+<br>Give it a descriptive name (e.g., "AutoScalingNotifications").
+<br><img alt="autoscaling-notifications-created.png" src="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png"><br><br>
+<br>Navigate to the EC2 console and select "Auto Scaling Groups".
+<br>Create a new Auto Scaling group with the desired configuration:
+
+<br>Launch Configuration: Specify the AMI, instance type, security groups, etc.
+<br>Scaling Policies:
+
+<br>Scaling Adjustment Policy: Define the scaling adjustment (e.g., add or remove instances) based on specific conditions.
+<br>Target Tracking Scaling Policy: Set a target value for a specific metric (e.g., memory utilization) and let the ASG automatically adjust the number of instances to maintain that target.
+
+
+
+
+<br><img alt="launch-template-creation-snsautoscalinggroup123.png" src="https://notes.sarangwandile.xyz/lib/media/launch-template-creation-snsautoscalinggroup123.png"><br>Created Launch Template with this User data<br>#!/bin/bash
+yum install nginx unzip -y
+systemctl enable --now nginx
+curl -O [https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip](https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip)
+unzip oxer.zip
+rm oxer.zip
+mv oxer* /usr/share/nginx/html
+systemctl restart nginx
+<br><img alt="autoscale-group-size.png" src="https://notes.sarangwandile.xyz/lib/media/autoscale-group-size.png"><br>enable sns notification and select previously created sns topic<br>
+<img alt="add-notification-in-auto-scaling-groups.png" src="https://notes.sarangwandile.xyz/lib/media/add-notification-in-auto-scaling-groups.png"><br><img alt="choose-lauch-template-review.png" src="https://notes.sarangwandile.xyz/lib/media/choose-lauch-template-review.png"><br><br>
+<br>Navigate to the CloudWatch console.
+<br>Create an alarm for the "MemoryUtilization" metric:
+
+<br>Metric Name: MemoryUtilization
+<br>Namespace: AWS/EC2
+<br>Statistic: Average
+<br>Period: 5 Minutes (or as needed)
+<br>Threshold: Set the desired threshold (e.g., 80%)
+<br>Comparison Operator: Greater Than or Equal To
+<br>Alarm Actions: Select the SNS topic created in step 1.
+
+
+<br>Associate the Alarm with the Auto Scaling Group:
+
+<br>In the Auto Scaling group settings, under "Notifications," add the CloudWatch alarm created in step 3.
+
+
+<br>Create Alarm<br>
+<img alt="create-alarms-cloudwatch.png" src="https://notes.sarangwandile.xyz/lib/media/create-alarms-cloudwatch.png"><br>select memory utilization metric<br>
+<img alt="select-metric-cpu-utilization.png" src="https://notes.sarangwandile.xyz/lib/media/select-metric-cpu-utilization.png"><br><img alt="select-matric.png" src="https://notes.sarangwandile.xyz/lib/media/select-matric.png">]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/🤔-task-1-implement-autoscaling-on-memory-utilization.html</link><guid isPermaLink="false">AWS/Tasks Done/🤔 Task 1 - Implement autoscaling on memory utilization.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/autoscaling-notifications-created.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Create notification for s3 bucket activity happen of put and delete]]></title><description><![CDATA[ 
+ <br><br>Whenever a new object is added or deleted in s3 bucket you will get notification via email<br><br><img alt="Create-bucket.png" src="https://notes.sarangwandile.xyz/lib/media/create-bucket.png"><br><br><img alt="create-topic.png" src="https://notes.sarangwandile.xyz/lib/media/create-topic.png"><br>
+Create an topic &gt; go to access policy and add a policy<br>&nbsp;<br>
+<img alt="sns-create-topic-access-policy.png" src="https://notes.sarangwandile.xyz/lib/media/sns-create-topic-access-policy.png"><br>Click on Advanced and Paste this code.<br>{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "SNS:Publish",
+      "Resource": "arn:aws:sns:us-west-2:970547378605:sns-s3-topic123",
+      "Condition": {
+        "ArnLike": {
+          "aws:SourceArn": "arn:aws:s3:::snsbucket123testing"
+        }
+      }
+    }
+  ]
+}
+<br>Tip
+In above JSON code edit "Resource"  block to replace the ARN id according to your sns topic's Arn id and aws:SourceArn to your S3 bucket's ARN id.<br>
+or in last two fields just change your AWS account id and topic name<br>
+"Resource": "arn:aws:sns:ap-south-1:&lt;your-aws-account-id&gt;:&lt;sns-topic-name&gt;"<br>
+"aws:SourceArn": "arn:aws:s3:::&lt;s3-bucket-name&gt;"
+<br><br>   After Topic is created Create Subscription to get notifications <br><img alt="sns-create-subscription.png" src="https://notes.sarangwandile.xyz/lib/media/sns-create-subscription.png"><br>
+Set:<br>
+<br>Topic ARN: Your previously created Topic's ARN ID
+<br>Protocol: Email<br>
+- Endpoint: Your Gmail address<br>
+Click on create subscription button
+<br>After your subscription is created, you'll get a mail to confirm it.<br><img alt="email-subscription-confirmation.png" src="https://notes.sarangwandile.xyz/lib/media/email-subscription-confirmation.png"><br>
+Goto your mail and click on Confirm Subscription link.<br>
+<img alt="sns-subscription-mail.png" src="https://notes.sarangwandile.xyz/lib/media/sns-subscription-mail.png"><br><br>Now go to your buckets<br>
+<br>
+Select Your Bucket:
+
+<br>
+Choose the bucket for which you want to set up notifications.
+
+<br>
+Go to the Properties tab.<br>
+<img alt="snsbucket123testing-overview.png" src="https://notes.sarangwandile.xyz/lib/media/snsbucket123testing-overview.png">
+
+<br>
+Scroll down to Event notifications and click Create event notification.<br>
+<img alt="creating-snsbucket123testing-event-notification.png" src="https://notes.sarangwandile.xyz/lib/media/creating-snsbucket123testing-event-notification.png">
+
+<br>
+Click on Create event notification 
+
+<br>
+Event name: put_and_delete_event
+
+<br>
+Event types: 
+
+<br>Select put checkbox
+<br>Permanently Deleted checkbox<br>
+<img alt="Pasted image 20241201210604.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241201210604.png">
+
+
+<br>
+Scroll down u will see Destination Option 
+
+<br>select SNS topic 
+<br>choose your previously created SNS Topic 
+<br>Click on Save changes<br>
+<img alt="selecting-sns-topic-s3-bucket.png" src="https://notes.sarangwandile.xyz/lib/media/selecting-sns-topic-s3-bucket.png"><br>
+Try adding new files in bucket you should get notification in your mail.<br>
+<img alt="uploading-files-s3-bucket.png" src="https://notes.sarangwandile.xyz/lib/media/uploading-files-s3-bucket.png">
+
+
+<br><img alt="sns-topic-email-notification.png" src="https://notes.sarangwandile.xyz/lib/media/sns-topic-email-notification.png">]]></description><link>https://notes.sarangwandile.xyz/aws/tasks-done/create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html</link><guid isPermaLink="false">AWS/Tasks Done/Create notification for s3 bucket activity happen of put and delete.md</guid><pubDate>Thu, 19 Dec 2024 16:34:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/create-bucket.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/create-bucket.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[✅ Tasks To Do]]></title><description><![CDATA[ 
  <br>Practical Tasks to perform<br>✅ = finished<br>
 ☑️ = done but not satisfied<br><br><br><br><br>]]></description><link>https://notes.sarangwandile.xyz/aws/✅-tasks-to-do.html</link><guid isPermaLink="false">AWS/✅ Tasks To Do.md</guid><pubDate>Sun, 29 Dec 2024 14:47:03 GMT</pubDate></item><item><title><![CDATA[🗒️ Tasks to Read]]></title><description><![CDATA[ 
  <br>📄 Tasks to read<br>
@@ -1454,7 +2003,9 @@ select * from students;
 <br>nehra classes
 <br>gaurav sharma
 <br>abhishek veermalla
-]]></description><link>https://notes.sarangwandile.xyz/aws/🗒️-tasks-to-read.html</link><guid isPermaLink="false">AWS/🗒️ Tasks to Read.md</guid><pubDate>Sun, 29 Dec 2024 14:45:40 GMT</pubDate></item><item><title><![CDATA[2024-11-18]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/aws/🗒️-tasks-to-read.html</link><guid isPermaLink="false">AWS/🗒️ Tasks to Read.md</guid><pubDate>Sun, 29 Dec 2024 14:45:40 GMT</pubDate></item><item><title><![CDATA[🤿 Tasks To Do]]></title><description><![CDATA[ 
+ <br>Practical Tasks to perform<br>✅ = finished<br>
+☑️ = done but not satisfied<br><br>Week's Assignment<br><br>Ongoing Task<br>]]></description><link>https://notes.sarangwandile.xyz/aws/🤿-tasks-to-do.html</link><guid isPermaLink="false">AWS/🤿 Tasks To Do.md</guid><pubDate>Sat, 28 Dec 2024 13:27:34 GMT</pubDate></item><item><title><![CDATA[2024-11-18]]></title><description><![CDATA[ 
  <br>EC2  <br>
 <br>instances
 <br>security groups
@@ -2049,7 +2600,7 @@ mvn clean package<br>Info
 first install java before maven because<br>
 maven will install java latest version which might conflict with required versions
 <br>cd target<br>code<br>
-artifact application<br> mv studentapp-2.2-SNAPSHOT.war studentapp.war<br> mv studentapp.war ../../apache-tomcat-9.0.97/webapps/.<br>cd ../../apache-tomcat-9.0.97/webapps/<br>.war file will get extracted automatically into student app<br>check ip:8080/studentapp<br><img alt="student-app-final-page.png" src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"><br>continue to <a data-href="2024-12-02" href="https://notes.sarangwandile.xyz/daily-notes/2024-12-02.html" class="internal-link" target="_self" rel="noopener nofollow">2024-12-02</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-11-30.html</link><guid isPermaLink="false">Daily Notes/2024-11-30.md</guid><pubDate>Mon, 30 Dec 2024 16:00:30 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-02]]></title><description><![CDATA[ 
+artifact application<br> mv studentapp-2.2-SNAPSHOT.war studentapp.war<br> mv studentapp.war ../../apache-tomcat-9.0.97/webapps/.<br>cd ../../apache-tomcat-9.0.97/webapps/<br>.war file will get extracted automatically into student app<br>check ip:8080/studentapp<br><img alt="student-app-final-page.png" src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"><br>continue to <a data-href="2024-12-02" href="https://notes.sarangwandile.xyz/daily-notes/2024-12-02.html" class="internal-link" target="_self" rel="noopener nofollow">2024-12-02</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-11-30.html</link><guid isPermaLink="false">Daily Notes/2024-11-30.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/student-app-final-page.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-02]]></title><description><![CDATA[ 
  <br>continued from <a data-href="2024-11-30" href="https://notes.sarangwandile.xyz/daily-notes/2024-11-30.html" class="internal-link" target="_self" rel="noopener nofollow">2024-11-30</a><br>create database<br>
 copy whole command<br>show database;<br>use studentapp;<br>show tables;<br><br>cd apache-tomcat/conf<br>
 vi context.xml<br>edit jdbc connector <br>&lt;Resource Name ... &gt;
@@ -2166,7 +2717,7 @@ bash ./catalina.sh start
 Agile<br>
 waterfall]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-17.html</link><guid isPermaLink="false">Daily Notes/2024-12-17.md</guid><pubDate>Thu, 19 Dec 2024 16:34:28 GMT</pubDate></item><item><title><![CDATA[2024-12-18]]></title><description><![CDATA[ 
  <br>Git Theory Explained]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-18.html</link><guid isPermaLink="false">Daily Notes/2024-12-18.md</guid><pubDate>Thu, 19 Dec 2024 16:34:28 GMT</pubDate></item><item><title><![CDATA[2024-12-19 Git Class]]></title><description><![CDATA[ 
- <br>DVCS vs CVS -- further expanded in <a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/for-reading/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a><br><br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>
+ <br>DVCS vs CVS -- further expanded in <a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a><br><br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>
 <br>installing git
 <br>signup to github.com
 <br><br><br>
@@ -2201,14 +2752,14 @@ Before Learning about docker it is crucial to know about containers and even bef
 <br>Single unified application
 <br><br>
 <br>one app divided in chunks
-<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://d1b8b7ac-fafb-4035-9519-dc7cfd89b9df" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
+<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://2f8fd54b-da01-44b5-b978-931b65d5fd85" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
 <br>its like small virtual machines
 <br>containers are free to use all the rams they needs
 <br>whereas in vms softwares has limited prealloted ram to use
 <br><br>
 <br><a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/" target="_blank">https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/</a>
 <br><a rel="noopener nofollow" class="external-link" href="https://adventofdocker.com" target="_blank">https://adventofdocker.com</a>
-]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-23-docker-day.html</link><guid isPermaLink="false">Daily Notes/2024-12-23 docker-day.md</guid><pubDate>Wed, 25 Dec 2024 13:33:38 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-24 docker basics]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-23-docker-day.html</link><guid isPermaLink="false">Daily Notes/2024-12-23 docker-day.md</guid><pubDate>Wed, 25 Dec 2024 13:33:38 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-24]]></title><description><![CDATA[ 
  <br><img alt="Pasted image 20241224092817.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"><br>
 docker client ---&gt; docker commands<br>
 docker machine ---&gt; docker host<br>ubuntu package name docker.i<br>in amazon-linux<br>
@@ -2220,7 +2771,20 @@ ps list running containers<br>
 -a list all containers stopped and running<br>
 rm remove stopped containers<br>
 kill kill the containers<br>
--P expose container on random host port ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-24-docker-basics.html</link><guid isPermaLink="false">Daily Notes/2024-12-24 docker basics.md</guid><pubDate>Tue, 24 Dec 2024 04:29:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-30]]></title><description><![CDATA[ 
+-P expose container on random host port ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-24.html</link><guid isPermaLink="false">Daily Notes/2024-12-24.md</guid><pubDate>Tue, 24 Dec 2024 04:29:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-24 docker basics]]></title><description><![CDATA[ 
+ <br><img alt="Pasted image 20241224092817.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"><br>
+docker client ---&gt; docker commands<br>
+docker machine ---&gt; docker host<br>ubuntu package name docker.i<br>in amazon-linux<br>
+yum install docker -y<br>enable daemon<br>
+systemctl enable --now docker<br>docker pull nginx<br>Tip
+Images can also be pulled from SHA Id.
+<br>docker run nginx<br>-d detached mode<br>
+ps list running containers<br>
+-a list all containers stopped and running<br>
+rm remove stopped containers<br>
+kill kill the containers<br>
+-P expose container on random host port ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-24-docker-basics.html</link><guid isPermaLink="false">Daily Notes/2024-12-24 docker basics.md</guid><pubDate>Tue, 24 Dec 2024 04:29:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241224092817.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-29]]></title><description><![CDATA[ 
+ ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-29.html</link><guid isPermaLink="false">Daily Notes/2024-12-29.md</guid><pubDate>Sun, 29 Dec 2024 16:03:37 GMT</pubDate></item><item><title><![CDATA[2024-12-30]]></title><description><![CDATA[ 
  <br>Task 1: <a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a><br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a><br>persistence storage<br>
 docker volume<br>
 docker volume ls<br>creating docker volume<br>
@@ -2230,7 +2794,197 @@ cd /var/lib/docker/<br>all systemd service files lies in<br>
 /etc/docker<br>socket file<br>
 /var/run/docker.sock<br>docker run -d -P -v dev:/usr/share/nginx/html nginx<br>Tommorow<br>
 dockerfile<br>
-network]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-30.html</link><guid isPermaLink="false">Daily Notes/2024-12-30.md</guid><pubDate>Mon, 30 Dec 2024 14:59:04 GMT</pubDate></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+network]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-30.html</link><guid isPermaLink="false">Daily Notes/2024-12-30.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Dockerfile Explained]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Step by step instructions to build Image
+<br>Blueprint of a container
+<br>Written in go
+<br>Has Instructions
+<br>Some Basic Instructions are:<br><br>There are two ways to run command in container.<br>
+<br>
+Using CMD instruction
+
+<br>
+Using Entrypoint
+
+<br>
+CMD
+
+<br>
+<br>Purpose: Defines the default command to execute when the container starts.
+<br>Flexibility: Easily overridden by using the docker run command with a different command.
+<br>Example: CMD ["python", "app.py"]
+<br>ENTRYPOINT<br>
+<br>Purpose: Configures the container to run as an executable. It sets the main command that always executes.
+<br>Less Flexible: While arguments can be appended, the core command defined by ENTRYPOINT remains.
+<br>Example: ENTRYPOINT ["/usr/bin/nginx"]
+<br>Key Differences and Use Cases<br><br>Entrypoint file can be single command or shell script.<br>
+Simple example of entrypoint script is this:<br>
+Entrypoint.sh<br>#!/bin/bash
+
+# Check if a configuration file exists
+if [ ! -f /app/config.yml ]; then
+  echo "Error: config.yml not found!"
+  exit 1
+fi
+
+# Start the application
+exec python /app/app.py
+<br>In your Dockerfile, you would use:<br>Dockerfile<br>COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+<br>Example of Dockerfile using command for entrypoint<br>
+Dockerfile<br>FROM ubuntu:latest
+
+# Install Apache
+RUN apt-get update &amp;&amp; apt-get install -y apache2
+
+# Set the entrypoint to the Apache server
+ENTRYPOINT ["apache2ctl"]
+
+# Default command to start Apache in the foreground
+CMD ["-D", "FOREGROUND"] 
+<br>In this example, ENTRYPOINT ["apache2ctl"] configures the container to run the Apache web server as its main process. When you start a container from this image, it will always execute apache2ctl.<br><br><br>
+<br>Follow on <a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-31-dockerfile-explained.html</link><guid isPermaLink="false">Daily Notes/2024-12-31 Dockerfile Explained.md</guid><pubDate>Tue, 31 Dec 2024 17:36:38 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Get the docker image of Amazon linux 
+<br>Add tomcat package  
+<br>Add student ui 
+<br>Then commit the image 
+<br>Store on ecr as well as on docker hub
+<br><br>Step 1: Getting the the Amazon Linux Image<br>
+Upon searching the for amazonlinux image in <a data-tooltip-position="top" aria-label="https://hub.docker.com" rel="noopener nofollow" class="external-link" href="https://hub.docker.com" target="_blank">dockerhub</a> I found its official image<br>
+I pulled it into the system with docker pull amazonlinux<br>sudo docker run -it -d -p 32768:8080 --name tomcat-student-ui amazonlinux`
+<br>and I run the image interactively and in detached mode so i can execute shell command later on<br><img alt="{1CC503E6-0A58-42E5-93CF-64946C7AA1EF}.png" src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"><br>Lets dive into the container <br>sudo docker exec -it &lt;containerid&gt; &lt;shell-command&gt;`
+<br><img alt="{0119C4A3-2DE3-4CB0-9692-E63934BF4F5C}.png" src="https://notes.sarangwandile.xyz/lib/media/{0119c4a3-2de3-4cb0-9692-e63934bf4f5c}.png"><br><br>Our App student-ui required specific version of tomcat thats why we gonna install it from source<br>Make sure to install dependancies and unzip package before hand<br><br>Install this specific version from source<br>cd /opt # we can use this directory for temporary space
+curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.zip
+unzip apache-tomcat-9.0.98.zip # unzip the archive
+yum install java-17 -y # tomcat 9 requires java-17 to work properly
+cd apache-tomcat-9.0.98/bin/
+bash ./catalina.sh start 
+<br><img alt="{9BD47135-6F08-466A-A3C7-A11FC17A759D}.png" src="https://notes.sarangwandile.xyz/lib/media/{9bd47135-6f08-466a-a3c7-a11fc17a759d}.png"><br><img alt="{40C024BF-0490-4CFC-9507-9363489D25BD}.png" src="https://notes.sarangwandile.xyz/lib/media/{40c024bf-0490-4cfc-9507-9363489d25bd}.png"><br>It looks like our tomcat server is up and running on desired port<br><br>but first we need these package building tools git and maven for building our student-ui app<br><br>sudo yum install git maven -y
+<br><br>git clone https://github.com/Pritam-Khergade/student-ui
+<br><br>cd student-ui
+mvn clean package
+<br><img alt="{8E723B0C-8E54-4F56-94BC-F7D231F3287A}.png" src="https://notes.sarangwandile.xyz/lib/media/{8e723b0c-8e54-4f56-94bc-f7d231f3287a}.png"><br>
+this creates .war file in ./target folder<br>
+rename it to suitable short name and move to /opt/apache-tomcat-9.0.98/webapps directory<br>mv target/studentapp-2.2-SNAPSHOT.war target/studentapp.war
+mv target/studentapp.war /opt/apache-tomcat-9.0.97/webapps/
+<br>and the app should be accessible on tomcat server on http://instance-ip:32768/studentapp<br><img alt="{0DFF6CA3-CC34-4310-933F-F66D3256551D}.png" src="https://notes.sarangwandile.xyz/lib/media/{0dff6ca3-cc34-4310-933f-f66d3256551d}.png"><br><br>Before creating the image its better to remove the unnecessary packages that we no longer need to make the size of the image minimal as possible.<br><br>yum remove maven git unzip -y
+<br>Lets exit from container shell and build the image <br>sudo docker commit &lt;container-id&gt;
+<br><img alt="{A2D16CE6-81BA-4DAF-A151-58EA34744A1B}.png" src="https://notes.sarangwandile.xyz/lib/media/{a2d16ce6-81ba-4daf-a151-58ea34744a1b}.png"><br>You see the created image doesnt have any name so lets give it a tag<br>sudo docker tag &lt;image-id&gt; &lt;newtag&gt;
+<br><img alt="{A6DFB555-CE8C-404D-AE0E-0E5BE4AECD43}.png" src="https://notes.sarangwandile.xyz/lib/media/{a6dfb555-ce8c-404d-ae0e-0e5be4aecd43}.png"><br>
+now push it to docker hub and ECR<br><br><br>
+<br>Login to docker hub
+<br>Click on repositories
+<br>Create new repository
+<br>Give it proper name and click create
+<br>Here is my repo looks llike<br><img alt="{8E536B96-794C-49C6-B49F-257C6FEE2E9E}.png" src="https://notes.sarangwandile.xyz/lib/media/{8e536b96-794c-49c6-b49f-257c6fee2e9e}.png"><br>Lets push our image into this repo<br>
+First rename add new tag to image appropriate according to docker hub repo name<br>sudo docker tag &lt;old-tag-name&gt; &lt;newtag-name&gt;
+<br><img alt="{62B7DAF9-7C95-4E53-BEB1-28F215445939}.png" src="https://notes.sarangwandile.xyz/lib/media/{62b7daf9-7c95-4e53-beb1-28f215445939}.png"><br>and now push it to docker hub<br>sudo docker push archsarangx/tomcat-student-ui:latest
+<br><img alt="{3386541C-1516-4A09-9493-93A52B3FF2E0}.png" src="https://notes.sarangwandile.xyz/lib/media/{3386541c-1516-4a09-9493-93a52b3ff2e0}.png"><br>and its successfully uploaded on docker hub at<br>
+<img alt="{034DA07E-A936-4284-9683-BF0300BC5EB4}.png" src="https://notes.sarangwandile.xyz/lib/media/{034da07e-a936-4284-9683-bf0300bc5eb4}.png"><br>
+and anyone can pull it with<br>docker pull archsarangx/tomcat-student-ui:latest
+<br><br><br>
+<br>goto amazon ECR service and create repositoy
+<br><img alt="Pasted image 20241228180114.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241228180114.png"><br>then click on blue repo name and click on view push commands<br><br>aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 970547378605.dkr.ecr.us-west-2.amazonaws.com
+<br><br>``<br>docker tag archsarangx/tomcat-student-ui:latest 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
+<br>docker push 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
+<br><img alt="{8230C2A4-4835-4E3A-9500-E4C8B9187FB3}.png" src="https://notes.sarangwandile.xyz/lib/media/{8230c2a4-4835-4e3a-9500-e4c8b9187fb3}.png"><br><img alt="{E9698F18-9E9B-4973-9E1A-3E629727DA11}.png" src="https://notes.sarangwandile.xyz/lib/media/{e9698f18-9e9b-4973-9e1a-3e629727da11}.png"><br>
+🎉 And our Image is successfully uploaded on both ECR and docker hub.<br><br>Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/dockertasks/task-1-creating-tomcat-student-ui-container.html</link><guid isPermaLink="false">DevOps/DockerTasks/Task 1 Creating Tomcat student-ui container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:56 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 2: Create the Free-css template container]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>get the docker image of Amazon linux 
+<br>install nginx 
+<br>add free-css template
+<br><br><br>
+<br>
+Goto docker hub --&gt; <a rel="noopener nofollow" class="external-link" href="https://hub.docker.com" target="_blank">https://hub.docker.com</a>
+
+<br>
+Click on Search and search for ---&gt; amazonlinux
+
+<br>
+Here I found this official image<br>
+<img alt="{BACB7514-FD34-4BC8-9CB6-0314BF45113F}.png" src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png">
+
+<br>
+I simply pulled the image into my ec2 instance<br>
+docker pull amazonlinux
+here is successful pull looks like
+<img alt="{BD7598CF-AF45-41FB-82E8-A7E26163D176}.png" src="https://notes.sarangwandile.xyz/lib/media/{bd7598cf-af45-41fb-82e8-a7e26163d176}.png">
+
+<br>
+We can further confirm if the image is really present in the system with docker images
+<img alt="Pasted image 20241227205640.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227205640.png"><br>
+Looks like amazonlinux is successfully pulled in our system<br>
+lets start the container using this image
+
+<br>
+Running the container from image<br>
+sudo docker run -d -p 32768:80 --name free-css-template amazonlinux
+We used -d to run the container in detached mode meaning its output wont occupy the terminal screen and quietly run in the background after running this command it will simply give us container-id and gives us prompt.<br>
+--name flag will assign the name for our container instead of their random funny names and with -p we are forwarding the network traffic of port 80 of the container to 32768 port of our host machine in this case ec2-instance.<br>
+<img alt="{5005E6A5-9A5C-44EE-B8B4-37364CD7D1E2}.png" src="https://notes.sarangwandile.xyz/lib/media/{5005e6a5-9a5c-44ee-b8b4-37364cd7d1e2}.png">
+We can check for the further detail of the container with<br>
+docker ps<br>
+Upon inspection we can see there is no container running<br>
+lets check again with docker ps -a and for our surprise container is exited just after it run. Thats because its an Operating system container which doesnt really do anything itself unless we assign it a task or a process that will run in background constantly so we can enter into the container to perform our tasks.
+We can achieve this by running the container interactively
+but first clean up the exited container with docker rm &lt;container-id&gt;
+
+<br><br>
+<br>Run a container interactively.
+<br>docker run -it -d -p 32768:80 --name free-css-template amazonlinux
+<br>   I run the container with -it and -d so it opened the interactive stdin shell session for me to interact with it and the container itself is in detached mode allowing us to enter into it anytime with exec command<br>docker exec -it &lt;container-id&gt; &lt;shell-command&gt;
+<br><img alt="{8DD627B8-39AA-4F0D-8320-CF6DA2D7BB33}.png" src="https://notes.sarangwandile.xyz/lib/media/{8dd627b8-39aa-4f0d-8320-cf6da2d7bb33}.png"><br>we got bash shell session inside container<br>
+Now we need to update the packages inside the container<br><br>yum update
+<br><img alt="{FEF2B4B8-3A70-49CA-B07C-475B398724EC}.png" src="https://notes.sarangwandile.xyz/lib/media/{fef2b4b8-3a70-49ca-b07c-475b398724ec}.png"><br>
+<br>Install nginx package start it
+<br>yum install nginx -y
+<br> since this amazonlinux container image doesn't come with systemd preinstalled we cannot start nginx daemon so we need to run this command manually in background<br>nginx &amp;
+<br>and our nginx server is successfully started at port 32768 on our host ec2-instance<br><img alt="{E0754AEE-5490-497B-AA74-428CD4B239A9}.png" src="https://notes.sarangwandile.xyz/lib/media/{e0754aee-5490-497b-aa74-428cd4b239a9}.png"><br><br>Lets add free css template in it<br>
+Head on to <a rel="noopener nofollow" class="external-link" href="https://www.free-css.com/" target="_blank">https://www.free-css.com/</a> and download any free css template you want by right clicking on the download button and copying link address<br>
+<img alt="{B54DF9F8-AC7B-420B-9EAA-54AE5D0B261F}.png" src="https://notes.sarangwandile.xyz/lib/media/{b54df9f8-ac7b-420b-9eaa-54ae5d0b261f}.png"><br>
+and go to your containers terminal session and download this file in nginx server directory with curl or wget<br>cd /usr/share/nginx/html
+curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/carvilla.zip
+
+# Extract the zip file
+unzip carvilla.zip
+
+# If unzip is not found install unzip package
+sudo yum install unzip
+<br>extracting the zip has extracted all contents into folder named carvilla-v1.0<br>
+I'll rename it for my convenient. <br>mv carvilla-v1.0 mywebsite
+<br>and the website is running at port 32768/mywebsite<br>now we can get out of this container with exit command.<br><img alt="{ADBAE0E2-C52F-4FE1-9DBE-85A5BABFF759}.png" src="https://notes.sarangwandile.xyz/lib/media/{adbae0e2-c52f-4fe1-9dbe-85a5babff759}.png"><br>We have our container successfully hosting our free-css template on port http://instance-ip:32768/mywebsite<br>
+Lets create the image out of this container so we can spin many containers as we want and save the hustle to do all these steps all over again.<br><br>
+<br>Creating the image<br>
+<img alt="{FE045571-00F2-44B6-B1CB-E7F26EE9AE7E}.png" src="https://notes.sarangwandile.xyz/lib/media/{fe045571-00f2-44b6-b1cb-e7f26ee9ae7e}.png"><br>
+Now that we have our container running and our site is visible I want to make image out of it and push it to docker hub 
+<br>for that we use docker commit &lt;container-id&gt;<br>it returns with the sha-id<br>
+<img alt="{83AC20A6-5137-45BC-8761-6AD28799FF56}.png" src="https://notes.sarangwandile.xyz/lib/media/{83ac20a6-5137-45bc-8761-6ad28799ff56}.png"><br>with docker images we can confirm the image creation<br>
+<img alt="{9EE50687-0A6E-4930-966B-D6D50B9E78B7}.png" src="https://notes.sarangwandile.xyz/lib/media/{9ee50687-0a6e-4930-966b-d6d50b9e78b7}.png"><br>our image shown in first row doesnt have name so lets give it a tag and then push it to repo<br>
+docker tag &lt;image-id&gt; &lt;tagname&gt;<br>
+docker tag local-image:tagname new-repo:tagname<br><img alt="Pasted image 20241227225859.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227225859.png"><br>Here I have already created repository in docker hub so I gave its name here<br>and run docker hub login command before running push command<br>
+docker login<br>and push it to our docker hub<br>
+docker push new-repo:tagname<br><img alt="Pasted image 20241227231042.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241227231042.png"><br>And our project is successful pushed over docker hub and can be access from here<br><a rel="noopener nofollow" class="external-link" href="https://hub.docker.com/r/archsarangx/amazonlinux-free-css-demo/tags" target="_blank">https://hub.docker.com/r/archsarangx/amazonlinux-free-css-demo/tags</a><br><br><img alt="{393988AE-E9F0-47A9-A960-5EBE39901FED}.png" src="https://notes.sarangwandile.xyz/lib/media/{393988ae-e9f0-47a9-a960-5ebe39901fed}.png"><br>To store the image into Amazon's Elastic Container Registry which is similar to docker hub but their own we need to create a repository here too.<br>I gave the repo same name<br>
+<img alt="{F7CDF0B9-3C17-4D22-9547-7D65863E4BDE}.png" src="https://notes.sarangwandile.xyz/lib/media/{f7cdf0b9-3c17-4d22-9547-7d65863e4bde}.png"><br>and Upon clicking create button my repo is created<br>
+<img alt="{7B336AAA-A8CB-4F61-823E-072A4025B6A6}.png" src="https://notes.sarangwandile.xyz/lib/media/{7b336aaa-a8cb-4f61-823e-072a4025b6a6}.png"><br>
+Click on the Repo name in blue and click on view push commands to get instruction for pushing our image into this repo<br><img alt="{7CB87CED-E1FD-4698-BCA5-DFC2D6C53B23}.png" src="https://notes.sarangwandile.xyz/lib/media/{7cb87ced-e1fd-4698-bca5-dfc2d6c53b23}.png"><br><br>To push our image we need to first Authenticate with registry for that carefully use first command also we need to have aws-cli installed and configured for that luckily for me I am using amazonlinux ec2 instance so its already installed i can just run aws configure to configure aws-cli<br>
+For those havent can check <a data-tooltip-position="top" aria-label="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html" rel="noopener nofollow" class="external-link" href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html" target="_blank">this documentation</a> to configure their aws-cli within instance.<br><img alt="Pasted image 20241228154309.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20241228154309.png"><br>and then run this command provided in the instructions but remember to add sudo as we are using standard user<br>
+<img alt="{AC6817B4-D44D-4A43-AEFF-16292F4D44D0}.png" src="https://notes.sarangwandile.xyz/lib/media/{ac6817b4-d44d-4a43-aeff-16292f4d44d0}.png"><br>Now that We have successfully login to ECR lets tag the image accordingly and push it to ECR<br>sudo docker tag &lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt; &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;newname&gt;:&lt;newtag&gt;<br><img alt="{19760D25-4AB9-4A59-9757-62575607EF5A}.png" src="https://notes.sarangwandile.xyz/lib/media/{19760d25-4ab9-4a59-9757-62575607ef5a}.png"><br>
+and push to ECR<br>sudo docker push &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt;<br><img alt="{D18E449C-3E7D-4B49-8AC1-75893D2A92F7}.png" src="https://notes.sarangwandile.xyz/lib/media/{d18e449c-3e7d-4b49-8ac1-75893d2a92f7}.png"><br>and refresh the amazon EKS web site to see the latest image listed in there<br>
+<img alt="{48017E2C-FBB3-4AB6-B125-BFEFA58746BE}.png" src="https://notes.sarangwandile.xyz/lib/media/{48017e2c-fbb3-4ab6-b125-bfefa58746be}.png"><br>Thank you for Reading<br>
+Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/dockertasks/task-2-create-the-free-css-template-container.html</link><guid isPermaLink="false">DevOps/DockerTasks/Task 2 Create the Free-css template container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:16 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Create the MYSQL Container]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Host mysql container 
+<br>Use -e ## environment variables
+<br>use MYSQL_USER, MYSQL_PASSWORD
+<br><br><br><br>sudo docker pull mysql
+<br><br>sudo docker run -e MYSQL_USER=sarang -e MYSQL_PASSWORD=mysupersecretpassword -e MYSQL_RANDOM_ROOT_PASSWORD=yes -p 3306:3306 --name mysql_container -v mysql_data:/var/lib/mysql mysql:latest
+<br>Here we used -e flag to specify each environment variables for mysql<br>MYSQL_USER=sarang  This sets the username for our mysql database<br>
+MYSQL_PASSWORD=mysupersecretpassword This sets the password for our database<br>MYSQL_RANDOM_ROOT_PASSWORD=yes    # This tells the mysql to generate a random root password (it can be seen in docker logs)<br>
+-v mysql_data:/var/lib/mysql mysql:latest This flag sets the persistence volume for our container and it mounts /var/lib/mysql directory of the container to the mysql_data directory of our host.]]></description><link>https://notes.sarangwandile.xyz/devops/dockertasks/task-3-create-mysql-container.html</link><guid isPermaLink="false">DevOps/DockerTasks/Task 3 Create Mysql Container.md</guid><pubDate>Sun, 29 Dec 2024 13:49:31 GMT</pubDate></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -2374,7 +3128,7 @@ b4a8af31416b   docker    "docker-entrypoint.s…"   16 minutes ago   Up 16 minut
 <br><a rel="noopener nofollow" class="external-link" href="https://lobster1234.github.io/2019/04/05/docker-socket-file-for-ipc/" target="_blank">https://lobster1234.github.io/2019/04/05/docker-socket-file-for-ipc/</a>
 <br><a rel="noopener nofollow" class="external-link" href="https://stackoverflow.com/questions/35110146/what-is-the-purpose-of-the-file-docker-sock" target="_blank">https://stackoverflow.com/questions/35110146/what-is-the-purpose-of-the-file-docker-sock</a>
 <br><a rel="noopener nofollow" class="external-link" href="https://www.educative.io/answers/var-run-dockersock" target="_blank">https://www.educative.io/answers/var-run-dockersock</a>
-]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html</link><guid isPermaLink="false">DevOps/For Reading/read about docker.sock file.md</guid><pubDate>Mon, 30 Dec 2024 15:51:49 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html</link><guid isPermaLink="false">DevOps/For Reading/read about docker.sock file.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
  <br>Output of Mysql container from <a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a> <br><br>docker inspect &lt;container-id&gt;<br>[
   {
     "Id": "3ce6ffd3357d7d78a4fff68218ea477ef0bcc3a747153cb93143e128bb21e4a3",
@@ -2684,7 +3438,7 @@ b4a8af31416b   docker    "docker-entrypoint.s…"   16 minutes ago   Up 16 minut
 - **SandboxID, SandboxKey:** Information related to the container's network namespace.
 - **Ports:**  Details about the ports that are published to the host.
 - **[Other network settings]:** IP address, MAC address, gateway, and other network-related information.
-<br>If you have a specific question about any of these elements, feel free to ask! I'm here to help you understand your Docker container's configuration.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html</link><guid isPermaLink="false">DevOps/For Reading/Reading Docker Inspect output.md</guid><pubDate>Mon, 30 Dec 2024 15:27:24 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
+<br>If you have a specific question about any of these elements, feel free to ask! I'm here to help you understand your Docker container's configuration.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html</link><guid isPermaLink="false">DevOps/For Reading/Reading Docker Inspect output.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
 Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br>At initial stages of the software development developers usually build software in monolithic way meaning everything that software has to offer is bundle in the single unit but as the development goes on the need to federate the services of the software arises and developers adapt Microservices method to divide software into chunks so all chunks communicate with each other creating illusion of one single software.<br><br>
 <br>Single unified application
@@ -2777,7 +3531,7 @@ which is basically telling git this is a final changes with the special stamp of
 <br>git branch -a   List all available branches
 <br>git checkout -b Create and switch to the new branch
 <br>git checkout    To switch to different branch
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-notes.html</link><guid isPermaLink="false">DevOps/Notes/Git Notes.md</guid><pubDate>Mon, 30 Dec 2024 15:58:08 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-notes.html</link><guid isPermaLink="false">DevOps/Notes/Git Notes.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
 <br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
@@ -2849,7 +3603,7 @@ and anyone can pull it with<br>docker pull archsarangx/tomcat-student-ui:latest
 <br><br>``<br>docker tag archsarangx/tomcat-student-ui:latest 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
 <br>docker push 970547378605.dkr.ecr.us-west-2.amazonaws.com/archsarangx/tomcat-student-ui:latest
 <br><img alt="{8230C2A4-4835-4E3A-9500-E4C8B9187FB3}.png" src="https://notes.sarangwandile.xyz/lib/media/{8230c2a4-4835-4e3a-9500-e4c8b9187fb3}.png"><br><img alt="{E9698F18-9E9B-4973-9E1A-3E629727DA11}.png" src="https://notes.sarangwandile.xyz/lib/media/{e9698f18-9e9b-4973-9e1a-3e629727da11}.png"><br>
-🎉 And our Image is successfully uploaded on both ECR and docker hub.<br><br>Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 1 Creating Tomcat student-ui container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:56 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 2: Create the Free-css template container]]></title><description><![CDATA[ 
+🎉 And our Image is successfully uploaded on both ECR and docker hub.<br><br>Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 1 Creating Tomcat student-ui container.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{1cc503e6-0a58-42e5-93cf-64946c7aa1ef}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 2: Create the Free-css template container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>get the docker image of Amazon linux 
 <br>install nginx 
@@ -2932,7 +3686,7 @@ For those havent can check <a data-tooltip-position="top" aria-label="https://do
 <img alt="{AC6817B4-D44D-4A43-AEFF-16292F4D44D0}.png" src="https://notes.sarangwandile.xyz/lib/media/{ac6817b4-d44d-4a43-aeff-16292f4d44d0}.png"><br>Now that We have successfully login to ECR lets tag the image accordingly and push it to ECR<br>sudo docker tag &lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt; &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;newname&gt;:&lt;newtag&gt;<br><img alt="{19760D25-4AB9-4A59-9757-62575607EF5A}.png" src="https://notes.sarangwandile.xyz/lib/media/{19760d25-4ab9-4a59-9757-62575607ef5a}.png"><br>
 and push to ECR<br>sudo docker push &lt;amazon-account-id&gt;.dkr.ecr.&lt;region&gt;.amazonaws.com/&lt;username&gt;/&lt;repo-name&gt;:&lt;tag-name&gt;<br><img alt="{D18E449C-3E7D-4B49-8AC1-75893D2A92F7}.png" src="https://notes.sarangwandile.xyz/lib/media/{d18e449c-3e7d-4b49-8ac1-75893d2a92f7}.png"><br>and refresh the amazon EKS web site to see the latest image listed in there<br>
 <img alt="{48017E2C-FBB3-4AB6-B125-BFEFA58746BE}.png" src="https://notes.sarangwandile.xyz/lib/media/{48017e2c-fbb3-4ab6-b125-bfefa58746be}.png"><br>Thank you for Reading<br>
-Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 2 Create the Free-css template container.md</guid><pubDate>Sun, 29 Dec 2024 13:47:16 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Create the MYSQL Container]]></title><description><![CDATA[ 
+Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 2 Create the Free-css template container.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{bacb7514-fd34-4bc8-9cb6-0314bf45113f}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Create the MYSQL Container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Host mysql container 
 <br>Use -e ## environment variables
@@ -2941,7 +3695,7 @@ Have a good day!]]></description><link>https://notes.sarangwandile.xyz/devops/ta
 <br><br>sudo docker run -e MYSQL_USER=sarang -e MYSQL_PASSWORD=mysupersecretpassword -e MYSQL_RANDOM_ROOT_PASSWORD=yes -p 3306:3306 --name mysql_container -v mysql_data:/var/lib/mysql mysql:latest
 <br>Here we used -e flag to specify each environment variables for mysql<br>MYSQL_USER=sarang  This sets the username for our mysql database<br>
 MYSQL_PASSWORD=mysupersecretpassword This sets the password for our database<br>MYSQL_RANDOM_ROOT_PASSWORD=yes    # This tells the mysql to generate a random root password (it can be seen in docker logs)<br>
--v mysql_data:/var/lib/mysql mysql:latest This flag sets the persistence volume for our container and it mounts /var/lib/mysql directory of the container to the mysql_data directory of our host.]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 3 Create Mysql Container.md</guid><pubDate>Mon, 30 Dec 2024 15:50:54 GMT</pubDate></item><item><title><![CDATA[Task 4 Create daemon service of tomcat]]></title><description><![CDATA[ 
+-v mysql_data:/var/lib/mysql mysql:latest This flag sets the persistence volume for our container and it mounts /var/lib/mysql directory of the container to the mysql_data directory of our host.]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 3 Create Mysql Container.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Task 4 Create daemon service of tomcat]]></title><description><![CDATA[ 
  <br>The simplest possible script I could make for tomcat is this one<br># make catalina.sh executable
 chmod +x ~/apache-tomcat-9.0.98/bin/catalina.sh 
 
@@ -2988,12 +3742,171 @@ Environment=CATALINA_BASE=/home/ec2-user/apache-tomcat-9.0.98
 Environment='CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'
 Environment='JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'
 
-<br>also for security purposes its recommended to use tomcat service as a dedicated tomcat user<br>after making changes in the file its important to reload systemd daemon with systemctl daemon-reload and restarting the tomat service and check the status.<br>If everything is working and your tomcat page is displaying on port 8080 it means your tomcat service is successfully working.]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 4 Create daemon service of tomcat.md</guid><pubDate>Mon, 30 Dec 2024 15:50:44 GMT</pubDate></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
+<br>also for security purposes its recommended to use tomcat service as a dedicated tomcat user<br>after making changes in the file its important to reload systemd daemon with systemctl daemon-reload and restarting the tomat service and check the status.<br>If everything is working and your tomcat page is displaying on port 8080 it means your tomcat service is successfully working.]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 4 Create daemon service of tomcat.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Task 5 Create dockerfiles]]></title><description><![CDATA[ 
+ <br><br>
+<br>Create a Seperate folder and move to it<br>
+mkdir my_nginx_image &amp;&amp; cd my_nginx_image
+<br>Create a docker file with vi Dockerfile
+<br>FROM nginx:latest
+COPY oxer-html /usr/share/nginx/html/.
+<br>
+<br>Build the Image docker build -t . my_nginx_image
+<br>Run the container docker run -dP my_nginx_image
+<br><br>FROM amazonlinux:latest
+RUN yun update &amp;&amp; yum install nginx
+EXPOSE 80
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+<br><br>FROM amazonlinux:latest
+WORKDIR /opt
+RUN yum update &amp;&amp; yum install java-17 unzip -y
+RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.zip
+RUN unzip apache-tomcat-9.0.98.zip
+RUN chmod +x /opt/apache-tomcat-9.0.98/bin/catalina.sh 
+EXPOSE 8080
+CMD ["/opt/apache-tomcat-9.0.98/bin/catalina.sh", "run"]
+<br><br>
+<br><a data-href="2024-12-31 Dockerfile Explained" href="https://notes.sarangwandile.xyz/daily-notes/2024-12-31-dockerfile-explained.html" class="internal-link" target="_self" rel="noopener nofollow">2024-12-31 Dockerfile Explained</a>
+]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 5 Create dockerfiles.md</guid><pubDate>Tue, 31 Dec 2024 17:35:52 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
+ <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
+Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br>At initial stages of the software development developers usually build software in monolithic way meaning everything that software has to offer is bundle in the single unit but as the development goes on the need to federate the services of the software arises and developers adapt Microservices method to divide software into chunks so all chunks communicate with each other creating illusion of one single software.<br><br>
+<br>Single unified application
+<br><br>
+<br>one app divided in chunks
+<br><br>*Docker is a containerization technology that packages your application in special portable sandboxed format along with its dependencies and system libraries for better compatibility across devices.<br><img alt="Docker-Architecture-diagram_1.excalidraw.svg" src="https://notes.sarangwandile.xyz/lib/media/docker-architecture-diagram_1.excalidraw.svg"><br><br>
+<br>its like small virtual machines
+<br>containers are free to use all the system resources they needs
+<br>whereas in vms softwares has limited preallocated resources to use
+<br><br>#Creating a nginx container
+docker run nginx
+
+# run as detached mode
+docker run -d nginx
+
+# list running containers
+docker ps 
+
+# list all containers
+docker ps -a
+
+# kill running container
+docker kill &lt;container-id&gt;
+
+# expose container on random host port
+docker run -P nginx
+
+# expose container on custom host port
+docker run -d -p 1313:8080 nginx:latest
+
+# Stopping the container
+docker stop &lt;container id&gt;
+
+# removing stopped containers
+docker rm &lt;container id&gt;
+
+<br><br>
+<br><a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/" target="_blank">https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://adventofdocker.com" target="_blank">https://adventofdocker.com</a>
+]]></description><link>https://notes.sarangwandile.xyz/devops/docker-basics.html</link><guid isPermaLink="false">DevOps/Docker Basics.md</guid><pubDate>Wed, 25 Dec 2024 17:29:52 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Docker little bit Advance]]></title><description><![CDATA[ 
+ <br><br><br>Installing docker on amazonlinux and rhel based distros are much easier than installling on ubuntu<br>sudo yum install docker # rhel/amazonlinux/fedora etc
+sudo pacman -S docker   # archlinux based distros
+<br><br>curl -fsSL https://get.docker.com -o get-docker.sh &amp;&amp; sudo sh get-docker.sh`
+<br>Running this script should install following package inside your ubuntu based distro docker-engine, docker.io, containerd, runc.<br>However I still recommend to check <a data-tooltip-position="top" aria-label="https://docs.docker.com/engine/install/ubuntu/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">this official installation guide</a><br><br>systemctl start docker
+systemctl enable docker
+<br>To run docker command its absolutely require to have docker daemon running in background otherwise it wont work so make sure you have docker daemon running.<br><br>docker pull nginx
+<br>This will pull latest version of nginx image from docker hub.<br>
+By default its always going to pull latest tag<br>
+In order to pull specific version you need to mention its tag name like this<br>docker pull nginx:1.23.1
+<br><br>docker run nginx
+<br>This command creates and starts a Docker container running the Nginx web serve. Although By default, Nginx runs on port 80 within the container. This command doesn't map any ports, so you won't be able to access the Nginx server from your host machine to specify port you can use-p flag.<br><br>docker run -p 8080:80 nginx
+<br>Here 8080 is host machine port and 80 is container port<br>docker run -P nginx
+<br>This will map random port for the host machine.<br><br>docker run -d nginx`
+<br>Normally running container will cause container to run in foreground and occupy the terminal screen. So its better choice to use -d to make it run in background.<br><br>docker run --name my-container nginx
+<br>By default docker give funny names to containers. but you can specify your custom name and can use that name instead of 'container-id' in docker commands.<br><br>docker stop &lt;conainer-id&gt;
+<br>Stopped containers and be restarted with start command<br><br>docker rm &lt;container-id&gt;
+<br>Sometimes stopped or exited containers wont have any use and needs to be removed to save space.<br><br>docker ps
+<br>This will list all the running containers only and not exited or stopped ones.<br>To list all containers including exited and stopped ones use ps -a<br>docker ps -a
+<br><br>docker logs &lt;container-id&gt;
+<br>This is important to monitor activities inside of containers.<br><br>docker inspect &lt;container-id&gt;
+<br>This will list all the information of container<br><br>docker commit &lt;container-id&gt; 
+<br>This will come in handy when you done changes inside running container and want to incorporate these changes into your image.<br>$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+&lt;none&gt;       &lt;none&gt;    5c9d3a455e0f   10 seconds ago   214MB
+<br><br>docker tag &lt;image-id&gt; new-name
+<br>Adding tag is like giving Image a name this comes in handy for identifying images.<br>$ sudo docker images
+REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
+custom-nginx   latest    5c9d3a455e0f   47 seconds ago   214MB
+<br><br>docker push &lt;image-id&gt;
+<br>If you have verified docker hub login through docker login command it will automatically push the image to your docker hub repo assuming your docker hub repo has same name as your image tag<br>and same goes to ECR except you need to authenticate through slightly different method:<br>aws ecr get-login-password --region &lt;region-name&gt; | docker login --username AWS --password-stdin &lt;amazon-account-id&gt;.dkr.ecr.&lt;region-name&gt;.amazonaws.com
+]]></description><link>https://notes.sarangwandile.xyz/devops/docker-little-bit-advance.html</link><guid isPermaLink="false">DevOps/Docker little bit Advance.md</guid><pubDate>Sun, 29 Dec 2024 13:04:54 GMT</pubDate></item><item><title><![CDATA[Git Practical]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
+<br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
+<br>or via package manager in linux
+
+<br>for ubuntu apt install git
+<br>for rhel based distros yum install git
+<br>for arch based distros pacman -S git
+
+
+<br><br>
+<br>Create empty folder in local machine
+<br>navigate to it and run git init
+<br>add some files and run git add .
+<br>commit changes `git commit -m "git initialized and new files added"
+<br>Create repository in github and use its link to below step
+<br>Add remote repo git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
+<br>update the remote repo with push git push origin main
+<br><br><br><br>git add . 
+<br>This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.<br>git add -A 
+<br>This command will stage all types of changes across your entire working directory including newfiles, modifications and deletions<br><br>git commit -m "new commit"
+<br>Creates a commit with the specified message. This is the most common way to commit changes.<br>git commit -A "your commit message"
+<br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
+<br>Uploads your local changes to the remote repository.<br>
+After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/git-practical.html</link><guid isPermaLink="false">DevOps/Git Practical.md</guid><pubDate>Sat, 28 Dec 2024 14:32:59 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
+<br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
+<br>or via package manager in linux
+
+<br>for ubuntu apt install git
+<br>for rhel based distros yum install git
+<br>for arch based distros pacman -S git
+
+
+<br><br>
+<br>Create empty folder in local machine
+<br>navigate to it and run git init
+<br>add some files and run git add .
+<br>commit changes `git commit -m "git initialized and new files added"
+<br>Create repository in github and use its link to below step
+<br>Add remote repo git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
+<br>update the remote repo with push git push origin main
+<br><br><br><br>git add . 
+<br>This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.<br>git add -A 
+<br>This command will stage all types of changes across your entire working directory including newfiles, modifications and deletions<br><br>git commit -m "new commit"
+<br>Creates a commit with the specified message. This is the most common way to commit changes.<br>git commit -A "your commit message"
+<br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
+<br>Uploads your local changes to the remote repository.<br>
+After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/git-practical-command.html</link><guid isPermaLink="false">DevOps/Git Practical Command.md</guid><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Git Theory]]></title><description><![CDATA[ 
+ <br><br>A centralized version control system (VCS) uses a single, central repository to store all file versions and their change history. Team members have their own working copies, but all modifications are ultimately committed to this central server. This facilitates collaboration by providing a single source of truth, but it also creates a single point of failure. Examples include <a data-tooltip-position="top" aria-label="https://subversion.apache.org/" rel="noopener nofollow" class="external-link" href="https://subversion.apache.org/" target="_blank">Subversion (SVN)</a> and <a data-tooltip-position="top" aria-label="https://www.nongnu.org/cvs/" rel="noopener nofollow" class="external-link" href="https://www.nongnu.org/cvs/" target="_blank">CVS</a>.<br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>In a Decentralized Version Control System (DVCS), every user has a complete copy of the repository, including its entire history. This eliminates the reliance on a central server, allowing for offline work and greater flexibility. Changes are shared between repositories as needed. Popular examples include <a data-tooltip-position="top" aria-label="https://git-scm.com" rel="noopener nofollow" class="external-link" href="https://git-scm.com" target="_blank">Git</a> and <a data-tooltip-position="top" aria-label="https://www.mercurial-scm.org/" rel="noopener nofollow" class="external-link" href="https://www.mercurial-scm.org/" target="_blank">Mercurial</a>.<br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br>Git is like a super-powered tracking system for your files and the changes you make to them over time. Imagine it as a special folder that remembers every version of your work, allowing you to go back to any previous stage if needed. &nbsp;<br>Here's what makes Git special:<br>
+<br>Keeps a detailed history: Git meticulously records every change you make to your files, who made it, and when. This history helps you understand how your project evolved. &nbsp;
+<br>Branching and merging: Git allows you to create separate branches, like alternate timelines, to experiment with new features or try different ideas without affecting the main project. You can then merge these branches back into the main project when you're ready. &nbsp;
+<br>Collaboration made easy: Git is designed for teamwork. Multiple people can work on the same project simultaneously, and Git helps manage and integrate everyone's contributions smoothly. &nbsp;
+<br>Offline access: You have the entire project history on your computer, so you can work even without an internet connection. &nbsp;
+<br>Popular and widely used: Git is the most popular version control system in the world, used by countless developers and companies. &nbsp;
+<br><br>Git was created by Linus Torvalds, the famous creator of the Linux operating system, in 2005. He needed a better tool to manage the Linux kernel development, as the existing version control systems were not efficient enough for such a large and complex project.<br>Here's a glimpse of Git's history:<br>
+<br>Early Days (2002-2005): Linux kernel development relied on a proprietary DVCS called <a data-tooltip-position="top" aria-label="https://www.bitkeeper.org/" rel="noopener nofollow" class="external-link" href="https://www.bitkeeper.org/" target="_blank">BitKeeper</a>. When its free-of-charge use was revoked, Torvalds decided to create his own version control system, with the goal of being faster, simpler, and more robust.
+<br>Birth of Git (April 2005): Torvalds began work on Git and within a remarkably short period, had a functional system ready to manage the Linux kernel.
+<br>Community Takes Over (July 2005): Junio Hamano took over the maintenance of Git, guiding its development and shaping it into the mature system it is today.
+<br>Widespread Adoption: Git's speed, flexibility, and powerful features quickly gained popularity among developers. It became the preferred choice for open-source projects and eventually spread to commercial software development.
+<br>Today, Git is the most widely used version control system worldwide, powering the development of countless software projects, from small personal projects to massive corporate endeavors.]]></description><link>https://notes.sarangwandile.xyz/devops/git-theory.html</link><guid isPermaLink="false">DevOps/Git Theory.md</guid><pubDate>Sun, 29 Dec 2024 13:28:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://notes.sarangwandile.xyz/linux/top-40-linux-commands.html</link><guid isPermaLink="false">Linux/Top 40 Linux Commands.md</guid><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[Understanding Vim]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br>Vim Modes<br>]]></description><link>https://notes.sarangwandile.xyz/linux/understanding-vim.html</link><guid isPermaLink="false">Linux/Understanding Vim.md</guid><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
-Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps related Notes, assignments and Practical. Feel free to explore.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Warning
-"These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced. "
+Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
+These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
 <br><br><br><br>Tasks to perform
 <a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
 <a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
@@ -3006,13 +3919,13 @@ Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel
 <a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
 <br>Task assigned for Reading
 
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/devops/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/devops/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
 <br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
 <br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
 <br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
 <br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/devops/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
 <br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
 <br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
 <br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
@@ -3021,7 +3934,7 @@ Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel
 <br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
 <br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
 <br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
-<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/Some talks about git in reddit" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
+<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
 <br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
 <br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
 <br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
@@ -3033,15 +3946,16 @@ Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel
 <br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
 <br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
 <br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
+<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
 
 <br>Task assigned for Reading
 
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/devops/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/devops/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/devops/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
 <br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
-<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/for-reading/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
+<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
 <br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
 <br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
 
-]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Mon, 30 Dec 2024 15:24:24 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Tue, 31 Dec 2024 17:33:29 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

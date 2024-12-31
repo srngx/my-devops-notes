@@ -8,12 +8,16 @@ tags: []
 **Author**: Sarang Wandile
 **Github**: [srngx](https://github.com/srngx)
 
-Hello, My name is Sarang, in this place I store my DevOps related Notes, assignments and Practical. Feel free to explore.
+Hello, My name is *Sarang*, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. 
+
+This Place also acts like a **Second brain** kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. 
+
+In this **Digital Garden** you are always welcome to explore and share your notes too if you want or [contribute/give suggestion](https://github.com/srngx/my-devops-notes) anytime.
 
 *These notes are made using [Obsidian App](https://obsidian.md) - A Markdown Notetaking App and Hosted with [Cloudflare page](https://pages.cloudflare.com/).*
 
->[!Warning]
->"These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced. "
+>[!Warning] Links in this website are subject to change.
+>These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
 
 #### Linux
 
@@ -71,12 +75,14 @@ Hello, My name is Sarang, in this place I store my DevOps related Notes, assignm
 | 2024-12-19 | [[2024-12-19 Git Class]]         |
 | 2024-12-23 | [[2024-12-23 docker-day]]        |
 | 2024-12-24 | [[2024-12-24 docker basics]]     |
+| 2024-12-31 | [[2024-12-31 Dockerfile Explained]]                   |
 
 > [!todo]- Tasks to perform
 > - [[Task 1 Creating Tomcat student-ui container]]
 > - [[Task 2 Create the Free-css template container]]
 > - [[Task 3 Create Mysql Container]]
 > - [[Task 4 Create daemon service of tomcat]]
+> - [[Task 5 Create dockerfiles]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
@@ -86,5 +92,6 @@ Hello, My name is Sarang, in this place I store my DevOps related Notes, assignm
 > - [[Git Theory]] 
 > - [[Reading Docker Inspect output]]
 > - [[read about docker.sock file]]
+
 
 
