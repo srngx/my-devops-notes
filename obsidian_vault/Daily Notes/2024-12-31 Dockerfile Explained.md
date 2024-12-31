@@ -8,14 +8,15 @@
 
 Some Basic Instructions are:
 
-| Instructions | Use Case                                                                             |
-| ------------ | ------------------------------------------------------------------------------------ |
-| FROM         | Specifies the base image to start with. example: nginx or ubuntu                     |
-| COPY         | Copies files or directories from your computer into the image.                       |
-| RUN          | Executes commands within the image during the build process                          |
-| ADD          | Similar to `COPY`, but can also extract compressed files and **download from URLs**. |
-| EXPOSE       | Informs Docker that the container listens on a specific network port at runtime.     |
-| CMD          | Specifies the command to run when the container starts.                              |
+| Instructions | Use Case                                                                                 |
+| ------------ | ---------------------------------------------------------------------------------------- |
+| FROM         | Specifies the **base image** to start with. example: nginx or ubuntu                     |
+| COPY         | Copies files or directories **from your computer** into the image.                       |
+| RUN          | **Executes commands** within the image during the build process                          |
+| ADD          | Similar to `COPY`, but can also **extract compressed files** and **download from URLs**. |
+| EXPOSE       | Informs Docker that the container **listens on a specific network port** at runtime.     |
+| CMD          | Specifies the **command to run** when the container starts.                              |
+| ENTRYPOINT   | Main command that always **executes when the container starts**.                         |
 
 There are two ways to run command in container.
 1. Using `CMD` instruction
