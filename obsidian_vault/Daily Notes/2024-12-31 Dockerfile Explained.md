@@ -21,25 +21,23 @@ There are two ways to run command in container.
 1. Using `CMD` instruction
 2. Using **Entrypoint**
 
-1. **`CMD`**
-
+ **`CMD`**
 - **Purpose:** Defines the default command to execute when the container starts.
 - **Flexibility:** Easily overridden by using the `docker run` command with a different command.
 - **Example:** `CMD ["python", "app.py"]`
 
 **`ENTRYPOINT`**
-
 - **Purpose:** Configures the container to run as an executable. It sets the main command that _always_ executes.
 - **Less Flexible:** While arguments can be appended, the core command defined by `ENTRYPOINT` remains.
 - **Example:** `ENTRYPOINT ["/usr/bin/nginx"]`
 
 **Key Differences and Use Cases**
 
-|Feature|`CMD`|`ENTRYPOINT`|
-|---|---|---|
-|**Override Behavior**|Easily overridden by `docker run`|Not easily overridden; arguments can be appended|
-|**Execution**|Runs _after_ `ENTRYPOINT` if both are defined|Runs _first_, effectively becoming the container's primary executable|
-|**Typical Use Cases**|Providing a default command, which can be changed if needed|Setting a fixed executable for the container, like a web server|
+| Feature               | `CMD`                                                       | `ENTRYPOINT`                                                          |
+| --------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Override Behavior** | Easily overridden by `docker run`                           | Not easily overridden; arguments can be appended                      |
+| **Execution**         | Runs _after_ `ENTRYPOINT` if both are defined               | Runs _first_, effectively becoming the container's primary executable |
+| **Typical Use Cases** | Providing a default command, which can be changed if needed | Setting a fixed executable for the container, like a web server       |
 
 Entrypoint file can be single command or shell script.
 *Simple example of entrypoint script is this:*
