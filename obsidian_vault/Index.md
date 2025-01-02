@@ -70,12 +70,13 @@ In this **Digital Garden** you are always welcome to explore and share your note
 | 2024-22-28 | [[2024-11-28 Creating RDS]]       |
 | 2024-12-11 | [[2024-12-11 AWS Task]]           |
 #### DevOps
-| Date       | Some Importants from Daily Notes |
-| ---------- | -------------------------------- |
-| 2024-12-19 | [[2024-12-19 Git Class]]         |
-| 2024-12-23 | [[2024-12-23 docker-day]]        |
-| 2024-12-24 | [[2024-12-24 docker basics]]     |
-| 2024-12-31 | [[2024-12-31 Dockerfile Explained]]                   |
+| Date       | Some Importants from Daily Notes     |
+| ---------- | ------------------------------------ |
+| 2024-12-19 | [[2024-12-19 Git Class]]             |
+| 2024-12-23 | [[2024-12-23 docker-day]]            |
+| 2024-12-24 | [[2024-12-24 docker basics]]         |
+| 2024-12-31 | [[2024-12-31 Dockerfile Explained]]  |
+| 2025-01-02 | [[2025-01-02 Multistage Dockerfile]] |
 
 > [!todo]- Tasks to perform
 > - [[Task 1 Creating Tomcat student-ui container]]
