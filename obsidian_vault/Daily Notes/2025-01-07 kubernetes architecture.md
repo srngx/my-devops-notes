@@ -1,4 +1,5 @@
-
+[[Kubernetes Architecture]]
+![[kubernetes-cluster.svg]]
 #### Creating cluster on aws
 
 **Prerequisites**
@@ -84,7 +85,7 @@ minimum n-2 version compatible for client to support with latest version of kube
 ***
 #### Tasks
 1. [[Task 6 How to set permanent alias]]
-2. [[Create LAMP Server]]
+2. [[Task 7 Create LAMP Server]]
 
 #### Some Useful Ai for Research
 https://www.perplexity.ai/

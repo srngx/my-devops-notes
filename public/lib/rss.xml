@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 07 Jan 2025 09:12:16 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 07 Jan 2025 09:09:35 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 07 Jan 2025 17:17:00 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 07 Jan 2025 17:15:24 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -2735,7 +2735,7 @@ Before Learning about docker it is crucial to know about containers and even bef
 <br>Single unified application
 <br><br>
 <br>one app divided in chunks
-<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://2bf5ec7c-d7e5-4032-8955-51ffc5542a33" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
+<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://f19e5a91-6ddb-473b-a032-f8563b6fac80" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
 <br>its like small virtual machines
 <br>containers are free to use all the rams they needs
 <br>whereas in vms softwares has limited prealloted ram to use
@@ -2839,7 +2839,8 @@ RUN mvn clean package     # build in target/*.war
 FROM tomcat:jre8:alpine
 COPY --from=builder /target/*.war webapps/student.war
 ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-02-multistage-dockerfile.html</link><guid isPermaLink="false">Daily Notes/2025-01-02 Multistage Dockerfile.md</guid><pubDate>Thu, 02 Jan 2025 04:25:33 GMT</pubDate></item><item><title><![CDATA[2025-01-06]]></title><description><![CDATA[ 
- <br><br>cluster -- group of identical instance<br>
+ <br><br><img alt="Pasted image 20250107191227.png" src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png"><br>
+cluster -- group of identical instance<br>
 resources -- pods<br>node -- instance<br>EKS <br>control plane / master<br>etcd = cluster database   name of the master, cluster etc
 api server = communication among cluster components, recieves and forwards information
 scheduler = scheduling pods
@@ -2849,8 +2850,9 @@ scheduler = scheduling pods
  controller = many controllers, manages pods and containers.
 <br>bare minimum criteria for<br>
 0.25m 6.25core<br>GB     Gi<br>
-1024   1000<br>containerd<br>kubeadm<br><a data-href="read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">read about each and every component of kubernetes</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-06.html</link><guid isPermaLink="false">Daily Notes/2025-01-06.md</guid><pubDate>Mon, 06 Jan 2025 04:38:15 GMT</pubDate></item><item><title><![CDATA[2025-01-07]]></title><description><![CDATA[ 
- <br><br>Prerequisites<br>
+1024   1000<br>containerd<br>kubeadm<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-06.html</link><guid isPermaLink="false">Daily Notes/2025-01-06.md</guid><pubDate>Tue, 07 Jan 2025 13:43:13 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-07 kubernetes architecture]]></title><description><![CDATA[ 
+ <br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a><br>
+<img alt="kubernetes-cluster.svg" src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"><br><br>Prerequisites<br>
 <br>kubectl
 <br>eksctl
 <br>aws
@@ -2892,10 +2894,10 @@ spec:
 <br>s comes - comes<br>
 - means array<br>cluster version updates comes in every 4 month<br>minimum n-2 version compatible for client to support with latest version of kubernetes<br><br><br>
 <br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
-<br><a data-href="Create LAMP Server" href="https://notes.sarangwandile.xyz/Create LAMP Server" class="internal-link" target="_self" rel="noopener nofollow">Create LAMP Server</a>
+<br><a data-href="Task 7 Create LAMP Server" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-7-create-lamp-server.html" class="internal-link" target="_self" rel="noopener nofollow">Task 7 Create LAMP Server</a>
 <br><br><a rel="noopener nofollow" class="external-link" href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a><br>
 <a rel="noopener nofollow" class="external-link" href="https://claude.ai/" target="_blank">https://claude.ai/</a><br>
-<a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07.html</link><guid isPermaLink="false">Daily Notes/2025-01-07.md</guid><pubDate>Tue, 07 Jan 2025 09:00:16 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+<a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes-architecture.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes architecture.md</guid><pubDate>Tue, 07 Jan 2025 16:05:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -3177,8 +3179,149 @@ b4a8af31416b   docker    "docker-entrypoint.s…"   16 minutes ago   Up 16 minut
 <br><a rel="noopener nofollow" class="external-link" href="https://lobster1234.github.io/2019/04/05/docker-socket-file-for-ipc/" target="_blank">https://lobster1234.github.io/2019/04/05/docker-socket-file-for-ipc/</a>
 <br><a rel="noopener nofollow" class="external-link" href="https://stackoverflow.com/questions/35110146/what-is-the-purpose-of-the-file-docker-sock" target="_blank">https://stackoverflow.com/questions/35110146/what-is-the-purpose-of-the-file-docker-sock</a>
 <br><a rel="noopener nofollow" class="external-link" href="https://www.educative.io/answers/var-run-dockersock" target="_blank">https://www.educative.io/answers/var-run-dockersock</a>
-]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html</link><guid isPermaLink="false">DevOps/For Reading/read about docker.sock file.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[read about each and every component of kubernetes]]></title><description><![CDATA[ 
- ]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html</link><guid isPermaLink="false">DevOps/For Reading/read about each and every component of kubernetes.md</guid><pubDate>Mon, 06 Jan 2025 04:36:16 GMT</pubDate></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html</link><guid isPermaLink="false">DevOps/For Reading/read about docker.sock file.md</guid><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/docker-sock-file.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Read about each and every component of kubernetes]]></title><description><![CDATA[ 
+ <br><br>Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It follows a master-worker architecture consisting of multiple components that work together to maintain the desired state of a cluster. Below is an explanation of each component in Kubernetes, along with an architecture diagram and manifest files.<br><br><br>The master node is the brain of the Kubernetes cluster. It manages and controls the cluster, making global decisions (e.g., scheduling), detecting and responding to cluster events (e.g., starting up pods), and managing the overall state of the cluster.<br>The master node consists of the following components:<br>
+<br>API Server (kube-apiserver):<br>
+The API server is the central management point for Kubernetes. It exposes the Kubernetes API, which is used for communicating with other components of the system. All requests (whether for interacting with pods, nodes, deployments, etc.) are handled by the API server.<br>
+
+<br>Scheduler (kube-scheduler):<br>
+The scheduler is responsible for selecting which node a newly created pod will run on based on resource availability and constraints defined by the user. It makes the decision to place pods on specific worker nodes.<br>
+
+<br>Controller Manager (kube-controller-manager):<br>
+The controller manager ensures that the desired state of the cluster is maintained. It manages controllers like the ReplicaSet, Deployment, and Node controllers. The controllers constantly check the state of the cluster and take corrective actions to meet the desired state.<br>
+
+<br>etcd:<br>
+etcd is a distributed key-value store that holds the entire configuration and state of the Kubernetes cluster. It is the source of truth for all cluster data, such as the definitions of nodes, pods, deployments, services, and more. It’s highly available and fault-tolerant.<br>
+
+<br><br>Worker nodes (also called minions) are the machines responsible for running the application workloads in the form of containers. Each node in a Kubernetes cluster contains the following components:<br>
+<br>Kubelet:<br>
+The kubelet is an agent that runs on each worker node. It ensures that containers are running in a pod by communicating with the API server and monitoring the health of the containers.<br>
+
+<br>Kube Proxy:<br>
+Kube Proxy manages the networking and load balancing between pods. It ensures that each pod has network connectivity and routes traffic to the correct backend service.<br>
+
+<br>Container Runtime:<br>
+This is the software responsible for running containers. Examples of container runtimes are Docker, containerd, and CRI-O.<br>
+
+<br><br>A pod is the smallest and simplest Kubernetes object. It is a single instance of a running process in the cluster, and it can contain one or more containers. All containers in a pod share the same network namespace and storage.<br><br>Namespaces provide a way to divide cluster resources between multiple users. Namespaces are used for organizing resources within a cluster into logical groups. They are primarily useful in large clusters with many users.<br><br>A service is an abstraction that defines a set of pods and a policy by which to access them. Services ensure that applications can communicate with each other reliably, regardless of pod lifecycles or IP changes.<br><br>A deployment provides declarative updates for pods and ReplicaSets. It allows you to manage and scale applications running in pods, ensuring that the desired number of replicas is always running.<br><br>ReplicaSets ensure that a specified number of identical pods are running at any given time. A ReplicaSet can be used by a Deployment to maintain the number of replicas.<br><br>StatefulSets are similar to ReplicaSets but designed for applications that require persistent storage and stable network identities. These are often used for stateful applications like databases.<br><br>
+<br>ConfigMap: A way to inject configuration data into pods, which can be used as environment variables, command-line arguments, or configuration files.
+<br>Secret: Stores sensitive data like passwords, OAuth tokens, or ssh keys in an encrypted form.
+<br><br>Ingress is a collection of rules that allow inbound connections to reach the cluster services. It manages HTTP and HTTPS routes to services.<br><br><br>Here's a high-level diagram of the Kubernetes architecture:<br>lua<br>Copy code<br>                +--------------------------------------+
+                |               Kubernetes             |
+                |             Master Node              |
+                |                                      |
+                |   +----------------------------+     |
+                |   |    kube-apiserver           |     |
+                |   +----------------------------+     |
+                |   |    kube-scheduler           |     |
+                |   +----------------------------+     |
+                |   |    kube-controller-manager  |     |
+                |   +----------------------------+     |
+                |   |    etcd                     |     |
+                +--------------------------------------+
+                           /              \
+                          /                \
+                         /                  \
+                        /                    \
+       +------------------+           +------------------+  
+       |  Worker Node 1   |           |  Worker Node 2   |
+       |                  |           |                  |
+       |  +-----------+   |           |  +-----------+   |
+       |  | Kubelet   |   |           |  | Kubelet   |   |
+       |  +-----------+   |           |  +-----------+   |
+       |  | Kube Proxy|   |           |  | Kube Proxy|   |
+       |  +-----------+   |           |  +-----------+   |
+       |  | Container  |   |           |  | Container  |   |
+       |  | Runtime    |   |           |  | Runtime    |   |
+       |  +-----------+   |           |  +-----------+   |
+       +------------------+           +------------------+
+
+
+<br><br>Kubernetes uses manifest files (usually written in YAML or JSON) to declare the desired state of various Kubernetes resources. Below are some key examples of manifest files.<br><br>A simple pod manifest that defines a pod with a single container running Nginx:<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+
+<br><br>A deployment manifest that creates a Deployment for Nginx with 3 replicas:<br>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+
+<br><br>A service manifest to expose the Nginx deployment:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+
+<br><br>A ConfigMap for providing configuration data to a pod:<br>apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  nginx.conf: |
+    server {
+      listen       80;
+      server_name  localhost;
+      location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+      }
+    }
+
+<br><br>A Secret to store sensitive information like a password:<br>apiVersion: v1
+kind: Secret
+metadata:
+  name: db-password
+type: Opaque
+data:
+  password: cGFzc3dvcmQ=  # This is 'password' encoded in base64
+
+<br><br>An Ingress resource to manage HTTP routing:<br>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+spec:
+  rules:
+  - host: nginx.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-service
+            port:
+              number: 80
+
+<br><br><br>Kubernetes is a complex system made up of many components that work together to provide a platform for managing containerized applications. The Master Node is responsible for controlling the cluster, while the Worker Nodes run the actual workloads in containers. Resources such as Pods, Services, Deployments, ConfigMaps, and Secrets are defined through YAML manifests that allow for declarative management of the desired state.<br>By using Kubernetes' powerful abstractions, you can efficiently deploy, scale, and manage applications in a fault-tolerant and automated manner.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html</link><guid isPermaLink="false">DevOps/For Reading/Read about each and every component of kubernetes.md</guid><pubDate>Tue, 07 Jan 2025 13:22:25 GMT</pubDate></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
  <br>Output of Mysql container from <a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a> <br><br>docker inspect &lt;container-id&gt;<br>[
   {
     "Id": "3ce6ffd3357d7d78a4fff68218ea477ef0bcc3a747153cb93143e128bb21e4a3",
@@ -3607,7 +3750,49 @@ which is basically telling git this is a final changes with the special stamp of
 <br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
 <br>Uploads your local changes to the remote repository.<br>
 After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Kubernetes Architecture]]></title><description><![CDATA[ 
+ <br>Kubernetes Cluster Architecture<br>
+<img alt="cluster-diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"><br>
+<br>Control Plane:
+
+<br>API Server: Central management point
+<br>etcd: Cluster state database
+<br>Controller Manager: Maintains desired state
+<br>Scheduler: Places pods on nodes
+
+
+<br>Worker Nodes:
+
+<br>Kubelet: Node agent
+<br>Container Runtime: Runs containers
+<br>Kube Proxy: Networking rules
+<br>Pods: Groups of containers
+
+
+<br>External Access:
+
+<br>kubectl CLI: Command-line interface
+<br>Load Balancer: External traffic distribution
+<br>Ingress: HTTP/HTTPS routing
+
+
+<br>Storage:
+
+<br>Persistent Volumes: Durable storage
+
+
+<br>Networking:
+
+<br>CNI: Pod networking
+<br>Network Policies: Traffic rules
+
+
+<br>The arrows show the communication flow between components. For example:<br>
+<br>All components communicate through the API Server
+<br>Kubelets on worker nodes report to API Server
+<br>Pods can access Persistent Volumes
+<br>Network policies control pod communication
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html</link><guid isPermaLink="false">DevOps/Notes/Kubernetes Architecture.md</guid><pubDate>Tue, 07 Jan 2025 16:01:14 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -4004,6 +4189,8 @@ These notes are not complete and subject to grow, modify and update in time to t
 <br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
 <br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
 <br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
+<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
+<br><a data-href="Task 7 Create LAMP Server" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-7-create-lamp-server.html" class="internal-link" target="_self" rel="noopener nofollow">Task 7 Create LAMP Server</a>
 
 <br>Task assigned for Reading
 
@@ -4015,4 +4202,4 @@ These notes are not complete and subject to grow, modify and update in time to t
 <br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
 <br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
 
-]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Thu, 02 Jan 2025 06:58:10 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Tue, 07 Jan 2025 16:05:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
