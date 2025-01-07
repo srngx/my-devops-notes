@@ -37,5 +37,3 @@ When executing git pull, there may be conflicts between remote and local changes
 ### What is git fetch used for?[](https://about.gitlab.com/blog/2024/09/24/git-pull-vs-git-fetch-whats-the-difference/#what-is-git-fetch-used-for%3F)
 
 Git fetch is useful for checking and retrieving the latest status of the remote repository. However, the changes retrieved are not automatically reflected in the local branch; git fetch is used to synchronize the local and remote repositories.
-
-## Read more

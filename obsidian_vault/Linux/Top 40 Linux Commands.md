@@ -75,14 +75,14 @@
 
 ### Additional Usecase Commands
 
-| No. | Command | Description                                                    |
-| --- | ------- | -------------------------------------------------------------- |
-| 27  | `man`   | Display online manual pages                                    |
-| 28  | `find`  | Search for files in a directory hierarchy                      |
-| 34  | `tar`   | Archive and compress files                                     |
-| 35  | `unzip` | Unzip compressed files                                         |
-| 36  | `wget`  | Download files from the internet                               |
-| 37  | `ssh`   | Secure Shell for remote login                                  |
-| 38  | `scp`   | Secure Copy for copying files over SSH                         |
-| 39  | `top`   | Display system processes                                       |
-| 40  | `htop`  | Interactive process viewer                                     |
+| Command | Description                               |
+| ------- | ----------------------------------------- |
+| `man`   | Display online manual pages               |
+| `find`  | Search for files in a directory hierarchy |
+| `tar`   | Archive and compress files                |
+| `unzip` | Unzip compressed files                    |
+| `wget`  | Download files from the internet          |
+| `ssh`   | Secure Shell for remote login             |
+| `scp`   | Secure Copy for copying files over SSH    |
+| `top`   | Display system processes                  |
+| `htop`  | Interactive process viewer                |
