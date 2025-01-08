@@ -132,7 +132,6 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
-
 ```
 
 #### 2. **Deployment Manifest**
@@ -240,7 +239,6 @@ spec:
             name: nginx-service
             port:
               number: 80
-
 ```
 ---
 

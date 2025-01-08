@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 07 Jan 2025 17:17:00 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 07 Jan 2025 17:15:24 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 08 Jan 2025 17:00:57 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 08 Jan 2025 16:59:16 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -2735,7 +2735,7 @@ Before Learning about docker it is crucial to know about containers and even bef
 <br>Single unified application
 <br><br>
 <br>one app divided in chunks
-<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://f19e5a91-6ddb-473b-a032-f8563b6fac80" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
+<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://e136f70b-75d7-4928-9bf0-37e46954878c" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
 <br>its like small virtual machines
 <br>containers are free to use all the rams they needs
 <br>whereas in vms softwares has limited prealloted ram to use
@@ -2856,32 +2856,57 @@ scheduler = scheduling pods
 <br>kubectl
 <br>eksctl
 <br>aws
-<br>eksctl.io/installation<br>Steps<br>
+<br>Steps<br>
 <br>create ec2 instance
 <br>add admin role on it
 <br>install Prerequisites on it
-<br>and run Create cluster command<br>eksctl create cluster --name clustername --node-type t2.medium --nodes 2 --region=us-east-1
-<br>See nodes<br>kubectl get nodes
-<br>see pods<br>kubectl get pods -A
+<br>Install kubectl binary from <a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" target="_blank">official website</a><br># for x86_64
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+# for arm64
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
+<br>Install eksctl binary from its <a data-tooltip-position="top" aria-label="https://eksctl.io/installation" rel="noopener nofollow" class="external-link" href="https://eksctl.io/installation" target="_blank">official website</a><br># for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+ARCH=amd64
+PLATFORM=$(uname -s)_$ARCH
+
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+# (Optional) Verify checksum
+curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp &amp;&amp; rm eksctl_$PLATFORM.tar.gz
+
+sudo mv /tmp/eksctl /usr/local/bin
+<br>Write this script into script.sh file and run it with bash script.sh<br>Check if commands working properly:<br># see kubectl version
+kubectl version
+
+# see eksctl version
+eksctl version
+<br>and run Create Cluster command<br>eksctl create cluster --name clustername --node-type t2.medium --nodes 2 --region=us-east-1
+<br>To See nodes<br>kubectl get nodes
+<br>To See pods<br>kubectl get pods -A
 <br>write pod.yaml manifest and apply<br>kubectl apply -f pod.yaml
 <br>get info about pods<br>kubectl describe pod nginx
-<br>Manifest<br>
-YAML<br>POD<br>
-Repl set<br>
-Deployments<br>
-Services<br>
-Load balancer<br>
-Node pod<br>
-cluster ip<br>
-config<br>
-secrets<br>
-configMap<br>
-Namespace<br>
-Resources<br>
-Resource Quota<br>
-Volume<br>
-Ingress<br>
-HPA<br>Pod.yaml<br>apiVersion: v1
+<br>Read about:<br>Manifest
+YAML
+
+POD
+Repl set
+Deployments
+Services
+	Load balancer
+	Node pod
+	cluster ip
+config
+	secrets
+	configMap
+Namespace
+Resources
+Resource Quota
+Volume
+Ingress
+HPA
+<br>Pod.yaml<br>apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
@@ -2892,12 +2917,14 @@ spec:
     ports:
       container-port: 80
 <br>s comes - comes<br>
-- means array<br>cluster version updates comes in every 4 month<br>minimum n-2 version compatible for client to support with latest version of kubernetes<br><br><br>
+- means array<br>cluster version updates comes in every 4 month<br>
+minimum n-2 version compatible for client to support with latest version of kubernetes<br><br><br>
 <br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
 <br><a data-href="Task 7 Create LAMP Server" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-7-create-lamp-server.html" class="internal-link" target="_self" rel="noopener nofollow">Task 7 Create LAMP Server</a>
 <br><br><a rel="noopener nofollow" class="external-link" href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a><br>
 <a rel="noopener nofollow" class="external-link" href="https://claude.ai/" target="_blank">https://claude.ai/</a><br>
-<a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes-architecture.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes architecture.md</guid><pubDate>Tue, 07 Jan 2025 16:05:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+<a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes-architecture.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes architecture.md</guid><pubDate>Wed, 08 Jan 2025 16:58:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-08]]></title><description><![CDATA[ 
+ <br>🔦Lights out]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-08.html</link><guid isPermaLink="false">Daily Notes/2025-01-08.md</guid><pubDate>Wed, 08 Jan 2025 16:58:49 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -3247,7 +3274,6 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
-
 <br><br>A deployment manifest that creates a Deployment for Nginx with 3 replicas:<br>apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -3320,8 +3346,7 @@ spec:
             name: nginx-service
             port:
               number: 80
-
-<br><br><br>Kubernetes is a complex system made up of many components that work together to provide a platform for managing containerized applications. The Master Node is responsible for controlling the cluster, while the Worker Nodes run the actual workloads in containers. Resources such as Pods, Services, Deployments, ConfigMaps, and Secrets are defined through YAML manifests that allow for declarative management of the desired state.<br>By using Kubernetes' powerful abstractions, you can efficiently deploy, scale, and manage applications in a fault-tolerant and automated manner.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html</link><guid isPermaLink="false">DevOps/For Reading/Read about each and every component of kubernetes.md</guid><pubDate>Tue, 07 Jan 2025 13:22:25 GMT</pubDate></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
+<br><br><br>Kubernetes is a complex system made up of many components that work together to provide a platform for managing containerized applications. The Master Node is responsible for controlling the cluster, while the Worker Nodes run the actual workloads in containers. Resources such as Pods, Services, Deployments, ConfigMaps, and Secrets are defined through YAML manifests that allow for declarative management of the desired state.<br>By using Kubernetes' powerful abstractions, you can efficiently deploy, scale, and manage applications in a fault-tolerant and automated manner.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html</link><guid isPermaLink="false">DevOps/For Reading/Read about each and every component of kubernetes.md</guid><pubDate>Wed, 08 Jan 2025 03:56:45 GMT</pubDate></item><item><title><![CDATA[Reading Docker Inspect output]]></title><description><![CDATA[ 
  <br>Output of Mysql container from <a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a> <br><br>docker inspect &lt;container-id&gt;<br>[
   {
     "Id": "3ce6ffd3357d7d78a4fff68218ea477ef0bcc3a747153cb93143e128bb21e4a3",
