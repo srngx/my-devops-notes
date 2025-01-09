@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 08 Jan 2025 17:00:57 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 08 Jan 2025 16:59:16 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 09 Jan 2025 10:38:45 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 09 Jan 2025 10:37:15 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -2729,13 +2729,13 @@ private
 <br><a rel="noopener nofollow" class="external-link" href="https://githowto.com/git_internals_git_directory" target="_blank">https://githowto.com/git_internals_git_directory</a>
 <br><a data-href="Some talks about git in reddit 1" href="https://notes.sarangwandile.xyz/Some talks about git in reddit 1" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit 1</a>
 <br><a rel="noopener nofollow" class="external-link" href="https://git-scm.com/book/en/v2" target="_blank">https://git-scm.com/book/en/v2</a>
-]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-19-git-class.html</link><guid isPermaLink="false">Daily Notes/2024-12-19 Git Class.md</guid><pubDate>Sun, 29 Dec 2024 14:56:24 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-23 docker-day]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-19-git-class.html</link><guid isPermaLink="false">Daily Notes/2024-12-19 Git Class.md</guid><pubDate>Wed, 08 Jan 2025 17:21:46 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-23 docker-day]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
 Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br><br>
 <br>Single unified application
 <br><br>
 <br>one app divided in chunks
-<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://e136f70b-75d7-4928-9bf0-37e46954878c" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
+<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://10f086fb-9555-46a8-9446-7775eb3bc1e6" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
 <br>its like small virtual machines
 <br>containers are free to use all the rams they needs
 <br>whereas in vms softwares has limited prealloted ram to use
@@ -2924,7 +2924,57 @@ minimum n-2 version compatible for client to support with latest version of kube
 <br><br><a rel="noopener nofollow" class="external-link" href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a><br>
 <a rel="noopener nofollow" class="external-link" href="https://claude.ai/" target="_blank">https://claude.ai/</a><br>
 <a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes-architecture.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes architecture.md</guid><pubDate>Wed, 08 Jan 2025 16:58:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-08]]></title><description><![CDATA[ 
- <br>🔦Lights out]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-08.html</link><guid isPermaLink="false">Daily Notes/2025-01-08.md</guid><pubDate>Wed, 08 Jan 2025 16:58:49 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+ <br>🔦Lights out]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-08.html</link><guid isPermaLink="false">Daily Notes/2025-01-08.md</guid><pubDate>Wed, 08 Jan 2025 16:58:49 GMT</pubDate></item><item><title><![CDATA[2025-01-09]]></title><description><![CDATA[ 
+ <br><br>The ReplicaSet configuration defines a number of identical pods required, and if a pod is evicted or fails, creates more pods to compensate for the loss.<br>
+ReplicaSets are usually not used directly—they are typically created as part of a deployment.<br>Here is a simple example using&nbsp;matchLabels&nbsp;as the selector.<br>
+rs.yaml<br>apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend
+  labels:
+    app: guestbook
+    tier: frontend
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontendn
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+<br>Apply Manifest kubectl apply -f rs.yaml<br>Note: use either one file naming yml or yaml<br><br>Deployments are one level up from ReplicaSets. They allow you to use a declarative method to deploy ReplicaSets and pods. You use YAML configuration to define what your group of pods should look like, and the deployment manipulates Kubernetes objects to create pods&nbsp;exactly according to the YAML specification.<br>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: guestbook
+    tier: frontend
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontendn
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+<br>deployment ----&gt; ReplicaSet -------&gt; Pods<br><img alt="Manifest_structure.svg" src="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg"><br><br>In a Kubernetes cluster, each Pod has an internal IP address. But the Pods in a Deployment come and go, and their IP addresses change. So it doesn't make sense to use Pod IP addresses directly. With a Service, you get a stable IP address that lasts for the life of the Service, even as the IP addresses of the member Pods change.<br>A key aim of Services in Kubernetes is that you don't need to modify your existing application to use an unfamiliar service discovery mechanism. You can run code in Pods, whether this is a code designed for a cloud-native world, or an older app you've containerized. You use a Service to make that set of Pods available on the network so that clients can interact with it.<br><br><br>Hot Tip
+Its not possible to remember all shortcodes for k8's Resources<br>
+Thats why we have this command to Lists all the resources in cluster
+kubectl api-resources
+
+<br><br>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-09.html</link><guid isPermaLink="false">Daily Notes/2025-01-09.md</guid><pubDate>Thu, 09 Jan 2025 09:41:20 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -4130,7 +4180,7 @@ custom-nginx   latest    5c9d3a455e0f   47 seconds ago   214MB
 <br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
 <br>Uploads your local changes to the remote repository.<br>
 After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/git-practical.html</link><guid isPermaLink="false">DevOps/Git Practical.md</guid><pubDate>Sat, 28 Dec 2024 14:32:59 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/git-practical.html</link><guid isPermaLink="false">DevOps/Git Practical.md</guid><pubDate>Wed, 08 Jan 2025 17:21:46 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
 <br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
