@@ -7,7 +7,6 @@ tags:
   - reading_tasks
 ---
 ## What is a Kubernetes Service?
-Source: [GKE Documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/service)
 
 
 The idea of a Service is to **group a set of Pod endpoints into a single resource**. You can configure various ways to access the grouping. By default, you get a stable cluster IP address that clients inside the cluster can use to contact Pods in the Service. A client sends a request to the stable IP address, and the request is routed to one of the Pods in the Service.
@@ -373,3 +372,7 @@ For each of these Service types, you can define `ipFamilies` and `ipFamilyPol
 | NodePort                       | External accessibility for web applications or APIs   | Accessible from outside the cluster via a high-numbered port on the node   | Additional resources needed                       |
 | LoadBalancer                   | Production environments with high traffic volumes     | Accessible from outside the cluster via a load balancer                    | Significant resources needed                      |
 | Cloud Provider’s Load Balancer | Using a cloud provider for Kubernetes                 | Accessible from outside the cluster via the cloud provider’s load balancer | May result in cost savings and better performance |
+
+### References
+- [GKE Documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/service)
+- https://www.baeldung.com/ops/kubernetes-service-types
