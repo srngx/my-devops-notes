@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 09 Jan 2025 10:38:45 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 09 Jan 2025 10:37:15 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 10 Jan 2025 10:30:09 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 10 Jan 2025 10:28:34 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -2735,7 +2735,7 @@ Before Learning about docker it is crucial to know about containers and even bef
 <br>Single unified application
 <br><br>
 <br>one app divided in chunks
-<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://10f086fb-9555-46a8-9446-7775eb3bc1e6" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
+<br><br><img style="max-width:400px; " class="excalidraw-svg excalidraw-embedded-img excalidraw-canvas-immersive" src="https://notes.sarangwandile.xyz/blob://9b97bf7a-1d21-4dc5-93a9-f9a8a1e0cea3" filesource="Drawings/Docker-Architecture-diagram_1.excalidraw.md" w="400" draggable="false" oncanvas="false"><br><br>
 <br>its like small virtual machines
 <br>containers are free to use all the rams they needs
 <br>whereas in vms softwares has limited prealloted ram to use
@@ -2924,7 +2924,7 @@ minimum n-2 version compatible for client to support with latest version of kube
 <br><br><a rel="noopener nofollow" class="external-link" href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a><br>
 <a rel="noopener nofollow" class="external-link" href="https://claude.ai/" target="_blank">https://claude.ai/</a><br>
 <a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes-architecture.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes architecture.md</guid><pubDate>Wed, 08 Jan 2025 16:58:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-08]]></title><description><![CDATA[ 
- <br>🔦Lights out]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-08.html</link><guid isPermaLink="false">Daily Notes/2025-01-08.md</guid><pubDate>Wed, 08 Jan 2025 16:58:49 GMT</pubDate></item><item><title><![CDATA[2025-01-09]]></title><description><![CDATA[ 
+ <br>🔦Lights out]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-08.html</link><guid isPermaLink="false">Daily Notes/2025-01-08.md</guid><pubDate>Wed, 08 Jan 2025 16:58:49 GMT</pubDate></item><item><title><![CDATA[2025-01-09 k8s manifest files]]></title><description><![CDATA[ 
  <br><br>The ReplicaSet configuration defines a number of identical pods required, and if a pod is evicted or fails, creates more pods to compensate for the loss.<br>
 ReplicaSets are usually not used directly—they are typically created as part of a deployment.<br>Here is a simple example using&nbsp;matchLabels&nbsp;as the selector.<br>
 rs.yaml<br>apiVersion: apps/v1
@@ -2974,7 +2974,48 @@ Its not possible to remember all shortcodes for k8's Resources<br>
 Thats why we have this command to Lists all the resources in cluster
 kubectl api-resources
 
-<br><br>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-09.html</link><guid isPermaLink="false">Daily Notes/2025-01-09.md</guid><pubDate>Thu, 09 Jan 2025 09:41:20 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+<br><br>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-09-k8s-manifest-files.html</link><guid isPermaLink="false">Daily Notes/2025-01-09 k8s manifest files.md</guid><pubDate>Fri, 10 Jan 2025 03:43:34 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/manifest_structure.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-10 Service Types]]></title><description><![CDATA[ 
+ <br>max surge / max unavailable<br>
+rolling updates<br>aws s3 ls --profile dev<br>aws configure --profile<br>Service<br>
+<br>ClusterIP 
+
+<br>default service
+
+
+<br>Service.yaml<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app.kubernetes.io/name: proxy
+spec:
+  containers:
+  - name: nginx
+    image: nginx:stable
+    ports:
+      - containerPort: 80
+        name: http-web-svc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app.kubernetes.io/name: proxy
+  ports:
+  - name: name-of-service-port
+    protocol: TCP
+    port: 80
+    targetPort: http-web-svc
+<br>spec:<br>
+type: LoadBalancer<br>annotations to change service type<br>
+can service lb me classic use kr skte ho kya?<br>spec:<br>
+type: NodePort<br>kubectl get -o wide<br>get more information<br>✅ Tasks To read<br>
+<br>minimum 5 points in services types
+<br>secrets and ConfigMap
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-10-service-types.html</link><guid isPermaLink="false">Daily Notes/2025-01-10 Service Types.md</guid><pubDate>Fri, 10 Jan 2025 09:12:51 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -3213,7 +3254,180 @@ AWS CodePipeline&nbsp;-&nbsp;Fully management continuous delivery service that h
 <br>Birth of Git (April 2005): Torvalds began work on Git and within a remarkably short period, had a functional system ready to manage the Linux kernel.
 <br>Community Takes Over (July 2005): Junio Hamano took over the maintenance of Git, guiding its development and shaping it into the mature system it is today.
 <br>Widespread Adoption: Git's speed, flexibility, and powerful features quickly gained popularity among developers. It became the preferred choice for open-source projects and eventually spread to commercial software development.
-<br>Today, Git is the most widely used version control system worldwide, powering the development of countless software projects, from small personal projects to massive corporate endeavors.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/git-theory.html</link><guid isPermaLink="false">DevOps/For Reading/Git Theory.md</guid><pubDate>Sun, 29 Dec 2024 13:28:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Monolithic vs Microservice Architecture]]></title><description><![CDATA[ 
+<br>Today, Git is the most widely used version control system worldwide, powering the development of countless software projects, from small personal projects to massive corporate endeavors.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/git-theory.html</link><guid isPermaLink="false">DevOps/For Reading/Git Theory.md</guid><pubDate>Sun, 29 Dec 2024 13:28:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[K8s Service Types]]></title><description><![CDATA[ 
+ <br><br>Source: <a data-tooltip-position="top" aria-label="https://cloud.google.com/kubernetes-engine/docs/concepts/service" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/kubernetes-engine/docs/concepts/service" target="_blank">GKE Documentation</a><br>The idea of a Service is to group a set of Pod endpoints into a single resource. You can configure various ways to access the grouping. By default, you get a stable cluster IP address that clients inside the cluster can use to contact Pods in the Service. A client sends a request to the stable IP address, and the request is routed to one of the Pods in the Service.<br>A Service identifies its member Pods with a selector. For a Pod to be a member of the Service, the Pod must have all of the labels specified in the selector. A&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/" target="_blank">label</a>&nbsp;is an arbitrary key/value pair that is attached to an object.<br>The following Service manifest has a selector that specifies two labels. The&nbsp;selector&nbsp;field says any Pod that has both the&nbsp;app: metrics&nbsp;label and the&nbsp;department:engineering&nbsp;label is a member of this Service.<br>apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: metrics
+    department: engineering
+  ports:
+  ...
+<br><br>In a Kubernetes cluster, each Pod has an internal IP address. But the Pods in a Deployment come and go, and their IP addresses change. So it doesn't make sense to use Pod IP addresses directly. With a Service, you get a stable IP address that lasts for the life of the Service, even as the IP addresses of the member Pods change.<br>A Service also provides load balancing. Clients call a single, stable IP address, and their requests are balanced across the Pods that are members of the Service.<br><br>There are five types of Services:<br>
+<br>ClusterIP (default):&nbsp;Internal clients send requests to a stable internal IP address.<br>
+
+<br>NodePort:&nbsp;Clients send requests to the IP address of a node on one or more&nbsp;nodePort&nbsp;values that are specified by the Service.<br>
+
+<br>LoadBalancer:&nbsp;Clients send requests to the IP address of a network load balancer.<br>
+
+<br>ExternalName:&nbsp;Internal clients use the DNS name of a Service as an alias for an external DNS name.<br>
+
+<br>Headless:&nbsp;You can use a&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/services-networking/service/#headless-services" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/services-networking/service/#headless-services" target="_blank">headless service</a>&nbsp;when you want a Pod grouping, but don't need a stable IP address.<br>
+
+<br>Note
+The&nbsp;NodePort&nbsp;type is an extension of the&nbsp;ClusterIP&nbsp;type. So a Service of type&nbsp;NodePort&nbsp;has a cluster IP address.
+The&nbsp;LoadBalancer&nbsp;type is an extension of the&nbsp;NodePort&nbsp;type. So a Service of type&nbsp;LoadBalancer&nbsp;has a cluster IP address and one or more&nbsp;nodePort&nbsp;values.
+<br><br>ClusterIP&nbsp;is the default service type in Kubernetes, and it provides internal connectivity between different components of our application.&nbsp;<br>Kubernetes assigns a virtual IP address to a&nbsp;ClusterIP&nbsp;service that can solely be accessed from within the cluster during its creation.&nbsp;This IP address is stable and doesn’t change even if the pods behind the service are rescheduled or replaced.<br>ClusterIP&nbsp;services are an excellent choice for internal communication between different components of our application that don’t need to be exposed to the outside world. For example, if we have a microservice that processes data and sends it to another microservice for further processing, we can use a&nbsp;ClusterIP&nbsp;service to connect them.<br>When you create a Service of type&nbsp;ClusterIP, Kubernetes creates a stable IP address that is accessible from nodes in the cluster.<br>Here is a manifest for a Service of type ClusterIP:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  selector:
+    app: backend
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+<br>In this example, we define a service named&nbsp;backend&nbsp;with a selector that targets pods labeled with&nbsp;app: backend.&nbsp;The service exposes port&nbsp;80, which is the port used by clients to access the service, and forwards the traffic to the pods’ port&nbsp;8080, which is where the backend application is running.<br>You can&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/kubernetes-engine/docs/how-to/exposing-apps" target="_blank">create the Service</a>&nbsp;by using&nbsp;kubectl apply -f [MANIFEST_FILE]. After you create the Service, you can use&nbsp;kubectl get service&nbsp;to see the stable IP address:<br>NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)
+my-cip-service   ClusterIP   10.11.247.213   none          80/TCP
+<br>Clients in the cluster call the Service by using the cluster IP address and the TCP port specified in the&nbsp;port&nbsp;field of the Service manifest. The request is forwarded to one of the member Pods on the TCP port specified in the&nbsp;targetPort&nbsp;field. For the preceding example, a client calls the Service at&nbsp;10.11.247.213&nbsp;on TCP port 80. The request is forwarded to one of the member Pods on TCP port 8080. The member Pod must have a container that is listening on TCP port 8080. If there is no container listening on port 8080, clients will see a message like "Failed to connect" or "This site can't be reached".<br><br>NodePort&nbsp;services extend the functionality of&nbsp;ClusterIP&nbsp;services by enabling external connectivity to our application. When we create a&nbsp;NodePort&nbsp;service on any node within the cluster that meets the defined criteria,&nbsp;Kubernetes opens up a designated port that forwards traffic to the corresponding&nbsp;ClusterIP&nbsp;service running on the node.<br>These services are ideal for applications that need to be accessible from outside the cluster, such as web applications or APIs. With&nbsp;NodePort&nbsp;services, we can access our application using the node’s IP address and the port number assigned to the service.<br>When you create a Service of type&nbsp;NodePort, Kubernetes gives you a&nbsp;nodePort&nbsp;value. Then the Service is accessible by using the IP address of any node along with the&nbsp;nodePort&nbsp;value.<br>Here is a manifest for a Service of type&nbsp;NodePort:<br>apiVersion: v1 
+kind: Service 
+metadata: 
+  name: frontend 
+spec: 
+  selector: 
+    app: frontend 
+  type: NodePort 
+  ports: 
+    - name: http 
+      port: 80 
+      targetPort: 8080
+<br>We define a service named&nbsp;frontend&nbsp;that targets pods labeled with&nbsp;app: frontend&nbsp;by setting a selector. The service exposes port&nbsp;80&nbsp;and forwards the traffic to the pods’ port&nbsp;8080. We set the service type to&nbsp;NodePort, and Kubernetes exposes the service on a specific port on a qualifying node within the cluster.<br>When we create a&nbsp;NodePort&nbsp;service, Kubernetes assigns a port number from a predefined range of&nbsp;30000-32767. Additionally, we can specify a custom port number by adding the&nbsp;nodePort&nbsp;field to the service definition:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  selector:
+    app: frontend
+  type: NodePort
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+    nodePort: 30080
+<br>The&nbsp;nodePort&nbsp;field is specified as&nbsp;30080, which tells Kubernetes to expose the service on port&nbsp;30080&nbsp;on every node in the cluster.<br>After you create the Service, you can use&nbsp;kubectl get service -o yaml&nbsp;to view its specification and see the&nbsp;nodePort&nbsp;value.<br>spec:
+  clusterIP: 10.11.254.114
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32675
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+<br>External clients call the Service by using the external IP address of a node along with the TCP port specified by&nbsp;nodePort. The request is forwarded to one of the member Pods on the TCP port specified by the&nbsp;targetPort&nbsp;field.<br>For example, suppose the external IP address of one of the cluster nodes is&nbsp;203.0.113.2. Then for the preceding example, the external client calls the Service at&nbsp;203.0.113.2&nbsp;on TCP port 32675. The request is forwarded to one of the member Pods on TCP port 8080. The member Pod must have a container listening on TCP port 8080.<br>The&nbsp;NodePort&nbsp;Service type is an extension of the&nbsp;ClusterIP&nbsp;Service type. So internal clients have two ways to call the Service:<br>
+<br>Use&nbsp;clusterIP&nbsp;and&nbsp;port.
+<br>Use a node's IP address and&nbsp;nodePort.
+<br>For some cluster configurations, the&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/load-balancing/docs/https" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/load-balancing/docs/https" target="_blank">external Application Load Balancer</a>&nbsp;uses a Service of type&nbsp;NodePort.<br>An external Application Load Balancer is a proxy server, and is fundamentally different from the&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/load-balancing/docs/network" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/load-balancing/docs/network" target="_blank">external passthrough Network Load Balancer</a>&nbsp;described in this topic under&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/kubernetes-engine/docs/concepts/service#services_of_type_loadbalancer" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/kubernetes-engine/docs/concepts/service#services_of_type_loadbalancer" target="_blank">Service of type LoadBalancer</a>.<br>Note
+You can specify your own&nbsp;nodePort&nbsp;value in the 30000--32767 range. However, it's best to omit the field and let Kubernetes allocate a&nbsp;nodePort&nbsp;for you. This avoids collisions between Services.
+<br><br><a data-tooltip-position="top" aria-label="https://www.baeldung.com/ops/kubernetes-ingress-vs-load-balancer" rel="noopener nofollow" class="external-link" href="https://www.baeldung.com/ops/kubernetes-ingress-vs-load-balancer" target="_blank"><em></em>&nbsp;services</a>LoadBalancer&nbsp;connect our applications externally, and production environments use them where high availability and scalability are critical. When we create a&nbsp;LoadBalancer&nbsp;service,&nbsp;Kubernetes provisions a load balancer in our cloud environment and forwards the traffic to the nodes running the service.<br>LoadBalancer&nbsp;services are ideal for applications that need to handle high traffic volumes, such as web applications or APIs. With&nbsp;LoadBalancer&nbsp;services, we can access our application using a single IP address assigned to the load balancer.<br>Here’s an example of a simple&nbsp;LoadBalancer&nbsp;service definition:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: web
+spec:
+  selector:
+    app: web
+  type: LoadBalancer
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+<br>We set the service type to&nbsp;LoadBalancer&nbsp;to instruct Kubernetes to provision a load balancer. Here, we define a service named&nbsp;web&nbsp;and specify a selector that targets pods labeled with&nbsp;app: web. Additionally, we expose port&nbsp;80&nbsp;and forward traffic to the pods’ port&nbsp;8080.<br>After creating the&nbsp;LoadBalancer&nbsp;service, Kubernetes provisions a load balancer in the cloud environment with a public IP address. We can use this IP address to access our application from outside the cluster.<br><br>A Service of type&nbsp;ExternalName&nbsp;provides an internal alias for an external DNS name. Internal clients make requests using the internal DNS name, and the requests are redirected to the external name.<br>Here is a manifest for a Service of type&nbsp;ExternalName:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: my-xn-service
+spec:
+  type: ExternalName
+  externalName: example.com
+<br>When you create a Service, Kubernetes creates a DNS name that internal clients can use to call the Service. For the preceding example, the DNS name is my-xn-service.default.svc.cluster.local. When an internal client makes a request to my-xn-service.default.svc.cluster.local, the request gets redirected to example.com.<br>The&nbsp;ExternalName&nbsp;Service type is fundamentally different from the other Service types. In fact, a Service of type&nbsp;ExternalName&nbsp;does not fit the definition of Service given at the beginning of this topic. A Service of type&nbsp;ExternalName&nbsp;is not associated with a set of Pods, and it does not have a stable IP address. Instead, a Service of type&nbsp;ExternalName&nbsp;is a mapping from an internal DNS name to an external DNS name.<br><br>A headless Service is a type of Kubernetes Service that does not allocate a cluster IP address. Instead, a headless Service uses DNS to expose the IP addresses of the Pods that are associated with the Service. This allows you to connect directly to the Pods, instead of going through a proxy.<br>Headless Services are useful for a variety of scenarios, including:<br>
+<br>Load balancing across pods: You can use headless Services to load balance across Pods. To implement this, create a Service with a selector that matches the Pods that you want to load balance. The Service will then distribute traffic evenly across all of the Pods that match the selector.<br>
+
+<br>Service discovery: You can use a headless Service to implement Service discovery. To implement this, create a Service with a name and a selector. DNS record for the headless service contains all the IPs of the Pods behind the Service that match the selector. Clients can use these DNS records to find the IP addresses of the Pods that are associated with the Service.<br>
+
+<br>Direct Pod access: Clients can connect directly to the Pods that are associated with a headless Service, which can be useful for Services that require direct access to the underlying Pods, such as load balancers and DNS servers.<br>
+
+<br>Flexibility: Headless services can be used to create a variety of different topologies, such as load balancers, DNS servers, and distributed databases.<br>
+
+<br>If you have special network requirements for your workloads that can not be solved using headless Services with selectors, there is also the possibility of using headless Services without selectors. Headless Services are a useful tool for accessing Services that are not located within the Kubernetes cluster itself, as the control plane does not create EndpointSlice objects, you can read more about it in&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/services-networking/service/#without-selectors" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/services-networking/service/#without-selectors" target="_blank">Service without selectors</a><br>The following example is a manifest for a Headless Service:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  clusterIP: None
+  selector:
+    app: nginx
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+<br>Once you have created a headless Service, you can find the IP addresses of the Pods that are associated with the Service by querying the DNS. For example, the following command lists the IP addresses of the Pods that are associated with the nginx Service:<br>Note:&nbsp;This example assumes that the Pods created are tagged with the&nbsp;nginx&nbsp;label.<br>dig +short nginx.default.svc.cluster.local
+<br>Another example which uses Kubernetes query expansion::<br>dig +short +search nginx
+<br>You can create a headless Service with a single command, and headless Services are easy to update and scale.<br>kubectl create service clusterip my-svc --clusterip="None" --dry-run=client -o yaml &gt; [file.yaml]
+<br><br>A Service is an abstraction in the sense that it is not a process that listens on some network interface. Part of the abstraction is implemented in the&nbsp;<a data-tooltip-position="top" aria-label="https://linux.die.net/man/8/iptables" rel="noopener nofollow" class="external-link" href="https://linux.die.net/man/8/iptables" target="_blank">iptables</a>&nbsp;rules of the cluster nodes. Depending on the type of the Service, other parts of the abstraction are implemented by either an&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/load-balancing/docs/network" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/load-balancing/docs/network" target="_blank">external passthrough Network Load Balancer</a>&nbsp;or an&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/load-balancing/docs/https" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/load-balancing/docs/https" target="_blank">external Application Load Balancer</a>.<br><br>The value of the&nbsp;port&nbsp;field in a Service manifest is arbitrary. However, the value of&nbsp;targetPort&nbsp;is not arbitrary. Each member Pod must have a container listening on&nbsp;targetPort.<br>Here's a Service, of type&nbsp;LoadBalancer, that has a&nbsp;port&nbsp;value of 50000:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: my-ap-service
+spec:
+  clusterIP: 10.11.241.93
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 30641
+    port: 50000
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: parts
+    department: engineering
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 203.0.113.200
+<br>A client calls the Service at&nbsp;203.0.113.200&nbsp;on TCP port 50000. The request is forwarded to one of the member Pods on TCP port 8080.<br><br>The&nbsp;ports&nbsp;field of a Service is an array of&nbsp;<a data-tooltip-position="top" aria-label="https://v1-25.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.25/#serviceport-v1-core" rel="noopener nofollow" class="external-link" href="https://v1-25.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.25/#serviceport-v1-core" target="_blank">ServicePort</a>&nbsp;objects. The ServicePort object has these fields:<br>
+<br>name
+<br>protocol
+<br>port
+<br>targetPort
+<br>nodePort
+<br>If you have more than one ServicePort, each ServicePort must have a unique name.<br>Here is a Service, of type&nbsp;LoadBalancer, that has two&nbsp;ServicePort&nbsp;objects:<br>apiVersion: v1
+kind: Service
+metadata:
+  name: my-tp-service
+spec:
+  clusterIP: 10.11.242.196
+  externalTrafficPolicy: Cluster
+  ports:
+  - name: my-first-service-port
+    nodePort: 31233
+    port: 60000
+    protocol: TCP
+    targetPort: 50000
+  - name: my-second-service-port
+    nodePort: 31081
+    port: 60001
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: tests
+    department: engineering
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 203.0.113.201
+<br>Note:&nbsp;You can specify a maximum of five ports for a LoadBalancer service.<br>In the preceding example, if a client calls the Service at&nbsp;203.0.113.201&nbsp;on TCP port 60000, the request is forwarded to a member Pod on TCP port 50000. But if a client calls the Service at&nbsp;203.0.113.201&nbsp;on TCP port 60001, the request is forwarded to a member Pod on TCP port 8080.<br>Each member Pod must have a container listening on TCP port 50000 and a container listening on TCP port 8080. This could be a single container with two threads, or two containers running in the same Pod.<br><br>When you create a Service, Kubernetes creates an&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.25/#endpoints-v1-core" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.25/#endpoints-v1-core" target="_blank">Endpoints</a>&nbsp;object that has the same name as your Service. Kubernetes uses the Endpoints object to keep track of which Pods are members of the Service.<br><br>You can create an IPv6 Service of type&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/kubernetes-engine/docs/concepts/service#services_of_type_clusterip" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/kubernetes-engine/docs/concepts/service#services_of_type_clusterip" target="_blank"><code></code></a>ClusterIP&nbsp;or&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/kubernetes-engine/docs/concepts/service#service_of_type_nodeport" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/kubernetes-engine/docs/concepts/service#service_of_type_nodeport" target="_blank"><code></code></a>NodePort. GKE supports dual-stack Services of type&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/kubernetes-engine/docs/concepts/service-load-balancer" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/kubernetes-engine/docs/concepts/service-load-balancer" target="_blank"><code></code></a>LoadBalancer&nbsp;during&nbsp;<a data-tooltip-position="top" aria-label="https://cloud.google.com/products#product-launch-stages" rel="noopener nofollow" class="external-link" href="https://cloud.google.com/products#product-launch-stages" target="_blank">Preview</a>&nbsp;which carries no SLA or technical support.<br>For each of these Service types, you can define&nbsp;ipFamilies&nbsp;and&nbsp;ipFamilyPolicy&nbsp;fields as either IPv4, IPv6, or a&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/services-networking/dual-stack/#services" target="_blank">dual-stack</a>&nbsp;Service.<br><br>]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html</link><guid isPermaLink="false">DevOps/For Reading/K8s Service Types.md</guid><pubDate>Fri, 10 Jan 2025 10:26:14 GMT</pubDate></item><item><title><![CDATA[Monolithic vs Microservice Architecture]]></title><description><![CDATA[ 
  <br>Monolithic applications are built as a single, unified unit. Think of it like a large container holding all the components of your application—user interface, business logic, database access—all bundled together. &nbsp;<br>Microservices, on the other hand, break down the application into a collection of small, independent services. Each service focuses on a specific business function and communicates with other services through APIs. Imagine it as a set of interconnected Lego blocks, each serving a distinct purpose. &nbsp;<br>Here's a table highlighting the key differences:<br><br>In a nutshell:<br>
 <br>Monolithic apps are simpler to start with but can become complex to manage as they grow. &nbsp;
 <br>Microservices offer greater flexibility, scalability, and fault isolation, but they come with increased architectural complexity. &nbsp;
@@ -3825,7 +4039,13 @@ which is basically telling git this is a final changes with the special stamp of
 <br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
 <br>Uploads your local changes to the remote repository.<br>
 After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Kubernetes Architecture]]></title><description><![CDATA[ 
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*<br><br>git checkout master
+git merge 4.4.0
+
+#or to replace completely (overwrite history) 
+git push origin 4.4.0:master 
+
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><pubDate>Thu, 09 Jan 2025 16:19:02 GMT</pubDate></item><item><title><![CDATA[Kubernetes Architecture]]></title><description><![CDATA[ 
  <br>Kubernetes Cluster Architecture<br>
 <img alt="cluster-diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"><br>
 <br>Control Plane:
@@ -3867,7 +4087,45 @@ After pushing, other developers can access your changes by pulling from the remo
 <br>Kubelets on worker nodes report to API Server
 <br>Pods can access Persistent Volumes
 <br>Network policies control pod communication
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html</link><guid isPermaLink="false">DevOps/Notes/Kubernetes Architecture.md</guid><pubDate>Tue, 07 Jan 2025 16:01:14 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html</link><guid isPermaLink="false">DevOps/Notes/Kubernetes Architecture.md</guid><pubDate>Tue, 07 Jan 2025 16:01:14 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Using diff smart way]]></title><description><![CDATA[ 
+ <br>What is diff?<br>Shows difference/comparison between files<br>Why is it useful?<br>
+<br>Tracking changes: See how a file has evolved over time.
+<br>Comparing versions: Find out what's different between two versions of a document or code.
+<br>Merging changes: Helps you combine different versions of a file.
+<br>Troubleshooting: Identify what went wrong in a configuration file or program.
+<br>How to use it?<br>The basic command is super simple:<br>Bash<br>diff file1 file2
+<br>Just replace file1 and file2 with the actual names of your files.<br>Making the output more helpful<br>diff has some options to make the output easier to understand:<br>
+<br>-u (or --unified): Shows the changes in a "unified" format, which is more compact and easier to read.
+<br>-y (or --side-by-side): Displays the files side-by-side, so you can see the differences directly.
+<br>-w (or --ignore-all-space): Ignores differences in whitespace (spaces and tabs), which is helpful if you only care about the content.
+<br>-r (or --recursive): Compares entire directories, not just individual files.
+<br>-q (or --brief): Only tells you if the files are different, not what the differences are.
+<br>Example:<br>Let's say you have two files, original.txt and revised.txt. To see the differences in a unified format:<br>diff -u original.txt revised.txt
+<br>Understanding the output<br>diff uses some symbols to show you the changes:<br>
+<br>+: Lines added in the second file.
+<br>-: Lines removed from the first file.
+<br>@@: Indicates a block of changed lines.
+<br><br>See difference between two folders<br>
+Basic Usage<br>diff -qr folder1 folder2
+<br>
+<br>-q: Only reports when files differ.
+<br>-r: Recursively compares subdirectories.
+<br>More detailed output<br>diff -ruN dir1 dir2
+<br>
+<br>-r: Recursively compares subdirectories.
+<br>-u: Produces a unified diff format, which is easier to read.
+<br>-N: Treats absent files as empty.
+<br>For files<br>diff -wy file1.txt file2.txt
+<br>
+<br>-w : for ignoring whitespaces
+<br>-y : side by side comparison
+<br>Some Very Important Flags<br>
+<br>--color=always
+<br>/pratyabhijna/quartz/components/TagList.tsx<br>./styles/toc.scss"<br>
+./styles/explorer.scss<br>
+"./styles/graph.scss<br>
+./styles/backlinks.scss"<br>
+./styles/search.scss"<br>../styles/listPage.scss<br><br>“{5C6FFB5F-BBC7-4DAD-AE6E-C10A0A22DBF1}.png” could not be found.]]></description><link>https://notes.sarangwandile.xyz/devops/notes/using-diff-smart-way.html</link><guid isPermaLink="false">DevOps/Notes/Using diff smart way.md</guid><pubDate>Thu, 09 Jan 2025 14:47:58 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -4265,7 +4523,6 @@ These notes are not complete and subject to grow, modify and update in time to t
 <br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
 <br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
 <br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
-<br><a data-href="Task 7 Create LAMP Server" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-7-create-lamp-server.html" class="internal-link" target="_self" rel="noopener nofollow">Task 7 Create LAMP Server</a>
 
 <br>Task assigned for Reading
 
@@ -4276,5 +4533,8 @@ These notes are not complete and subject to grow, modify and update in time to t
 <br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
 <br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
 <br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
+<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
+<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
+<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
 
-]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Tue, 07 Jan 2025 16:05:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><pubDate>Fri, 10 Jan 2025 09:25:16 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>

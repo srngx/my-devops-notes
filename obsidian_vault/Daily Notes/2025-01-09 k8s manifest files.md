@@ -90,3 +90,6 @@ A key aim of Services in Kubernetes is that you don't need to modify your existi
 | Imperative Way | Declarative Way |
 | -------------- | --------------- |
 | commands       | Manifest        |
+
+
+

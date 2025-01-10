@@ -70,14 +70,16 @@ In this **Digital Garden** you are always welcome to explore and share your note
 | 2024-22-28 | [[2024-11-28 Creating RDS]]       |
 | 2024-12-11 | [[2024-12-11 AWS Task]]           |
 #### DevOps
-| Date       | Some Importants from Daily Notes       |
-| ---------- | -------------------------------------- |
-| 2024-12-19 | [[2024-12-19 Git Class]]               |
-| 2024-12-23 | [[2024-12-23 docker-day]]              |
-| 2024-12-24 | [[2024-12-24 docker basics]]           |
-| 2024-12-31 | [[2024-12-31 Dockerfile Explained]]    |
-| 2025-01-02 | [[2025-01-02 Multistage Dockerfile]]   |
-| 2025-01-07 | [[2025-01-07 kubernetes architecture]] |
+| Date       | Some Importants from Daily Notes       |     |
+| ---------- | -------------------------------------- | --- |
+| 2024-12-19 | [[2024-12-19 Git Class]]               |     |
+| 2024-12-23 | [[2024-12-23 docker-day]]              |     |
+| 2024-12-24 | [[2024-12-24 docker basics]]           |     |
+| 2024-12-31 | [[2024-12-31 Dockerfile Explained]]    |     |
+| 2025-01-02 | [[2025-01-02 Multistage Dockerfile]]   |     |
+| 2025-01-07 | [[2025-01-07 kubernetes architecture]] |     |
+| 2025-01-09 | [[2025-01-09 k8s manifest files]]      |     |
+| 2025-01-10 | [[2025-01-10 Service Types]]           |     |
 
 > [!todo]- Tasks to perform
 > - [[Task 1 Creating Tomcat student-ui container]]
@@ -86,7 +88,6 @@ In this **Digital Garden** you are always welcome to explore and share your note
 > - [[Task 4 Create daemon service of tomcat]]
 > - [[Task 5 Create dockerfiles]]
 > - [[Task 6 How to set permanent alias]]
-> - [[Task 7 Create LAMP Server]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
@@ -96,6 +97,10 @@ In this **Digital Garden** you are always welcome to explore and share your note
 > - [[Git Theory]] 
 > - [[Reading Docker Inspect output]]
 > - [[read about docker.sock file]]
+> - [[Kubernetes Architecture]]
+> - [[Read about each and every component of kubernetes]]
+> - [[K8s Service Types]]
+
 
 
 

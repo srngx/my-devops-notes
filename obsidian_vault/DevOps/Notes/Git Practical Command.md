@@ -55,4 +55,12 @@ git pull origin main
 ```
 **Downloads changes from the remote repository to your local repository.** Used to stay up-to-date with the latest changes made by other develpers.*
 
+#### Merging changes from branch to master
+```sh
+git checkout master
+git merge 4.4.0
 
+#or to replace completely (overwrite history) 
+git push origin 4.4.0:master 
+
+```
