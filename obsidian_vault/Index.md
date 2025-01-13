@@ -101,7 +101,8 @@ In this **Digital Garden** you are always welcome to explore and share your note
 > - [[Kubernetes Architecture]]
 > - [[Read about each and every component of kubernetes]]
 > - [[K8s Service Types]]
-> - 
+> - [[k8s Namespace]]
+> - [[k8s Volume]]
 
 ---
 
