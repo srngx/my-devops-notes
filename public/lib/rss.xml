@@ -1,4 +1,21 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 10 Jan 2025 12:09:00 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 10 Jan 2025 12:07:33 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 13 Jan 2025 04:55:00 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 13 Jan 2025 04:54:57 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-10]]></title><description><![CDATA[ 
+ ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-10.html</link><guid isPermaLink="false">Daily Notes/2025-01-10.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Fri, 10 Jan 2025 12:33:50 GMT</pubDate></item><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
+ <br>ConfigMap - non confidential information<br>
+Secrets - confidential information<br><br><br>Create configMap Command<br>kubectl create cm nginx-cm --from-file=index.html
+<br>generate configmap definition file<br>kubectl create cm nginx-cm --from-file=index.html --dry-run=client -o yaml &gt; configmap.yaml
+<br>Enter into pod shell<br>kubectl exec -it mypod --bash
+<br>Port forward<br>kubectl port-forward service/myservice 80:80
+<br><br>Three types of secret<br>
+<br>docker-registry : Create a secret for use with a Docker registry
+<br>generic : Create a secret from a local file, directory, or literal value
+<br>tls : Create a TLS secret
+<br>Generate Secret.yaml file<br>kubectl create secret generic --from-literal=idli=chutney --dry-run=client -o yaml &gt; secret.yaml
+<br>Decode secret<br>echo "Y2hhdG55" | base64 --decode
+<br>Expose pod external port<br>kubectl expose pod nginx-secret --port=80 -o yaml --dry-run=client &gt; svc.yaml
+<br><br>Tommorrow:<br>
+<br>Namespace
+<br>Volume
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-13.html</link><guid isPermaLink="false">Daily Notes/2025-01-13.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 04:54:10 GMT</pubDate></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
