@@ -1,5 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 13 Jan 2025 04:55:00 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 13 Jan 2025 04:54:57 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-10]]></title><description><![CDATA[ 
- ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-10.html</link><guid isPermaLink="false">Daily Notes/2025-01-10.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Fri, 10 Jan 2025 12:33:50 GMT</pubDate></item><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 13 Jan 2025 05:58:02 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 13 Jan 2025 05:57:56 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
  <br>ConfigMap - non confidential information<br>
 Secrets - confidential information<br><br><br>Create configMap Command<br>kubectl create cm nginx-cm --from-file=index.html
 <br>generate configmap definition file<br>kubectl create cm nginx-cm --from-file=index.html --dry-run=client -o yaml &gt; configmap.yaml
@@ -13,9 +12,290 @@ Secrets - confidential information<br><br><br>Create configMap Command<br>kubect
 <br>Decode secret<br>echo "Y2hhdG55" | base64 --decode
 <br>Expose pod external port<br>kubectl expose pod nginx-secret --port=80 -o yaml --dry-run=client &gt; svc.yaml
 <br><br>Tommorrow:<br>
-<br>Namespace
-<br>Volume
-]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-13.html</link><guid isPermaLink="false">Daily Notes/2025-01-13.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 04:54:10 GMT</pubDate></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
+<br><a data-href="k8s Namespace" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Namespace</a>
+<br><a data-href="k8s Volume" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Volume</a>
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-13.html</link><guid isPermaLink="false">Daily Notes/2025-01-13.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 05:53:07 GMT</pubDate></item><item><title><![CDATA[k8s Namespace]]></title><description><![CDATA[ 
+ <br>In Kubernetes,&nbsp;namespaces&nbsp;provide a mechanism for isolating groups of resources within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces. Namespace-based scoping is applicable only for namespaced&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/overview/working-with-objects/#kubernetes-objects" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/#kubernetes-objects" target="_blank">objects</a>&nbsp;(e.g. Deployments, Services, etc.)&nbsp;and not for cluster-wide objects&nbsp;(e.g. StorageClass, Nodes, PersistentVolumes, etc.).<br><br>Namespaces are intended for use in environments with many users spread across multiple teams, or projects. For clusters with a few to tens of users, you should not need to create or think about namespaces at all. Start using namespaces when you need the features they provide.<br>Namespaces provide a scope for names. Names of resources need to be unique within a namespace, but not across namespaces. Namespaces cannot be nested inside one another and each Kubernetes resource can only be in one namespace.<br>Namespaces are a way to divide cluster resources between multiple users (via&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/policy/resource-quotas/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/policy/resource-quotas/" target="_blank">resource quota</a>).<br>It is not necessary to use multiple namespaces to separate slightly different resources, such as different versions of the same software: use&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels" target="_blank">labels</a>&nbsp;to distinguish resources within the same namespace.<br><br>For a production cluster, consider&nbsp;not&nbsp;using the&nbsp;default&nbsp;namespace. Instead, make other namespaces and use those.<br><br>Kubernetes starts with four initial namespaces:<br>default<br>Kubernetes includes this namespace so that you can start using your new cluster without first creating a namespace.<br>kube-node-lease<br>This namespace holds&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/architecture/leases/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/architecture/leases/" target="_blank">Lease</a>&nbsp;objects associated with each node. Node leases allow the kubelet to send&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/architecture/nodes/#node-heartbeats" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/architecture/nodes/#node-heartbeats" target="_blank">heartbeats</a>&nbsp;so that the control plane can detect node failure.<br>kube-public<br>This namespace is readable by&nbsp;all&nbsp;clients (including those not authenticated). This namespace is mostly reserved for cluster usage, in case that some resources should be visible and readable publicly throughout the whole cluster. The public aspect of this namespace is only a convention, not a requirement.<br>kube-system<br>The namespace for objects created by the Kubernetes system.<br><br>Creation and deletion of namespaces are described in the&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/tasks/administer-cluster/namespaces/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/tasks/administer-cluster/namespaces/" target="_blank">Admin Guide documentation for namespaces</a>.<br><br>Avoid creating namespaces with the prefix&nbsp;kube-, since it is reserved for Kubernetes system namespaces.<br><br>You can list the current namespaces in a cluster using:<br>kubectl get namespace
+<br>NAME              STATUS   AGE
+default           Active   1d
+kube-node-lease   Active   1d
+kube-public       Active   1d
+kube-system       Active   1d
+<br><br>To set the namespace for a current request, use the&nbsp;--namespace&nbsp;flag.<br>For example:<br>kubectl run nginx --image=nginx --namespace=&lt;insert-namespace-name-here&gt;
+kubectl get pods --namespace=&lt;insert-namespace-name-here&gt;
+<br><br>You can permanently save the namespace for all subsequent kubectl commands in that context.<br>kubectl config set-context --current --namespace=&lt;insert-namespace-name-here&gt;
+# Validate it
+kubectl config view --minify | grep namespace:
+<br><br>When you create a&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/services-networking/service/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/services-networking/service/" target="_blank">Service</a>, it creates a corresponding&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/" target="_blank">DNS entry</a>. This entry is of the form&nbsp;&lt;service-name&gt;.&lt;namespace-name&gt;.svc.cluster.local, which means that if a container only uses&nbsp;&lt;service-name&gt;, it will resolve to the service which is local to a namespace. This is useful for using the same configuration across multiple namespaces such as Development, Staging and Production. If you want to reach across namespaces, you need to use the fully qualified domain name (FQDN).<br>As a result, all namespace names must be valid&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-label-names" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#dns-label-names" target="_blank">RFC 1123 DNS labels</a>.<br><br>By creating namespaces with the same name as&nbsp;<a data-tooltip-position="top" aria-label="https://data.iana.org/TLD/tlds-alpha-by-domain.txt" rel="noopener nofollow" class="external-link" href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt" target="_blank">public top-level domains</a>, Services in these namespaces can have short DNS names that overlap with public DNS records. Workloads from any namespace performing a DNS lookup without a&nbsp;<a data-tooltip-position="top" aria-label="https://datatracker.ietf.org/doc/html/rfc1034#page-8" rel="noopener nofollow" class="external-link" href="https://datatracker.ietf.org/doc/html/rfc1034#page-8" target="_blank">trailing dot</a>&nbsp;will be redirected to those services, taking precedence over public DNS.<br>To mitigate this, limit privileges for creating namespaces to trusted users. If required, you could additionally configure third-party security controls, such as&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/" target="_blank">admission webhooks</a>, to block creating any namespace with the name of&nbsp;<a data-tooltip-position="top" aria-label="https://data.iana.org/TLD/tlds-alpha-by-domain.txt" rel="noopener nofollow" class="external-link" href="https://data.iana.org/TLD/tlds-alpha-by-domain.txt" target="_blank">public TLDs</a>.<br><br>Most Kubernetes resources (e.g. pods, services, replication controllers, and others) are in some namespaces. However namespace resources are not themselves in a namespace. And low-level resources, such as&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/architecture/nodes/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/architecture/nodes/" target="_blank">nodes</a>&nbsp;and&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/storage/persistent-volumes/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/" target="_blank">persistentVolumes</a>, are not in any namespace.<br>To see which Kubernetes resources are and aren't in a namespace:<br># In a namespace
+kubectl api-resources --namespaced=true
+
+# Not in a namespace
+kubectl api-resources --namespaced=false
+<br><br>FEATURE STATE:&nbsp;Kubernetes 1.22 [stable]<br>The Kubernetes control plane sets an immutable&nbsp;<a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels" target="_blank">label</a>&nbsp;kubernetes.io/metadata.name&nbsp;on all namespaces. The value of the label is the namespace name.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html</link><guid isPermaLink="false">DevOps/For Reading/k8s Namespace.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 05:35:30 GMT</pubDate></item><item><title><![CDATA[k8s Volume]]></title><description><![CDATA[ 
+ <br>On-disk files in a container are ephemeral, which presents some problems for non-trivial applications when running in containers. First, when a container crashes kubelet will restart it, but the files will be lost - the container starts with a clean state. Second, when running containers together in a&nbsp;Pod&nbsp;it is often necessary to share files between those containers. The Kubernetes&nbsp;Volume&nbsp;abstraction solves both of these problems.<br><br>Docker also has a concept of&nbsp;<a data-tooltip-position="top" aria-label="https://docs.docker.com/userguide/dockervolumes/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/userguide/dockervolumes/" target="_blank">volumes</a>, though it is somewhat looser and less managed. In Docker, a volume is simply a directory on disk or in another container. Lifetimes are not managed and until very recently there were only local-disk-backed volumes. Docker now provides volume drivers, but the functionality is very limited for now (e.g. as of Docker 1.7 only one volume driver is allowed per container and there is no way to pass parameters to volumes).<br>A Kubernetes volume, on the other hand, has an explicit lifetime - the same as the pod that encloses it. Consequently, a volume outlives any containers that run within the Pod, and data is preserved across Container restarts. Of course, when a Pod ceases to exist, the volume will cease to exist, too. Perhaps more importantly than this, Kubernetes supports many type of volumes, and a Pod can use any number of them simultaneously.<br>At its core, a volume is just a directory, possibly with some data in it, which is accessible to the containers in a pod. How that directory comes to be, the medium that backs it, and the contents of it are determined by the particular volume type used.<br>To use a volume, a pod specifies what volumes to provide for the pod (the&nbsp;spec.volumes&nbsp;field) and where to mount those into containers(the&nbsp;spec.containers.volumeMounts&nbsp;field).<br>A process in a container sees a filesystem view composed from their Docker image and volumes. The&nbsp;<a data-tooltip-position="top" aria-label="https://docs.docker.com/userguide/dockerimages/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/userguide/dockerimages/" target="_blank">Docker image</a>&nbsp;is at the root of the filesystem hierarchy, and any volumes are mounted at the specified paths within the image. Volumes can not mount onto other volumes or have hard links to other volumes. Each container in the Pod must independently specify where to mount each volume.<br><br>Kubernetes supports several types of Volumes:<br>
+<br>emptyDir
+<br>hostPath
+<br>gcePersistentDisk
+<br>awsElasticBlockStore
+<br>nfs
+<br>iscsi
+<br>flocker
+<br>glusterfs
+<br>rbd
+<br>cephfs
+<br>gitRepo
+<br>secret
+<br>persistentVolumeClaim
+<br>downwardAPI
+<br>azureFileVolume
+<br>azureDisk
+<br>vsphereVolume
+<br>Quobyte
+<br>PortworxVolume
+<br>ScaleIO
+<br>We welcome additional contributions.<br><br>An&nbsp;emptyDir&nbsp;volume is first created when a Pod is assigned to a Node, and exists as long as that Pod is running on that node. As the name says, it is initially empty. Containers in the pod can all read and write the same files in the&nbsp;emptyDir&nbsp;volume, though that volume can be mounted at the same or different paths in each container. When a Pod is removed from a node for any reason, the data in the&nbsp;emptyDir&nbsp;is deleted forever. NOTE: a container crashing does&nbsp;NOT&nbsp;remove a pod from a node, so the data in an&nbsp;emptyDir&nbsp;volume is safe across container crashes.<br>Some uses for an&nbsp;emptyDir&nbsp;are:<br>
+<br>scratch space, such as for a disk-based merge sort
+<br>checkpointing a long computation for recovery from crashes
+<br>holding files that a content-manager container fetches while a webserver container serves the data
+<br>By default,&nbsp;emptyDir&nbsp;volumes are stored on whatever medium is backing the machine - that might be disk or SSD or network storage, depending on your environment. However, you can set the&nbsp;emptyDir.medium&nbsp;field to&nbsp;"Memory"&nbsp;to tell Kubernetes to mount a tmpfs (RAM-backed filesystem) for you instead. While tmpfs is very fast, be aware that unlike disks, tmpfs is cleared on machine reboot and any files you write will count against your container's memory limit.<br><br>apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /cache
+      name: cache-volume
+  volumes:
+  - name: cache-volume
+    emptyDir: {}
+<br><br>A&nbsp;hostPath&nbsp;volume mounts a file or directory from the host node's filesystem into your pod. This is not something that most Pods will need, but it offers a powerful escape hatch for some applications.<br>For example, some uses for a&nbsp;hostPath&nbsp;are:<br>
+<br>running a container that needs access to Docker internals; use a&nbsp;hostPath&nbsp;of&nbsp;/var/lib/docker
+<br>running cAdvisor in a container; use a&nbsp;hostPath&nbsp;of&nbsp;/dev/cgroups
+<br>Watch out when using this type of volume, because:<br>
+<br>pods with identical configuration (such as created from a podTemplate) may behave differently on different nodes due to different files on the nodes
+<br>when Kubernetes adds resource-aware scheduling, as is planned, it will not be able to account for resources used by a&nbsp;hostPath
+<br>the directories created on the underlying hosts are only writable by root. You either need to run your process as root in a&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/security-context" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/security-context" target="_blank">privileged container</a>&nbsp;or modify the file permissions on the host to be able to write to a&nbsp;hostPath&nbsp;volume
+<br><br>apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /test-pd
+      name: test-volume
+  volumes:
+  - name: test-volume
+    hostPath:
+      # directory location on host
+      path: /data
+<br><br>A&nbsp;gcePersistentDisk&nbsp;volume mounts a Google Compute Engine (GCE)&nbsp;<a data-tooltip-position="top" aria-label="http://cloud.google.com/compute/docs/disks" rel="noopener nofollow" class="external-link" href="http://cloud.google.com/compute/docs/disks" target="_blank">Persistent Disk</a>&nbsp;into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of a PD are preserved and the volume is merely unmounted. This means that a PD can be pre-populated with data, and that data can be "handed off" between pods.<br>Important: You must create a PD using&nbsp;gcloud&nbsp;or the GCE API or UI before you can use it<br>There are some restrictions when using a&nbsp;gcePersistentDisk:<br>
+<br>the nodes on which pods are running must be GCE VMs
+<br>those VMs need to be in the same GCE project and zone as the PD
+<br>A feature of PD is that they can be mounted as read-only by multiple consumers simultaneously. This means that you can pre-populate a PD with your dataset and then serve it in parallel from as many pods as you need. Unfortunately, PDs can only be mounted by a single consumer in read-write mode - no simultaneous writers allowed.<br>Using a PD on a pod controlled by a ReplicationController will fail unless the PD is read-only or the replica count is 0 or 1.<br><br>Before you can use a GCE PD with a pod, you need to create it.<br>gcloud compute disks create --size=500GB --zone=us-central1-a my-data-disk
+<br><br>apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /test-pd
+      name: test-volume
+  volumes:
+  - name: test-volume
+    # This GCE PD must already exist.
+    gcePersistentDisk:
+      pdName: my-data-disk
+      fsType: ext4
+<br><br>An&nbsp;awsElasticBlockStore&nbsp;volume mounts an Amazon Web Services (AWS)&nbsp;<a data-tooltip-position="top" aria-label="http://aws.amazon.com/ebs/" rel="noopener nofollow" class="external-link" href="http://aws.amazon.com/ebs/" target="_blank">EBS Volume</a>&nbsp;into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of an EBS volume are preserved and the volume is merely unmounted. This means that an EBS volume can be pre-populated with data, and that data can be "handed off" between pods.<br>Important: You must create an EBS volume using&nbsp;aws ec2 create-volume&nbsp;or the AWS API before you can use it<br>There are some restrictions when using an awsElasticBlockStore volume:<br>
+<br>the nodes on which pods are running must be AWS EC2 instances
+<br>those instances need to be in the same region and availability-zone as the EBS volume
+<br>EBS only supports a single EC2 instance mounting a volume
+<br><br>Before you can use an EBS volume with a pod, you need to create it.<br>aws ec2 create-volume --availability-zone eu-west-1a --size 10 --volume-type gp2
+<br>Make sure the zone matches the zone you brought up your cluster in. (And also check that the size and EBS volume type are suitable for your use!)<br><br>apiVersion: v1
+kind: Pod
+metadata:
+  name: test-ebs
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /test-ebs
+      name: test-volume
+  volumes:
+  - name: test-volume
+    # This AWS EBS volume must already exist.
+    awsElasticBlockStore:
+      volumeID: &lt;volume-id&gt;
+      fsType: ext4
+<br><br>An&nbsp;nfs&nbsp;volume allows an existing NFS (Network File System) share to be mounted into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of an&nbsp;nfs&nbsp;volume are preserved and the volume is merely unmounted. This means that an NFS volume can be pre-populated with data, and that data can be "handed off" between pods. NFS can be mounted by multiple writers simultaneously.<br>Important: You must have your own NFS server running with the share exported before you can use it<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/nfs" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/nfs" target="_blank">NFS example</a>&nbsp;for more details.<br><br>An&nbsp;iscsi&nbsp;volume allows an existing iSCSI (SCSI over IP) volume to be mounted into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of an&nbsp;iscsi&nbsp;volume are preserved and the volume is merely unmounted. This means that an iscsi volume can be pre-populated with data, and that data can be "handed off" between pods.<br>Important: You must have your own iSCSI server running with the volume created before you can use it<br>A feature of iSCSI is that it can be mounted as read-only by multiple consumers simultaneously. This means that you can pre-populate a volume with your dataset and then serve it in parallel from as many pods as you need. Unfortunately, iSCSI volumes can only be mounted by a single consumer in read-write mode - no simultaneous writers allowed.<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/iscsi" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/iscsi" target="_blank">iSCSI example</a>&nbsp;for more details.<br><br><a data-tooltip-position="top" aria-label="https://clusterhq.com/flocker" rel="noopener nofollow" class="external-link" href="https://clusterhq.com/flocker" target="_blank">Flocker</a>&nbsp;is an open-source clustered container data volume manager. It provides management and orchestration of data volumes backed by a variety of storage backends.<br>A&nbsp;flocker&nbsp;volume allows a Flocker dataset to be mounted into a pod. If the dataset does not already exist in Flocker, it needs to be first created with the Flocker CLI or by using the Flocker API. If the dataset already exists it will be reattached by Flocker to the node that the pod is scheduled. This means data can be "handed off" between pods as required.<br>Important: You must have your own Flocker installation running before you can use it<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/flocker" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/flocker" target="_blank">Flocker example</a>&nbsp;for more details.<br><br>A&nbsp;glusterfs&nbsp;volume allows a&nbsp;<a data-tooltip-position="top" aria-label="http://www.gluster.org/" rel="noopener nofollow" class="external-link" href="http://www.gluster.org/" target="_blank">Glusterfs</a>&nbsp;(an open source networked filesystem) volume to be mounted into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of a&nbsp;glusterfs&nbsp;volume are preserved and the volume is merely unmounted. This means that a glusterfs volume can be pre-populated with data, and that data can be "handed off" between pods. GlusterFS can be mounted by multiple writers simultaneously.<br>Important: You must have your own GlusterFS installation running before you can use it<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/glusterfs" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/glusterfs" target="_blank">GlusterFS example</a>&nbsp;for more details.<br><br>An&nbsp;rbd&nbsp;volume allows a&nbsp;<a data-tooltip-position="top" aria-label="http://ceph.com/docs/master/rbd/rbd/" rel="noopener nofollow" class="external-link" href="http://ceph.com/docs/master/rbd/rbd/" target="_blank">Rados Block Device</a>&nbsp;volume to be mounted into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of a&nbsp;rbd&nbsp;volume are preserved and the volume is merely unmounted. This means that a RBD volume can be pre-populated with data, and that data can be "handed off" between pods.<br>Important: You must have your own Ceph installation running before you can use RBD<br>A feature of RBD is that it can be mounted as read-only by multiple consumers simultaneously. This means that you can pre-populate a volume with your dataset and then serve it in parallel from as many pods as you need. Unfortunately, RBD volumes can only be mounted by a single consumer in read-write mode - no simultaneous writers allowed.<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/rbd" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/rbd" target="_blank">RBD example</a>&nbsp;for more details.<br><br>A&nbsp;cephfs&nbsp;volume allows an existing CephFS volume to be mounted into your pod. Unlike&nbsp;emptyDir, which is erased when a Pod is removed, the contents of a&nbsp;cephfs&nbsp;volume are preserved and the volume is merely unmounted. This means that a CephFS volume can be pre-populated with data, and that data can be "handed off" between pods. CephFS can be mounted by multiple writers simultaneously.<br>Important: You must have your own Ceph server running with the share exported before you can use it<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/cephfs/" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/cephfs/" target="_blank">CephFS example</a>&nbsp;for more details.<br><br>A&nbsp;gitRepo&nbsp;volume is an example of what can be done as a volume plugin. It mounts an empty directory and clones a git repository into it for your pod to use. In the future, such volumes may be moved to an even more decoupled model, rather than extending the Kubernetes API for every such use case.<br>Here is an example for gitRepo volume:<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: server
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+    volumeMounts:
+    - mountPath: /mypath
+      name: git-volume
+  volumes:
+  - name: git-volume
+    gitRepo:
+      repository: "git@somewhere:me/my-git-repository.git"
+      revision: "22f1d8406d464b0c0874075539c1f2e96c253775"
+<br><br>A&nbsp;secret&nbsp;volume is used to pass sensitive information, such as passwords, to pods. You can store secrets in the Kubernetes API and mount them as files for use by pods without coupling to Kubernetes directly.&nbsp;secret&nbsp;volumes are backed by tmpfs (a RAM-backed filesystem) so they are never written to non-volatile storage.<br>Important: You must create a secret in the Kubernetes API before you can use it<br>Secrets are described in more detail&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/secrets" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/secrets" target="_blank">here</a>.<br><br>A&nbsp;persistentVolumeClaim&nbsp;volume is used to mount a&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/persistent-volumes" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/persistent-volumes" target="_blank">PersistentVolume</a>&nbsp;into a pod. PersistentVolumes are a way for users to "claim" durable storage (such as a GCE PersistentDisk or an iSCSI volume) without knowing the details of the particular cloud environment.<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/persistent-volumes/" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/persistent-volumes/" target="_blank">PersistentVolumes example</a>&nbsp;for more details.<br><br>A&nbsp;downwardAPI&nbsp;volume is used to make downward API data available to applications. It mounts a directory and writes the requested data in plain text files.<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/downward-api/volume/" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/downward-api/volume/" target="_blank"><code></code>&nbsp;volume example</a>downwardAPI&nbsp;for more details.<br><br>A&nbsp;FlexVolume&nbsp;enables users to mount vendor volumes into a pod. It expects vendor drivers are installed in the volume plugin path on each kubelet node. This is an alpha feature and may change in future.<br>More details are in&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/flexvolume/README.md" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/flexvolume/README.md" target="_blank">here</a><br><br>A&nbsp;AzureFileVolume&nbsp;is used to mount a Microsoft Azure File Volume (SMB 2.1 and 3.0) into a Pod.<br>More details can be found&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/azure_file/README.md" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/azure_file/README.md" target="_blank">here</a><br><br>A&nbsp;AzureDiskVolume&nbsp;is used to mount a Microsoft Azure&nbsp;<a data-tooltip-position="top" aria-label="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-about-disks-vhds/" rel="noopener nofollow" class="external-link" href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-about-disks-vhds/" target="_blank">Data Disk</a>&nbsp;into a Pod.<br>More details can be found&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/azure_disk/README.md" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/azure_disk/README.md" target="_blank">here</a><br><br>Prerequisite: Kubernetes with vSphere Cloud Provider configured. For cloudprovider configuration please refer&nbsp;<a data-tooltip-position="top" aria-label="http://kubernetes.io/docs/getting-started-guides/vsphere/" rel="noopener nofollow" class="external-link" href="http://kubernetes.io/docs/getting-started-guides/vsphere/" target="_blank">vSphere getting started guide</a>.<br>A&nbsp;vsphereVolume&nbsp;is used to mount a vSphere VMDK Volume into your Pod. The contents of a volume are preserved when it is unmounted. It supports both VMFS and VSAN datastore.<br>Important: You must create VMDK using one of the following method before using with POD.<br><br>
+<br>Create using vmkfstools.
+<br>First ssh into ESX and then use following command to create vmdk,<br>    vmkfstools -c 2G /vmfs/volumes/DatastoreName/volumes/myDisk.vmdk
+<br>
+<br>Create using vmware-vdiskmanager.
+<br>  vmware-vdiskmanager -c -t 0 -s 40GB -a lsilogic myDisk.vmdk
+<br><br>apiVersion: v1
+kind: Pod
+metadata:
+  name: test-vmdk
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /test-vmdk
+      name: test-volume
+  volumes:
+  - name: test-volume
+    # This VMDK volume must already exist.
+    vsphereVolume:
+      volumePath: "[DatastoreName] volumes/myDisk"
+      fsType: ext4
+<br>More examples can be found&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/vsphere" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/vsphere" target="_blank">here</a>.<br><br>A&nbsp;Quobyte&nbsp;volume allows an existing&nbsp;<a data-tooltip-position="top" aria-label="http://www.quobyte.com/" rel="noopener nofollow" class="external-link" href="http://www.quobyte.com/" target="_blank">Quobyte</a>&nbsp;volume to be mounted into your pod.<br>Important: You must have your own Quobyte setup running with the volumes created before you can use it<br>See the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/quobyte" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/quobyte" target="_blank">Quobyte example</a>&nbsp;for more details.<br><br>A&nbsp;PortworxVolume&nbsp;is an elastic block storage layer that runs hyperconverged with Kubernetes. Portworx fingerprints storage in a server, tiers based on capabilities, and aggregates capacity across multiple servers. Portworx runs in-guest in virtual machines or on bare metal Linux nodes.<br>A&nbsp;PortworxVolume&nbsp;can be dynamically created through Kubernetes or it can also be pre-provisioned and referenced inside a Kubernetes pod. Here is an example pod referencing a pre-provisioned PortworxVolume:<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: test-portworx-volume-pod
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /mnt
+      name: pxvol
+  volumes:
+  - name: pxvol
+    # This Portworx volume must already exist.
+    portworxVolume:
+      volumeID: "pxvol"
+      fsType: "&lt;fs-type&gt;"
+<br>Important: Make sure you have an existing PortworxVolume with name&nbsp;pxvol&nbsp;before using it in the pod<br>More details and examples can be found&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/portworx/README.md" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/portworx/README.md" target="_blank">here</a><br><br>ScaleIO is a software-based storage platform that can use existing hardware to create clusters of scalable shared block networked storage. The ScaleIO volume plugin allows deployed pods to access existing ScaleIO volumes (or it can dynamically provision new volumes for persistent volume claims, see&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/persistent-volumes/#scaleio" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/persistent-volumes/#scaleio" target="_blank">ScaleIO Persistent Volumes</a>).<br>Important: You must have an existing ScaleIO cluster already setup and running with the volumes created before you can use them<br>The following is an example pod configuration with ScaleIO:<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-0
+spec:
+  containers:
+  - image: gcr.io/google_containers/test-webserver
+    name: pod-0
+    volumeMounts:
+    - mountPath: /test-pd
+      name: vol-0
+  volumes:
+  - name: vol-0
+    scaleIO:
+      gateway: https://localhost:443/api
+      system: scaleio
+      volumeName: vol-0
+      secretRef:
+        name: sio-secret
+      fsType: xfs
+<br>For further detail, plese the see the&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/scaleio" rel="noopener nofollow" class="external-link" href="https://github.com/kubernetes/kubernetes/tree/%7B%7Bpage.githubbranch%7D%7D/examples/volumes/scaleio" target="_blank">ScaleIO examples</a>.<br><br>Sometimes, it is useful to share one volume for multiple uses in a single pod. The&nbsp;volumeMounts.subPath&nbsp;property can be used to specify a sub-path inside the referenced volume instead of its root.<br>Here is an example of a pod with a LAMP stack (Linux Apache Mysql PHP) using a single, shared volume. The HTML contents are mapped to its&nbsp;html&nbsp;folder, and the databases will be stored in its&nbsp;mysql&nbsp;folder:<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: my-lamp-site
+spec:
+    containers:
+    - name: mysql
+      image: mysql
+      volumeMounts:
+      - mountPath: /var/lib/mysql
+        name: site-data
+        subPath: mysql
+    - name: php
+      image: php
+      volumeMounts:
+      - mountPath: /var/www/html
+        name: site-data
+        subPath: html
+    volumes:
+    - name: site-data
+      persistentVolumeClaim:
+        claimName: my-lamp-site-data
+<br><br>The storage media (Disk, SSD, etc.) of an&nbsp;emptyDir&nbsp;volume is determined by the medium of the filesystem holding the kubelet root dir (typically&nbsp;/var/lib/kubelet). There is no limit on how much space an&nbsp;emptyDir&nbsp;or&nbsp;hostPath&nbsp;volume can consume, and no isolation between containers or between pods.<br>In the future, we expect that&nbsp;emptyDir&nbsp;and&nbsp;hostPath&nbsp;volumes will be able to request a certain amount of space using a&nbsp;<a data-tooltip-position="top" aria-label="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/compute-resources" rel="noopener nofollow" class="external-link" href="https://unofficial-kubernetes.readthedocs.io/en/latest/docs/user-guide/compute-resources" target="_blank">resource</a>&nbsp;specification, and to select the type of media to use, for clusters that have several media types.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html</link><guid isPermaLink="false">DevOps/For Reading/k8s Volume.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 05:56:59 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
+ <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
+Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
+These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
+<br><br><br><br>Tasks to perform
+<a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
+<a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
+<a data-href="✅ Create 5 IAM users and 5 S3 buckets and attach them each other" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-5-iam-users-and-5-s3-buckets-and-attach-them-each-other.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create 5 IAM users and 5 S3 buckets and attach them each other</a><br>
+<a data-href="✅ Implement Template with Scheduled Autoscaling" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-implement-template-with-scheduled-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Implement Template with Scheduled Autoscaling</a><br>
+<a data-href="✅ Monitoring Nginx logs with Cloudwatch" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-monitoring-nginx-logs-with-cloudwatch.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Monitoring Nginx logs with Cloudwatch</a><br>
+<a data-href="☑️ How to store aws load balancer logs in s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-how-to-store-aws-load-balancer-logs-in-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ How to store aws load balancer logs in s3 bucket</a><br>
+<a data-href="✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html" class="internal-link" target="_self" rel="noopener nofollow">✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2</a><br>
+<a data-href="✅ Get sns alert when any user launches new instance" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-get-sns-alert-when-any-user-launches-new-instance.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Get sns alert when any user launches new instance</a><br>
+<a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
+<br>Task assigned for Reading
+
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
+<br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
+<br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
+<br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
+<br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
+<br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
+<br><a data-href="Managed policies and inline policies" href="https://notes.sarangwandile.xyz/aws/for-reading/managed-policies-and-inline-policies.html" class="internal-link" target="_self" rel="noopener nofollow">Managed policies and inline policies</a>
+<br><a data-href="Network Protocols" href="https://notes.sarangwandile.xyz/aws/for-reading/network-protocols.html" class="internal-link" target="_self" rel="noopener nofollow">Network Protocols</a>
+<br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
+<br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
+<br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
+<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
+<br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
+<br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
+<br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
+<br><a data-href="Types of Autoscaling" href="https://notes.sarangwandile.xyz/aws/for-reading/types-of-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">Types of Autoscaling</a>
+
+<br><br><br><br>Tasks to perform
+
+<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
+<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
+<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
+<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
+<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
+<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
+
+<br>Task assigned for Reading
+
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
+<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
+<br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
+<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
+<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
+<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
+<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
+<br>
+
+<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 05:31:58 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Agile Development]]></title><description><![CDATA[ 
  <br><br>Agile Manifesto
 The agile manifesto outlines 4 values and 12 principles for teams, but—decades later—is it still relevant? Find out
 <br>Scrum
@@ -4498,63 +4778,4 @@ After pushing, other developers can access your changes by pulling from the remo
 <br>Widespread Adoption: Git's speed, flexibility, and powerful features quickly gained popularity among developers. It became the preferred choice for open-source projects and eventually spread to commercial software development.
 <br>Today, Git is the most widely used version control system worldwide, powering the development of countless software projects, from small personal projects to massive corporate endeavors.]]></description><link>https://notes.sarangwandile.xyz/devops/git-theory.html</link><guid isPermaLink="false">DevOps/Git Theory.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 29 Dec 2024 13:28:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://notes.sarangwandile.xyz/linux/top-40-linux-commands.html</link><guid isPermaLink="false">Linux/Top 40 Linux Commands.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sat, 04 Jan 2025 05:21:49 GMT</pubDate></item><item><title><![CDATA[Understanding Vim]]></title><description><![CDATA[ 
- <br><br><br><br><br><br><br><br><br>Vim Modes<br>]]></description><link>https://notes.sarangwandile.xyz/linux/understanding-vim.html</link><guid isPermaLink="false">Linux/Understanding Vim.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
- <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
-Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
-These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
-<br><br><br><br>Tasks to perform
-<a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
-<a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
-<a data-href="✅ Create 5 IAM users and 5 S3 buckets and attach them each other" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-5-iam-users-and-5-s3-buckets-and-attach-them-each-other.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create 5 IAM users and 5 S3 buckets and attach them each other</a><br>
-<a data-href="✅ Implement Template with Scheduled Autoscaling" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-implement-template-with-scheduled-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Implement Template with Scheduled Autoscaling</a><br>
-<a data-href="✅ Monitoring Nginx logs with Cloudwatch" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-monitoring-nginx-logs-with-cloudwatch.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Monitoring Nginx logs with Cloudwatch</a><br>
-<a data-href="☑️ How to store aws load balancer logs in s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-how-to-store-aws-load-balancer-logs-in-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ How to store aws load balancer logs in s3 bucket</a><br>
-<a data-href="✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html" class="internal-link" target="_self" rel="noopener nofollow">✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2</a><br>
-<a data-href="✅ Get sns alert when any user launches new instance" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-get-sns-alert-when-any-user-launches-new-instance.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Get sns alert when any user launches new instance</a><br>
-<a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
-<br>Task assigned for Reading
-
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
-<br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
-<br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
-<br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
-<br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
-<br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
-<br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
-<br><a data-href="Managed policies and inline policies" href="https://notes.sarangwandile.xyz/aws/for-reading/managed-policies-and-inline-policies.html" class="internal-link" target="_self" rel="noopener nofollow">Managed policies and inline policies</a>
-<br><a data-href="Network Protocols" href="https://notes.sarangwandile.xyz/aws/for-reading/network-protocols.html" class="internal-link" target="_self" rel="noopener nofollow">Network Protocols</a>
-<br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
-<br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
-<br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
-<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
-<br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
-<br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
-<br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
-<br><a data-href="Types of Autoscaling" href="https://notes.sarangwandile.xyz/aws/for-reading/types-of-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">Types of Autoscaling</a>
-
-<br><br><br><br>Tasks to perform
-
-<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
-<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
-<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
-<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
-<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
-<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
-
-<br>Task assigned for Reading
-
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
-<br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
-<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
-<br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
-<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
-<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
-<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
-<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
-
-<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Fri, 10 Jan 2025 12:06:17 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item></channel></rss>
+ <br><br><br><br><br><br><br><br><br>Vim Modes<br>]]></description><link>https://notes.sarangwandile.xyz/linux/understanding-vim.html</link><guid isPermaLink="false">Linux/Understanding Vim.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item></channel></rss>
