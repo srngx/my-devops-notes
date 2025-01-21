@@ -1,44 +1,30 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 21 Jan 2025 05:57:55 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 21 Jan 2025 05:57:51 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-14]]></title><description><![CDATA[ 
- <br>Volumes<br>
-env<br><br>Create namespace<br>kubectl create ns prod --dry-run=client -o yaml &gt; ns.yaml
-<br>namespace creates on across the cluster<br><br>
-<br>host
-<br>addons (realtime use) --&gt; CSI Drivers EBS volume
-<br>CSI ebs drivers<br>
-pod<br>
-persistence volume claim<br>service account<br>
-storage account<br>kubectl get sa
-]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-14.html</link><guid isPermaLink="false">Daily Notes/2025-01-14.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 14 Jan 2025 04:34:28 GMT</pubDate></item><item><title><![CDATA[2025-01-16]]></title><description><![CDATA[ 
- ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-16.html</link><guid isPermaLink="false">Daily Notes/2025-01-16.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 16 Jan 2025 08:49:55 GMT</pubDate></item><item><title><![CDATA[2025-01-20]]></title><description><![CDATA[ 
- <br><br>Difference between POD, Deployment and container<br><br>Controller: - Ensures desired state is always present in the cluster.<br>
-Pod:- A wrapper around container that maintain desired state.<br>
-ReplicaSet - A controller that carries autohealing behaviour.<br>Login to kubernetes cluster with minkube<br>
-minikube ssh<br>Deplyoyment - Is an abstraction.<br>Controller is golang application which ensures specific behaviour is implemented.<br>
-eg. - ReplicaSet behaviour ensures desired replicas are always present.<br>Autohealing - spawns the containers with different ip addresses<br>
-hence we create service<br>svc ---- 1. load balancer<br>
-|-------- 2. Service Discovery<br>
-|                    |------- labels and selector<br>
-|-------- 3. expsoing to the world<br>autohealing without service ----<br>
-deployment<br>
-pod ---- 172.16.3.4     ----&gt; user 1<br>
-rs1----     172.16.3.5  ----&gt; user 2<br>
-rs2  ---    172.16.3.6 ----&gt; user 3<br>but if one pod gets deleted auto healing will create another pod with different ip address and user not knowing new ip address unable to access it<br>hence service comes in handy<br>Service (eg. load balancer) will have single ip and all users will get ip of service and service will distribute traffic among pods and rs.<br>but when pods gets respawn with new ip how does service knows its ip<br>
-for that service has this feature called service discovery <br>how service does service discovery<br>
-unlike manually keeping track of ip addresses which can change everytime service use labels and selectors mechanism.<br>
-service maintains service discovery through labels and selectors.<br>
-label will be common for all the app and service will only be watching for the labels.<br>Service is also use for exposing your application to outside world.<br>
-service is allow application to access outiside k8s cluster.<br>You can create service of 3 types <br>Service.YAML<br>
-|_ _ _ _  1. Cluster IP (inside accessible) [ you get discovery and lb]<br>
-| _ _ _  2. Node Port (inside organisation or network\ access worker node )<br>
-| _ _ _ _ 3. Load balancer ( service is accessible to external world)<br>load balancer only work for cloud based k8s like EKS<br>load balancer ----&gt; amazon.com<br>
-Node Port ---&gt; VPC and nodes<br>
-CLUSTER IP ---&gt; Cluster Network ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-20.html</link><guid isPermaLink="false">Daily Notes/2025-01-20.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 20 Jan 2025 09:13:47 GMT</pubDate></item><item><title><![CDATA[2025-01-21 Creating PVC]]></title><description><![CDATA[ 
- <br>Step 1: Create instance<br>
-Add admin role [administrator access]<br>Step 2: Login to ec2<br>Install kubectl and eksctl package<br>Step 3: Create cluster<br>Step 4: OIDC <br>oidc_id=$(aws eks describe-cluster --name irondome --region=us-west-2 --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 21 Jan 2025 13:44:57 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 21 Jan 2025 13:44:52 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-21 Creating PVC]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Add admin role (administrator access)
+<br><br>Install kubectl package<br>curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+<br>and eksctl <br>ARCH=amd64
+PLATFORM=$(uname -s)_$ARCH
+
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+# (Optional) Verify checksum
+curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp &amp;&amp; rm eksctl_$PLATFORM.tar.gz
+
+sudo mv /tmp/eksctl /usr/local/bin
+<br>Write this script into script.sh file and run it with bash script.sh<br>Check if commands working properly:<br># see kubectl version
+kubectl version
+
+# see eksctl version
+eksctl version
+<br><br>eksctl create cluster --name clustername --node-type t2.medium --nodes 2 --region=us-east-1
+<br><br><br>oidc_id=$(aws eks describe-cluster --name irondome --region=us-west-2 --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)
 echo $oidc_id
-<br>04B9B8B86AAB8AF93259FBD40DFF0D4C<br>aws iam list-open-id-connect-providers --region=us-west-2 | grep $oidc_id | cut -d "/" -f4 
-<br>eksctl utils associate-iam-oidc-provider --cluster irondome --approve --region=us-west-2
-<br>eksctl create iamserviceaccount \
+<br>You will get something like this: 04B9B8B86AAB8AF93259FBD40DFF0D4C<br>
+☠️Dont copy it it just for illustration.☠️<br><br>aws iam list-open-id-connect-providers --region=us-west-2 | grep $oidc_id | cut -d "/" -f4 
+<br><br>eksctl utils associate-iam-oidc-provider --cluster irondome --approve --region=us-west-2
+<br><br>eksctl create iamserviceaccount \
         --name ebs-csi-controller-sa \
         --namespace kube-system \
         --cluster irondome \
@@ -46,10 +32,14 @@ echo $oidc_id
         --role-only \
         --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy \
         --approve  --region=us-west-2
-<br>Step 5: create addon<br>eksctl utils describe-addon-versions --kubernetes-version 1.30 --region=us-west-2 --name aws-ebs-csi-driver
-<br>eksctl create addon --cluster irondome --name aws-ebs-csi-driver --version latest \
+<br><br><br>eksctl utils describe-addon-versions --kubernetes-version 1.30 --region=us-west-2 --name aws-ebs-csi-driver
+<br><br>eksctl create addon --cluster irondome --name aws-ebs-csi-driver --version latest \
       --service-account-role-arn arn:aws:iam::970547378605:role/AmazonEKS_EBS_CSI_DriverRole --force --region=us-west-2
-<br>Step 6: create pods<br>apiVersion: v1
+<br><br>Create a Pod definition file that:<br>
+<br>Start an nginx container
+<br>Mount an EBS volume (claimed through ebs-claim) at /data
+<br>Store data persistently in the EBS volume even if the pod is deleted
+<br>apiVersion: v1
 kind: Pod
 metadata:
   name: app
@@ -75,8 +65,41 @@ spec:
   resources:
     requests:
       storage: 4Gi
-<br>Practical Walkthrough Video<br>
-<a rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-21-creating-pvc.html</link><guid isPermaLink="false">Daily Notes/2025-01-21 Creating PVC.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 21 Jan 2025 05:56:08 GMT</pubDate></item><item><title><![CDATA[Understanding Manifest File]]></title><description><![CDATA[ 
+<br>This definition requests a 4GB persistent volume of type "gp2" (likely an EBS volume) that can be mounted by only one node at a time.<br>Practical Walkthrough Video<br>
+<a rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-21-creating-pvc.html</link><guid isPermaLink="false">Daily Notes/2025-01-21 Creating PVC.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 21 Jan 2025 13:44:03 GMT</pubDate></item><item><title><![CDATA[2025-01-14]]></title><description><![CDATA[ 
+ <br>Volumes<br>
+env<br><br>Create namespace<br>kubectl create ns prod --dry-run=client -o yaml &gt; ns.yaml
+<br>namespace creates on across the cluster<br><br>
+<br>host
+<br>addons (realtime use) --&gt; CSI Drivers EBS volume
+<br>CSI ebs drivers<br>
+pod<br>
+persistence volume claim<br>service account<br>
+storage account<br>kubectl get sa
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-14.html</link><guid isPermaLink="false">Daily Notes/2025-01-14.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 14 Jan 2025 04:34:28 GMT</pubDate></item><item><title><![CDATA[2025-01-20]]></title><description><![CDATA[ 
+ <br><br>Difference between POD, Deployment and container<br><br>Controller: - Ensures desired state is always present in the cluster.<br>
+Pod:- A wrapper around container that maintain desired state.<br>
+ReplicaSet - A controller that carries autohealing behaviour.<br>Login to kubernetes cluster with minkube<br>
+minikube ssh<br>Deplyoyment - Is an abstraction.<br>Controller is golang application which ensures specific behaviour is implemented.<br>
+eg. - ReplicaSet behaviour ensures desired replicas are always present.<br>Autohealing - spawns the containers with different ip addresses<br>
+hence we create service<br>svc ---- 1. load balancer<br>
+|-------- 2. Service Discovery<br>
+|                    |------- labels and selector<br>
+|-------- 3. expsoing to the world<br>autohealing without service ----<br>
+deployment<br>
+pod ---- 172.16.3.4     ----&gt; user 1<br>
+rs1----     172.16.3.5  ----&gt; user 2<br>
+rs2  ---    172.16.3.6 ----&gt; user 3<br>but if one pod gets deleted auto healing will create another pod with different ip address and user not knowing new ip address unable to access it<br>hence service comes in handy<br>Service (eg. load balancer) will have single ip and all users will get ip of service and service will distribute traffic among pods and rs.<br>but when pods gets respawn with new ip how does service knows its ip<br>
+for that service has this feature called service discovery <br>how service does service discovery<br>
+unlike manually keeping track of ip addresses which can change everytime service use labels and selectors mechanism.<br>
+service maintains service discovery through labels and selectors.<br>
+label will be common for all the app and service will only be watching for the labels.<br>Service is also use for exposing your application to outside world.<br>
+service is allow application to access outiside k8s cluster.<br>You can create service of 3 types <br>Service.YAML<br>
+|_ _ _ _  1. Cluster IP (inside accessible) [ you get discovery and lb]<br>
+| _ _ _  2. Node Port (inside organisation or network\ access worker node )<br>
+| _ _ _ _ 3. Load balancer ( service is accessible to external world)<br>load balancer only work for cloud based k8s like EKS<br>load balancer ----&gt; amazon.com<br>
+Node Port ---&gt; VPC and nodes<br>
+CLUSTER IP ---&gt; Cluster Network ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-20.html</link><guid isPermaLink="false">Daily Notes/2025-01-20.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 20 Jan 2025 09:13:47 GMT</pubDate></item><item><title><![CDATA[Understanding Manifest File]]></title><description><![CDATA[ 
  <br>Each configuration file has 3 part<br>
 <br>Metadata
 <br>Specification
