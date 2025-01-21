@@ -1,4 +1,88 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 13 Jan 2025 06:08:40 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 13 Jan 2025 06:08:38 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Tue, 21 Jan 2025 05:57:55 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Tue, 21 Jan 2025 05:57:51 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-14]]></title><description><![CDATA[ 
+ <br>Volumes<br>
+env<br><br>Create namespace<br>kubectl create ns prod --dry-run=client -o yaml &gt; ns.yaml
+<br>namespace creates on across the cluster<br><br>
+<br>host
+<br>addons (realtime use) --&gt; CSI Drivers EBS volume
+<br>CSI ebs drivers<br>
+pod<br>
+persistence volume claim<br>service account<br>
+storage account<br>kubectl get sa
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-14.html</link><guid isPermaLink="false">Daily Notes/2025-01-14.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 14 Jan 2025 04:34:28 GMT</pubDate></item><item><title><![CDATA[2025-01-16]]></title><description><![CDATA[ 
+ ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-16.html</link><guid isPermaLink="false">Daily Notes/2025-01-16.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 16 Jan 2025 08:49:55 GMT</pubDate></item><item><title><![CDATA[2025-01-20]]></title><description><![CDATA[ 
+ <br><br>Difference between POD, Deployment and container<br><br>Controller: - Ensures desired state is always present in the cluster.<br>
+Pod:- A wrapper around container that maintain desired state.<br>
+ReplicaSet - A controller that carries autohealing behaviour.<br>Login to kubernetes cluster with minkube<br>
+minikube ssh<br>Deplyoyment - Is an abstraction.<br>Controller is golang application which ensures specific behaviour is implemented.<br>
+eg. - ReplicaSet behaviour ensures desired replicas are always present.<br>Autohealing - spawns the containers with different ip addresses<br>
+hence we create service<br>svc ---- 1. load balancer<br>
+|-------- 2. Service Discovery<br>
+|                    |------- labels and selector<br>
+|-------- 3. expsoing to the world<br>autohealing without service ----<br>
+deployment<br>
+pod ---- 172.16.3.4     ----&gt; user 1<br>
+rs1----     172.16.3.5  ----&gt; user 2<br>
+rs2  ---    172.16.3.6 ----&gt; user 3<br>but if one pod gets deleted auto healing will create another pod with different ip address and user not knowing new ip address unable to access it<br>hence service comes in handy<br>Service (eg. load balancer) will have single ip and all users will get ip of service and service will distribute traffic among pods and rs.<br>but when pods gets respawn with new ip how does service knows its ip<br>
+for that service has this feature called service discovery <br>how service does service discovery<br>
+unlike manually keeping track of ip addresses which can change everytime service use labels and selectors mechanism.<br>
+service maintains service discovery through labels and selectors.<br>
+label will be common for all the app and service will only be watching for the labels.<br>Service is also use for exposing your application to outside world.<br>
+service is allow application to access outiside k8s cluster.<br>You can create service of 3 types <br>Service.YAML<br>
+|_ _ _ _  1. Cluster IP (inside accessible) [ you get discovery and lb]<br>
+| _ _ _  2. Node Port (inside organisation or network\ access worker node )<br>
+| _ _ _ _ 3. Load balancer ( service is accessible to external world)<br>load balancer only work for cloud based k8s like EKS<br>load balancer ----&gt; amazon.com<br>
+Node Port ---&gt; VPC and nodes<br>
+CLUSTER IP ---&gt; Cluster Network ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-20.html</link><guid isPermaLink="false">Daily Notes/2025-01-20.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 20 Jan 2025 09:13:47 GMT</pubDate></item><item><title><![CDATA[2025-01-21 Creating PVC]]></title><description><![CDATA[ 
+ <br>Step 1: Create instance<br>
+Add admin role [administrator access]<br>Step 2: Login to ec2<br>Install kubectl and eksctl package<br>Step 3: Create cluster<br>Step 4: OIDC <br>oidc_id=$(aws eks describe-cluster --name irondome --region=us-west-2 --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5)
+echo $oidc_id
+<br>04B9B8B86AAB8AF93259FBD40DFF0D4C<br>aws iam list-open-id-connect-providers --region=us-west-2 | grep $oidc_id | cut -d "/" -f4 
+<br>eksctl utils associate-iam-oidc-provider --cluster irondome --approve --region=us-west-2
+<br>eksctl create iamserviceaccount \
+        --name ebs-csi-controller-sa \
+        --namespace kube-system \
+        --cluster irondome \
+        --role-name AmazonEKS_EBS_CSI_DriverRole \
+        --role-only \
+        --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy \
+        --approve  --region=us-west-2
+<br>Step 5: create addon<br>eksctl utils describe-addon-versions --kubernetes-version 1.30 --region=us-west-2 --name aws-ebs-csi-driver
+<br>eksctl create addon --cluster irondome --name aws-ebs-csi-driver --version latest \
+      --service-account-role-arn arn:aws:iam::970547378605:role/AmazonEKS_EBS_CSI_DriverRole --force --region=us-west-2
+<br>Step 6: create pods<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: app
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: persistent-storage
+      mountPath: /data
+  volumes:
+  - name: persistent-storage
+    persistentVolumeClaim:
+      claimName: ebs-claim
+<br>create claim.yaml<br>apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ebs-claim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2
+  resources:
+    requests:
+      storage: 4Gi
+<br>Practical Walkthrough Video<br>
+<a rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-21-creating-pvc.html</link><guid isPermaLink="false">Daily Notes/2025-01-21 Creating PVC.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 21 Jan 2025 05:56:08 GMT</pubDate></item><item><title><![CDATA[Understanding Manifest File]]></title><description><![CDATA[ 
+ <br>Each configuration file has 3 part<br>
+<br>Metadata
+<br>Specification
+<br>Status (often autogenerated by kubernetes)
+<br>Attributes of "spec" are specific to the "kind"<br>Metadata part contains Labels and<br>
+Specification part contains Selectors]]></description><link>https://notes.sarangwandile.xyz/devops/notes/understanding-manifest-file.html</link><guid isPermaLink="false">DevOps/Notes/Understanding Manifest File.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 14:49:40 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
 Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
 These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
@@ -59,7 +143,7 @@ These notes are not complete and subject to grow, modify and update in time to t
 <br><a data-href="k8s Namespace" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Namespace</a>
 <br><a data-href="k8s Volume" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Volume</a>
 
-<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 06:05:58 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
+<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 21 Jan 2025 05:57:35 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
  <br>ConfigMap - non confidential information<br>
 Secrets - confidential information<br><br><br>Create configMap Command<br>kubectl create cm nginx-cm --from-file=index.html
 <br>generate configmap definition file<br>kubectl create cm nginx-cm --from-file=index.html --dry-run=client -o yaml &gt; configmap.yaml

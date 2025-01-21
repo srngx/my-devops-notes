@@ -81,6 +81,7 @@ In this **Digital Garden** you are always welcome to explore and share your note
 | 2025-01-09 | [[2025-01-09 k8s manifest files]]      |     |
 | 2025-01-10 | [[2025-01-10 Service Types]]           |     |
 | 2025-01-13 | [[2025-01-13]] Config Map and Secrets  |     |
+| 2025-01-21 | [[2025-01-21 Creating PVC]]            |     |
 
 > [!todo]- Tasks to perform
 > - [[Task 1 Creating Tomcat student-ui container]]
