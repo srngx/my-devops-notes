@@ -90,6 +90,8 @@ In this **Digital Garden** you are always welcome to explore and share your note
 > - [[Task 4 Create daemon service of tomcat]]
 > - [[Task 5 Create dockerfiles]]
 > - [[Task 6 How to set permanent alias]]
+> - Kubernetes [[2025-01-22 K8S Tasks List]]
+> - [[K8s Task 1]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
