@@ -1,4 +1,65 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 Jan 2025 16:41:51 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 Jan 2025 16:41:48 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-21 Creating PVC]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 Jan 2025 16:49:52 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 Jan 2025 16:49:50 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[K8s Task 1]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Launch Ec2 instance
+<br>Add IAM Role 
+<br>Install Docker and Kubernetes Packages
+<br>Create Cluster
+<br><br>curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip
+
+unzip neogym.zip
+
+mv neogym-html/* html/
+<br><br>
+<br>Create Dockerfile
+<br>FROM nginx:stable-alpine3.20-perl 
+COPY ./html/ /usr/share/nginx/html/
+EXPOSE 80
+
+CMD ["/usr/bin/nginx", "-g", "daemon off;"]
+<br>
+<br>Build Image and Push it to Docker hub
+<br>docker build . -t nginx-css
+
+docker tag nginx-css &lt;repo-name&gt;/nginx-css
+
+docker push &lt;repo-name&gt;/nginx-css
+<br><br># Create namespace
+kubectl create ns dev-nginx
+<br>Deployment File<br>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-css
+  namespace: dev-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-css
+  template:
+    metadata:
+      labels:
+        app: nginx-css
+    spec:
+      containers:
+      - name: nginx
+        image: archsarangx/nginx-css
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: dev-nginx
+spec:
+  selector:
+    app: nginx-css
+  ports:
+  - port: 80
+    targetPort: 80
+  type: LoadBalancer
+<br>Installing Helm<br><a rel="noopener nofollow" class="external-link" href="https://helm.sh" target="_blank">https://helm.sh</a>]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/k8s-task-1.html</link><guid isPermaLink="false">DevOps/K8S Tasks/K8s Task 1.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 07:16:41 GMT</pubDate></item><item><title><![CDATA[2025-01-21 Creating PVC]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Add admin role (administrator access)
 <br><br>Install kubectl package<br>curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
