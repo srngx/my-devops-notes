@@ -23,14 +23,14 @@ and 3 end points for 3 microservices
 
 <subdomain.learndevops.live>
 
-Reading Task
+**Reading Task**
 1. Node affinity
 2. Anti Affinity
 3. Node Selectors
 4. Pod Affinity
 5. Taint and Tolerance
 
-Previous task twist 
+**Previous task twist**
 - 3 node
 - one pod on each node
 - node 1 --> httpd

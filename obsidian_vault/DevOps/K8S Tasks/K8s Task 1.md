@@ -19,8 +19,10 @@ mv neogym-html/* html/
 FROM nginx:stable-alpine3.20-perl 
 COPY ./html/ /usr/share/nginx/html/
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
+CMD ["/usr/bin/nginx", "-g", "daemon off;"]
 ```
+
 - Build Image and Push it to Docker hub
 ```
 docker build . -t nginx-css
@@ -36,7 +38,7 @@ kubectl create ns dev-nginx
 ```
 
 Deployment File
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -72,4 +74,10 @@ spec:
     targetPort: 80
   type: LoadBalancer
 ```
+
+
+
+Installing Helm
+
+https://helm.sh
 
