@@ -1,4 +1,435 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 Jan 2025 16:49:52 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 Jan 2025 16:49:50 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[K8s Task 1]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 23 Jan 2025 07:34:35 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 23 Jan 2025 07:34:31 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-07 kubernetes]]></title><description><![CDATA[ 
+ <br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a><br>
+<img alt="kubernetes-cluster.svg" src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"><br><br>Prerequisites<br>
+<br>kubectl
+<br>eksctl
+<br>aws
+<br>Steps<br>
+<br>create ec2 instance
+<br>add admin role on it
+<br>install Prerequisites on it
+<br>Install kubectl binary from <a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" target="_blank">official website</a><br># for x86_64
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+# for arm64
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
+<br>Install eksctl binary from its <a data-tooltip-position="top" aria-label="https://eksctl.io/installation" rel="noopener nofollow" class="external-link" href="https://eksctl.io/installation" target="_blank">official website</a><br># for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
+ARCH=amd64
+PLATFORM=$(uname -s)_$ARCH
+
+curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
+
+# (Optional) Verify checksum
+curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
+
+tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp &amp;&amp; rm eksctl_$PLATFORM.tar.gz
+
+sudo mv /tmp/eksctl /usr/local/bin
+<br>Write this script into script.sh file and run it with bash script.sh<br>Check if commands working properly:<br># see kubectl version
+kubectl version
+
+# see eksctl version
+eksctl version
+<br>and run Create Cluster command<br>eksctl create cluster --name clustername --node-type t2.medium --nodes 2 --region=us-east-1
+<br>To See nodes<br>kubectl get nodes
+<br>To See pods<br>kubectl get pods -A
+<br>write pod.yaml manifest and apply<br>kubectl apply -f pod.yaml
+<br>get info about pods<br>kubectl describe pod nginx
+<br>Read about:<br>Manifest
+YAML
+
+POD
+Repl set
+Deployments
+Services
+	Load balancer
+	Node pod
+	cluster ip
+config
+	secrets
+	configMap
+Namespace
+Resources
+Resource Quota
+Volume
+Ingress
+HPA
+<br>Pod.yaml<br>apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - image:
+    name:
+    ports:
+      container-port: 80
+<br>s comes - comes<br>
+- means array<br>cluster version updates comes in every 4 month<br>
+minimum n-2 version compatible for client to support with latest version of kubernetes<br><br><br>
+<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
+<br><a data-href="Task 7 Create LAMP Server" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-7-create-lamp-server.html" class="internal-link" target="_self" rel="noopener nofollow">Task 7 Create LAMP Server</a>
+<br><br><a rel="noopener nofollow" class="external-link" href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a><br>
+<a rel="noopener nofollow" class="external-link" href="https://claude.ai/" target="_blank">https://claude.ai/</a><br>
+<a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 08 Jan 2025 16:58:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-22 3-Microservice Tasks]]></title><description><![CDATA[ 
+ <br><br>3 microservices in 3 different namespace<br>nginx: dev-nginx<br>
+httpd: dev-httpd<br>
+tomcat: dev-tomcat<br>Microservice 1<br>
+<br>Create Docker Image nginx free css template
+<br>Build it and deploy to k8s
+<br>Microservice 2<br>
+<br>Httpd container 
+<br>Make deployment
+<br>Send index.html via configMap
+<br>Microservice 3<br>
+<br>Deploy tomcat container
+<br>Make deployment
+<br>Nginx ingress controller deploy on nginx-ingress namespace<br>
+and 3 end points for 3 microservices<br>&lt;subdomain.learndevops.live&gt;<br>Reading Task<br>
+<br>Node affinity
+<br>Anti Affinity
+<br>Node Selectors
+<br>Pod Affinity
+<br>Taint and Tolerance
+<br>Previous task twist<br>
+<br>3 node
+<br>one pod on each node
+<br>node 1 --&gt; httpd
+<br>node 2 --&gt; tomcat
+<br>node 3 ---&gt; nginx
+<br><a rel="noopener nofollow" class="external-link" href="https://envs.sh/gA-.yaml" target="_blank">https://envs.sh/gA-.yaml</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-22-3-microservice-tasks.html</link><guid isPermaLink="false">Daily Notes/2025-01-22 3-Microservice Tasks.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:03:30 GMT</pubDate></item><item><title><![CDATA[2025-01-23 Tomcat on Single Node Task]]></title><description><![CDATA[ 
+ <br>  po<br>
+dep<br>
+rs<br>
+clus<br>
+ip nodpo<br>
+LB<br>
+secre<br>
+configmap<br>
+volume<br>
+namespace<br>
+hpa<br>
+pvc<br>
+rolling upd<br>
+applic lifecycle<br>
+stateful set<br>
+daemon set<br>
+tenant<br>
+pod affinity<br>
+node affinity<br>
+node selector<br>
+anti afinity<br>
+taint and tolerance<br>what is probe?<br>Task <br>
+<br>1 Microservice Tomcat 
+<br>RS =1
+<br>Node selector
+<br>pod affinity
+<br>node affinity
+<br>Implement probe to check if service is running
+<br>Database tomcat in Cluster with persistent volume
+<br>ingress 
+<br>tomcat app resource alloaction:
+
+<br>Request
+<br>CPU: 500m
+<br>Mem: 1GB
+<br>Limit
+<br>cpu: 1
+<br>memory: 2gb
+
+
+<br>hard coded values can be sent no secret will be used
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-23-tomcat-on-single-node-task.html</link><guid isPermaLink="false">Daily Notes/2025-01-23 Tomcat on Single Node Task.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:32:41 GMT</pubDate></item><item><title><![CDATA[3 Microservices Task]]></title><description><![CDATA[ 
+ <br>1. Project Setup and Namespace Creation<br><br>
+<br>Launch Ec2 instance
+<br>Add IAM Role 
+<br>Install Docker and Kubernetes Packages
+<br>Create Cluster
+<br><br>curl -O https://www.free-css.com/assets/files/free-css-templates/download/page296/neogym.zip
+
+unzip neogym.zip
+
+mv neogym-html/* html/
+<br>2. Microservice 1: Nginx with Free CSS Template<br>
+<br>Dockerfile (Dockerfile_nginx):
+<br>FROM nginx:stable-alpine3.20-perl 
+COPY ./html/ /usr/share/nginx/html/
+EXPOSE 80
+
+CMD ["/usr/bin/nginx", "-g", "daemon off;"]
+<br>
+<br>Build and Push Docker Image:
+<br># Build Image
+docker build -t nginx-free-css:latest -f Dockerfile_nginx . 
+# Add tag to repo-name/image name for docker hub push
+docker tag nginx-css &lt;repo-name&gt;/nginx-css
+# Push to docker hub repo
+docker push nginx-free-css:latest
+<br>
+<br>Create Kubernetes Namespaces:<br>
+Create 3 Namespaces for 3 Microservices
+<br>kubectl create namespace dev-nginx
+kubectl create namespace dev-httpd
+kubectl create namespace dev-tomcat
+<br><br>
+<br>Kubernetes Deployment (dev-nginx namespace):
+<br>    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: nginx-deployment
+      namespace: dev-nginx
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: nginx
+      template:
+        metadata:
+          labels:
+            app: nginx
+        spec:
+          containers:
+          - name: nginx
+            image: nginx-free-css:latest
+            ports:
+            - containerPort: 80
+<br>
+<br>Apply Deployment:
+<br>kubectl apply -f nginx-deployment.yaml -n dev-nginx
+<br>3. Microservice 2: HTTP Server with ConfigMap<br>
+<br>ConfigMap (dev-httpd namespace):
+<br>apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: index-html
+  namespace: dev-httpd
+data:
+  index.html: |
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;HTTP Server&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Hello from HTTP Server!&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+<br>
+<br>Deployment (dev-httpd namespace):
+<br>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-deployment
+  namespace: dev-httpd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: httpd
+  template:
+    metadata:
+      labels:
+        app: httpd
+    spec:
+      containers:
+      - name: httpd
+        image: httpd:latest 
+        volumeMounts:
+        - name: config-volume
+          mountPath: /usr/local/apache2/htdocs/ 
+      volumes:
+      - name: config-volume
+        configMap:
+          name: index-html
+<br>
+<br>Apply ConfigMap and Deployment:
+<br>kubectl apply -f index-html.yaml -n dev-httpd
+kubectl apply -f httpd-deployment.yaml -n dev-httpd
+<br>4. Microservice 3: Tomcat<br>
+<br>Deployment (dev-tomcat namespace):
+<br>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-deployment
+  namespace: dev-tomcat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+      - name: tomcat
+        image: tomcat:latest
+        ports:
+        - containerPort: 8080
+<br>
+<br>Apply Deployment:
+<br>kubectl apply -f tomcat-deployment.yaml -n dev-tomcat
+<br>5. Nginx Ingress Controller (nginx-ingress namespace)<br>
+<br>Install Ingress Controller:
+
+<br>Refer to the official Nginx Ingress Controller documentation for installation instructions.
+
+
+<br>6. Ingress Configuration (nginx-ingress namespace)<br>
+<br>Create Ingress resource:
+<br>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: microservices-ingress
+spec:
+  rules:
+  - host: httpd.your-domain.com 
+    http:
+      paths:
+      - path: /
+        pathType: Prefix 
+        backend:
+          service:
+            name: httpd-service 
+            port:
+              number: 80
+  - host: tomcat.your-domain.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: tomcat-service
+            port:
+              number: 8080
+  - host: nginx.your-domain.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-service
+            port:
+              number: 80
+<br>
+<br>Create Services for each Deployment:
+
+<br>You'll need to create Services of type LoadBalancer or NodePort for each Deployment to expose them.
+
+
+<br>Apply Ingress and Services:
+<br>kubectl apply -f microservices-ingress.yaml -n nginx-ingress 
+# Apply Service YAML files for each Deployment 
+<br>7. DNS Configuration<br>
+<br>Configure your DNS records to point the following domains to the Ingress Controller's IP address:
+
+<br>httpd.your-domain.com
+<br>tomcat.your-domain.com
+<br>nginx.your-domain.com
+
+
+<br>8. Node Assignment (Manual)<br>
+<br>Node 1: Schedule the httpd-deployment to run on Node 1.
+<br>Node 2: Schedule the tomcat-deployment to run on Node 2.
+<br>Node 3: Schedule the nginx-deployment to run on Node 3.
+<br>Note:<br>
+<br>Replace placeholders like your-domain.com with actual domain names.
+<br>Adjust paths, ports, and other configurations as per your requirements.
+<br>This is a basic example. You may need to adjust the configurations based on your specific needs and security requirements.
+<br>Consider using a more robust service discovery mechanism like Kubernetes Service.
+<br>For production environments, use a more advanced deployment strategy like rolling updates or blue/green deployments.
+]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/3-microservices-task.html</link><guid isPermaLink="false">DevOps/K8S Tasks/3 Microservices Task.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:26:07 GMT</pubDate></item><item><title><![CDATA[Tomcat on single node]]></title><description><![CDATA[ 
+ <br><br>
+<br>1 Microservice = Tomcat 
+<br>ReplicaSet 1
+<br>Add Node selector
+<br>add pod affinity
+<br>add node affinity
+<br>Implement probe to check to see if service is running
+<br>Add Database tomcat in Cluster with persistent volume
+<br>Use ingress LB
+<br>tomcat app resource alloaction:
+
+<br>Request
+<br>CPU: 500m
+<br>Mem: 1GB
+<br>Limit
+<br>cpu: 1
+<br>memory: 2gb
+
+
+<br>hard coded values can be sent so no secret will be used<br>
+or<br>
+Use online bookshop application where secrets and configMap can be used
+]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/tomcat-on-single-node.html</link><guid isPermaLink="false">DevOps/K8S Tasks/Tomcat on single node.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:30:24 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
+ <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
+Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
+These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
+<br><br><br><br>Tasks to perform
+<a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
+<a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
+<a data-href="✅ Create 5 IAM users and 5 S3 buckets and attach them each other" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-5-iam-users-and-5-s3-buckets-and-attach-them-each-other.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create 5 IAM users and 5 S3 buckets and attach them each other</a><br>
+<a data-href="✅ Implement Template with Scheduled Autoscaling" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-implement-template-with-scheduled-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Implement Template with Scheduled Autoscaling</a><br>
+<a data-href="✅ Monitoring Nginx logs with Cloudwatch" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-monitoring-nginx-logs-with-cloudwatch.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Monitoring Nginx logs with Cloudwatch</a><br>
+<a data-href="☑️ How to store aws load balancer logs in s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-how-to-store-aws-load-balancer-logs-in-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ How to store aws load balancer logs in s3 bucket</a><br>
+<a data-href="✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html" class="internal-link" target="_self" rel="noopener nofollow">✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2</a><br>
+<a data-href="✅ Get sns alert when any user launches new instance" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-get-sns-alert-when-any-user-launches-new-instance.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Get sns alert when any user launches new instance</a><br>
+<a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
+<br>Task assigned for Reading
+
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
+<br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
+<br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
+<br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
+<br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
+<br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
+<br><a data-href="Managed policies and inline policies" href="https://notes.sarangwandile.xyz/aws/for-reading/managed-policies-and-inline-policies.html" class="internal-link" target="_self" rel="noopener nofollow">Managed policies and inline policies</a>
+<br><a data-href="Network Protocols" href="https://notes.sarangwandile.xyz/aws/for-reading/network-protocols.html" class="internal-link" target="_self" rel="noopener nofollow">Network Protocols</a>
+<br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
+<br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
+<br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
+<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
+<br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
+<br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
+<br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
+<br><a data-href="Types of Autoscaling" href="https://notes.sarangwandile.xyz/aws/for-reading/types-of-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">Types of Autoscaling</a>
+
+<br><br><br><br>Tasks to perform
+
+<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
+<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
+<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
+<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
+<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
+<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
+<br>Kubernetes <a data-href="2025-01-22 3-Microservice Tasks" href="https://notes.sarangwandile.xyz/daily-notes/2025-01-22-3-microservice-tasks.html" class="internal-link" target="_self" rel="noopener nofollow">2025-01-22 3-Microservice Tasks</a>
+<br><a data-href="K8s Task 1" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/k8s-task-1.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Task 1</a>
+<br><a data-href="3 Microservices Task" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/3-microservices-task.html" class="internal-link" target="_self" rel="noopener nofollow">3 Microservices Task</a>
+<br><a data-href="Tomcat on single node" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/tomcat-on-single-node.html" class="internal-link" target="_self" rel="noopener nofollow">Tomcat on single node</a>
+
+<br>Task assigned for Reading
+
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
+<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
+<br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
+<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
+<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
+<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
+<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
+<br><a data-href="k8s Namespace" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Namespace</a>
+<br><a data-href="k8s Volume" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Volume</a>
+
+<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:32:07 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[K8s Task 1]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Launch Ec2 instance
 <br>Add IAM Role 
@@ -127,96 +558,7 @@ spec:
     requests:
       storage: 4Gi
 <br>This definition requests a 4GB persistent volume of type "gp2" (likely an EBS volume) that can be mounted by only one node at a time.<br>Practical Walkthrough Video<br>
-<a rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-21-creating-pvc.html</link><guid isPermaLink="false">Daily Notes/2025-01-21 Creating PVC.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:21:28 GMT</pubDate></item><item><title><![CDATA[2025-01-22 K8S Tasks List]]></title><description><![CDATA[ 
- <br><br>3 microservices in 3 different namespace<br>nginx: dev-nginx<br>
-httpd: dev-httpd<br>
-tomcat: dev-tomcat<br>Microservice 1<br>
-<br>Create Docker Image nginx free css template
-<br>Build it and deploy to k8s
-<br>Microservice 2<br>
-<br>Httpd container 
-<br>Make deployment
-<br>Send index.html via configMap
-<br>Microservice 3<br>
-<br>Deploy tomcat container
-<br>Make deployment
-<br>Nginx ingress controller deploy on nginx-ingress namespace<br>
-and 3 end points for 3 microservices<br>&lt;subdomain.learndevops.live&gt;<br>Reading Task<br>
-<br>Node affinity
-<br>Anti Affinity
-<br>Node Selectors
-<br>Pod Affinity
-<br>Taint and Tolerance
-<br>Previous task twist<br>
-<br>3 node
-<br>one pod on each node
-<br>node 1 --&gt; httpd
-<br>node 2 --&gt; tomcat
-<br>node 3 ---&gt; nginx
-<br><a rel="noopener nofollow" class="external-link" href="https://envs.sh/gA-.yaml" target="_blank">https://envs.sh/gA-.yaml</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-22-k8s-tasks-list.html</link><guid isPermaLink="false">Daily Notes/2025-01-22 K8S Tasks List.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:03:30 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
- <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
-Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
-These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
-<br><br><br><br>Tasks to perform
-<a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
-<a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
-<a data-href="✅ Create 5 IAM users and 5 S3 buckets and attach them each other" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-5-iam-users-and-5-s3-buckets-and-attach-them-each-other.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create 5 IAM users and 5 S3 buckets and attach them each other</a><br>
-<a data-href="✅ Implement Template with Scheduled Autoscaling" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-implement-template-with-scheduled-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Implement Template with Scheduled Autoscaling</a><br>
-<a data-href="✅ Monitoring Nginx logs with Cloudwatch" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-monitoring-nginx-logs-with-cloudwatch.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Monitoring Nginx logs with Cloudwatch</a><br>
-<a data-href="☑️ How to store aws load balancer logs in s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-how-to-store-aws-load-balancer-logs-in-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ How to store aws load balancer logs in s3 bucket</a><br>
-<a data-href="✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html" class="internal-link" target="_self" rel="noopener nofollow">✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2</a><br>
-<a data-href="✅ Get sns alert when any user launches new instance" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-get-sns-alert-when-any-user-launches-new-instance.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Get sns alert when any user launches new instance</a><br>
-<a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
-<br>Task assigned for Reading
-
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
-<br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
-<br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
-<br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
-<br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
-<br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
-<br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
-<br><a data-href="Managed policies and inline policies" href="https://notes.sarangwandile.xyz/aws/for-reading/managed-policies-and-inline-policies.html" class="internal-link" target="_self" rel="noopener nofollow">Managed policies and inline policies</a>
-<br><a data-href="Network Protocols" href="https://notes.sarangwandile.xyz/aws/for-reading/network-protocols.html" class="internal-link" target="_self" rel="noopener nofollow">Network Protocols</a>
-<br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
-<br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
-<br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
-<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
-<br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
-<br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
-<br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
-<br><a data-href="Types of Autoscaling" href="https://notes.sarangwandile.xyz/aws/for-reading/types-of-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">Types of Autoscaling</a>
-
-<br><br><br><br>Tasks to perform
-
-<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
-<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
-<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
-<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
-<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
-<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
-<br>Kubernetes <a data-href="2025-01-22 K8S Tasks List" href="https://notes.sarangwandile.xyz/daily-notes/2025-01-22-k8s-tasks-list.html" class="internal-link" target="_self" rel="noopener nofollow">2025-01-22 K8S Tasks List</a>
-<br><a data-href="K8s Task 1" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/k8s-task-1.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Task 1</a>
-
-<br>Task assigned for Reading
-
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
-<br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
-<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
-<br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
-<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
-<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
-<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
-<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
-<br><a data-href="k8s Namespace" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Namespace</a>
-<br><a data-href="k8s Volume" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Volume</a>
-
-<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 05:44:02 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-14]]></title><description><![CDATA[ 
+<a rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1lSwdeRuENgKLNIaqMpFCM9SosavuoSDb/view?usp=sharing</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-21-creating-pvc.html</link><guid isPermaLink="false">Daily Notes/2025-01-21 Creating PVC.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:21:28 GMT</pubDate></item><item><title><![CDATA[2025-01-14]]></title><description><![CDATA[ 
  <br>Volumes<br>
 env<br><br>Create namespace<br>kubectl create ns prod --dry-run=client -o yaml &gt; ns.yaml
 <br>namespace creates on across the cluster<br><br>
@@ -3344,80 +3686,7 @@ scheduler = scheduling pods
  controller = many controllers, manages pods and containers.
 <br>bare minimum criteria for<br>
 0.25m 6.25core<br>GB     Gi<br>
-1024   1000<br>containerd<br>kubeadm<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-06.html</link><guid isPermaLink="false">Daily Notes/2025-01-06.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 07 Jan 2025 13:43:13 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-07 kubernetes architecture]]></title><description><![CDATA[ 
- <br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a><br>
-<img alt="kubernetes-cluster.svg" src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"><br><br>Prerequisites<br>
-<br>kubectl
-<br>eksctl
-<br>aws
-<br>Steps<br>
-<br>create ec2 instance
-<br>add admin role on it
-<br>install Prerequisites on it
-<br>Install kubectl binary from <a data-tooltip-position="top" aria-label="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" rel="noopener nofollow" class="external-link" href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" target="_blank">official website</a><br># for x86_64
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-
-# for arm64
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
-<br>Install eksctl binary from its <a data-tooltip-position="top" aria-label="https://eksctl.io/installation" rel="noopener nofollow" class="external-link" href="https://eksctl.io/installation" target="_blank">official website</a><br># for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
-ARCH=amd64
-PLATFORM=$(uname -s)_$ARCH
-
-curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$PLATFORM.tar.gz"
-
-# (Optional) Verify checksum
-curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_checksums.txt" | grep $PLATFORM | sha256sum --check
-
-tar -xzf eksctl_$PLATFORM.tar.gz -C /tmp &amp;&amp; rm eksctl_$PLATFORM.tar.gz
-
-sudo mv /tmp/eksctl /usr/local/bin
-<br>Write this script into script.sh file and run it with bash script.sh<br>Check if commands working properly:<br># see kubectl version
-kubectl version
-
-# see eksctl version
-eksctl version
-<br>and run Create Cluster command<br>eksctl create cluster --name clustername --node-type t2.medium --nodes 2 --region=us-east-1
-<br>To See nodes<br>kubectl get nodes
-<br>To See pods<br>kubectl get pods -A
-<br>write pod.yaml manifest and apply<br>kubectl apply -f pod.yaml
-<br>get info about pods<br>kubectl describe pod nginx
-<br>Read about:<br>Manifest
-YAML
-
-POD
-Repl set
-Deployments
-Services
-	Load balancer
-	Node pod
-	cluster ip
-config
-	secrets
-	configMap
-Namespace
-Resources
-Resource Quota
-Volume
-Ingress
-HPA
-<br>Pod.yaml<br>apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-  containers:
-  - image:
-    name:
-    ports:
-      container-port: 80
-<br>s comes - comes<br>
-- means array<br>cluster version updates comes in every 4 month<br>
-minimum n-2 version compatible for client to support with latest version of kubernetes<br><br><br>
-<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
-<br><a data-href="Task 7 Create LAMP Server" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-7-create-lamp-server.html" class="internal-link" target="_self" rel="noopener nofollow">Task 7 Create LAMP Server</a>
-<br><br><a rel="noopener nofollow" class="external-link" href="https://www.perplexity.ai/" target="_blank">https://www.perplexity.ai/</a><br>
-<a rel="noopener nofollow" class="external-link" href="https://claude.ai/" target="_blank">https://claude.ai/</a><br>
-<a rel="noopener nofollow" class="external-link" href="https://chatgpt.com" target="_blank">https://chatgpt.com</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-07-kubernetes-architecture.html</link><guid isPermaLink="false">Daily Notes/2025-01-07 kubernetes architecture.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 08 Jan 2025 16:58:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-08]]></title><description><![CDATA[ 
+1024   1000<br>containerd<br>kubeadm<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-06.html</link><guid isPermaLink="false">Daily Notes/2025-01-06.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 07 Jan 2025 13:43:13 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/pasted-image-20250107191227.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-08]]></title><description><![CDATA[ 
  <br>🔦Lights out]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-08.html</link><guid isPermaLink="false">Daily Notes/2025-01-08.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 08 Jan 2025 16:58:49 GMT</pubDate></item><item><title><![CDATA[2025-01-09 k8s manifest files]]></title><description><![CDATA[ 
  <br><br>The ReplicaSet configuration defines a number of identical pods required, and if a pod is evicted or fails, creates more pods to compensate for the loss.<br>
 ReplicaSets are usually not used directly—they are typically created as part of a deployment.<br>Here is a simple example using&nbsp;matchLabels&nbsp;as the selector.<br>
