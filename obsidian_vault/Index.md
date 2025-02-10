@@ -16,8 +16,11 @@ In this **Digital Garden** you are always welcome to explore and share your note
 
 *These notes are made using [Obsidian App](https://obsidian.md) - A Markdown Notetaking App and Hosted with [Cloudflare page](https://pages.cloudflare.com/).*
 
->[!Warning] Links in this website are subject to change.
->These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
+>[!example] Recent Notes
+>- [[aws-cli cheatsheet]]
+>- [[SonarQube with maven]]
+>- [[HCL Basics]]
+>- [[Jenkins First Look]]
 
 #### Linux
 
@@ -119,6 +122,8 @@ In this **Digital Garden** you are always welcome to explore and share your note
 | 2025-02-02 | [[S3 bucket Creation]] |
 | 2025-02-03 | [[VPC Creation]]       |
 
+>[!Warning] Links in this website are subject to change.
+>These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
 ---
 
 <div style="position: relative;bottom: 0;left: 0;right: 0;padding: 1rem;background-color: var(--bg_dark);border-top: 1px solid #e5e7eb;text-align: center;font-size: 0.875rem;color: #4b5563;">Powered by <a rel="noopener noreferrer" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" href="https://obsidian.md" target="_blank">Obsidian</a></div>
