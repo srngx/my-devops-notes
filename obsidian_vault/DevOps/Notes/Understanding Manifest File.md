@@ -1,4 +1,3 @@
-
 Each configuration file has 3 part
 
 1) Metadata

@@ -69,7 +69,8 @@ In this **Digital Garden** you are always welcome to explore and share your note
 | 2024-11-26 | [[2024-11-26 Cloudwatch class]]   |
 | 2024-22-28 | [[2024-11-28 Creating RDS]]       |
 | 2024-12-11 | [[2024-12-11 AWS Task]]           |
-#### DevOps
+#### DevOps | Git, Docker, Kubernetes
+
 | Date       | Some Importants from Daily Notes      |     |
 | ---------- | ------------------------------------- | --- |
 | 2024-12-19 | [[2024-12-19 Git Class]]              |     |
@@ -100,7 +101,7 @@ In this **Digital Garden** you are always welcome to explore and share your note
 > - [[Agile Vs DevOps]]
 > - [[Git Fetch vs Git pull]]
 > - [[Monolithic vs Microservice Architecture]]
-> - [[Git Theory]] 
+> - [[Git Theory and Practical]] 
 > - [[Reading Docker Inspect output]]
 > - [[read about docker.sock file]]
 > - [[Kubernetes Architecture]]
@@ -108,6 +109,15 @@ In this **Digital Garden** you are always welcome to explore and share your note
 > - [[K8s Service Types]]
 > - [[k8s Namespace]]
 > - [[k8s Volume]]
+
+#### DevOps | Jenkins, Terraform
+
+| Date       | Notes                  |
+| ---------- | ---------------------- |
+| 2025-01-28 | [[Jenkins First Look]] |
+| 2025-02-01 | [[EC2 Creation]]       |
+| 2025-02-02 | [[S3 bucket Creation]] |
+| 2025-02-03 | [[VPC Creation]]       |
 
 ---
 

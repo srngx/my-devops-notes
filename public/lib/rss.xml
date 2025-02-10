@@ -1,4 +1,1143 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 23 Jan 2025 07:34:35 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 23 Jan 2025 07:34:31 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2025-01-07 kubernetes]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Sarang's DevOps Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://notes.sarangwandile.xyz/</link><image><url>https://notes.sarangwandile.xyz/lib/media/favicon.png</url><title>Sarang's DevOps Notes</title><link>https://notes.sarangwandile.xyz/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 10 Feb 2025 10:18:39 GMT</lastBuildDate><atom:link href="https://notes.sarangwandile.xyz/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 10 Feb 2025 10:18:38 GMT</pubDate><copyright><![CDATA[Sarang Wandile]]></copyright><ttl>60</ttl><dc:creator>Sarang Wandile</dc:creator><item><title><![CDATA[2024-12-19 Git Class]]></title><description><![CDATA[ 
+ <br>DVCS vs CVS -- further expanded in <a data-href="Git Theory and Practical" href="https://notes.sarangwandile.xyz/devops/notes/git-theory-and-practical.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory and Practical</a><br><br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>
+<br>installing git
+<br>signup to github.com
+<br><br><br>
+<br>git add
+<br>git commit
+<br>git push
+<br>git pull
+<br><br><br>Going back to previous commit to and rebasing<br>Seeing git logs<br>
+git log<br>Start interactive rebase<br>
+git rebase -i &lt;commit hash&gt;<br>In the editor, choose to edit the commit identified in step 3 by changing&nbsp;pick&nbsp;to&nbsp;edit&nbsp;on the first line of the text.<br>edit 8728dbe67 my second commit message
+pick 03d69e5d3 my third commit message
+pick 8053f7b27 my fourth commit message
+<br>make changes and git add . <br>
+<br>git commit --amend 
+<br>git rebase --continue
+<br>git push
+<br>removing some files from git index<br>git rm --cached -r folder or files
+<br>Learned to create .gitignore file<br>.trash/
+.obsidian/
+private
+<br><br><br>
+<br><a data-tooltip-position="top" aria-label="https://docs.github.com/en/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#removing-a-secret-introduced-by-an-earlier-commit-on-your-branch" rel="noopener nofollow" class="external-link" href="https://docs.github.com/en/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#removing-a-secret-introduced-by-an-earlier-commit-on-your-branch" target="_blank">Removing secret introduced by earler commit</a>
+<br><a data-tooltip-position="top" aria-label="https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/" rel="noopener nofollow" class="external-link" href="https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/" target="_blank">How to ignore files in git</a>
+<br><br>
+<br><a rel="noopener nofollow" class="external-link" href="https://jvns.ca/blog/2024/01/26/inside-git/" target="_blank">https://jvns.ca/blog/2024/01/26/inside-git/</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://githowto.com/git_internals_git_directory" target="_blank">https://githowto.com/git_internals_git_directory</a>
+<br><a data-href="Some talks about git in reddit 1" href="https://notes.sarangwandile.xyz/Some talks about git in reddit 1" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit 1</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://git-scm.com/book/en/v2" target="_blank">https://git-scm.com/book/en/v2</a>
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-19-git-class.html</link><guid isPermaLink="false">Daily Notes/2024-12-19 Git Class.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 16:11:27 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-23 Tomcat on Single Node Task]]></title><description><![CDATA[ 
+ <br>  po<br>
+dep<br>
+rs<br>
+clus<br>
+ip nodpo<br>
+LB<br>
+secre<br>
+configmap<br>
+volume<br>
+namespace<br>
+hpa<br>
+pvc<br>
+rolling upd<br>
+applic lifecycle<br>
+stateful set<br>
+daemon set<br>
+tenant<br>
+pod affinity<br>
+node affinity<br>
+node selector<br>
+anti afinity<br>
+taint and tolerance<br>what is probe?<br>Task <br>
+<br>1 Microservice Tomcat 
+<br>RS =1
+<br>Node selector
+<br>pod affinity
+<br>node affinity
+<br>Implement probe to check if service is running
+<br>Database tomcat in Cluster with persistent volume
+<br>ingress 
+<br>tomcat app resource alloaction:
+
+<br>Request
+<br>CPU: 500m
+<br>Mem: 1GB
+<br>Limit
+<br>cpu: 1
+<br>memory: 2gb
+
+
+<br>hard coded values can be sent no secret will be used
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-23-tomcat-on-single-node-task.html</link><guid isPermaLink="false">Daily Notes/2025-01-23 Tomcat on Single Node Task.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 13:44:30 GMT</pubDate></item><item><title><![CDATA[2025-01-29]]></title><description><![CDATA[ 
+ <br>sudo yum install -y java-17-amazon-corretto
+<br>git code --&gt; build --&gt; push --&gt; deploy<br>devsecops --&gt; git checkout --&gt; git leaks scan --&gt; sonar scan --&gt; build --&gt; image scan / trivy --&gt; push --&gt; deploy<br>ecr policy<br>Re-run Jenkins with Docker Socket Mounted: When you run Jenkins in Docker, you'll need to mount the host’s Docker socket into the Jenkins container. This allows the Jenkins container to communicate with the Docker daemon running on your local system.<br>Run the following command to start the Jenkins container with Docker socket mounted:<br>docker run -d \
+  -p 8080:8080 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v jenkins_home:/var/jenkins_home \
+  --name jenkins \
+  jenkins/jenkins:latest
+<br>Here’s what this does:<br>
+-v /var/run/docker.sock:/var/run/docker.sock: This mounts the Docker socket from your host (/var/run/docker.sock) into the Jenkins container, allowing Jenkins inside the container to access Docker on the host.<br>-v jenkins_home:/var/jenkins_home: This persists your Jenkins configuration and jobs, even if the container is removed.<br>-p 8080:8080: Exposes the Jenkins UI on port 8080 of your host.]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-29.html</link><guid isPermaLink="false">Daily Notes/2025-01-29.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 13:50:14 GMT</pubDate></item><item><title><![CDATA[2025-01-30]]></title><description><![CDATA[ 
+ <br>Jenkinsfile to push image into aws ecr<br>agent any
+
+    stages {
+        stage('git checkout') {
+            steps {
+                checkout scmGit(branches: [[name: '*/${BRANCH}']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-user', url: 'https://github.com/cholekulche/BE-application-student.git']])
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'sudo docker build -t student-ui .'
+            }
+        }
+        stage('ecr push') {
+            steps {
+                sh '''
+                aws ecr get-login-password --region us-east-2 | sudo docker login --username AWS --password-stdin 970653867674.dkr.ecr.us-east-2.amazonaws.com
+                sudo docker tag student-ui:latest 970653867674.dkr.ecr.us-east-2.amazonaws.com/student-ui:${BRANCH}-${BUILD_TIMESTAMP}
+                sudo docker push 970653867674.dkr.ecr.us-east-2.amazonaws.com/student-ui:${BRANCH}-${BUILD_TIMESTAMP}
+                '''
+            }
+        }
+        stage('docker cleanup') {
+            steps {
+                sh 'sudo docker system prune -a -f'
+            }
+        }
+    }
+}
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-30.html</link><guid isPermaLink="false">Daily Notes/2025-01-30.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 13:53:30 GMT</pubDate></item><item><title><![CDATA[2025-02-01]]></title><description><![CDATA[ 
+ <br>Docker in docker<br>Sonarcube<br>jenkins upgrade<br>sonar cube = code coverage<br>
+<br>not testing tool
+<br>code analysis and improvement
+<br>sudo alternative --config java<br>Installing sonarcube<br>
+<br>
+install java-17
+
+<br>
+install postgres
+
+<br>
+   maven plugin<br>
+- surefire
+
+<br>pom.xml file for sonarqube plugin]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-02-01.html</link><guid isPermaLink="false">Daily Notes/2025-02-01.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 13:54:57 GMT</pubDate></item><item><title><![CDATA[2025-02-02]]></title><description><![CDATA[ 
+ <br>🔥 Adding Docker-Based Jenkins Agents<br>To add Jenkins agents running as Docker containers, you need to:<br>
+1️⃣ Install Docker in the Jenkins controller container.<br>
+2️⃣ Install and configure the "Docker Plugin" in Jenkins.<br>
+3️⃣ Configure Jenkins to launch Docker-based agents dynamically.<br>
+🚀 Step 1: Run Jenkins with Docker Access<br>First, ensure your Jenkins container can communicate with the Docker daemon. Run Jenkins with the Docker socket mounted:<br>docker run -d \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  --name jenkins \
+  --user root \
+  -v jenkins_home:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  jenkins/jenkins:lts
+<br>Now, install Docker inside the Jenkins container:<br>docker exec -it jenkins bash
+apt-get update &amp;&amp; apt-get install -y docker.io
+exit
+<br>🔧 Step 2: Install the Docker Plugin in Jenkins<br> Open Jenkins at http://your-server-ip:8080/<br>
+<br>Go to Manage Jenkins → Manage Plugins
+<br>In the "Available" tab, search for "Docker Plugin" and install it.
+<br>Restart Jenkins after installation.
+<br>⚙️ Step 3: Configure Docker Cloud in Jenkins<br>Go to Manage Jenkins → Manage Nodes and Clouds → Configure Clouds
+Click Add a new cloud → Select Docker
+In "Docker Host URI", enter:
+
+unix:///var/run/docker.sock
+
+Click Test Connection → It should be successful.
+<br>🏗 Step 4: Create a Docker Agent Template<br>Under "Docker Agent templates," click Add Docker Template
+Set:
+    Label: docker-agent
+    Docker Image: Use jenkins/inbound-agent (official Jenkins agent)
+    Remote File System Root: /home/jenkins
+    Usage: "Use this node as much as possible"
+    Launch Method: Select "Attach Docker container"
+Click Save.
+<br>✅ Step 5: Run a Test Pipeline Using Docker Agents<br>Now create a simple Jenkins Pipeline:<br>Go to Jenkins Dashboard → New Item → Pipeline<br>
+Use the following script:<br>pipeline {
+    agent { label 'docker-agent' }
+    stages {
+        stage('Run on Docker Agent') {
+            steps {
+                sh 'echo "Running on a Docker Agent!"'
+                sh 'docker --version'
+            }
+        }
+    }
+}
+<br>Click Build Now → Jenkins will automatically start a Docker agent and run the job inside it.<br>🎯 Final Notes<br>
+<br>Dynamic Agents: Jenkins will only spin up agents when needed and remove them after execution.
+<br>If agents don’t start: Check Manage Nodes and Clouds → Check agent logs.
+<br>Using Custom Images: You can specify a different agent image, e.g., python:3.10, maven:latest, etc.
+<br><br>Let me know if you need more details! 🚀<br>It looks like Jenkins inside your container does not have the Docker CLI installed. Mounting the Docker socket (/var/run/docker.sock) allows the container to communicate with the Docker daemon running on your host, but the Jenkins container itself still needs the docker CLI to execute commands.<br>
+Solution: Use a Docker-in-Docker (DinD) Approach<br>Instead of using the basic jenkins/jenkins image, use jenkins/jenkins:lts with Docker installed or use a dedicated image like jenkins/jenkins:lts-jdk17 that comes with Docker.<br>Steps to Fix<br>1️⃣ Run Jenkins with Docker Installed<br>Instead of jenkins/jenkins:latest, use jenkins/jenkins:lts and manually install Docker inside it.<br>docker run -d \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  --name jenkins \
+  --user root \
+  -v jenkins_home:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  jenkins/jenkins:lts
+<br>2️⃣  Install Docker in the Jenkins Container<br>Once the container is running, enter it:<br>docker exec -it jenkins bash
+<br>Then, install Docker inside the Jenkins container:<br>apt-get update &amp;&amp; apt-get install -y docker.io
+<br>3️⃣ Verify Docker Inside Jenkins<br>Run inside the container:<br>docker --version
+docker ps
+<br>If these commands work, your Jenkins pipelines should now be able to execute docker commands successfully.<br>
+Alternative: Use the jenkinsci/blueocean Image<br>The jenkinsci/blueocean image comes pre-installed with Docker CLI:<br>docker run -d \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  --name jenkins \
+  --user root \
+  -v jenkins_home:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  jenkinsci/blueocean
+
+<br>This might be an easier way if you don’t want to manually install Docker inside Jenkins.<br>Let me know if you need more help! 🚀<br>
+You said:<br>
+why   -p 50000:50000 \<br>
+ChatGPT said:<br>
+ChatGPT<br>The -p 50000:50000 option in your Docker run command is used to expose the Jenkins agent (slave) communication port.<br>
+🔹 Why is Port 50000 Used?<br>Jenkins uses port 50000 for JNLP-based (Java Network Launch Protocol) agent communication. This is needed when Jenkins connects to remote build agents (worker nodes) that run jobs.<br>
+<br>If you plan to run Jenkins agents on different machines and connect them to your Jenkins controller, you should expose port 50000.
+<br>If you are running everything on a single container without agents, you don't need -p 50000:50000.
+<br>✅ When to Use -p 50000:50000<br>✔️ If you want to add remote Jenkins agents.<br>
+✔️ If you use JNLP (Java Web Start) agents to connect workers to Jenkins.<br>
+❌ When You Can Skip It<br>❌ If you are running all jobs inside the Jenkins container itself.<br>
+❌ If you are using Docker-based agents instead of traditional JNLP agents.<br>
+🛠 Example Without Agents (If You Don’t Need Port 50000)<br>docker run -d \
+  -p 8080:8080 \
+  --name jenkins \
+  --user root \
+  -v jenkins_home:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  jenkins/jenkins:lts
+]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-02-02.html</link><guid isPermaLink="false">Daily Notes/2025-02-02.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 14:06:21 GMT</pubDate></item><item><title><![CDATA[2025-02-03]]></title><description><![CDATA[ 
+ <br>Run using docker<br>$ docker run -d --name sonarqube -p 9000:9000 sonarqube
+<br>mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=student \
+  -Dsonar.projectName='student' \
+  -Dsonar.host.url=http://3.137.177.165:32768 \
+  -Dsonar.token=sqp_3584391716cf8fbc01eeea4e17d34b35b07d5a2f
+<br> docker run -d --privileged -P --user root  -v /mnt:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkins/jenkins<br>  nexus<br>
+jfrog<br>  -&gt; s3 ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-02-03.html</link><guid isPermaLink="false">Daily Notes/2025-02-03.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 10 Feb 2025 15:30:35 GMT</pubDate></item><item><title><![CDATA[2025-02-04]]></title><description><![CDATA[ 
+ <br>Run sonarqube using docker<br>artifactory to store artifact<br>
+<br>nexus
+<br>jfrog
+<br>s3
+<br>aws-cli container<br>storing artifact in s3<br>github pages - How to create free portfolio website using github pages<br>cluster creates infra in its own way<br>
+terraform gives complete control<br>IAC = Infrastructure as a Code<br>main.tf<br>provider.tf<br>
+cloud provider information<br>variable.tf<br>terraform init<br>
+provider download<br>
+terraform.lock.hcl created<br>terraform plan<br>
+will show infra plan<br>terraform apply<br>
+terraform.tfstate created<br>tf destroy<br>
+deletes all resources mentioned in tfstate file<br>Task: create 3 ec2 instances with terraform]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-02-04.html</link><guid isPermaLink="false">Daily Notes/2025-02-04.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 14:11:45 GMT</pubDate></item><item><title><![CDATA[Mysql APP From Scratch]]></title><description><![CDATA[ 
+ <br><br># Update system packages
+sudo yum update -y
+
+# Install Apache web server
+sudo yum install -y httpd
+
+# Install PHP and MySQL
+sudo amazon-linux-extras enable php7.4
+sudo yum clean metadata
+sudo yum install -y php php-devel php-mysqlnd httpd mysql-server
+
+# Start and enable services
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl start mysqld
+sudo systemctl enable mysqld
+
+# Secure MySQL installation
+sudo mysql_secure_installation
+<br><br>-- Create database
+CREATE DATABASE user_registration;
+USE user_registration;
+
+-- Create users table
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    student_name VARCHAR(100),
+    address VARCHAR(255),
+    email VARCHAR(100) UNIQUE,
+    username VARCHAR(50) UNIQUE,
+    password VARCHAR(255)
+);
+<br><br>signin.html<br>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sign In&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Sign In&lt;/h2&gt;
+        &lt;form action="login.php" method="post"&gt;
+            &lt;input type="text" name="username" placeholder="Username" required&gt;
+            &lt;input type="password" name="password" placeholder="Password" required&gt;
+            &lt;button type="submit"&gt;Sign In&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;div class="signup-link"&gt;
+            &lt;p&gt;Don't have an account? &lt;a href="signup.html"&gt;Sign Up&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<br><br>signup.html<br>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Sign Up&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Sign Up&lt;/h2&gt;
+        &lt;form action="register.php" method="post"&gt;
+            &lt;input type="text" name="student_name" placeholder="Student Name" required&gt;
+            &lt;input type="text" name="address" placeholder="Address" required&gt;
+            &lt;input type="email" name="email" placeholder="Email" required&gt;
+            &lt;input type="text" name="username" placeholder="Username" required&gt;
+            &lt;input type="password" name="password" placeholder="Password" required&gt;
+            &lt;button type="submit"&gt;Register&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<br><br>register.php<br>&lt;?php
+session_start();
+$host = 'localhost';
+$db_username = 'root';  // Change this to your MySQL username
+$db_password = 'your_mysql_password';  // Change to your MySQL password
+$database = 'user_registration';
+
+// Create connection
+$conn = new mysqli($host, $db_username, $db_password, $database);
+
+// Check connection
+if ($conn-&gt;connect_error) {
+    die("Connection failed: " . $conn-&gt;connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $student_name = $conn-&gt;real_escape_string($_POST['student_name']);
+    $address = $conn-&gt;real_escape_string($_POST['address']);
+    $email = $conn-&gt;real_escape_string($_POST['email']);
+    $username = $conn-&gt;real_escape_string($_POST['username']);
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    // Check if username or email already exists
+    $check_query = "SELECT * FROM users WHERE username = ? OR email = ?";
+    $stmt = $conn-&gt;prepare($check_query);
+    $stmt-&gt;bind_param("ss", $username, $email);
+    $stmt-&gt;execute();
+    $result = $stmt-&gt;get_result();
+
+    if ($result-&gt;num_rows &gt; 0) {
+        echo "Username or email already exists!";
+    } else {
+        // Insert new user
+        $sql = "INSERT INTO users (student_name, address, email, username, password) VALUES (?, ?, ?, ?, ?)";
+        $stmt = $conn-&gt;prepare($sql);
+        $stmt-&gt;bind_param("sssss", $student_name, $address, $email, $username, $password);
+
+        if ($stmt-&gt;execute()) {
+            $_SESSION['username'] = $username;
+            header("Location: profile.php");
+        } else {
+            echo "Error: " . $stmt-&gt;error;
+        }
+    }
+    $stmt-&gt;close();
+}
+$conn-&gt;close();
+?&gt;
+<br><br>Login.php<br>&lt;?php
+session_start();
+$host = 'localhost';
+$db_username = 'root';
+$db_password = 'your_mysql_password';
+$database = 'user_registration';
+
+$conn = new mysqli($host, $db_username, $db_password, $database);
+
+if ($conn-&gt;connect_error) {
+    die("Connection failed: " . $conn-&gt;connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $conn-&gt;real_escape_string($_POST['username']);
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM users WHERE username = ?";
+    $stmt = $conn-&gt;prepare($sql);
+    $stmt-&gt;bind_param("s", $username);
+    $stmt-&gt;execute();
+    $result = $stmt-&gt;get_result();
+
+    if ($result-&gt;num_rows == 1) {
+        $user = $result-&gt;fetch_assoc();
+        if (password_verify($password, $user['password'])) {
+            $_SESSION['username'] = $username;
+            header("Location: profile.php");
+        } else {
+            echo "Incorrect password!";
+        }
+    } else {
+        echo "Account not registered!";
+    }
+    $stmt-&gt;close();
+}
+$conn-&gt;close();
+?&gt;
+<br><br>Profile.php<br>&lt;?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: signin.html");
+    exit();
+}
+
+$host = 'localhost';
+$db_username = 'root';
+$db_password = 'your_mysql_password';
+$database = 'user_registration';
+
+$conn = new mysqli($host, $db_username, $db_password, $database);
+
+$username = $_SESSION['username'];
+$sql = "SELECT * FROM users WHERE username = ?";
+$stmt = $conn-&gt;prepare($sql);
+$stmt-&gt;bind_param("s", $username);
+$stmt-&gt;execute();
+$result = $stmt-&gt;get_result();
+$user = $result-&gt;fetch_assoc();
+?&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Profile&lt;/title&gt;
+    &lt;style&gt;
+        body { font-family: Arial, sans-serif; max-width: 400px; margin: 0 auto; padding: 20px; }
+        .profile-section { background: #f4f4f4; padding: 20px; border-radius: 5px; }
+        input { width: 100%; margin: 10px 0; padding: 5px; }
+        button { margin-top: 10px; padding: 10px; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="profile-section"&gt;
+        &lt;h2&gt;Profile&lt;/h2&gt;
+        &lt;form action="update_profile.php" method="post"&gt;
+            &lt;label&gt;Name: &lt;input type="text" name="student_name" value="&lt;?php echo $user['student_name']; ?&gt;"&gt;&lt;/label&gt;
+            &lt;label&gt;Email: &lt;input type="email" name="email" value="&lt;?php echo $user['email']; ?&gt;"&gt;&lt;/label&gt;
+            &lt;label&gt;New Password: &lt;input type="password" name="new_password"&gt;&lt;/label&gt;
+            &lt;button type="submit"&gt;Update Profile&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;a href="logout.php"&gt;Logout&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<br><br>update_profile.php<br>&lt;?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: signin.html");
+    exit();
+}
+
+$host = 'localhost';
+$db_username = 'root';
+$db_password = 'your_mysql_password';
+$database = 'user_registration';
+
+$conn = new mysqli($host, $db_username, $db_password, $database);
+
+$username = $_SESSION['username'];
+$student_name = $conn-&gt;real_escape_string($_POST['student_name']);
+$email = $conn-&gt;real_escape_string($_POST['email']);
+
+$update_sql = "UPDATE users SET student_name = ?, email = ?";
+$params = [$student_name, $email];
+$types = "ss";
+
+if (!empty($_POST['new_password'])) {
+    $new_password = password_hash($_POST['new_password'], PASSWORD_BCRYPT);
+    $update_sql .= ", password = ?";
+    $params[] = $new_password;
+    $types .= "s";
+}
+
+$update_sql .= " WHERE username = ?";
+$params[] = $username;
+$types .= "s";
+
+$stmt = $conn-&gt;prepare($update_sql);
+$stmt-&gt;bind_param($types, ...$params);
+
+if ($stmt-&gt;execute()) {
+    header("Location: profile.php");
+} else {
+    echo "Error updating profile: " . $stmt-&gt;error;
+}
+
+$stmt-&gt;close();
+$conn-&gt;close();
+?&gt;
+<br><br>logout.php<br>&lt;?php
+session_start();
+session_destroy();
+header("Location: signin.html");
+exit();
+?&gt;
+<br>Deployment Steps:<br>
+<br>Install all these files in /var/www/html/ directory
+<br>Set proper file permissions: sudo chmod 755 /var/www/html/*
+<br>Restart Apache: sudo systemctl restart httpd
+<br>Security Notes:<br>
+<br>Replace your_mysql_password with a strong password
+<br>Configure firewall to allow HTTP/HTTPS traffic
+<br>Use HTTPS in production
+<br>Implement additional input validation
+<br>Requirements Covered:<br>
+<br>MySQL installed on EC2
+<br>Simple registration and login system
+<br>Profile update functionality
+<br>Basic error handling
+<br>Password hashing for security
+<br><br><br>FROM php:7.4-apache
+
+# Install system dependencies and PHP extensions
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Copy application files
+COPY . /var/www/html/
+
+# Set proper permissions
+RUN chown -R www-data:www-data /var/www/html \
+    &amp;&amp; chmod -R 755 /var/www/html
+
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
+
+# Expose port 80
+EXPOSE 80
+
+<br>docker build -t your-dockerhub-username/php-user-registration:v1 .
+docker push your-dockerhub-username/php-user-registration:v1
+]]></description><link>https://notes.sarangwandile.xyz/development/mysql-app-from-scratch.html</link><guid isPermaLink="false">Development/Mysql APP From Scratch.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 26 Jan 2025 13:32:27 GMT</pubDate></item><item><title><![CDATA[Tomcat on single node]]></title><description><![CDATA[ 
+ <br><br>
+<br>1 Microservice = Tomcat 
+<br>ReplicaSet 1
+<br>Add Node selector
+<br>add pod affinity
+<br>add node affinity
+<br>Implement probe to check to see if service is running
+<br>Add Database tomcat in Cluster with persistent volume
+<br>Use ingress LB
+<br>tomcat app resource alloaction:
+
+<br>Request
+<br>CPU: 500m
+<br>Mem: 1GB
+<br>Limit
+<br>cpu: 1
+<br>memory: 2gb
+
+
+<br>hard coded values can be sent so no secret will be used<br>
+or<br>
+Use online bookshop application where secrets and configMap can be used
+]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/tomcat-on-single-node.html</link><guid isPermaLink="false">DevOps/K8S Tasks/Tomcat on single node.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 16:16:31 GMT</pubDate></item><item><title><![CDATA[Docker Theory and Practical]]></title><description><![CDATA[ 
+ <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
+Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br>At initial stages of the software development developers usually build software in monolithic way meaning everything that software has to offer is bundle in the single unit but as the development goes on the need to federate the services of the software arises and developers adapt Microservices method to divide software into chunks so all chunks communicate with each other creating illusion of one single software.<br><br>
+<br>Single unified application
+<br><br>
+<br>one app divided in chunks
+<br><br>*Docker is a containerization technology that packages your application in special portable sandboxed format along with its dependencies and system libraries for better compatibility across devices.<br><img alt="Docker-Architecture-diagram_1.excalidraw.svg" src="https://notes.sarangwandile.xyz/lib/media/docker-architecture-diagram_1.excalidraw.svg"><br><br>
+<br>its like small virtual machines
+<br>containers are free to use all the system resources they needs
+<br>whereas in vms softwares has limited preallocated resources to use
+<br><br>#Creating a nginx container
+docker run nginx
+
+# run as detached mode
+docker run -d nginx
+
+# list running containers
+docker ps 
+
+# list all containers
+docker ps -a
+
+# kill running container
+docker kill &lt;container-id&gt;
+
+# expose container on random host port
+docker run -P nginx
+
+# expose container on custom host port
+docker run -d -p 1313:8080 nginx:latest
+
+# Stopping the container
+docker stop &lt;container id&gt;
+
+# removing stopped containers
+docker rm &lt;container id&gt;
+
+<br><br><br>Installing docker on amazonlinux and rhel based distros are much easier than installling on ubuntu<br>sudo yum install docker # rhel/amazonlinux/fedora etc
+sudo pacman -S docker   # archlinux based distros
+<br><br>curl -fsSL https://get.docker.com -o get-docker.sh &amp;&amp; sudo sh get-docker.sh`
+<br>Running this script should install following package inside your ubuntu based distro docker-engine, docker.io, containerd, runc.<br>Tip
+However I still recommend to check <a data-tooltip-position="top" aria-label="https://docs.docker.com/engine/install/ubuntu/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">this official installation guide</a>
+<br><br>systemctl start docker
+systemctl enable docker
+<br>To run docker command its absolutely require to have docker daemon running in background otherwise it wont work so make sure you have docker daemon running.<br><br>docker pull nginx
+<br>This will pull latest version of nginx image from docker hub.<br>
+By default its always going to pull latest tag<br>
+In order to pull specific version you need to mention its tag name like this<br>docker pull nginx:1.23.1
+<br><br>docker run nginx
+<br>This command creates and starts a Docker container running the Nginx web serve. Although By default, Nginx runs on port 80 within the container. This command doesn't map any ports, so you won't be able to access the Nginx server from your host machine to specify port you can use-p flag.<br><br>docker run -p 8080:80 nginx
+<br>Here 8080 is host machine port and 80 is container port<br>docker run -P nginx
+<br>This will map random port for the host machine.<br><br>docker run -d nginx`
+<br>Normally running container will cause container to run in foreground and occupy the terminal screen. So its better choice to use -d to make it run in background.<br><br>docker run --name my-container nginx
+<br>By default docker give funny names to containers. but you can specify your custom name and can use that name instead of 'container-id' in docker commands.<br><br>docker stop &lt;conainer-id&gt;
+<br>Stopped containers and be restarted with start command<br><br>docker rm &lt;container-id&gt;
+<br>Sometimes stopped or exited containers wont have any use and needs to be removed to save space.<br><br>docker ps
+<br>This will list all the running containers only and not exited or stopped ones.<br>To list all containers including exited and stopped ones use ps -a<br>docker ps -a
+<br><br>docker logs &lt;container-id&gt;
+<br>This is important to monitor activities inside of containers.<br><br>docker inspect &lt;container-id&gt;
+<br>This will list all the information of container<br><br>docker commit &lt;container-id&gt; 
+<br>This will come in handy when you done changes inside running container and want to incorporate these changes into your image.<br>$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+&lt;none&gt;       &lt;none&gt;    5c9d3a455e0f   10 seconds ago   214MB
+<br><br>docker tag &lt;image-id&gt; new-name
+<br>Adding tag is like giving Image a name this comes in handy for identifying images.<br>$ sudo docker images
+REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
+custom-nginx   latest    5c9d3a455e0f   47 seconds ago   214MB
+<br><br>docker push &lt;image-id&gt;
+<br>If you have verified docker hub login through docker login command it will automatically push the image to your docker hub repo assuming your docker hub repo has same name as your image tag<br>and same goes to ECR except you need to authenticate through slightly different method:<br>aws ecr get-login-password --region &lt;region-name&gt; | docker login --username AWS --password-stdin &lt;amazon-account-id&gt;.dkr.ecr.&lt;region-name&gt;.amazonaws.com
+<br><br>
+<br><a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/" target="_blank">https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/</a>
+<br><a rel="noopener nofollow" class="external-link" href="https://adventofdocker.com" target="_blank">https://adventofdocker.com</a>
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/docker-theory-and-practical.html</link><guid isPermaLink="false">DevOps/Notes/Docker Theory and Practical.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 16:11:08 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Git Notes]]></title><description><![CDATA[ 
+ <br><br>Git is a Distributed Version Control System that mainly used for Source code management by developers.<br>Git basically divides your code into three part.<br>
+<br>Working Area
+<br>Staging Area
+<br>Head or commit
+<br>Working Area is your state of code before running the git add command.<br>
+The files in here also known as "untracked files".<br>To add the files into git you do git add and they moved to staging area.<br>Here your code got the stage. <br>Before finalizing your code into production i.e. 'commit' you make required changes and after making sure<br>
+your code is ready to go into production you run git commit command.<br>
+which is basically telling git this is a final changes with the special stamp of "commit hash".<br>Then If you want you can push your code into remote repository sitting onto the cloud waiting to be forked and contributed by peoples across the glob.<br><br>
+<br>git add     To add code into git
+<br>git commit  To commit changes 
+<br>git push    To upload your code into remote repo
+<br>git pull    To download latest changes from remote to your local
+<br>git fetch   Fetching Metadata and logs from remote 
+<br><br>Git Provide "Branches" which are nothing but a way to seperate your code into different version so you can later integrate your features and bugfixes into production once they finished peacefully in their own isolated places.<br>There are well known three branches people generally creates:<br>
+<br>Main  (which is your production branch)
+<br>Dev   (which is your ongoing development which never cease to stop.)
+<br>Test  (Here your code is being tested against performance and security standards.)
+<br>Some people also like to create their own custom branches like alpha, beta, stable etc i.e. according to release state.<br><br>
+<br>git branch -a   List all available branches
+<br>git checkout -b Create and switch to the new branch
+<br>git checkout    To switch to different branch
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-notes-in-my-own-words.html</link><guid isPermaLink="false">DevOps/Notes/Git Notes in My Own words.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Git Theory and Practical]]></title><description><![CDATA[ 
+ <br><br><br>A centralized version control system (VCS) uses a single, central repository to store all file versions and their change history. Team members have their own working copies, but all modifications are ultimately committed to this central server. This facilitates collaboration by providing a single source of truth, but it also creates a single point of failure. Examples include <a data-tooltip-position="top" aria-label="https://subversion.apache.org/" rel="noopener nofollow" class="external-link" href="https://subversion.apache.org/" target="_blank">Subversion (SVN)</a> and <a data-tooltip-position="top" aria-label="https://www.nongnu.org/cvs/" rel="noopener nofollow" class="external-link" href="https://www.nongnu.org/cvs/" target="_blank">CVS</a>.<br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>In a Decentralized Version Control System (DVCS), every user has a complete copy of the repository, including its entire history. This eliminates the reliance on a central server, allowing for offline work and greater flexibility. Changes are shared between repositories as needed. Popular examples include <a data-tooltip-position="top" aria-label="https://git-scm.com" rel="noopener nofollow" class="external-link" href="https://git-scm.com" target="_blank">Git</a> and <a data-tooltip-position="top" aria-label="https://www.mercurial-scm.org/" rel="noopener nofollow" class="external-link" href="https://www.mercurial-scm.org/" target="_blank">Mercurial</a>.<br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br>Git is like a super-powered tracking system for your files and the changes you make to them over time. Imagine it as a special folder that remembers every version of your work, allowing you to go back to any previous stage if needed. &nbsp;<br>Here's what makes Git special:<br>
+<br>Keeps a detailed history: Git meticulously records every change you make to your files, who made it, and when. This history helps you understand how your project evolved. &nbsp;
+<br>Branching and merging: Git allows you to create separate branches, like alternate timelines, to experiment with new features or try different ideas without affecting the main project. You can then merge these branches back into the main project when you're ready. &nbsp;
+<br>Collaboration made easy: Git is designed for teamwork. Multiple people can work on the same project simultaneously, and Git helps manage and integrate everyone's contributions smoothly. &nbsp;
+<br>Offline access: You have the entire project history on your computer, so you can work even without an internet connection. &nbsp;
+<br>Popular and widely used: Git is the most popular version control system in the world, used by countless developers and companies. &nbsp;
+<br><br>Git was created by Linus Torvalds, the famous creator of the Linux operating system, in 2005. He needed a better tool to manage the Linux kernel development, as the existing version control systems were not efficient enough for such a large and complex project.<br>Here's a glimpse of Git's history:<br>
+<br>Early Days (2002-2005): Linux kernel development relied on a proprietary DVCS called <a data-tooltip-position="top" aria-label="https://www.bitkeeper.org/" rel="noopener nofollow" class="external-link" href="https://www.bitkeeper.org/" target="_blank">BitKeeper</a>. When its free-of-charge use was revoked, Torvalds decided to create his own version control system, with the goal of being faster, simpler, and more robust.
+<br>Birth of Git (April 2005): Torvalds began work on Git and within a remarkably short period, had a functional system ready to manage the Linux kernel.
+<br>Community Takes Over (July 2005): Junio Hamano took over the maintenance of Git, guiding its development and shaping it into the mature system it is today.
+<br>Widespread Adoption: Git's speed, flexibility, and powerful features quickly gained popularity among developers. It became the preferred choice for open-source projects and eventually spread to commercial software development.
+<br>Today, Git is the most widely used version control system worldwide, powering the development of countless software projects, from small personal projects to massive corporate endeavors.<br><br>
+<br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
+<br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
+<br>or via package manager in linux
+
+<br>for ubuntu apt install git
+<br>for rhel based distros yum install git
+<br>for arch based distros pacman -S git
+
+
+<br><br>
+<br>Create empty folder in local machine
+<br>navigate to it and run git init
+<br>add some files and run git add .
+<br>commit changes `git commit -m "git initialized and new files added"
+<br>Create repository in github and use its link to below step
+<br>Add remote repo git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
+<br>update the remote repo with push git push origin main
+<br><br><br><br>git add . 
+<br>This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.<br>git add -A 
+<br>This command will stage all types of changes across your entire working directory including newfiles, modifications and deletions<br><br>git commit -m "new commit"
+<br>Creates a commit with the specified message. This is the most common way to commit changes.<br>git commit -A "your commit message"
+<br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
+<br>Uploads your local changes to the remote repository.<br>
+After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
+<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-theory-and-practical.html</link><guid isPermaLink="false">DevOps/Notes/Git Theory and Practical.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 16:14:20 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[My limited diff usecase In case I forgot]]></title><description><![CDATA[ 
+ <br>What is diff?<br>Shows difference/comparison between files<br>Why is it useful?<br>
+<br>Tracking changes: See how a file has evolved over time.
+<br>Comparing versions: Find out what's different between two versions of a document or code.
+<br>Merging changes: Helps you combine different versions of a file.
+<br>Troubleshooting: Identify what went wrong in a configuration file or program.
+<br>How to use it?<br>The basic command is super simple:<br>diff file1 file2
+<br>Just replace file1 and file2 with the actual names of your files.<br>Making the output more helpful<br>diff has some options to make the output easier to understand:<br>
+<br>-u (or --unified): Shows the changes in a "unified" format, which is more compact and easier to read.
+<br>-y (or --side-by-side): Displays the files side-by-side, so you can see the differences directly.
+<br>-w (or --ignore-all-space): Ignores differences in whitespace (spaces and tabs), which is helpful if you only care about the content.
+<br>-r (or --recursive): Compares entire directories, not just individual files.
+<br>-q (or --brief): Only tells you if the files are different, not what the differences are.
+<br>Example:<br>Let's say you have two files, original.txt and revised.txt. To see the differences in a unified format:<br>diff -u original.txt revised.txt
+<br>Understanding the output<br>diff uses some symbols to show you the changes:<br>
+<br>+: Lines added in the second file.
+<br>-: Lines removed from the first file.
+<br>@@: Indicates a block of changed lines.
+<br><br>See difference between two folders<br>
+Basic Usage<br>diff -qr folder1 folder2
+<br>
+<br>-q: Only reports when files differ.
+<br>-r: Recursively compares subdirectories.
+<br>More detailed output<br>diff -ruN dir1 dir2
+<br>
+<br>-r: Recursively compares subdirectories.
+<br>-u: Produces a unified diff format, which is easier to read.
+<br>-N: Treats absent files as empty.
+<br>For files<br>diff -wy file1.txt file2.txt
+<br>
+<br>-w : for ignoring whitespaces
+<br>-y : side by side comparison
+<br>Some Very Important Flags<br>
+<br>--color=always
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/my-limited-diff-usecase-in-case-i-forgot.html</link><guid isPermaLink="false">DevOps/Notes/My limited diff usecase In case I forgot.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 16:15:19 GMT</pubDate></item><item><title><![CDATA[Understanding Manifest File]]></title><description><![CDATA[ 
+ <br>Each configuration file has 3 part<br>
+<br>Metadata
+<br>Specification
+<br>Status (often autogenerated by kubernetes)
+<br>Attributes of "spec" are specific to the "kind"<br>Metadata part contains Labels and<br>
+Specification part contains Selectors]]></description><link>https://notes.sarangwandile.xyz/devops/notes/understanding-manifest-file.html</link><guid isPermaLink="false">DevOps/Notes/Understanding Manifest File.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 14:58:45 GMT</pubDate></item><item><title><![CDATA[Jenkins First Look]]></title><description><![CDATA[ 
+ <br><br><img alt="Jenkins Logo" src="https://www.lambdatest.com/blog/wp-content/uploads/2020/09/Jenkins-Logo.png" referrerpolicy="no-referrer"><br>Jenkins is an open-source server that is written entirely in Java. It lets you execute a series of actions to achieve the continuous integration process, that too in an automated fashion.<br>This CI server runs in servlet containers such as Apache Tomcat. Jenkins facilitates <a data-tooltip-position="top" aria-label="https://www.lambdatest.com/blog/what-is-continuous-integration-and-continuous-delivery/" rel="noopener nofollow" class="external-link" href="https://www.lambdatest.com/blog/what-is-continuous-integration-and-continuous-delivery/" target="_blank">continuous integration and continuous delivery</a> in software projects by automating parts related to build, test, and deployment. This makes it easy for developers to continuously work on the betterment of the product by integrating changes to the project.<br>Jenkins automates the software builds in a continuous manner and lets the developers know about the errors at an early stage. A strong Jenkins community is one of the prime reasons for its popularity. Jenkins is not only extensible but also has a thriving plugin ecosystem.<br>Some of the possible steps that can be performed using Jenkins are:<br>
+<br>Software build using build systems such as Gradle, Maven, and more.
+<br>Automation testing using test frameworks such as Nose2, PyTest, Robot, Selenium, and more.
+<br>Execute test scripts (using Windows terminal, Linux shell, etc.
+<br>Achieve test results and perform post actions such as printing test reports, and more.
+<br>Execute test scenarios against different input combinations for obtaining improved test coverage.
+<br>Continuous Integration (CI) where the artifacts are automatically created and tested. This aids in identification of issues in the product at an early stage of development.
+<br>At the time of what is Jenkins blog, it had close to 1500+ plugins contributed by the community. Plugins help in customizing the experience with Jenkins, along with providing support for accelerating activities related to building, deploying, and automating a project.<br><br>Jenkins has an early mover advantage since it has been in development since 2011. Kohsuke Kawaguchi created Jenkins (then called ‘Hudson’) while working at Sun Microsystems. Hudson was created in the summer of 2004 and the first release was in February 2005.<br>After the acquisition of Sun Microsystems by Oracle, a proposal was approved by the Hudson community for creating the Jenkins project. In February 2011, Oracle intended that the development of Hudson should continue hence, Hudson was forked instead of renaming it to Jenkins.<br>Though Hudson and Jenkins were being developed independently, Jenkins acquired significantly more projects &amp; contributors than Hudson. Consequently, Hudson is no longer maintained by the community.<br><br>Like other open-source projects, Jenkins also produces two release lines – LTS (Long-Term Support) and Weekly (regular) releases. Jenkins is very good with releases, as stable releases happen every four weeks.<br><br>Jenkins is a self-contained Java program that is agnostic of the platform on which it is installed. It is available for almost all the popular operating systems such as Windows, different flavors of Unix, and Mac OS.<br>It is available as a normal installer, as well as a .war file. Once installed, it is easy to configure using its web interface.<br><br>As it is open-source, it is free for use. There is a strong involvement of the community which makes it a powerful CI/CD tool. You can take support from the Jenkins community, whether it is for extensibility, support, documentation, or any other feature related to Jenkins.<br><br>The backbone of Jenkins is the community and the community members have been instrumental in the development (and testing) of close to 1500+ plugins available in the Update Center.<br><br>Jenkins is designed in such a manner that makes it relatively easy to distribute work across multiple machines and platforms for the accelerated build, testing, and deployment.<br><br>In this section of the What is Jenkins blog, we look at the internal functioning of Jenkins i.e. what happens once the developer commits changes to the repository and how CI/CD is realized in Jenkins. We also look at the Master-Agent architecture in Jenkins.<br><br>Before we dive into how does Jenkins works, we must understand the architecture of Jenkins. These are the series of steps that outlines the interaction between different elements in Jenkins:<br>
+<br>Developers do the necessary modifications in the source code and commit the changes to the repository. A new version of that file will be created in the version control system that is used for maintaining the repository of source code.
+<br>The repository is continuously checked by the Jenkins CI server for any changes (either in the form of code or libraries) and changes are pulled by the server.
+<br>In the next step, we ensure that the build with the ‘pulled changes’ is going through or not. The Build server performs a build with the code and an executable is generated if the build process is successful. In case of a build failure, an automated email with a link to build logs and other build artifacts is sent to the developer.
+<br>In case of a successful build, the built application (or executable) is deployed to the test server. This step helps in realizing continuous testing where the newly built executable goes through a series of automated tests. Developers are alerted in case the changes have caused any breakage in functionality.
+<br>If there are no build, integration, and testing issues with the checked-in code, the changes and tested application are automatically deployed to the Prod/Production server.
+<br>Here is the diagrammatic representation of the Jenkins architecture:<br><img alt="Jenkins architecture" src="https://www.lambdatest.com/blog/wp-content/uploads/2020/09/Jenkins-architecture-1.png" referrerpolicy="no-referrer"><br>A single Jenkins server might not be sufficient to realize the following requirements:<br>
+<br>Testing needs to be performed on different environments (i.e. code written using different languages e.g. Java, Python, C, etc. are committed to the version control system), where a single server might not suffice the requirement.
+<br>A single Jenkins server might not be sufficient to handle the load that comes with large-scale software projects.
+<br>In such scenarios, the distributed (or Master-Agent) architecture of Jenkins is used for continuous integration and testing. Diving deeper into how does Jenkins works, we take a look at the architecture of Jenkins.<br><br>The master-agent (or distributed) architecture in Jenkins is used for managing distributed builds. The Master and Agent(s) communicate through the TCP/IP protocol.<br>These are the roles and responsibilities of the Jenkins Master and Agent(s):<br><br>The main server in Jenkins is the Master. Here are the jobs handled by Jenkins Master:<br>
+<br>Schedule build jobs
+<br>Choosing the appropriate agent in the master-agent ecosystem for dispatching the builds.
+<br>Monitor agents and take them online/offline as and when required.
+<br>Presenting the build results (and reports) to the developer.
+<br>The Jenkins master can also execute the jobs directly but it is always recommended to select the appropriate agent(s) for build and execution-related tasks.<br><br>A agent is a remote machine that is connected to the Master. Depending on the project and build requirements, you could opt for ‘N’ number of agents. agents can run on different operating systems and depending on the ‘type of build request’, the appropriate Agent is chosen by the Master for build execution and testing.<br>Here are the jobs handled by the Jenkins Agent(s):<br>
+<br>Listen to commands from the Jenkins Master.
+<br>Execute build jobs that are dispatched by the Master.
+<br>Developers have the flexibility to run the build and execute tests on a particular agent or a particular type of Agent. The default option is Jenkins Master selecting the best-suited Agent for the job.
+<br>Here is a simple diagrammatic representation of how does Jenkins work, with multiple Jenkins Agents connected to the Jenkins Master:<br><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/09/Agent_Master.jpg" referrerpolicy="no-referrer"><br><br>In the previous section of the What is Jenkins blog, we touched upon the brief responsibilities of Master and Agent(s) in Jenkins. Let’s look at exactly how does Jenkins works in the Master-Agent (or distributed) architecture:<br>In the Jenkins Master-Agent architecture shown below, there are three Agents, each running on a different operating system (i.e. Windows 10, Linux, and Mac OS).<br><img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/09/Jenkins-Architecture.jpg" referrerpolicy="no-referrer"><br>
+<br>Developers check-in their respective code changes in ‘The Remote Source Code Repository’ that is depicted on the left-hand side.
+<br>Only the Jenkins master is connected to the repository and it checks for code-changes (in the repository) at periodic intervals. All the Jenkins Agents are connected to the Jenkins Master.
+<br>Jenkins master dispatches the request (for build and test) to the appropriate Jenkins Agent depending on the environment required for performing the build. This lets you perform builds and execute tests in different environments across the entire architecture.
+<br>The Agent performs the testing, generates test reports, and sends the same to the Jenkins Master for monitoring.
+<br>As developers keep pushing code, Jenkins Agents can run different builds versions of the code for different platforms. Jenkins Master (or Master Node) controls how the respective builds should operate.<br>In subsequent sections of the What is Jenkins blog, we would look at the steps for setting up Jenkins Master and Agents.]]></description><link>https://notes.sarangwandile.xyz/jenkins/jenkins-first-look.html</link><guid isPermaLink="false">Jenkins/Jenkins First Look.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 06 Feb 2025 16:40:09 GMT</pubDate><enclosure url="https://www.lambdatest.com/blog/wp-content/uploads/2020/09/Jenkins-Logo.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/09/Jenkins-Logo.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Introduction]]></title><description><![CDATA[ 
+ <br><img alt="sonar" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KOadiTidZoHtrfanE3Ck5A.png" referrerpolicy="no-referrer"><br>Sonar provides a comprehensive code quality and security analysis solution to scan your IaC files in your managed cloud environments to review a wide range of possible issues or security vulnerabilities.<br><br>SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect <a data-tooltip-position="top" aria-label="https://www.techopedia.com/definition/3758/bug" rel="noopener nofollow" class="external-link" href="https://www.techopedia.com/definition/3758/bug" target="_blank">bugs</a>, <a data-tooltip-position="top" aria-label="https://en.wikipedia.org/wiki/Code_smell" rel="noopener nofollow" class="external-link" href="https://en.wikipedia.org/wiki/Code_smell" target="_blank">code smells</a>, and <a data-tooltip-position="top" aria-label="https://owasp.org/www-community/vulnerabilities/" rel="noopener nofollow" class="external-link" href="https://owasp.org/www-community/vulnerabilities/" target="_blank">security vulnerabilities</a> on 20+ programming languages.<br>
+It can report duplicated code, coding standards, unit tests, code coverage, code complexity and comments.
+<br>
+The only prerequisite for running SonarQube is to have Java (<a data-tooltip-position="top" aria-label="https://www.oracle.com/java/technologies/javase-jre8-downloads.html" rel="noopener nofollow" class="external-link" href="https://www.oracle.com/java/technologies/javase-jre8-downloads.html" target="_blank">Oracle JRE 11</a> or <a data-tooltip-position="top" aria-label="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" rel="noopener nofollow" class="external-link" href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank">OpenJDK 11</a>) installed on your machine.
+<br><br>Using docker run sonarqube container<br>docker run -d --name sonarqube -p 9000:9000 sonarqube
+<br>In your web browser, connect to <a rel="noopener nofollow" class="external-link" href="http://localhost:9000" target="_blank">http://localhost:9000</a> to access the SonarQube web interface.<br>Use the following default credentials to log in:<br>Username: admin  
+Password: admin
+<br>You'll probably prompted to change the default password<br>
+<br>
+To run sonar scan against our locally hosted code select manually option
+
+<br>
+Enter the&nbsp;token name and click the&nbsp;"Generate" button. You will get the sonar token.
+
+<br>
+Save that token and Click "Continue".
+
+<br>
+Select Maven and copy the code
+
+<br>and open terminal and navigate to your locally hosted code's directory<br>
+and run that command<br>mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=student \
+  -Dsonar.projectName='student' \
+  -Dsonar.host.url=http://3.137.177.165:32768 \
+  -Dsonar.token=sqp_3584391716cf8fbc01eeea4e17d34b35b07d5a2f
+<br>and then check sonarqube dashboard for code analysis report.]]></description><link>https://notes.sarangwandile.xyz/jenkins/sonarqube-with-maven.html</link><guid isPermaLink="false">Jenkins/SonarQube with maven.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 10 Feb 2025 15:31:41 GMT</pubDate><enclosure url="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KOadiTidZoHtrfanE3Ck5A.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*KOadiTidZoHtrfanE3Ck5A.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[EC2 Creation]]></title><description><![CDATA[ 
+ <br>Terraform is IAC i.e. Infrastructure as Code which leverages code to create Infrastructure resource in any of the cloud provider that support terraform.<br>We create two files main.tf and provider.tf<br>
+in main.tf we specify the resources with their configuration to create and in provider.tf we declare information about the cloud provider at we are creating resources.<br>Here is the simple Terraform code to create aws_instance resource in aws platform.<br>File Name: main.tf<br>resource "aws_instance" "a" {
+  ami           = "ami-0c614dee691cbbf37"
+  instance_type = "t2.micro"
+  key_name = "my-key"
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
+<br>File Name: provider.tf<br>terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.80.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+]]></description><link>https://notes.sarangwandile.xyz/terraform/ec2-creation.html</link><guid isPermaLink="false">Terraform/EC2 Creation.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 14:28:37 GMT</pubDate></item><item><title><![CDATA[HCL Basics]]></title><description><![CDATA[ 
+ <br>HCL Syntax:<br>
+<br>consists of a block and argument
+<br>&lt;block&gt; &lt;parameter&gt; {
+	key1 = value1
+	key2 = value2
+}
+<br>A block is defined within curly braces and it contains a set of arguments in key value pair format representing the configuration detail.<br>A block in terraforms contains information about infrastructure platform and set of resources withing that platform we want to create.<br>For example to create a local file we will use local_file resource and we'll create local.tf file cotaining following configuration:<br>resource "local_file" "pet" {
+	filename = "/root/pets.txt"
+	content = "We love pets!"
+}
+<br><img alt="tf-resource-block.png" src="https://notes.sarangwandile.xyz/lib/media/tf-resource-block.png"><br>
+Here is resource is a block name (keyword) which shows the type of block we are using.<br>
+after the resource declaration we have "resource type" called local_file its fixed value.<br>
+Here "local" is a provider and "file" follwing the underscore _ shows the type of resource which is file<br>
+Next is a Resource name pet which can be anything.<br>
+Next we have Arguments specific to the resource type in a key value pair format. In this case for local_file we have filename and content which are self explanatory.]]></description><link>https://notes.sarangwandile.xyz/terraform/hcl-basics.html</link><guid isPermaLink="false">Terraform/HCL Basics.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 14:35:32 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/tf-resource-block.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/tf-resource-block.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[S3 bucket Creation]]></title><description><![CDATA[ 
+ <br>There are two methods to do this:<br>
+<br>Manually giving buckets names for each buckets
+<br>Using Increment in Variable to add numbers after specific Unique name
+<br><br>Filename: Main.tf<br>resource "aws_s3_bucket" "my-known-buckets" {
+  count     = length(var.bucket_names) 
+  bucket    = var.bucket_names[count.index]
+}
+<br>Filename: vars.tf<br>variable "bucket_names" {
+  description = "List of S3 bucket names"
+  type        = list(string)
+  default     = ["chandratsdfsdasfdfaara", "nayantara123qq3112", "rocketshopzxys", "123asdxzsdgheoi", "asdf21alkj44dsfj"]
+}
+<br>Filename: provider.tf<br>terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.80.0"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+  region = "us-east-1"
+}
+<br>This will create 5 buckets with the given names ["chandratsdfsdasfdfaara", "nayantara123qq3112", "rocketshopzxys", "123asdxzsdgheoi", "asdf21alkj44dsfj"]<br>Apply it using<br>
+terraform plan<br>
+terraform apply<br>You can list s3 buckets with aws cli commands<br>aws s3 ls
+<br><br>Use this method when you have too many buckets to create and naming doesnt really matters<br>
+then this will save your time as you only need to change bucket count in vars.tf file<br>Filename: main.tf<br>resource "aws_s3_bucket" "c" {
+  count     = var.bucket_count
+  bucket    = "wingardiumleviosamybucketsintheair-${count.index + 1}"
+}
+<br>Filename: vars.tf<br>variable "bucket_count" {
+	description = "number of s3 buckets to create"
+	type = number
+	default = 5
+}
+]]></description><link>https://notes.sarangwandile.xyz/terraform/s3-bucket-creation.html</link><guid isPermaLink="false">Terraform/S3 bucket Creation.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 13:42:33 GMT</pubDate></item><item><title><![CDATA[VPC Creation]]></title><description><![CDATA[ 
+ <br>element()<br>
+length()<br>main.tf<br># vpc
+
+resource "aws_vpc" "main" {
+  cidr_block       = var.vpc_cidr
+
+  tags = {
+    Name = "${var.tag}-vpc"
+  }
+}
+
+# public subnet
+
+resource "aws_subnet" "main" {
+  count = length(var.public_subnet_cidr)
+  vpc_id     = aws_vpc.main.id
+  cidr_block = element( var.public_subnet_cidr, count.index )
+  tags = {
+    Name = "${var.tag}-public-subnet-${element( var.public_subnet_cidr, count.index )}"
+  }
+}
+
+## private subnet
+resource "aws_subnet" "private" {
+    count = length(var.private_subnet_cidr)
+  vpc_id     = aws_vpc.main.id
+  cidr_block = element(var.private_subnet_cidr, count.index)
+
+  tags = {
+    Name = "${var.tag}-private-subnet-${element(var.private_subnet_cidr, count.index)}"
+  }
+}
+
+# public rt
+
+resource "aws_route_table" "main" {
+  vpc_id = aws_vpc.main.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.gw.id
+  }
+
+
+  tags = {
+    Name = "${var.tag}-public-route"
+  }
+}
+
+
+# private rt
+
+resource "aws_route_table" "private" {
+  vpc_id = aws_vpc.main.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_nat_gateway.nat.id
+  }
+
+
+  tags = {
+    Name = "${var.tag}-private-route"
+  }
+}
+# eip
+resource "aws_eip" "nat" {
+  domain   = "vpc"
+} 
+
+#nat 
+resource "aws_nat_gateway" "nat" {
+  allocation_id = aws_eip.nat.id
+  subnet_id     = aws_subnet.main[0].id
+
+  tags = {
+    Name = "${var.tag}-nat"
+  }
+
+  # To ensure proper ordering, it is recommended to add an explicit dependency
+  # on the Internet Gateway for the VPC.
+  depends_on = [aws_internet_gateway.gw]
+}
+
+# igw 
+resource "aws_internet_gateway" "gw" {
+  vpc_id = aws_vpc.main.id
+
+  tags = {
+    Name = "${var.tag}-igw"
+  }
+}
+
+# subnet association
+
+resource "aws_route_table_association" "a" {
+  count = length(var.public_subnet_cidr)
+  subnet_id = aws_subnet.main[count.index].id
+  route_table_id = aws_route_table.main.id
+}
+
+# private subnet association
+
+resource "aws_route_table_association" "b" {
+  count = length(var.private_subnet_cidr)
+  subnet_id      = aws_subnet.private[count.index].id
+  route_table_id = aws_route_table.private.id
+}
+<br>Provider.tf<br>terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "5.85.0"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+  region = "us-east-2"
+
+}
+<br>var.tf<br>variable "vpc_cidr" {
+  type = string
+  default = "10.0.0.0/16"
+  description = "vpc cidr "
+}
+
+variable "tag" {
+  type = string
+  default = "cdec"
+}
+
+variable "public_subnet_cidr" {
+  default = ["10.0.1.0/24", "10.0.2.0/24"]
+}
+
+variable "private_subnet_cidr" {
+  default = ["10.0.3.0/24", "10.0.4.0/24", "10.0.5.0/24","10.0.6.0/24"]
+}
+]]></description><link>https://notes.sarangwandile.xyz/terraform/vpc-creation.html</link><guid isPermaLink="false">Terraform/VPC Creation.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 09 Feb 2025 14:32:40 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
+ <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
+Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
+These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
+<br><br><br><br>Tasks to perform
+<a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
+<a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
+<a data-href="✅ Create 5 IAM users and 5 S3 buckets and attach them each other" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-5-iam-users-and-5-s3-buckets-and-attach-them-each-other.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create 5 IAM users and 5 S3 buckets and attach them each other</a><br>
+<a data-href="✅ Implement Template with Scheduled Autoscaling" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-implement-template-with-scheduled-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Implement Template with Scheduled Autoscaling</a><br>
+<a data-href="✅ Monitoring Nginx logs with Cloudwatch" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-monitoring-nginx-logs-with-cloudwatch.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Monitoring Nginx logs with Cloudwatch</a><br>
+<a data-href="☑️ How to store aws load balancer logs in s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-how-to-store-aws-load-balancer-logs-in-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ How to store aws load balancer logs in s3 bucket</a><br>
+<a data-href="✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html" class="internal-link" target="_self" rel="noopener nofollow">✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2</a><br>
+<a data-href="✅ Get sns alert when any user launches new instance" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-get-sns-alert-when-any-user-launches-new-instance.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Get sns alert when any user launches new instance</a><br>
+<a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
+<br>Task assigned for Reading
+
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
+<br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
+<br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
+<br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
+<br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
+<br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
+<br><a data-href="Managed policies and inline policies" href="https://notes.sarangwandile.xyz/aws/for-reading/managed-policies-and-inline-policies.html" class="internal-link" target="_self" rel="noopener nofollow">Managed policies and inline policies</a>
+<br><a data-href="Network Protocols" href="https://notes.sarangwandile.xyz/aws/for-reading/network-protocols.html" class="internal-link" target="_self" rel="noopener nofollow">Network Protocols</a>
+<br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
+<br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
+<br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
+<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
+<br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
+<br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
+<br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
+<br><a data-href="Types of Autoscaling" href="https://notes.sarangwandile.xyz/aws/for-reading/types-of-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">Types of Autoscaling</a>
+
+<br><br><br><br>Tasks to perform
+
+<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
+<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
+<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
+<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
+<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
+<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
+<br>Kubernetes <a data-href="2025-01-22 3-Microservice Tasks" href="https://notes.sarangwandile.xyz/daily-notes/2025-01-22-3-microservice-tasks.html" class="internal-link" target="_self" rel="noopener nofollow">2025-01-22 3-Microservice Tasks</a>
+<br><a data-href="K8s Task 1" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/k8s-task-1.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Task 1</a>
+<br><a data-href="3 Microservices Task" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/3-microservices-task.html" class="internal-link" target="_self" rel="noopener nofollow">3 Microservices Task</a>
+<br><a data-href="Tomcat on single node" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/tomcat-on-single-node.html" class="internal-link" target="_self" rel="noopener nofollow">Tomcat on single node</a>
+
+<br>Task assigned for Reading
+
+<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
+<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
+<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
+<br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
+<br><a data-href="Git Theory and Practical" href="https://notes.sarangwandile.xyz/devops/notes/git-theory-and-practical.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory and Practical</a> 
+<br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
+<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
+<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
+<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
+<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
+<br><a data-href="k8s Namespace" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Namespace</a>
+<br><a data-href="k8s Volume" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Volume</a>
+
+<br><br><br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 10 Feb 2025 15:34:45 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2025-01-07 kubernetes]]></title><description><![CDATA[ 
  <br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a><br>
 <img alt="kubernetes-cluster.svg" src="https://notes.sarangwandile.xyz/lib/media/kubernetes-cluster.svg"><br><br>Prerequisites<br>
 <br>kubectl
@@ -97,49 +1236,7 @@ and 3 end points for 3 microservices<br>&lt;subdomain.learndevops.live&gt;<br>Re
 <br>node 1 --&gt; httpd
 <br>node 2 --&gt; tomcat
 <br>node 3 ---&gt; nginx
-<br><a rel="noopener nofollow" class="external-link" href="https://envs.sh/gA-.yaml" target="_blank">https://envs.sh/gA-.yaml</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-22-3-microservice-tasks.html</link><guid isPermaLink="false">Daily Notes/2025-01-22 3-Microservice Tasks.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:03:30 GMT</pubDate></item><item><title><![CDATA[2025-01-23 Tomcat on Single Node Task]]></title><description><![CDATA[ 
- <br>  po<br>
-dep<br>
-rs<br>
-clus<br>
-ip nodpo<br>
-LB<br>
-secre<br>
-configmap<br>
-volume<br>
-namespace<br>
-hpa<br>
-pvc<br>
-rolling upd<br>
-applic lifecycle<br>
-stateful set<br>
-daemon set<br>
-tenant<br>
-pod affinity<br>
-node affinity<br>
-node selector<br>
-anti afinity<br>
-taint and tolerance<br>what is probe?<br>Task <br>
-<br>1 Microservice Tomcat 
-<br>RS =1
-<br>Node selector
-<br>pod affinity
-<br>node affinity
-<br>Implement probe to check if service is running
-<br>Database tomcat in Cluster with persistent volume
-<br>ingress 
-<br>tomcat app resource alloaction:
-
-<br>Request
-<br>CPU: 500m
-<br>Mem: 1GB
-<br>Limit
-<br>cpu: 1
-<br>memory: 2gb
-
-
-<br>hard coded values can be sent no secret will be used
-]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-23-tomcat-on-single-node-task.html</link><guid isPermaLink="false">Daily Notes/2025-01-23 Tomcat on Single Node Task.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:32:41 GMT</pubDate></item><item><title><![CDATA[3 Microservices Task]]></title><description><![CDATA[ 
+<br><a rel="noopener nofollow" class="external-link" href="https://envs.sh/gA-.yaml" target="_blank">https://envs.sh/gA-.yaml</a>]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-22-3-microservice-tasks.html</link><guid isPermaLink="false">Daily Notes/2025-01-22 3-Microservice Tasks.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 22 Jan 2025 16:03:30 GMT</pubDate></item><item><title><![CDATA[3 Microservices Task]]></title><description><![CDATA[ 
  <br>1. Project Setup and Namespace Creation<br><br>
 <br>Launch Ec2 instance
 <br>Add IAM Role 
@@ -341,95 +1438,7 @@ spec:
 <br>This is a basic example. You may need to adjust the configurations based on your specific needs and security requirements.
 <br>Consider using a more robust service discovery mechanism like Kubernetes Service.
 <br>For production environments, use a more advanced deployment strategy like rolling updates or blue/green deployments.
-]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/3-microservices-task.html</link><guid isPermaLink="false">DevOps/K8S Tasks/3 Microservices Task.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:26:07 GMT</pubDate></item><item><title><![CDATA[Tomcat on single node]]></title><description><![CDATA[ 
- <br><br>
-<br>1 Microservice = Tomcat 
-<br>ReplicaSet 1
-<br>Add Node selector
-<br>add pod affinity
-<br>add node affinity
-<br>Implement probe to check to see if service is running
-<br>Add Database tomcat in Cluster with persistent volume
-<br>Use ingress LB
-<br>tomcat app resource alloaction:
-
-<br>Request
-<br>CPU: 500m
-<br>Mem: 1GB
-<br>Limit
-<br>cpu: 1
-<br>memory: 2gb
-
-
-<br>hard coded values can be sent so no secret will be used<br>
-or<br>
-Use online bookshop application where secrets and configMap can be used
-]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/tomcat-on-single-node.html</link><guid isPermaLink="false">DevOps/K8S Tasks/Tomcat on single node.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:30:24 GMT</pubDate></item><item><title><![CDATA[My DevOps Notes]]></title><description><![CDATA[ 
- <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br><br>Author: Sarang Wandile<br>
-Github: <a data-tooltip-position="top" aria-label="https://github.com/srngx" rel="noopener nofollow" class="external-link" href="https://github.com/srngx" target="_blank">srngx</a><br>Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practical. Its not much but I like to keep track of everything I learned. <br>This Place also acts like a Second brain kinda thing where I can always go back in time and recollect my old thoughts and Ideas. Its not perfect and thats the beautify of it. I like to keep it this way original and imperfect. <br>In this Digital Garden you are always welcome to explore and share your notes too if you want or <a data-tooltip-position="top" aria-label="https://github.com/srngx/my-devops-notes" rel="noopener nofollow" class="external-link" href="https://github.com/srngx/my-devops-notes" target="_blank">contribute/give suggestion</a> anytime.<br>These notes are made using <a data-tooltip-position="top" aria-label="https://obsidian.md" rel="noopener nofollow" class="external-link" href="https://obsidian.md" target="_blank">Obsidian App</a> - A Markdown Notetaking App and Hosted with <a data-tooltip-position="top" aria-label="https://pages.cloudflare.com/" rel="noopener nofollow" class="external-link" href="https://pages.cloudflare.com/" target="_blank">Cloudflare page</a>.<br>Links in this website are subject to change.
-These notes are not complete and subject to grow, modify and update in time to time, so its very likely that your shared page specific links might not work as that page itself either moved to different folder or replaced or renamed.
-<br><br><br><br>Tasks to perform
-<a data-href="☑️ Implement autoscaling on memory utilization" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-implement-autoscaling-on-memory-utilization.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ Implement autoscaling on memory utilization</a><br>
-<a data-href="✅ Host static website on s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-host-static-website-on-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Host static website on s3 bucket</a><br>
-<a data-href="✅ Create 5 IAM users and 5 S3 buckets and attach them each other" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-5-iam-users-and-5-s3-buckets-and-attach-them-each-other.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create 5 IAM users and 5 S3 buckets and attach them each other</a><br>
-<a data-href="✅ Implement Template with Scheduled Autoscaling" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-implement-template-with-scheduled-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Implement Template with Scheduled Autoscaling</a><br>
-<a data-href="✅ Monitoring Nginx logs with Cloudwatch" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-monitoring-nginx-logs-with-cloudwatch.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Monitoring Nginx logs with Cloudwatch</a><br>
-<a data-href="☑️ How to store aws load balancer logs in s3 bucket" href="https://notes.sarangwandile.xyz/aws/tasks-done/☑️-how-to-store-aws-load-balancer-logs-in-s3-bucket.html" class="internal-link" target="_self" rel="noopener nofollow">☑️ How to store aws load balancer logs in s3 bucket</a><br>
-<a data-href="✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅🐈‍⬛host-tomcat-basesd-web-app-called-student-app-with-rds-and-ec2.html" class="internal-link" target="_self" rel="noopener nofollow">✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2</a><br>
-<a data-href="✅ Get sns alert when any user launches new instance" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-get-sns-alert-when-any-user-launches-new-instance.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Get sns alert when any user launches new instance</a><br>
-<a data-href="✅ Create notification for s3 bucket activity happen of put and delete" href="https://notes.sarangwandile.xyz/aws/tasks-done/✅-create-notification-for-s3-bucket-activity-happen-of-put-and-delete.html" class="internal-link" target="_self" rel="noopener nofollow">✅ Create notification for s3 bucket activity happen of put and delete</a>
-<br>Task assigned for Reading
-
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Amazon Web Services In Plain English" href="https://notes.sarangwandile.xyz/aws/notes/amazon-web-services-in-plain-english.html" class="internal-link" target="_self" rel="noopener nofollow">Amazon Web Services In Plain English</a>
-<br><a data-href="Authorized vs Authonticated" href="https://notes.sarangwandile.xyz/aws/for-reading/authorized-vs-authonticated.html" class="internal-link" target="_self" rel="noopener nofollow">Authorized vs Authonticated</a>
-<br><a data-href="AWS Instance Types" href="https://notes.sarangwandile.xyz/aws/for-reading/aws-instance-types.html" class="internal-link" target="_self" rel="noopener nofollow">AWS Instance Types</a>
-<br><a data-href="Difference between Load balancers" href="https://notes.sarangwandile.xyz/aws/for-reading/difference-between-load-balancers.html" class="internal-link" target="_self" rel="noopener nofollow">Difference between Load balancers</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
-<br><a data-href="How DNS Works" href="https://notes.sarangwandile.xyz/aws/for-reading/how-dns-works.html" class="internal-link" target="_self" rel="noopener nofollow">How DNS Works</a>
-<br><a data-href="IAM Policies" href="https://notes.sarangwandile.xyz/aws/for-reading/iam-policies.html" class="internal-link" target="_self" rel="noopener nofollow">IAM Policies</a>
-<br><a data-href="Load Balancer" href="https://notes.sarangwandile.xyz/aws/for-reading/load-balancer.html" class="internal-link" target="_self" rel="noopener nofollow">Load Balancer</a>
-<br><a data-href="Managed policies and inline policies" href="https://notes.sarangwandile.xyz/aws/for-reading/managed-policies-and-inline-policies.html" class="internal-link" target="_self" rel="noopener nofollow">Managed policies and inline policies</a>
-<br><a data-href="Network Protocols" href="https://notes.sarangwandile.xyz/aws/for-reading/network-protocols.html" class="internal-link" target="_self" rel="noopener nofollow">Network Protocols</a>
-<br><a data-href="OSI Model" href="https://notes.sarangwandile.xyz/aws/for-reading/osi-model.html" class="internal-link" target="_self" rel="noopener nofollow">OSI Model</a>
-<br><a data-href="SDLC - Software Developement LifeCycle" href="https://notes.sarangwandile.xyz/aws/for-reading/sdlc-software-developement-lifecycle.html" class="internal-link" target="_self" rel="noopener nofollow">SDLC - Software Developement LifeCycle</a>
-<br><a data-href="Simple Definitions To give in Interview" href="https://notes.sarangwandile.xyz/aws/notes/simple-definitions-to-give-in-interview.html" class="internal-link" target="_self" rel="noopener nofollow">Simple Definitions To give in Interview</a>
-<br><a data-href="Some talks about git in reddit" href="https://notes.sarangwandile.xyz/aws/for-reading/some-talks-about-git-in-reddit.html" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit</a>
-<br><a data-href="ssl certificate" href="https://notes.sarangwandile.xyz/aws/for-reading/ssl-certificate.html" class="internal-link" target="_self" rel="noopener nofollow">ssl certificate</a>
-<br><a data-href="Storage Classes in S3" href="https://notes.sarangwandile.xyz/aws/for-reading/storage-classes-in-s3.html" class="internal-link" target="_self" rel="noopener nofollow">Storage Classes in S3</a>
-<br><a data-href="Subnetting" href="https://notes.sarangwandile.xyz/aws/for-reading/subnetting.html" class="internal-link" target="_self" rel="noopener nofollow">Subnetting</a>
-<br><a data-href="Types of Autoscaling" href="https://notes.sarangwandile.xyz/aws/for-reading/types-of-autoscaling.html" class="internal-link" target="_self" rel="noopener nofollow">Types of Autoscaling</a>
-
-<br><br><br><br>Tasks to perform
-
-<br><a data-href="Task 1 Creating Tomcat student-ui container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-1-creating-tomcat-student-ui-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 1 Creating Tomcat student-ui container</a>
-<br><a data-href="Task 2 Create the Free-css template container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-2-create-the-free-css-template-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 2 Create the Free-css template container</a>
-<br><a data-href="Task 3 Create Mysql Container" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-3-create-mysql-container.html" class="internal-link" target="_self" rel="noopener nofollow">Task 3 Create Mysql Container</a>
-<br><a data-href="Task 4 Create daemon service of tomcat" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-4-create-daemon-service-of-tomcat.html" class="internal-link" target="_self" rel="noopener nofollow">Task 4 Create daemon service of tomcat</a>
-<br><a data-href="Task 5 Create dockerfiles" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-5-create-dockerfiles.html" class="internal-link" target="_self" rel="noopener nofollow">Task 5 Create dockerfiles</a>
-<br><a data-href="Task 6 How to set permanent alias" href="https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html" class="internal-link" target="_self" rel="noopener nofollow">Task 6 How to set permanent alias</a>
-<br>Kubernetes <a data-href="2025-01-22 3-Microservice Tasks" href="https://notes.sarangwandile.xyz/daily-notes/2025-01-22-3-microservice-tasks.html" class="internal-link" target="_self" rel="noopener nofollow">2025-01-22 3-Microservice Tasks</a>
-<br><a data-href="K8s Task 1" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/k8s-task-1.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Task 1</a>
-<br><a data-href="3 Microservices Task" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/3-microservices-task.html" class="internal-link" target="_self" rel="noopener nofollow">3 Microservices Task</a>
-<br><a data-href="Tomcat on single node" href="https://notes.sarangwandile.xyz/devops/k8s-tasks/tomcat-on-single-node.html" class="internal-link" target="_self" rel="noopener nofollow">Tomcat on single node</a>
-
-<br>Task assigned for Reading
-
-<br><a data-href="Agile Development" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-development.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Development</a>
-<br><a data-href="Agile Vs DevOps" href="https://notes.sarangwandile.xyz/aws/for-reading/agile-vs-devops.html" class="internal-link" target="_self" rel="noopener nofollow">Agile Vs DevOps</a>
-<br><a data-href="Git Fetch vs Git pull" href="https://notes.sarangwandile.xyz/aws/for-reading/git-fetch-vs-git-pull.html" class="internal-link" target="_self" rel="noopener nofollow">Git Fetch vs Git pull</a>
-<br><a data-href="Monolithic vs Microservice Architecture" href="https://notes.sarangwandile.xyz/devops/for-reading/monolithic-vs-microservice-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Monolithic vs Microservice Architecture</a>
-<br><a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a> 
-<br><a data-href="Reading Docker Inspect output" href="https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html" class="internal-link" target="_self" rel="noopener nofollow">Reading Docker Inspect output</a>
-<br><a data-href="read about docker.sock file" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-docker.sock-file.html" class="internal-link" target="_self" rel="noopener nofollow">read about docker.sock file</a>
-<br><a data-href="Kubernetes Architecture" href="https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html" class="internal-link" target="_self" rel="noopener nofollow">Kubernetes Architecture</a>
-<br><a data-href="Read about each and every component of kubernetes" href="https://notes.sarangwandile.xyz/devops/for-reading/read-about-each-and-every-component-of-kubernetes.html" class="internal-link" target="_self" rel="noopener nofollow">Read about each and every component of kubernetes</a>
-<br><a data-href="K8s Service Types" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-service-types.html" class="internal-link" target="_self" rel="noopener nofollow">K8s Service Types</a>
-<br><a data-href="k8s Namespace" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-namespace.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Namespace</a>
-<br><a data-href="k8s Volume" href="https://notes.sarangwandile.xyz/devops/for-reading/k8s-volume.html" class="internal-link" target="_self" rel="noopener nofollow">k8s Volume</a>
-
-<br><br>Powered by <a href="https://obsidian.md" style="color: #7c3aed; text-decoration: none; margin-left: 0.25rem;" rel="noopener noreferrer" target="_blank">Obsidian</a>]]></description><link>https://notes.sarangwandile.xyz/index.html</link><guid isPermaLink="false">Index.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:32:07 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[K8s Task 1]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/k8s-tasks/3-microservices-task.html</link><guid isPermaLink="false">DevOps/K8S Tasks/3 Microservices Task.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 23 Jan 2025 07:26:07 GMT</pubDate></item><item><title><![CDATA[K8s Task 1]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Launch Ec2 instance
 <br>Add IAM Role 
@@ -591,13 +1600,7 @@ service is allow application to access outiside k8s cluster.<br>You can create s
 | _ _ _  2. Node Port (inside organisation or network\ access worker node )<br>
 | _ _ _ _ 3. Load balancer ( service is accessible to external world)<br>load balancer only work for cloud based k8s like EKS<br>load balancer ----&gt; amazon.com<br>
 Node Port ---&gt; VPC and nodes<br>
-CLUSTER IP ---&gt; Cluster Network ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-20.html</link><guid isPermaLink="false">Daily Notes/2025-01-20.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 20 Jan 2025 09:13:47 GMT</pubDate></item><item><title><![CDATA[Understanding Manifest File]]></title><description><![CDATA[ 
- <br>Each configuration file has 3 part<br>
-<br>Metadata
-<br>Specification
-<br>Status (often autogenerated by kubernetes)
-<br>Attributes of "spec" are specific to the "kind"<br>Metadata part contains Labels and<br>
-Specification part contains Selectors]]></description><link>https://notes.sarangwandile.xyz/devops/notes/understanding-manifest-file.html</link><guid isPermaLink="false">DevOps/Notes/Understanding Manifest File.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 13 Jan 2025 14:49:40 GMT</pubDate></item><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
+CLUSTER IP ---&gt; Cluster Network ]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2025-01-20.html</link><guid isPermaLink="false">Daily Notes/2025-01-20.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 20 Jan 2025 09:13:47 GMT</pubDate></item><item><title><![CDATA[2025-01-13]]></title><description><![CDATA[ 
  <br>ConfigMap - non confidential information<br>
 Secrets - confidential information<br><br><br>Create configMap Command<br>kubectl create cm nginx-cm --from-file=index.html
 <br>generate configmap definition file<br>kubectl create cm nginx-cm --from-file=index.html --dry-run=client -o yaml &gt; configmap.yaml
@@ -3535,37 +4538,7 @@ bash ./catalina.sh start
  <br>SDLC<br>
 Agile<br>
 waterfall]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-17.html</link><guid isPermaLink="false">Daily Notes/2024-12-17.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 19 Dec 2024 16:34:28 GMT</pubDate></item><item><title><![CDATA[2024-12-18]]></title><description><![CDATA[ 
- <br>Git Theory Explained]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-18.html</link><guid isPermaLink="false">Daily Notes/2024-12-18.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 19 Dec 2024 16:34:28 GMT</pubDate></item><item><title><![CDATA[2024-12-19 Git Class]]></title><description><![CDATA[ 
- <br>DVCS vs CVS -- further expanded in <a data-href="Git Theory" href="https://notes.sarangwandile.xyz/devops/git-theory.html" class="internal-link" target="_self" rel="noopener nofollow">Git Theory</a><br><br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>
-<br>installing git
-<br>signup to github.com
-<br><br><br>
-<br>git add
-<br>git commit
-<br>git push
-<br>git pull
-<br><br><br>Going back to previous commit to and rebasing<br>Seeing git logs<br>
-git log<br>Start interactive rebase<br>
-git rebase -i &lt;commit hash&gt;<br>In the editor, choose to edit the commit identified in step 3 by changing&nbsp;pick&nbsp;to&nbsp;edit&nbsp;on the first line of the text.<br>edit 8728dbe67 my second commit message
-pick 03d69e5d3 my third commit message
-pick 8053f7b27 my fourth commit message
-<br>make changes and git add . <br>
-<br>git commit --amend 
-<br>git rebase --continue
-<br>git push
-<br>removing some files from git index<br>git rm --cached -r folder or files
-<br>Learned to create .gitignore file<br>.trash/
-.obsidian/
-private
-<br><br><br>
-<br><a data-tooltip-position="top" aria-label="https://docs.github.com/en/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#removing-a-secret-introduced-by-an-earlier-commit-on-your-branch" rel="noopener nofollow" class="external-link" href="https://docs.github.com/en/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#removing-a-secret-introduced-by-an-earlier-commit-on-your-branch" target="_blank">Removing secret introduced by earler commit</a>
-<br><a data-tooltip-position="top" aria-label="https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/" rel="noopener nofollow" class="external-link" href="https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/" target="_blank">How to ignore files in git</a>
-<br><br>
-<br><a rel="noopener nofollow" class="external-link" href="https://jvns.ca/blog/2024/01/26/inside-git/" target="_blank">https://jvns.ca/blog/2024/01/26/inside-git/</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://githowto.com/git_internals_git_directory" target="_blank">https://githowto.com/git_internals_git_directory</a>
-<br><a data-href="Some talks about git in reddit 1" href="https://notes.sarangwandile.xyz/Some talks about git in reddit 1" class="internal-link" target="_self" rel="noopener nofollow">Some talks about git in reddit 1</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://git-scm.com/book/en/v2" target="_blank">https://git-scm.com/book/en/v2</a>
-]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-19-git-class.html</link><guid isPermaLink="false">Daily Notes/2024-12-19 Git Class.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 08 Jan 2025 17:21:46 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[2024-12-23 docker-day]]></title><description><![CDATA[ 
+ <br>Git Theory Explained]]></description><link>https://notes.sarangwandile.xyz/daily-notes/2024-12-18.html</link><guid isPermaLink="false">Daily Notes/2024-12-18.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 19 Dec 2024 16:34:28 GMT</pubDate></item><item><title><![CDATA[2024-12-23 docker-day]]></title><description><![CDATA[ 
  <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
 Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br><br>
 <br>Single unified application
@@ -4686,132 +5659,7 @@ spec:
 - **SandboxID, SandboxKey:** Information related to the container's network namespace.
 - **Ports:**  Details about the ports that are published to the host.
 - **[Other network settings]:** IP address, MAC address, gateway, and other network-related information.
-<br>If you have a specific question about any of these elements, feel free to ask! I'm here to help you understand your Docker container's configuration.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html</link><guid isPermaLink="false">DevOps/For Reading/Reading Docker Inspect output.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
- <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
-Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br>At initial stages of the software development developers usually build software in monolithic way meaning everything that software has to offer is bundle in the single unit but as the development goes on the need to federate the services of the software arises and developers adapt Microservices method to divide software into chunks so all chunks communicate with each other creating illusion of one single software.<br><br>
-<br>Single unified application
-<br><br>
-<br>one app divided in chunks
-<br><br>*Docker is a containerization technology that packages your application in special portable sandboxed format along with its dependencies and system libraries for better compatibility across devices.<br><img alt="Docker-Architecture-diagram_1.excalidraw.svg" src="https://notes.sarangwandile.xyz/lib/media/docker-architecture-diagram_1.excalidraw.svg"><br><br>
-<br>its like small virtual machines
-<br>containers are free to use all the system resources they needs
-<br>whereas in vms softwares has limited preallocated resources to use
-<br><br>#Creating a nginx container
-docker run nginx
-
-# run as detached mode
-docker run -d nginx
-
-# list running containers
-docker ps 
-
-# list all containers
-docker ps -a
-
-# kill running container
-docker kill &lt;container-id&gt;
-
-# expose container on random host port
-docker run -P nginx
-
-# expose container on custom host port
-docker run -d -p 1313:8080 nginx:latest
-
-# Stopping the container
-docker stop &lt;container id&gt;
-
-# removing stopped containers
-docker rm &lt;container id&gt;
-
-<br><br>
-<br><a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/" target="_blank">https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://adventofdocker.com" target="_blank">https://adventofdocker.com</a>
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/docker-basics.html</link><guid isPermaLink="false">DevOps/Notes/Docker Basics.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 25 Dec 2024 17:29:52 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Docker little bit Advance]]></title><description><![CDATA[ 
- <br><br><br>Installing docker on amazonlinux and rhel based distros are much easier than installling on ubuntu<br>sudo yum install docker # rhel/amazonlinux/fedora etc
-sudo pacman -S docker   # archlinux based distros
-<br><br>curl -fsSL https://get.docker.com -o get-docker.sh &amp;&amp; sudo sh get-docker.sh`
-<br>Running this script should install following package inside your ubuntu based distro docker-engine, docker.io, containerd, runc.<br>However I still recommend to check <a data-tooltip-position="top" aria-label="https://docs.docker.com/engine/install/ubuntu/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">this official installation guide</a><br><br>systemctl start docker
-systemctl enable docker
-<br>To run docker command its absolutely require to have docker daemon running in background otherwise it wont work so make sure you have docker daemon running.<br><br>docker pull nginx
-<br>This will pull latest version of nginx image from docker hub.<br>
-By default its always going to pull latest tag<br>
-In order to pull specific version you need to mention its tag name like this<br>docker pull nginx:1.23.1
-<br><br>docker run nginx
-<br>This command creates and starts a Docker container running the Nginx web serve. Although By default, Nginx runs on port 80 within the container. This command doesn't map any ports, so you won't be able to access the Nginx server from your host machine to specify port you can use-p flag.<br><br>docker run -p 8080:80 nginx
-<br>Here 8080 is host machine port and 80 is container port<br>docker run -P nginx
-<br>This will map random port for the host machine.<br><br>docker run -d nginx`
-<br>Normally running container will cause container to run in foreground and occupy the terminal screen. So its better choice to use -d to make it run in background.<br><br>docker run --name my-container nginx
-<br>By default docker give funny names to containers. but you can specify your custom name and can use that name instead of 'container-id' in docker commands.<br><br>docker stop &lt;conainer-id&gt;
-<br>Stopped containers and be restarted with start command<br><br>docker rm &lt;container-id&gt;
-<br>Sometimes stopped or exited containers wont have any use and needs to be removed to save space.<br><br>docker ps
-<br>This will list all the running containers only and not exited or stopped ones.<br>To list all containers including exited and stopped ones use ps -a<br>docker ps -a
-<br><br>docker logs &lt;container-id&gt;
-<br>This is important to monitor activities inside of containers.<br><br>docker inspect &lt;container-id&gt;
-<br>This will list all the information of container<br><br>docker commit &lt;container-id&gt; 
-<br>This will come in handy when you done changes inside running container and want to incorporate these changes into your image.<br>$ sudo docker images
-REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
-&lt;none&gt;       &lt;none&gt;    5c9d3a455e0f   10 seconds ago   214MB
-<br><br>docker tag &lt;image-id&gt; new-name
-<br>Adding tag is like giving Image a name this comes in handy for identifying images.<br>$ sudo docker images
-REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
-custom-nginx   latest    5c9d3a455e0f   47 seconds ago   214MB
-<br><br>docker push &lt;image-id&gt;
-<br>If you have verified docker hub login through docker login command it will automatically push the image to your docker hub repo assuming your docker hub repo has same name as your image tag<br>and same goes to ECR except you need to authenticate through slightly different method:<br>aws ecr get-login-password --region &lt;region-name&gt; | docker login --username AWS --password-stdin &lt;amazon-account-id&gt;.dkr.ecr.&lt;region-name&gt;.amazonaws.com
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/docker-little-bit-advance.html</link><guid isPermaLink="false">DevOps/Notes/Docker little bit Advance.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 30 Dec 2024 03:48:40 GMT</pubDate></item><item><title><![CDATA[Git Notes]]></title><description><![CDATA[ 
- <br><br>Git is a Distributed Version Control System that mainly used for Source code management by developers.<br>Git basically divides your code into three part.<br>
-<br>Working Area
-<br>Staging Area
-<br>Head or commit
-<br>Working Area is your state of code before running the git add command.<br>
-The files in here also known as "untracked files".<br>To add the files into git you do git add and they moved to staging area.<br>Here your code got the stage. <br>Before finalizing your code into production i.e. 'commit' you make required changes and after making sure<br>
-your code is ready to go into production you run git commit command.<br>
-which is basically telling git this is a final changes with the special stamp of "commit hash".<br>Then If you want you can push your code into remote repository sitting onto the cloud waiting to be forked and contributed by peoples across the glob.<br><br>
-<br>git add     To add code into git
-<br>git commit  To commit changes 
-<br>git push    To upload your code into remote repo
-<br>git pull    To download latest changes from remote to your local
-<br>git fetch   Fetching Metadata and logs from remote 
-<br><br>Git Provide "Branches" which are nothing but a way to seperate your code into different version so you can later integrate your features and bugfixes into production once they finished peacefully in their own isolated places.<br>There are well known three branches people generally creates:<br>
-<br>Main  (which is your production branch)
-<br>Dev   (which is your ongoing development which never cease to stop.)
-<br>Test  (Here your code is being tested against performance and security standards.)
-<br>Some people also like to create their own custom branches like alpha, beta, stable etc i.e. according to release state.<br><br>
-<br>git branch -a   List all available branches
-<br>git checkout -b Create and switch to the new branch
-<br>git checkout    To switch to different branch
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-notes.html</link><guid isPermaLink="false">DevOps/Notes/Git Notes.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
- <br><br><br>
-<br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
-<br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
-<br>or via package manager in linux
-
-<br>for ubuntu apt install git
-<br>for rhel based distros yum install git
-<br>for arch based distros pacman -S git
-
-
-<br><br>
-<br>Create empty folder in local machine
-<br>navigate to it and run git init
-<br>add some files and run git add .
-<br>commit changes `git commit -m "git initialized and new files added"
-<br>Create repository in github and use its link to below step
-<br>Add remote repo git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
-<br>update the remote repo with push git push origin main
-<br><br><br><br>git add . 
-<br>This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.<br>git add -A 
-<br>This command will stage all types of changes across your entire working directory including newfiles, modifications and deletions<br><br>git commit -m "new commit"
-<br>Creates a commit with the specified message. This is the most common way to commit changes.<br>git commit -A "your commit message"
-<br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
-<br>Uploads your local changes to the remote repository.<br>
-After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*<br><br>git checkout master
-git merge 4.4.0
-
-#or to replace completely (overwrite history) 
-git push origin 4.4.0:master 
-
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/git-practical-command.html</link><guid isPermaLink="false">DevOps/Notes/Git Practical Command.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 09 Jan 2025 16:19:02 GMT</pubDate></item><item><title><![CDATA[Kubernetes Architecture]]></title><description><![CDATA[ 
+<br>If you have a specific question about any of these elements, feel free to ask! I'm here to help you understand your Docker container's configuration.]]></description><link>https://notes.sarangwandile.xyz/devops/for-reading/reading-docker-inspect-output.html</link><guid isPermaLink="false">DevOps/For Reading/Reading Docker Inspect output.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Mon, 30 Dec 2024 16:13:04 GMT</pubDate></item><item><title><![CDATA[Kubernetes Architecture]]></title><description><![CDATA[ 
  <br>Kubernetes Cluster Architecture<br>
 <img alt="cluster-diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"><br>
 <br>Control Plane:
@@ -4853,45 +5701,7 @@ git push origin 4.4.0:master
 <br>Kubelets on worker nodes report to API Server
 <br>Pods can access Persistent Volumes
 <br>Network policies control pod communication
-]]></description><link>https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html</link><guid isPermaLink="false">DevOps/Notes/Kubernetes Architecture.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 07 Jan 2025 16:01:14 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Using diff smart way]]></title><description><![CDATA[ 
- <br>What is diff?<br>Shows difference/comparison between files<br>Why is it useful?<br>
-<br>Tracking changes: See how a file has evolved over time.
-<br>Comparing versions: Find out what's different between two versions of a document or code.
-<br>Merging changes: Helps you combine different versions of a file.
-<br>Troubleshooting: Identify what went wrong in a configuration file or program.
-<br>How to use it?<br>The basic command is super simple:<br>Bash<br>diff file1 file2
-<br>Just replace file1 and file2 with the actual names of your files.<br>Making the output more helpful<br>diff has some options to make the output easier to understand:<br>
-<br>-u (or --unified): Shows the changes in a "unified" format, which is more compact and easier to read.
-<br>-y (or --side-by-side): Displays the files side-by-side, so you can see the differences directly.
-<br>-w (or --ignore-all-space): Ignores differences in whitespace (spaces and tabs), which is helpful if you only care about the content.
-<br>-r (or --recursive): Compares entire directories, not just individual files.
-<br>-q (or --brief): Only tells you if the files are different, not what the differences are.
-<br>Example:<br>Let's say you have two files, original.txt and revised.txt. To see the differences in a unified format:<br>diff -u original.txt revised.txt
-<br>Understanding the output<br>diff uses some symbols to show you the changes:<br>
-<br>+: Lines added in the second file.
-<br>-: Lines removed from the first file.
-<br>@@: Indicates a block of changed lines.
-<br><br>See difference between two folders<br>
-Basic Usage<br>diff -qr folder1 folder2
-<br>
-<br>-q: Only reports when files differ.
-<br>-r: Recursively compares subdirectories.
-<br>More detailed output<br>diff -ruN dir1 dir2
-<br>
-<br>-r: Recursively compares subdirectories.
-<br>-u: Produces a unified diff format, which is easier to read.
-<br>-N: Treats absent files as empty.
-<br>For files<br>diff -wy file1.txt file2.txt
-<br>
-<br>-w : for ignoring whitespaces
-<br>-y : side by side comparison
-<br>Some Very Important Flags<br>
-<br>--color=always
-<br>/pratyabhijna/quartz/components/TagList.tsx<br>./styles/toc.scss"<br>
-./styles/explorer.scss<br>
-"./styles/graph.scss<br>
-./styles/backlinks.scss"<br>
-./styles/search.scss"<br>../styles/listPage.scss<br><br>“{5C6FFB5F-BBC7-4DAD-AE6E-C10A0A22DBF1}.png” could not be found.]]></description><link>https://notes.sarangwandile.xyz/devops/notes/using-diff-smart-way.html</link><guid isPermaLink="false">DevOps/Notes/Using diff smart way.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 09 Jan 2025 14:47:58 GMT</pubDate></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/notes/kubernetes-architecture.html</link><guid isPermaLink="false">DevOps/Notes/Kubernetes Architecture.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 07 Jan 2025 16:01:14 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cluster-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Task 1 - Creating Tomcat student-ui container]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Get the docker image of Amazon linux 
 <br>Add tomcat package  
@@ -5107,141 +5917,6 @@ CMD ["/opt/apache-tomcat-9.0.98/bin/catalina.sh", "run"]
 <br>You can add your alias in this way either in ~/.bashrc or ~/.profile or ~/.bash-profile file<br>Immediate result may not be seen you need to restart shell or source the file again <br>source ~/.bashrc
 or 
 . ~/.bashrc
-]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 6 How to set permanent alias.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 07 Jan 2025 08:57:04 GMT</pubDate></item><item><title><![CDATA[Docker Basics]]></title><description><![CDATA[ 
- <br><img alt="{494AEA1D-4739-4A7B-B8A5-C8BB6655CD12}.png" src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"><br>
-Before Learning about docker it is crucial to know about containers and even before that one should know what is Microservices and monolithic application architecture<br><br>At initial stages of the software development developers usually build software in monolithic way meaning everything that software has to offer is bundle in the single unit but as the development goes on the need to federate the services of the software arises and developers adapt Microservices method to divide software into chunks so all chunks communicate with each other creating illusion of one single software.<br><br>
-<br>Single unified application
-<br><br>
-<br>one app divided in chunks
-<br><br>*Docker is a containerization technology that packages your application in special portable sandboxed format along with its dependencies and system libraries for better compatibility across devices.<br><img alt="Docker-Architecture-diagram_1.excalidraw.svg" src="https://notes.sarangwandile.xyz/lib/media/docker-architecture-diagram_1.excalidraw.svg"><br><br>
-<br>its like small virtual machines
-<br>containers are free to use all the system resources they needs
-<br>whereas in vms softwares has limited preallocated resources to use
-<br><br>#Creating a nginx container
-docker run nginx
-
-# run as detached mode
-docker run -d nginx
-
-# list running containers
-docker ps 
-
-# list all containers
-docker ps -a
-
-# kill running container
-docker kill &lt;container-id&gt;
-
-# expose container on random host port
-docker run -P nginx
-
-# expose container on custom host port
-docker run -d -p 1313:8080 nginx:latest
-
-# Stopping the container
-docker stop &lt;container id&gt;
-
-# removing stopped containers
-docker rm &lt;container id&gt;
-
-<br><br>
-<br><a rel="noopener nofollow" class="external-link" href="https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/" target="_blank">https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/</a>
-<br><a rel="noopener nofollow" class="external-link" href="https://adventofdocker.com" target="_blank">https://adventofdocker.com</a>
-]]></description><link>https://notes.sarangwandile.xyz/devops/docker-basics.html</link><guid isPermaLink="false">DevOps/Docker Basics.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 25 Dec 2024 17:29:52 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Docker little bit Advance]]></title><description><![CDATA[ 
- <br><br><br>Installing docker on amazonlinux and rhel based distros are much easier than installling on ubuntu<br>sudo yum install docker # rhel/amazonlinux/fedora etc
-sudo pacman -S docker   # archlinux based distros
-<br><br>curl -fsSL https://get.docker.com -o get-docker.sh &amp;&amp; sudo sh get-docker.sh`
-<br>Running this script should install following package inside your ubuntu based distro docker-engine, docker.io, containerd, runc.<br>However I still recommend to check <a data-tooltip-position="top" aria-label="https://docs.docker.com/engine/install/ubuntu/" rel="noopener nofollow" class="external-link" href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">this official installation guide</a><br><br>systemctl start docker
-systemctl enable docker
-<br>To run docker command its absolutely require to have docker daemon running in background otherwise it wont work so make sure you have docker daemon running.<br><br>docker pull nginx
-<br>This will pull latest version of nginx image from docker hub.<br>
-By default its always going to pull latest tag<br>
-In order to pull specific version you need to mention its tag name like this<br>docker pull nginx:1.23.1
-<br><br>docker run nginx
-<br>This command creates and starts a Docker container running the Nginx web serve. Although By default, Nginx runs on port 80 within the container. This command doesn't map any ports, so you won't be able to access the Nginx server from your host machine to specify port you can use-p flag.<br><br>docker run -p 8080:80 nginx
-<br>Here 8080 is host machine port and 80 is container port<br>docker run -P nginx
-<br>This will map random port for the host machine.<br><br>docker run -d nginx`
-<br>Normally running container will cause container to run in foreground and occupy the terminal screen. So its better choice to use -d to make it run in background.<br><br>docker run --name my-container nginx
-<br>By default docker give funny names to containers. but you can specify your custom name and can use that name instead of 'container-id' in docker commands.<br><br>docker stop &lt;conainer-id&gt;
-<br>Stopped containers and be restarted with start command<br><br>docker rm &lt;container-id&gt;
-<br>Sometimes stopped or exited containers wont have any use and needs to be removed to save space.<br><br>docker ps
-<br>This will list all the running containers only and not exited or stopped ones.<br>To list all containers including exited and stopped ones use ps -a<br>docker ps -a
-<br><br>docker logs &lt;container-id&gt;
-<br>This is important to monitor activities inside of containers.<br><br>docker inspect &lt;container-id&gt;
-<br>This will list all the information of container<br><br>docker commit &lt;container-id&gt; 
-<br>This will come in handy when you done changes inside running container and want to incorporate these changes into your image.<br>$ sudo docker images
-REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
-&lt;none&gt;       &lt;none&gt;    5c9d3a455e0f   10 seconds ago   214MB
-<br><br>docker tag &lt;image-id&gt; new-name
-<br>Adding tag is like giving Image a name this comes in handy for identifying images.<br>$ sudo docker images
-REPOSITORY     TAG       IMAGE ID       CREATED          SIZE
-custom-nginx   latest    5c9d3a455e0f   47 seconds ago   214MB
-<br><br>docker push &lt;image-id&gt;
-<br>If you have verified docker hub login through docker login command it will automatically push the image to your docker hub repo assuming your docker hub repo has same name as your image tag<br>and same goes to ECR except you need to authenticate through slightly different method:<br>aws ecr get-login-password --region &lt;region-name&gt; | docker login --username AWS --password-stdin &lt;amazon-account-id&gt;.dkr.ecr.&lt;region-name&gt;.amazonaws.com
-]]></description><link>https://notes.sarangwandile.xyz/devops/docker-little-bit-advance.html</link><guid isPermaLink="false">DevOps/Docker little bit Advance.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 29 Dec 2024 13:04:54 GMT</pubDate></item><item><title><![CDATA[Git Practical]]></title><description><![CDATA[ 
- <br><br><br>
-<br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
-<br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
-<br>or via package manager in linux
-
-<br>for ubuntu apt install git
-<br>for rhel based distros yum install git
-<br>for arch based distros pacman -S git
-
-
-<br><br>
-<br>Create empty folder in local machine
-<br>navigate to it and run git init
-<br>add some files and run git add .
-<br>commit changes `git commit -m "git initialized and new files added"
-<br>Create repository in github and use its link to below step
-<br>Add remote repo git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
-<br>update the remote repo with push git push origin main
-<br><br><br><br>git add . 
-<br>This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.<br>git add -A 
-<br>This command will stage all types of changes across your entire working directory including newfiles, modifications and deletions<br><br>git commit -m "new commit"
-<br>Creates a commit with the specified message. This is the most common way to commit changes.<br>git commit -A "your commit message"
-<br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
-<br>Uploads your local changes to the remote repository.<br>
-After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/git-practical.html</link><guid isPermaLink="false">DevOps/Git Practical.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Wed, 08 Jan 2025 17:21:46 GMT</pubDate></item><item><title><![CDATA[Git Practical Command]]></title><description><![CDATA[ 
- <br><br><br>
-<br>Signup to <a data-tooltip-position="top" aria-label="https://github.com" rel="noopener nofollow" class="external-link" href="https://github.com" target="_blank">github.com</a>
-<br>Install git with <a data-tooltip-position="top" aria-label="http://git-scm.com" rel="noopener nofollow" class="external-link" href="http://git-scm.com" target="_blank">gitbash</a> in windows 
-<br>or via package manager in linux
-
-<br>for ubuntu apt install git
-<br>for rhel based distros yum install git
-<br>for arch based distros pacman -S git
-
-
-<br><br>
-<br>Create empty folder in local machine
-<br>navigate to it and run git init
-<br>add some files and run git add .
-<br>commit changes `git commit -m "git initialized and new files added"
-<br>Create repository in github and use its link to below step
-<br>Add remote repo git remote add origin git@github.com:&lt;username&gt;/&lt;repo-name&gt;.git
-<br>update the remote repo with push git push origin main
-<br><br><br><br>git add . 
-<br>This command will staged all files and modifications done in current and subdirectories but wont wont stage deletions.<br>git add -A 
-<br>This command will stage all types of changes across your entire working directory including newfiles, modifications and deletions<br><br>git commit -m "new commit"
-<br>Creates a commit with the specified message. This is the most common way to commit changes.<br>git commit -A "your commit message"
-<br>Automatically stages all tracked files that have been modified and deleted, then creates a commit. It combines git add -A and git commit -m into a single command.<br>Does not stage any new files. If you have new files you want to include in the commit, you still need to stage them separately using git add.<br><br>git push origin main
-<br>Uploads your local changes to the remote repository.<br>
-After pushing, other developers can access your changes by pulling from the remote repository.<br><br>git pull origin main
-<br>Downloads changes from the remote repository to your local repository. Used to stay up-to-date with the latest changes made by other develpers.*]]></description><link>https://notes.sarangwandile.xyz/devops/git-practical-command.html</link><guid isPermaLink="false">DevOps/Git Practical Command.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 29 Dec 2024 13:20:50 GMT</pubDate></item><item><title><![CDATA[Git Theory]]></title><description><![CDATA[ 
- <br><br>A centralized version control system (VCS) uses a single, central repository to store all file versions and their change history. Team members have their own working copies, but all modifications are ultimately committed to this central server. This facilitates collaboration by providing a single source of truth, but it also creates a single point of failure. Examples include <a data-tooltip-position="top" aria-label="https://subversion.apache.org/" rel="noopener nofollow" class="external-link" href="https://subversion.apache.org/" target="_blank">Subversion (SVN)</a> and <a data-tooltip-position="top" aria-label="https://www.nongnu.org/cvs/" rel="noopener nofollow" class="external-link" href="https://www.nongnu.org/cvs/" target="_blank">CVS</a>.<br><img alt="CVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"><br><br>In a Decentralized Version Control System (DVCS), every user has a complete copy of the repository, including its entire history. This eliminates the reliance on a central server, allowing for offline work and greater flexibility. Changes are shared between repositories as needed. Popular examples include <a data-tooltip-position="top" aria-label="https://git-scm.com" rel="noopener nofollow" class="external-link" href="https://git-scm.com" target="_blank">Git</a> and <a data-tooltip-position="top" aria-label="https://www.mercurial-scm.org/" rel="noopener nofollow" class="external-link" href="https://www.mercurial-scm.org/" target="_blank">Mercurial</a>.<br><img alt="DVCS-Diagram.svg" src="https://notes.sarangwandile.xyz/lib/media/dvcs-diagram.svg"><br><br>Git is like a super-powered tracking system for your files and the changes you make to them over time. Imagine it as a special folder that remembers every version of your work, allowing you to go back to any previous stage if needed. &nbsp;<br>Here's what makes Git special:<br>
-<br>Keeps a detailed history: Git meticulously records every change you make to your files, who made it, and when. This history helps you understand how your project evolved. &nbsp;
-<br>Branching and merging: Git allows you to create separate branches, like alternate timelines, to experiment with new features or try different ideas without affecting the main project. You can then merge these branches back into the main project when you're ready. &nbsp;
-<br>Collaboration made easy: Git is designed for teamwork. Multiple people can work on the same project simultaneously, and Git helps manage and integrate everyone's contributions smoothly. &nbsp;
-<br>Offline access: You have the entire project history on your computer, so you can work even without an internet connection. &nbsp;
-<br>Popular and widely used: Git is the most popular version control system in the world, used by countless developers and companies. &nbsp;
-<br><br>Git was created by Linus Torvalds, the famous creator of the Linux operating system, in 2005. He needed a better tool to manage the Linux kernel development, as the existing version control systems were not efficient enough for such a large and complex project.<br>Here's a glimpse of Git's history:<br>
-<br>Early Days (2002-2005): Linux kernel development relied on a proprietary DVCS called <a data-tooltip-position="top" aria-label="https://www.bitkeeper.org/" rel="noopener nofollow" class="external-link" href="https://www.bitkeeper.org/" target="_blank">BitKeeper</a>. When its free-of-charge use was revoked, Torvalds decided to create his own version control system, with the goal of being faster, simpler, and more robust.
-<br>Birth of Git (April 2005): Torvalds began work on Git and within a remarkably short period, had a functional system ready to manage the Linux kernel.
-<br>Community Takes Over (July 2005): Junio Hamano took over the maintenance of Git, guiding its development and shaping it into the mature system it is today.
-<br>Widespread Adoption: Git's speed, flexibility, and powerful features quickly gained popularity among developers. It became the preferred choice for open-source projects and eventually spread to commercial software development.
-<br>Today, Git is the most widely used version control system worldwide, powering the development of countless software projects, from small personal projects to massive corporate endeavors.]]></description><link>https://notes.sarangwandile.xyz/devops/git-theory.html</link><guid isPermaLink="false">DevOps/Git Theory.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sun, 29 Dec 2024 13:28:03 GMT</pubDate><enclosure url="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://notes.sarangwandile.xyz/lib/media/cvcs-diagram.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
+]]></description><link>https://notes.sarangwandile.xyz/devops/tasks-done/task-6-how-to-set-permanent-alias.html</link><guid isPermaLink="false">DevOps/Tasks Done/Task 6 How to set permanent alias.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Tue, 07 Jan 2025 08:57:04 GMT</pubDate></item><item><title><![CDATA[Top 40 Linux Commands]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>]]></description><link>https://notes.sarangwandile.xyz/linux/top-40-linux-commands.html</link><guid isPermaLink="false">Linux/Top 40 Linux Commands.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Sat, 04 Jan 2025 05:21:49 GMT</pubDate></item><item><title><![CDATA[Understanding Vim]]></title><description><![CDATA[ 
  <br><br><br><br><br><br><br><br><br>Vim Modes<br>]]></description><link>https://notes.sarangwandile.xyz/linux/understanding-vim.html</link><guid isPermaLink="false">Linux/Understanding Vim.md</guid><dc:creator><![CDATA[Sarang Wandile]]></dc:creator><pubDate>Thu, 19 Dec 2024 16:34:29 GMT</pubDate></item></channel></rss>

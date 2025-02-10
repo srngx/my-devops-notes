@@ -21,7 +21,6 @@
 anti afinity
 taint and tolerance
 
-
 what is probe?
 
 **Task** 

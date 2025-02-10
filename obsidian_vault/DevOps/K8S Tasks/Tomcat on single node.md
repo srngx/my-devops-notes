@@ -1,4 +1,3 @@
-
 ##### Task 
 - 1 Microservice = Tomcat 
 - ReplicaSet 1
