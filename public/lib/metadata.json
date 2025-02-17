@@ -1,6 +1,6 @@
 {
   "vaultName": "Sarang's DevOps Notes",
-  "lastExport": 1739184586061,
+  "lastExport": 1739756256354,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
@@ -98,7 +98,6 @@
     "Daily Notes/2025-02-02.md",
     "Daily Notes/2025-02-03.md",
     "Daily Notes/2025-02-04.md",
-    "Daily Notes/2025-02-10.md",
     "Development/Mysql APP From Scratch.md",
     "DevOps/DockerTasks/Task 1 Creating Tomcat student-ui container.md",
     "DevOps/DockerTasks/Task 2 Create the Free-css template container.md",
@@ -129,6 +128,21 @@
     "DevOps/Tasks Done/Task 4 Create daemon service of tomcat.md",
     "DevOps/Tasks Done/Task 5 Create dockerfiles.md",
     "DevOps/Tasks Done/Task 6 How to set permanent alias.md",
+    "Drawings/cluster-diagram.svg",
+    "Drawings/cluster-diagram.excalidraw.md",
+    "Drawings/CVCS-Diagram.svg",
+    "Drawings/CVCS-Diagram-Excalidraw.md",
+    "Drawings/Docker-Architecture-diagram_1.excalidraw.svg",
+    "Drawings/Docker-Architecture-diagram_1.excalidraw.md",
+    "Drawings/docker-sock-file.svg",
+    "Drawings/docker-sock-file.excalidraw.md",
+    "Drawings/Drawing 2025-01-10 09.07.03.excalidraw.md",
+    "Drawings/DVCS-Diagram.svg",
+    "Drawings/DVCS-Diagram-Excalidraw.md",
+    "Drawings/kubernetes-cluster.svg",
+    "Drawings/kubernetes-cluster.excalidraw.md",
+    "Drawings/Manifest_structure.svg",
+    "Drawings/Manifest_structure.excalidraw.md",
     "Jenkins/Jenkins First Look.md",
     "Jenkins/SonarQube with maven.md",
     "Linux/Cloudblitz Linux Session.pdf",
@@ -137,8 +151,14 @@
     "Terraform/EC2 Creation.md",
     "Terraform/HCL Basics.md",
     "Terraform/S3 bucket Creation.md",
+    "Terraform/Terraform Commands.md",
     "Terraform/VPC Creation.md",
     "Index.md",
+    "lib/media/dvcs-diagram.svg",
+    "lib/media/cvcs-diagram.svg",
+    "lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png",
+    "lib/media/docker-architecture-diagram_1.excalidraw.svg",
+    "lib/media/tf-resource-block.png",
     "images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
@@ -246,9 +266,6 @@
     "lib/media/{78b1e5b8-5f9f-4c45-a995-997c82837901}.png",
     "lib/media/pasted-image-20241213154148.png",
     "lib/media/{51c73fff-c61a-4231-ba6b-783f6bd22f4d}.png",
-    "lib/media/dvcs-diagram.svg",
-    "lib/media/cvcs-diagram.svg",
-    "lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png",
     "lib/media/pasted-image-20241224092817.png",
     "lib/media/pasted-image-20250107191227.png",
     "lib/media/kubernetes-cluster.svg",
@@ -292,9 +309,7 @@
     "lib/media/{d18e449c-3e7d-4b49-8ac1-75893d2a92f7}.png",
     "lib/media/{48017e2c-fbb3-4ab6-b125-bfefa58746be}.png",
     "lib/media/docker-sock-file.svg",
-    "lib/media/docker-architecture-diagram_1.excalidraw.svg",
-    "lib/media/cluster-diagram.svg",
-    "lib/media/tf-resource-block.png"
+    "lib/media/cluster-diagram.svg"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -764,7 +779,7 @@
       "dependencies": []
     },
     "Daily Notes/2024-12-19 Git Class.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 1630,
       "exportedPath": "daily-notes/2024-12-19-git-class.html",
       "dependencies": [
@@ -1380,19 +1395,19 @@
       "dependencies": []
     },
     "lib/media/dvcs-diagram.svg": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 27540,
       "exportedPath": "lib/media/dvcs-diagram.svg",
       "dependencies": []
     },
     "lib/media/cvcs-diagram.svg": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 15335,
       "exportedPath": "lib/media/cvcs-diagram.svg",
       "dependencies": []
     },
     "lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 164055,
       "exportedPath": "lib/media/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png",
       "dependencies": []
@@ -1410,7 +1425,7 @@
       "dependencies": []
     },
     "lib/media/docker-architecture-diagram_1.excalidraw.svg": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 44259,
       "exportedPath": "lib/media/docker-architecture-diagram_1.excalidraw.svg",
       "dependencies": []
@@ -1644,91 +1659,91 @@
       "dependencies": []
     },
     "images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 164055,
       "exportedPath": "images/{494aea1d-4739-4a7b-b8a5-c8bb6655cd12}.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
@@ -1740,68 +1755,68 @@
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1739184586061,
-      "sourceSize": 112989,
+      "modifiedTime": 1739756256354,
+      "sourceSize": 126008,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1739184586061,
-      "sourceSize": 12338,
+      "modifiedTime": 1739756256354,
+      "sourceSize": 12954,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1739184586061,
-      "sourceSize": 137228,
+      "modifiedTime": 1739756256354,
+      "sourceSize": 137329,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
@@ -1812,19 +1827,19 @@
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 66234,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 598,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
@@ -2060,7 +2075,7 @@
       "dependencies": []
     },
     "Index.md": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 5472,
       "exportedPath": "index.html",
       "dependencies": [
@@ -2088,7 +2103,7 @@
       "dependencies": []
     },
     "DevOps/For Reading/Read about each and every component of kubernetes.md": {
-      "modifiedTime": 1736510853512,
+      "modifiedTime": 1739756256354,
       "sourceSize": 9228,
       "exportedPath": "devops/for-reading/read-about-each-and-every-component-of-kubernetes.html",
       "dependencies": []
@@ -2152,8 +2167,8 @@
       "dependencies": []
     },
     "lib/styles/supported-plugins.css": {
-      "modifiedTime": 1739184586061,
-      "sourceSize": 1637,
+      "modifiedTime": 1739756256354,
+      "sourceSize": 1640,
       "exportedPath": "lib/styles/supported-plugins.css",
       "dependencies": []
     },
@@ -2194,7 +2209,7 @@
       "dependencies": []
     },
     "DevOps/Notes/Understanding Manifest File.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 250,
       "exportedPath": "devops/notes/understanding-manifest-file.html",
       "dependencies": []
@@ -2352,7 +2367,7 @@
       "dependencies": []
     },
     "Daily Notes/2025-01-23 Tomcat on Single Node Task.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 654,
       "exportedPath": "daily-notes/2025-01-23-tomcat-on-single-node-task.html",
       "dependencies": []
@@ -2364,43 +2379,43 @@
       "dependencies": []
     },
     "DevOps/K8S Tasks/Tomcat on single node.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 504,
       "exportedPath": "devops/k8s-tasks/tomcat-on-single-node.html",
       "dependencies": []
     },
     "Daily Notes/2025-01-29.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 1161,
       "exportedPath": "daily-notes/2025-01-29.html",
       "dependencies": []
     },
     "Daily Notes/2025-01-30.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 1136,
       "exportedPath": "daily-notes/2025-01-30.html",
       "dependencies": []
     },
     "Daily Notes/2025-02-01.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 296,
       "exportedPath": "daily-notes/2025-02-01.html",
       "dependencies": []
     },
     "Daily Notes/2025-02-02.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 5623,
       "exportedPath": "daily-notes/2025-02-02.html",
       "dependencies": []
     },
     "Daily Notes/2025-02-03.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 458,
       "exportedPath": "daily-notes/2025-02-03.html",
       "dependencies": []
     },
     "Daily Notes/2025-02-04.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 619,
       "exportedPath": "daily-notes/2025-02-04.html",
       "dependencies": []
@@ -2412,7 +2427,7 @@
       "dependencies": []
     },
     "DevOps/Notes/Docker Theory and Practical.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 6131,
       "exportedPath": "devops/notes/docker-theory-and-practical.html",
       "dependencies": [
@@ -2421,13 +2436,13 @@
       ]
     },
     "DevOps/Notes/Git Notes in My Own words.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 2053,
       "exportedPath": "devops/notes/git-notes-in-my-own-words.html",
       "dependencies": []
     },
     "DevOps/Notes/Git Theory and Practical.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 5729,
       "exportedPath": "devops/notes/git-theory-and-practical.html",
       "dependencies": [
@@ -2436,31 +2451,31 @@
       ]
     },
     "DevOps/Notes/My limited diff usecase In case I forgot.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 2182,
       "exportedPath": "devops/notes/my-limited-diff-usecase-in-case-i-forgot.html",
       "dependencies": []
     },
     "Jenkins/Jenkins First Look.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 9963,
       "exportedPath": "jenkins/jenkins-first-look.html",
       "dependencies": []
     },
     "Jenkins/SonarQube with maven.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 2102,
       "exportedPath": "jenkins/sonarqube-with-maven.html",
       "dependencies": []
     },
     "Terraform/EC2 Creation.md": {
-      "modifiedTime": 1739201757425,
-      "sourceSize": 908,
+      "modifiedTime": 1739756256354,
+      "sourceSize": 1076,
       "exportedPath": "terraform/ec2-creation.html",
       "dependencies": []
     },
     "Terraform/HCL Basics.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 1168,
       "exportedPath": "terraform/hcl-basics.html",
       "dependencies": [
@@ -2468,39 +2483,129 @@
       ]
     },
     "Terraform/S3 bucket Creation.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 1750,
       "exportedPath": "terraform/s3-bucket-creation.html",
       "dependencies": []
     },
     "Terraform/VPC Creation.md": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 2654,
       "exportedPath": "terraform/vpc-creation.html",
       "dependencies": []
     },
     "lib/media/tf-resource-block.png": {
-      "modifiedTime": 1739201757425,
+      "modifiedTime": 1739756256354,
       "sourceSize": 93839,
       "exportedPath": "lib/media/tf-resource-block.png",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "AWS/Notes/aws-cli cheatsheet.md": {
-      "modifiedTime": 1739184586061,
+      "modifiedTime": 1739756256354,
       "sourceSize": 7330,
       "exportedPath": "aws/notes/aws-cli-cheatsheet.html",
       "dependencies": []
     },
-    "Daily Notes/2025-02-10.md": {
-      "modifiedTime": 1739184586061,
-      "sourceSize": 0,
-      "exportedPath": "daily-notes/2025-02-10.html",
+    "Drawings/cluster-diagram.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 47021,
+      "exportedPath": "drawings/cluster-diagram.svg",
+      "dependencies": []
+    },
+    "Drawings/cluster-diagram.excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 22784,
+      "exportedPath": "drawings/cluster-diagram.excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/CVCS-Diagram.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 15335,
+      "exportedPath": "drawings/cvcs-diagram.svg",
+      "dependencies": []
+    },
+    "Drawings/CVCS-Diagram-Excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 7113,
+      "exportedPath": "drawings/cvcs-diagram-excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/Docker-Architecture-diagram_1.excalidraw.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 44259,
+      "exportedPath": "drawings/docker-architecture-diagram_1.excalidraw.svg",
+      "dependencies": []
+    },
+    "Drawings/Docker-Architecture-diagram_1.excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 17819,
+      "exportedPath": "drawings/docker-architecture-diagram_1.excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/docker-sock-file.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 12816,
+      "exportedPath": "drawings/docker-sock-file.svg",
+      "dependencies": []
+    },
+    "Drawings/docker-sock-file.excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 4940,
+      "exportedPath": "drawings/docker-sock-file.excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/Drawing 2025-01-10 09.07.03.excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 1767,
+      "exportedPath": "drawings/drawing-2025-01-10-09.07.03.excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/DVCS-Diagram.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 27540,
+      "exportedPath": "drawings/dvcs-diagram.svg",
+      "dependencies": []
+    },
+    "Drawings/DVCS-Diagram-Excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 15553,
+      "exportedPath": "drawings/dvcs-diagram-excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/kubernetes-cluster.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 66173,
+      "exportedPath": "drawings/kubernetes-cluster.svg",
+      "dependencies": []
+    },
+    "Drawings/kubernetes-cluster.excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 23967,
+      "exportedPath": "drawings/kubernetes-cluster.excalidraw.html",
+      "dependencies": []
+    },
+    "Drawings/Manifest_structure.svg": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 16503,
+      "exportedPath": "drawings/manifest_structure.svg",
+      "dependencies": []
+    },
+    "Drawings/Manifest_structure.excalidraw.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 9039,
+      "exportedPath": "drawings/manifest_structure.excalidraw.html",
+      "dependencies": []
+    },
+    "Terraform/Terraform Commands.md": {
+      "modifiedTime": 1739756256354,
+      "sourceSize": 1072,
+      "exportedPath": "terraform/terraform-commands.html",
       "dependencies": []
     }
   }

@@ -40,4 +40,7 @@ provider "aws" {
 }
 ```
 
+To apply the execution plan we run 
+`terraform plan` This shows us detailed view of what changes going to take place.
+and with `terraform apply` we make these changes.
 
