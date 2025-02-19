@@ -33,15 +33,15 @@ In this **Digital Garden** you are always welcome to explore and share your note
 #### AWS
 
 > [!todo]- Tasks to perform
-> [[☑️ Implement autoscaling on memory utilization]]
-> [[✅ Host static website on s3 bucket]]
-> [[✅ Create 5 IAM users and 5 S3 buckets and attach them each other]]
-> [[✅ Implement Template with Scheduled Autoscaling]]
-> [[✅ Monitoring Nginx logs with Cloudwatch]]
-> [[☑️ How to store aws load balancer logs in s3 bucket]]
-> [[✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]]
-> [[✅ Get sns alert when any user launches new instance]]
-> [[✅ Create notification for s3 bucket activity happen of put and delete]]
+> -  [[☑️ Implement autoscaling on memory utilization]]
+> - [[✅ Host static website on s3 bucket]]
+> - [[✅ Create 5 IAM users and 5 S3 buckets and attach them each other]]
+> - [[✅ Implement Template with Scheduled Autoscaling]]
+> - [[✅ Monitoring Nginx logs with Cloudwatch]]
+> - [[☑️ How to store aws load balancer logs in s3 bucket]]
+> - [[✅🐈‍⬛Host tomcat basesd web app called Student-app with RDS and ec2]]
+> - [[✅ Get sns alert when any user launches new instance]]
+> - [[✅ Create notification for s3 bucket activity happen of put and delete]]
 
 > [!example]- Task assigned for Reading
 > - [[Agile Development]]
