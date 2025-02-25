@@ -6,41 +6,23 @@
       <description>Last 10 notes on सारंग&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>2025-02-22</title>
-    <link>https://notes.sarangwandile.xyz/Daily-Notes/2025-02-22</link>
-    <guid>https://notes.sarangwandile.xyz/Daily-Notes/2025-02-22</guid>
-    <description></description>
-    <pubDate>Sat, 22 Feb 2025 06:39:56 GMT</pubDate>
+    <title>Jenkins First Look</title>
+    <link>https://notes.sarangwandile.xyz/Jenkins/Jenkins-First-Look</link>
+    <guid>https://notes.sarangwandile.xyz/Jenkins/Jenkins-First-Look</guid>
+    <description>What is Jenkins? Jenkins is a CI/CD Automation Tool that automates the Continuous Integration and Continuous development part of Software development process ...</description>
+    <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Terraform Cheatsheet</title>
+    <link>https://notes.sarangwandile.xyz/Terraform/Terraform-Cheatsheet</link>
+    <guid>https://notes.sarangwandile.xyz/Terraform/Terraform-Cheatsheet</guid>
+    <description>Main Commands CommandDescriptionterraform initTo initialize the Projectterraform validateCheck whether the configuration is validterraform planShows which changes will ...</description>
+    <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
   </item><item>
     <title>index</title>
     <link>https://notes.sarangwandile.xyz/</link>
     <guid>https://notes.sarangwandile.xyz/</guid>
     <description> My DevOps Notes Author: Sarang Wandile Github: srngx Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practicals. Its not much but I like to keep track of everything I learned.</description>
     <pubDate>Wed, 19 Feb 2025 17:03:14 GMT</pubDate>
-  </item><item>
-    <title>HCL Basics</title>
-    <link>https://notes.sarangwandile.xyz/Terraform/HCL-Basics</link>
-    <guid>https://notes.sarangwandile.xyz/Terraform/HCL-Basics</guid>
-    <description>HCL Syntax: consists of a block and argument &lt;block&gt; &lt;parameter&gt; { key1 = value1 key2 = value2 } A block is defined within curly braces and it contains a set of arguments ...</description>
-    <pubDate>Wed, 19 Feb 2025 17:03:10 GMT</pubDate>
-  </item><item>
-    <title>Terraform Commands</title>
-    <link>https://notes.sarangwandile.xyz/Terraform/Terraform-Commands</link>
-    <guid>https://notes.sarangwandile.xyz/Terraform/Terraform-Commands</guid>
-    <description>Main Commands CommandDescriptionterraform initTo initialize the Projectterraform validateCheck whether the configuration is validterraform planShows which changes will ...</description>
-    <pubDate>Wed, 19 Feb 2025 17:03:10 GMT</pubDate>
-  </item><item>
-    <title>S3 bucket Creation</title>
-    <link>https://notes.sarangwandile.xyz/Terraform/S3-bucket-Creation</link>
-    <guid>https://notes.sarangwandile.xyz/Terraform/S3-bucket-Creation</guid>
-    <description>There are two methods to do this: Manually giving buckets names for each buckets Using Increment in Variable to add numbers after specific Unique name Method 1 : Manually Adding Bucket ...</description>
-    <pubDate>Wed, 19 Feb 2025 17:03:10 GMT</pubDate>
-  </item><item>
-    <title>EC2 Creation</title>
-    <link>https://notes.sarangwandile.xyz/Terraform/EC2-Creation</link>
-    <guid>https://notes.sarangwandile.xyz/Terraform/EC2-Creation</guid>
-    <description>Terraform is IAC i.e. Infrastructure as Code which leverages code to create Infrastructure resource in any of the cloud provider that support terraform.</description>
-    <pubDate>Wed, 19 Feb 2025 17:03:10 GMT</pubDate>
   </item><item>
     <title>kubernetes-cluster.excalidraw</title>
     <link>https://notes.sarangwandile.xyz/Drawings/kubernetes-cluster.excalidraw</link>
@@ -63,6 +45,24 @@
     <title>CVCS-Diagram-Excalidraw</title>
     <link>https://notes.sarangwandile.xyz/Drawings/CVCS-Diagram-Excalidraw</link>
     <guid>https://notes.sarangwandile.xyz/Drawings/CVCS-Diagram-Excalidraw</guid>
+    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
+    <pubDate>Wed, 19 Feb 2025 17:03:09 GMT</pubDate>
+  </item><item>
+    <title>cluster-diagram.excalidraw</title>
+    <link>https://notes.sarangwandile.xyz/Drawings/cluster-diagram.excalidraw</link>
+    <guid>https://notes.sarangwandile.xyz/Drawings/cluster-diagram.excalidraw</guid>
+    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
+    <pubDate>Wed, 19 Feb 2025 17:03:09 GMT</pubDate>
+  </item><item>
+    <title>Manifest_structure.excalidraw</title>
+    <link>https://notes.sarangwandile.xyz/Drawings/Manifest_structure.excalidraw</link>
+    <guid>https://notes.sarangwandile.xyz/Drawings/Manifest_structure.excalidraw</guid>
+    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
+    <pubDate>Wed, 19 Feb 2025 17:03:09 GMT</pubDate>
+  </item><item>
+    <title>docker-sock-file.excalidraw</title>
+    <link>https://notes.sarangwandile.xyz/Drawings/docker-sock-file.excalidraw</link>
+    <guid>https://notes.sarangwandile.xyz/Drawings/docker-sock-file.excalidraw</guid>
     <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
     <pubDate>Wed, 19 Feb 2025 17:03:09 GMT</pubDate>
   </item>
