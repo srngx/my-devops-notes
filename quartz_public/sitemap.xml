@@ -293,6 +293,9 @@
     <loc>https://notes.sarangwandile.xyz/DevOps/Notes/Understanding-Manifest-File</loc>
     <lastmod>2025-02-19T17:03:05.553Z</lastmod>
   </url><url>
+    <loc>https://notes.sarangwandile.xyz/Docker-Interview-Questions</loc>
+    <lastmod>2025-02-28T00:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://notes.sarangwandile.xyz/Drawings/CVCS-Diagram-Excalidraw</loc>
     <lastmod>2025-02-19T17:03:09.705Z</lastmod>
   </url><url>
@@ -305,6 +308,12 @@
     <loc>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-01-10-09.07.03.excalidraw</loc>
     <lastmod>2025-02-19T17:03:10.137Z</lastmod>
   </url><url>
+    <loc>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-03-16.17.28.excalidraw</loc>
+    <lastmod>2025-03-03T10:47:28.208Z</lastmod>
+  </url><url>
+    <loc>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-06-12.03.52.excalidraw</loc>
+    <lastmod>2025-03-06T06:33:52.719Z</lastmod>
+  </url><url>
     <loc>https://notes.sarangwandile.xyz/Drawings/Manifest_structure.excalidraw</loc>
     <lastmod>2025-02-19T17:03:09.055Z</lastmod>
   </url><url>
@@ -316,6 +325,12 @@
   </url><url>
     <loc>https://notes.sarangwandile.xyz/Drawings/kubernetes-cluster.excalidraw</loc>
     <lastmod>2025-02-19T17:03:10.171Z</lastmod>
+  </url><url>
+    <loc>https://notes.sarangwandile.xyz/GCP/GCP-Overview</loc>
+    <lastmod>2025-03-02T04:27:37.555Z</lastmod>
+  </url><url>
+    <loc>https://notes.sarangwandile.xyz/GCP/Intel-GCP-Project</loc>
+    <lastmod>2025-03-06T06:33:19.776Z</lastmod>
   </url><url>
     <loc>https://notes.sarangwandile.xyz/Jenkins/Jenkins-First-Look</loc>
     <lastmod>2025-02-25T00:00:00.000Z</lastmod>
@@ -332,7 +347,7 @@
     <loc>https://notes.sarangwandile.xyz/SideQuests/Jenkins-With-Docker-Agents</loc>
     <lastmod>2025-02-02T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://notes.sarangwandile.xyz/SideQuests/Mysql-APP-From-Scratch</loc>
+    <loc>https://notes.sarangwandile.xyz/SideQuests/PHP-and-Mysql-based-Student-Registration-App-From-Scratch</loc>
     <lastmod>2025-01-26T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://notes.sarangwandile.xyz/SideQuests/WordPress-App-Docker-Migration</loc>
