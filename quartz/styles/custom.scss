@@ -1,0 +1,92 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+.page>#quartz-body .sidebar {
+    box-sizing: border-box;
+    gap: 1rem;
+    height: 100vh;
+    padding: 2rem 1rem 1rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Regular';
+    src: url('../static/JetBrainsMono-Regular.woff2');
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Light';
+    src: url('../static/JetBrainsMono-Light.woff2');
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Bold';
+    src: url('../static/JetBrainsMono-Bold.woff2');
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'marathi';
+    src: url('../static/siddhanta.ttf');
+}
+
+.table-container {
+    border: solid 1px var(--dark);
+}
+
+.graph>.graph-outer {
+    border: 1px solid var(--secondary);
+}
+
+html {
+  background-color: var(--light);
+}
+
+
+body {
+  background-size: cover;
+  background-position-y: center;
+  background-color: var(--light);
+}
+
+@media (max-width: 392px) {
+   .page-title {
+      font-size: 1.30rem;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background-size: contain; /* or 100% 100% */
+    }
+
+}
+
+.center-header {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 3em 0;
+}
+
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkmode {
+    display: none;
+}
+
+
+.page-title {
+    font-family: 'marathi';
+}

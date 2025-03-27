@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>सारंग&#039;s Notes</title>
+      <link>https://notes.sarangwandile.xyz</link>
+      <description>Last 10 notes on सारंग&#039;s Notes</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>GCP CI-CD Project</title>
+    <link>https://notes.sarangwandile.xyz/GCP/GCP-CI-CD-Project</link>
+    <guid>https://notes.sarangwandile.xyz/GCP/GCP-CI-CD-Project</guid>
+    <description>This is raw notes from GCP CI/CD Handson from Intel Learning Platform 1 Push our code to github repository Dockerfile FROM python:3.11-slim-bullseye WORKDIR /app COPY requirements.txt ...</description>
+    <pubDate>Thu, 27 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>mock interview</title>
+    <link>https://notes.sarangwandile.xyz/Interview-Questions/mock-interview</link>
+    <guid>https://notes.sarangwandile.xyz/Interview-Questions/mock-interview</guid>
+    <description>1)AWS SERVICES 2)HOW MANY LAYERS ARE THEIR IN PASS,SAAS,IAAS 3)S3 LIFECYCLE IN AWS 4)VPC TYPES IN AWS 5)TERRAFORM LIFECYCLYE 6)GIT LIFECYCLE 7)USE CASE OF GIT ADD COMMAND 8)DIFFERENCE ...</description>
+    <pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>new scratch mock questions</title>
+    <link>https://notes.sarangwandile.xyz/Interview-Questions/new-scratch-mock-questions</link>
+    <guid>https://notes.sarangwandile.xyz/Interview-Questions/new-scratch-mock-questions</guid>
+    <description>how to check hypervisor in your operating system? What are service types Infrastructure as service how many layers s3 lifecycle vpc types terraform lifecycle git lifecycle git clone ...</description>
+    <pubDate>Wed, 26 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>GCP Overview</title>
+    <link>https://notes.sarangwandile.xyz/GCP/GCP-Overview</link>
+    <guid>https://notes.sarangwandile.xyz/GCP/GCP-Overview</guid>
+    <description>...</description>
+    <pubDate>Thu, 20 Mar 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Drawing 2025-03-06 12.03.52.excalidraw</title>
+    <link>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-06-12.03.52.excalidraw</link>
+    <guid>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-06-12.03.52.excalidraw</guid>
+    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
+    <pubDate>Thu, 06 Mar 2025 06:33:52 GMT</pubDate>
+  </item><item>
+    <title>Drawing 2025-03-03 16.17.28.excalidraw</title>
+    <link>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-03-16.17.28.excalidraw</link>
+    <guid>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-03-16.17.28.excalidraw</guid>
+    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
+    <pubDate>Mon, 03 Mar 2025 10:47:28 GMT</pubDate>
+  </item><item>
+    <title>Docker Interview Questions</title>
+    <link>https://notes.sarangwandile.xyz/Interview-Questions/Docker-Interview-Questions</link>
+    <guid>https://notes.sarangwandile.xyz/Interview-Questions/Docker-Interview-Questions</guid>
+    <description>Fundamentals 1. What is docker and why is it used? Docker is a containerization platform that allows developers to package, ship and run application in container format.</description>
+    <pubDate>Fri, 28 Feb 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Jenkins First Look</title>
+    <link>https://notes.sarangwandile.xyz/Jenkins/Jenkins-First-Look</link>
+    <guid>https://notes.sarangwandile.xyz/Jenkins/Jenkins-First-Look</guid>
+    <description>What is Jenkins? Jenkins is a CI/CD Automation Tool that automates the Continuous Integration and Continuous development part of Software development process ...</description>
+    <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Terraform Cheatsheet</title>
+    <link>https://notes.sarangwandile.xyz/Terraform/Terraform-Cheatsheet</link>
+    <guid>https://notes.sarangwandile.xyz/Terraform/Terraform-Cheatsheet</guid>
+    <description>Main Commands CommandDescriptionterraform initTo initialize the Projectterraform validateCheck whether the configuration is validterraform planShows which changes will ...</description>
+    <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://notes.sarangwandile.xyz/</link>
+    <guid>https://notes.sarangwandile.xyz/</guid>
+    <description> My DevOps Notes Author: Sarang Wandile Github: srngx Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practicals. Its not much but I like to keep track of everything I learned.</description>
+    <pubDate>Wed, 19 Feb 2025 17:03:14 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
