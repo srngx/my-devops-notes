@@ -131,9 +131,6 @@
     <loc>https://notes.sarangwandile.xyz/AWS/%F0%9F%A4%BF-Tasks-To-Do</loc>
     <lastmod>2025-03-27T11:19:37.047Z</lastmod>
   </url><url>
-    <loc>https://notes.sarangwandile.xyz/Angular-Project-Deployment</loc>
-    <lastmod>2025-04-25T11:58:01.815Z</lastmod>
-  </url><url>
     <loc>https://notes.sarangwandile.xyz/Daily-Notes/2024-11-18-EC2-VPC-and-stuffs</loc>
     <lastmod>2024-11-18T00:00:00.000Z</lastmod>
   </url><url>
@@ -254,6 +251,9 @@
     <loc>https://notes.sarangwandile.xyz/Daily-Notes/2025-04-25</loc>
     <lastmod>2025-04-25T11:57:53.705Z</lastmod>
   </url><url>
+    <loc>https://notes.sarangwandile.xyz/Daily-Notes/2025-04-26</loc>
+    <lastmod>2025-04-26T05:18:45.296Z</lastmod>
+  </url><url>
     <loc>https://notes.sarangwandile.xyz/DevOps/For-Reading/Agile-Development</loc>
     <lastmod>2024-12-19T00:00:00.000Z</lastmod>
   </url><url>
@@ -365,13 +365,16 @@
     <loc>https://notes.sarangwandile.xyz/Linux/Understanding-Vim</loc>
     <lastmod>2024-12-19T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://notes.sarangwandile.xyz/SideQuests/Jenkins-With-Docker-Agents</loc>
+    <loc>https://notes.sarangwandile.xyz/Projects/Jenkins-With-Docker-Agents</loc>
     <lastmod>2025-02-02T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://notes.sarangwandile.xyz/SideQuests/PHP-and-Mysql-based-Student-Registration-App-From-Scratch</loc>
+    <loc>https://notes.sarangwandile.xyz/Projects/Modern-Web-Application-Deployment-on-AWS</loc>
+    <lastmod>2025-04-25T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://notes.sarangwandile.xyz/Projects/PHP-and-Mysql-based-Student-Registration-App-From-Scratch</loc>
     <lastmod>2025-01-26T00:00:00.000Z</lastmod>
   </url><url>
-    <loc>https://notes.sarangwandile.xyz/SideQuests/WordPress-App-Docker-Migration</loc>
+    <loc>https://notes.sarangwandile.xyz/Projects/WordPress-App-Docker-Migration</loc>
     <lastmod>2024-11-23T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://notes.sarangwandile.xyz/Tasks/Docker/Task-1-Creating-Tomcat-student-ui-container</loc>
