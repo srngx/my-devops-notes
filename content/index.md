@@ -23,6 +23,7 @@ In this **Digital Garden** you are always welcome to explore and share your note
 *These notes are made using [Obsidian App](https://obsidian.md) - A Markdown Notetaking App and Hosted with [Cloudflare page](https://pages.cloudflare.com/) and compiled into html with [Quartz](https://quartz.jzhao.xyz/)*
 
 >[!example] Recent Notes
+>- [[Azure Notes]]
 >- [[Modern Web Application Deployment on AWS]]
 >- [[Terraform Cheatsheet]] 
 >- [[aws-cli cheatsheet]]
