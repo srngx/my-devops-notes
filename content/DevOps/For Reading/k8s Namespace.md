@@ -106,7 +106,7 @@ kubectl api-resources --namespaced=true
 kubectl api-resources --namespaced=false
 ```
 
-## Automatic labelling[](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#automatic-labelling)
+## [Automatic labelling](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#automatic-labelling)
 
 FEATURE STATE: `Kubernetes 1.22 [stable]`
 

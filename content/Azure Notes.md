@@ -1,3 +1,9 @@
+---
+Title: Azure Notes
+date: 2025-04-15
+tags:
+  - Azure
+---
 
 Azure is **Microsoft's cloud platform**. It helps you run websites, store data, use databases, build apps, and more.
 

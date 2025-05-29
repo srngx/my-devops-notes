@@ -1,5 +1,5 @@
 ---
-Title: Docker - Theory and Practical
+Title: Docker
 date: 2025-02-06
 tags:
   - docker
