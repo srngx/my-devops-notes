@@ -1,5 +1,5 @@
 ---
-Title: Full-Stack Web Application Deployment
+title: Full-Stack Web Application Deployment
 date: 2025-04-25
 tags:
   - agile

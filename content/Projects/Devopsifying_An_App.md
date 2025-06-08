@@ -7,7 +7,8 @@ tags:
   - projects
 ---
 
-## Devopsifying An Application
+## GitOps-driven Kubernetes Native Deployment
+
 This Project Include:
 - Containerizing the Static website
 - Minikube Clusters
