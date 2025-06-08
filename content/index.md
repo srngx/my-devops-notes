@@ -23,6 +23,7 @@ In this **Digital Garden** you are always welcome to explore and share your note
 *These notes are made using [Obsidian App](https://obsidian.md) - A Markdown Notetaking App and Hosted with [Cloudflare page](https://pages.cloudflare.com/) and compiled into html with [Quartz](https://quartz.jzhao.xyz/)*
 
 >[!example] Recent Notes
+>- [[Devopsifying_An_App]]
 >- [[What is Devops]]
 >- [[SDLC]]
 >- [[Agile Model]]
@@ -30,9 +31,12 @@ In this **Digital Garden** you are always welcome to explore and share your note
 >- [[Azure Notes]]
 >- [[Modern Web Application Deployment on AWS]]
 >- [[Terraform Cheatsheet]] 
->- [[aws-cli cheatsheet]]
 
-
+#### Projects
+- [[GitOps-driven Kubernetes Native Deployment]]
+- [[Full-Stack Web Application Deployment]]
+- [[Bookstore Application Deployment on Kubernetes]]
+- [[PHP-MySQL Web Application Development and EC2 Deployment]]
 
 #### Linux
 
@@ -135,5 +139,4 @@ In this **Digital Garden** you are always welcome to explore and share your note
 | 2025-02-03 | [[VPC Creation]]       |
 | 2025-02-17 | [[Terraform Cheatsheet]] |
 
-#### Projects
-- [[Modern Web Application Deployment on AWS]]
+

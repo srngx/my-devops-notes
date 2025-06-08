@@ -1,5 +1,5 @@
 ---
-Title: MySQL App From Scratch
+title: PHP-MySQL Web Application Development and EC2 Deployment
 date: 2025-01-26
 tags:
   - sidequests

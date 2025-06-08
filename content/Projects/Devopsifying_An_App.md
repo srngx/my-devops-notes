@@ -1,5 +1,5 @@
 ---
-Title: GitOps-driven Kubernetes Native Deployment 
+title: GitOps-driven Kubernetes Native Deployment 
 date: 2025-05-12
 tags:
   - argocd

@@ -1,5 +1,5 @@
 ---
-Title: Devops Foundational Project
+title: Bookstore Application Deployment on K8S
 date: 2025-04-27
 tags:
   - project

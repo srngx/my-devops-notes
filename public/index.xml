@@ -6,65 +6,65 @@
       <description>Last 10 notes on सारंग&#039;s Notes</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Azure Notes</title>
-    <link>https://notes.sarangwandile.xyz/Azure-Notes</link>
-    <guid>https://notes.sarangwandile.xyz/Azure-Notes</guid>
-    <description>Azure is Microsoft’s cloud platform. It helps you run websites, store data, use databases, build apps, and more. It offers:- IaaS (you manage apps, Azure manages hardware) PaaS (Azure handles most of the setup for you) It works well with Microsoft tools and supports many programming languages.</description>
-    <pubDate>Tue, 29 Apr 2025 12:46:25 GMT</pubDate>
+    <title>Agile Model</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/Agile-Model</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/Agile-Model</guid>
+    <description> Iterative and incremental. Focus on collaboration and customer feedback. Pros: Flexibility, faster delivery, better quality. Cons: Requires close collaboration, may lack documentation.</description>
+    <pubDate>Thu, 29 May 2025 09:17:10 GMT</pubDate>
   </item><item>
-    <title>DevOps Foundational Project</title>
-    <link>https://notes.sarangwandile.xyz/Projects/DevOps-Foundational-Project</link>
-    <guid>https://notes.sarangwandile.xyz/Projects/DevOps-Foundational-Project</guid>
-    <description>Containerize the application Step 1: Log in to Container Registry docker login ghcr.io This command will prompt you to enter your GitHub username and password ...</description>
-    <pubDate>Sun, 27 Apr 2025 00:00:00 GMT</pubDate>
+    <title>SDLC</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/SDLC</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/SDLC</guid>
+    <description>Software Development Life Cycle (SDLC): Waterfall vs Agile Model Waterfall Methodology Overview The Waterfall Model is a sequential software development methodology where progress ...</description>
+    <pubDate>Thu, 29 May 2025 09:15:32 GMT</pubDate>
   </item><item>
-    <title>Modern Web Application Deployment on AWS</title>
-    <link>https://notes.sarangwandile.xyz/Projects/Modern-Web-Application-Deployment-on-AWS</link>
-    <guid>https://notes.sarangwandile.xyz/Projects/Modern-Web-Application-Deployment-on-AWS</guid>
-    <description>Project Overview This project demonstrates a comprehensive cloud-native approach to deploying a full-stack web application using modern DevOps practices ...</description>
-    <pubDate>Fri, 25 Apr 2025 00:00:00 GMT</pubDate>
+    <title>GCP Notes</title>
+    <link>https://notes.sarangwandile.xyz/GCP-Notes</link>
+    <guid>https://notes.sarangwandile.xyz/GCP-Notes</guid>
+    <description>Google Cloud Platform (GCP) Is Google’s cloud computing service that offers a suite of computing services for building, deploying, and scaling applications ...</description>
+    <pubDate>Sat, 24 May 2025 06:23:48 GMT</pubDate>
   </item><item>
-    <title>INTEL Partner DEVOPS</title>
-    <link>https://notes.sarangwandile.xyz/DevOps/INTEL-Partner-DEVOPS</link>
-    <guid>https://notes.sarangwandile.xyz/DevOps/INTEL-Partner-DEVOPS</guid>
-    <description>Some saved Images from this course www.credly.com/badges/8818739f-dfab-4ac2-af37-cf31d0d2c2bd/embedded .</description>
-    <pubDate>Sat, 29 Mar 2025 00:00:00 GMT</pubDate>
+    <title>index</title>
+    <link>https://notes.sarangwandile.xyz/</link>
+    <guid>https://notes.sarangwandile.xyz/</guid>
+    <description> My DevOps Notes Author: Sarang Wandile Github: srngx Hello, My name is Sarang, in this place I store my DevOps Notes, assignments and Practicals. Its not much but I like to keep track of everything I learned.</description>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item><item>
-    <title>kubernetes-cluster.excalidraw</title>
-    <link>https://notes.sarangwandile.xyz/Drawings/kubernetes-cluster.excalidraw</link>
-    <guid>https://notes.sarangwandile.xyz/Drawings/kubernetes-cluster.excalidraw</guid>
+    <title>DVCS-Diagram-Excalidraw</title>
+    <link>https://notes.sarangwandile.xyz/Drawings/DVCS-Diagram-Excalidraw</link>
+    <guid>https://notes.sarangwandile.xyz/Drawings/DVCS-Diagram-Excalidraw</guid>
     <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
-    <pubDate>Thu, 27 Mar 2025 11:19:38 GMT</pubDate>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item><item>
-    <title>docker-sock-file.excalidraw</title>
-    <link>https://notes.sarangwandile.xyz/Drawings/docker-sock-file.excalidraw</link>
-    <guid>https://notes.sarangwandile.xyz/Drawings/docker-sock-file.excalidraw</guid>
-    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
-    <pubDate>Thu, 27 Mar 2025 11:19:38 GMT</pubDate>
+    <title>Git Theory</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/Git-Theory</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/Git-Theory</guid>
+    <description>CVCS Centralized Versioning System A centralized version control system (VCS) uses a single, central repository to store all file versions and their change history ...</description>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item><item>
-    <title>cluster-diagram.excalidraw</title>
-    <link>https://notes.sarangwandile.xyz/Drawings/cluster-diagram.excalidraw</link>
-    <guid>https://notes.sarangwandile.xyz/Drawings/cluster-diagram.excalidraw</guid>
-    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
-    <pubDate>Thu, 27 Mar 2025 11:19:38 GMT</pubDate>
+    <title>Kubernetes Components</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/Kubernetes-Components</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/Kubernetes-Components</guid>
+    <description>Kubernetes Components and Architecture Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized ...</description>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item><item>
-    <title>Manifest_structure.excalidraw</title>
-    <link>https://notes.sarangwandile.xyz/Drawings/Manifest_structure.excalidraw</link>
-    <guid>https://notes.sarangwandile.xyz/Drawings/Manifest_structure.excalidraw</guid>
-    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
-    <pubDate>Thu, 27 Mar 2025 11:19:38 GMT</pubDate>
+    <title>Monolithic vs Microservice Architecture</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/Monolithic-vs-Microservice-Architecture</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/Monolithic-vs-Microservice-Architecture</guid>
+    <description>Monolithic applications are built as a single, unified unit. Think of it like a large container holding all the components of your application—user interface, business logic, database access—all bundled together.</description>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item><item>
-    <title>Drawing 2025-03-06 12.03.52.excalidraw</title>
-    <link>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-06-12.03.52.excalidraw</link>
-    <guid>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-06-12.03.52.excalidraw</guid>
-    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
-    <pubDate>Thu, 27 Mar 2025 11:19:38 GMT</pubDate>
+    <title>k8s Namespace</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/k8s-Namespace</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/k8s-Namespace</guid>
+    <description>In Kubernetes, namespaces provide a mechanism for isolating groups of resources within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.</description>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item><item>
-    <title>Drawing 2025-03-03 16.17.28.excalidraw</title>
-    <link>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-03-16.17.28.excalidraw</link>
-    <guid>https://notes.sarangwandile.xyz/Drawings/Drawing-2025-03-03-16.17.28.excalidraw</guid>
-    <description>⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ You can decompress Drawing data with the command palette: ‘Decompress current Excalidraw file’.</description>
-    <pubDate>Thu, 27 Mar 2025 11:19:38 GMT</pubDate>
+    <title>k8s Volume</title>
+    <link>https://notes.sarangwandile.xyz/DevOps/For-Reading/k8s-Volume</link>
+    <guid>https://notes.sarangwandile.xyz/DevOps/For-Reading/k8s-Volume</guid>
+    <description>On-disk files in a container are ephemeral, which presents some problems for non-trivial applications when running in containers. First, when a container crashes kubelet will restart it, but the files will be lost - the container starts with a clean state.</description>
+    <pubDate>Thu, 22 May 2025 12:59:18 GMT</pubDate>
   </item>
     </channel>
   </rss>

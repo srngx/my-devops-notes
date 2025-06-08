@@ -1,5 +1,5 @@
 ---
-Title: Modern Web Application Deployment on AWS
+Title: Full-Stack Web Application Deployment
 date: 2025-04-25
 tags:
   - agile
